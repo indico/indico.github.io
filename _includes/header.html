@@ -15,7 +15,8 @@
         </svg>
       </a>
       <div class="trigger">
-        {% for p in site.pages | sort:weight %}
+        {% assign pages = site.pages | sort:"weight" %}
+        {% for p in pages %}
           {% assign class_holder = "" %}
           {% if p.title %}
             {% if p.url == page.url %}
