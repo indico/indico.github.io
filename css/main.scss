@@ -7,6 +7,7 @@
 
 // Our variables
 $base-font-family: Helvetica, Arial, sans-serif;
+$maven-medium:	   MavenProMedium;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -14,8 +15,11 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:       #111;
+$text-color-white: #FFFFFF;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
+$blue-color-light: #297699;
+$blue-color:	   #2D98C8;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
