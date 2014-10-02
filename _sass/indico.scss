@@ -1,7 +1,85 @@
+/**
+ * Indico specific stylesheet.
+ * Integration with compass for easier gradients.
+ */
+
 @import "compass";
 
+$maven-medium:     MavenProMedium;
+$maven-regular:    MavenProRegular;
+$maven-light-regular: MavenProLight300-Regular;
+
+$blue-color:        #2D98C8;
+$blue-color-light:  #297699;
+$blue-color-lighter:#9CD5EF;
+$white-color:       #FFFFFF;
+$green-color:       #7ED321;
+
 .hero-section {
+	background-image: url('../img/conference_hero.png');
+	background-position: center;
 	height: 851px;
-	padding-top: 70px;
+    text-align: center;
+}
+
+.hero-section-fader {
 	@include background-image(linear-gradient(top, rgba(26,74,97,1) 0%,rgba(26,74,97,0.75) 68%,rgba(26,74,97,1) 100%));
+	height: 100%;
  }
+
+.hero-section-content {
+    padding-top: 90px;
+}
+
+.hero-spotlight {
+    margin-top: 80px;
+}
+
+.hero-spotlight-1 {
+    font-family: $maven-regular;
+    font-size: 18px;
+    color: $blue-color-lighter;
+    line-height: 25px;
+}
+
+.hero-spotlight-line {
+    border-bottom: 3px solid $blue-color-lighter;
+    width: 20%;
+    margin: 20px auto;
+}
+.hero-spotlight-2 {
+    margin: 50px 0;
+}
+
+.hero-spotlight-2 h1 {
+    font-family: $maven-light-regular;
+    font-size: 48px;
+    color: $white-color;
+    line-height: 56px;
+}
+
+.hero-spotlight-demo {
+    a {
+        text-decoration: none;
+        border-radius: 40px;
+        background: $green-color;
+        font-family: $maven-medium;
+        font-size: 16px;
+        color: $white-color;
+        line-height: 25px;
+        padding: 15px 60px;
+    }
+    a:visited {
+        color: $white-color;
+    }
+}
+
+.hero-spotlight-download {
+    margin-top: 30px;
+
+    a {
+        font-family: $maven-regular;
+        font-size: 14px;
+        color: $blue-color-lighter;
+        line-height: 17px;    }
+}
