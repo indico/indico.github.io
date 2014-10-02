@@ -5,9 +5,11 @@
 
 @import "compass";
 
-$maven-medium:     MavenProMedium;
-$maven-regular:    MavenProRegular;
-$maven-light-regular: MavenProLight300-Regular;
+$maven:            Maven Pro;
+$maven-medium:     400;
+$maven-regular:    500; // regular = normal
+$maven-light-300:  300; // MavenProLight300-Regular
+$maven-light-200:  200; // maven-pro-light-200
 
 $blue-color:        #2D98C8;
 $blue-color-light:  #297699;
@@ -36,7 +38,8 @@ $green-color:       #7ED321;
 }
 
 .hero-spotlight-1 {
-    font-family: $maven-regular;
+    font-family: $maven;
+    font-weight: $maven-regular;
     font-size: 18px;
     color: $blue-color-lighter;
     line-height: 25px;
@@ -52,7 +55,8 @@ $green-color:       #7ED321;
 }
 
 .hero-spotlight-2 h1 {
-    font-family: $maven-light-regular;
+    font-family: $maven;
+    font-weight: $maven-light-300;
     font-size: 48px;
     color: $white-color;
     line-height: 56px;
@@ -63,7 +67,8 @@ $green-color:       #7ED321;
         text-decoration: none;
         border-radius: 40px;
         background: $green-color;
-        font-family: $maven-medium;
+        font-family: $maven;
+        font-weight: $maven-medium;
         font-size: 16px;
         color: $white-color;
         line-height: 25px;
@@ -78,7 +83,8 @@ $green-color:       #7ED321;
     margin-top: 30px;
 
     a {
-        font-family: $maven-regular;
+        font-family: $maven;
+        font-weight: $maven-regular;
         font-size: 14px;
         color: $blue-color-lighter;
         line-height: 17px;    }

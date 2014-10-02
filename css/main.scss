@@ -7,8 +7,12 @@
 
 // Our variables
 $base-font-family: Helvetica, Arial, sans-serif;
-$maven-medium:     MavenProMedium;
-$maven-regular:    MavenProRegular;
+$maven:            Maven Pro;
+$maven-medium:     400;
+$maven-regular:    500; // regular = normal
+$maven-light-300:  300; // MavenProLight300-Regular
+$maven-light-200:  200; // maven-pro-light-200
+
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
