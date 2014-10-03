@@ -14,6 +14,7 @@ $maven-light-200:  200; // maven-pro-light-200
 $blue-color:        #2D98C8;
 $blue-color-light:  #297699;
 $blue-color-lighter:#9CD5EF;
+$blue-cern:         #34AAE0;
 $white-color:       #FFFFFF;
 $green-color:       #7ED321;
 
@@ -88,4 +89,31 @@ $green-color:       #7ED321;
         font-size: 14px;
         color: $blue-color-lighter;
         line-height: 17px;    }
+}
+
+.partners-section {
+    height: 450px;
+    background-color: $blue-cern;
+    text-align: center;
+
+    .partner-carousel {
+        font-family: $maven;
+        font-weight: $maven-medium;
+        font-size: 18px;
+        color: #FFFFFF;
+        line-height: 24px;
+        /* CERN - "The European: */
+    }
+}
+
+.section-content {
+    padding: 70px 0;
+}
+
+.partner-carousel-item {
+    padding: 0px 170px;
+
+    .partner-carousel-item-text {
+        padding-top: 40px;
+    }
 }
