@@ -153,16 +153,17 @@ $green-color:       #7ED321;
         text-align: left;
 
         .col-content {
-                padding: 80px;
+                padding: 0 80px;
         }
 
         .features-section-feature {
             clear: both;
             height: 70px;
+            padding-top: 50px; 
 
-            &:not(:last-child) {
-                padding-bottom: 50px;
-            }
+            // &:not(:last-child) {
+            //     padding-bottom: 50px;
+            // }
 
             .features-section-feature-icon {
                 width: 62px;
