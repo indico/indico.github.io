@@ -14,6 +14,7 @@ $maven-light-200:  200; // maven-pro-light-200
 $blue-color:        #2D98C8;
 $blue-color-light:  #297699;
 $blue-color-lighter:#9CD5EF;
+$blue-color-even-lighter: #F0F8FC;
 $blue-cern:         #34AAE0;
 $blue-dark:         #1A4A61;
 $white-color:       #FFFFFF;
@@ -139,11 +140,48 @@ $green-color:       #7ED321;
 
         .features-section-intro-txt {
             font-family: $maven;
-            font-weight: $maven-light-300;
+            font-weight: $maven-regular;
             font-size: 18px;
             color: #6D92A3;
             line-height: 24px;
             padding: 100px 150px;
+        }
+    }
+
+    .features-section-list {
+        background-color: $blue-color-even-lighter;
+        text-align: left;
+
+        .col-half {
+            width: 50%;
+            float: left;
+
+            .col-content {
+                padding: 80px;
+            }
+        }
+
+        .features-section-feature {
+            clear: both;
+            height: 70px;
+
+            &:not(:last-child) {
+                padding-bottom: 50px;
+            }
+
+            .features-section-feature-icon {
+                width: 62px;
+                float: left;
+                margin-right: 20px;
+            }
+
+            .features-section-feature-description {
+                font-family: $maven;
+                font-weight: $maven-regular;
+                font-size: 16px;
+                color: $blue-dark;
+                line-height: 24px;
+            }
         }
     }
 }
