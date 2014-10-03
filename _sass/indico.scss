@@ -15,14 +15,18 @@ $blue-color:        #2D98C8;
 $blue-color-light:  #297699;
 $blue-color-lighter:#9CD5EF;
 $blue-cern:         #34AAE0;
+$blue-dark:         #1A4A61;
 $white-color:       #FFFFFF;
 $green-color:       #7ED321;
+
+.section {
+    text-align: center;
+}
 
 .hero-section {
 	background-image: url('../img/conference_hero.png');
 	background-position: center;
 	height: 851px;
-    text-align: center;
 }
 
 .hero-section-fader {
@@ -94,7 +98,6 @@ $green-color:       #7ED321;
 .partners-section {
     height: 450px;
     background-color: $blue-cern;
-    text-align: center;
 
     .partner-carousel {
         font-family: $maven;
@@ -115,5 +118,32 @@ $green-color:       #7ED321;
 
     .partner-carousel-item-text {
         padding-top: 40px;
+    }
+}
+
+.features-section {
+    .features-section-title {
+        font-family: $maven;
+        font-weight: $maven-medium;
+        font-size: 20px;
+        color: $blue-dark;
+        line-height: 25px;
+    }
+
+    .features-section-intro {
+        background-image: url("../img/browser_illustration.png");
+        background-position: center;
+        height: 236px;
+        background-repeat: no-repeat;
+        margin-top: 70px;
+
+        .features-section-intro-txt {
+            font-family: $maven;
+            font-weight: $maven-light-300;
+            font-size: 18px;
+            color: #6D92A3;
+            line-height: 24px;
+            padding: 100px 150px;
+        }
     }
 }
