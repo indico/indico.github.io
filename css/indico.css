@@ -2,19 +2,19 @@
  * Indico specific stylesheet.
  * Integration with compass for easier gradients.
  */
-/* line 23, ../_sass/indico.scss */
+/* line 24, ../_sass/indico.scss */
 .section {
   text-align: center;
 }
 
-/* line 27, ../_sass/indico.scss */
+/* line 28, ../_sass/indico.scss */
 .hero-section {
   background-image: url("../img/conference_hero.png");
   background-position: center;
   height: 851px;
 }
 
-/* line 33, ../_sass/indico.scss */
+/* line 34, ../_sass/indico.scss */
 .hero-section-fader {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFhNGE2MSIvPjxzdG9wIG9mZnNldD0iNjglIiBzdG9wLWNvbG9yPSIjMWE0YTYxIiBzdG9wLW9wYWNpdHk9IjAuNzUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxYTRhNjEiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
@@ -25,17 +25,17 @@
   height: 100%;
 }
 
-/* line 38, ../_sass/indico.scss */
+/* line 39, ../_sass/indico.scss */
 .hero-section-content {
   padding-top: 90px;
 }
 
-/* line 42, ../_sass/indico.scss */
+/* line 43, ../_sass/indico.scss */
 .hero-spotlight {
   margin-top: 80px;
 }
 
-/* line 46, ../_sass/indico.scss */
+/* line 47, ../_sass/indico.scss */
 .hero-spotlight-1 {
   font-family: Maven Pro;
   font-weight: 500;
@@ -44,19 +44,19 @@
   line-height: 25px;
 }
 
-/* line 54, ../_sass/indico.scss */
+/* line 55, ../_sass/indico.scss */
 .hero-spotlight-line {
   border-bottom: 3px solid #9CD5EF;
   width: 20%;
   margin: 20px auto;
 }
 
-/* line 59, ../_sass/indico.scss */
+/* line 60, ../_sass/indico.scss */
 .hero-spotlight-2 {
   margin: 50px 0;
 }
 
-/* line 63, ../_sass/indico.scss */
+/* line 64, ../_sass/indico.scss */
 .hero-spotlight-2 h1 {
   font-family: Maven Pro;
   font-weight: 300;
@@ -65,7 +65,7 @@
   line-height: 56px;
 }
 
-/* line 72, ../_sass/indico.scss */
+/* line 73, ../_sass/indico.scss */
 .hero-spotlight-demo a {
   text-decoration: none;
   border-radius: 40px;
@@ -77,16 +77,16 @@
   line-height: 25px;
   padding: 15px 60px;
 }
-/* line 83, ../_sass/indico.scss */
+/* line 84, ../_sass/indico.scss */
 .hero-spotlight-demo a:visited {
   color: #FFFFFF;
 }
 
-/* line 88, ../_sass/indico.scss */
+/* line 89, ../_sass/indico.scss */
 .hero-spotlight-download {
   margin-top: 30px;
 }
-/* line 91, ../_sass/indico.scss */
+/* line 92, ../_sass/indico.scss */
 .hero-spotlight-download a {
   font-family: Maven Pro;
   font-weight: 500;
@@ -95,12 +95,12 @@
   line-height: 17px;
 }
 
-/* line 99, ../_sass/indico.scss */
+/* line 100, ../_sass/indico.scss */
 .partners-section {
   height: 450px;
   background-color: #34AAE0;
 }
-/* line 103, ../_sass/indico.scss */
+/* line 104, ../_sass/indico.scss */
 .partners-section .partner-carousel {
   font-family: Maven Pro;
   font-weight: 400;
@@ -110,21 +110,21 @@
   /* CERN - "The European: */
 }
 
-/* line 113, ../_sass/indico.scss */
+/* line 114, ../_sass/indico.scss */
 .section-content {
   padding: 70px 0;
 }
 
-/* line 117, ../_sass/indico.scss */
+/* line 118, ../_sass/indico.scss */
 .partner-carousel-item {
   padding: 0px 170px;
 }
-/* line 120, ../_sass/indico.scss */
+/* line 121, ../_sass/indico.scss */
 .partner-carousel-item .partner-carousel-item-text {
   padding-top: 40px;
 }
 
-/* line 126, ../_sass/indico.scss */
+/* line 127, ../_sass/indico.scss */
 .features-section .features-section-title {
   font-family: Maven Pro;
   font-weight: 400;
@@ -132,7 +132,7 @@
   color: #1A4A61;
   line-height: 25px;
 }
-/* line 134, ../_sass/indico.scss */
+/* line 135, ../_sass/indico.scss */
 .features-section .features-section-intro {
   background-image: url("../img/browser_illustration.png");
   background-position: center;
@@ -140,7 +140,7 @@
   background-repeat: no-repeat;
   margin-top: 70px;
 }
-/* line 141, ../_sass/indico.scss */
+/* line 142, ../_sass/indico.scss */
 .features-section .features-section-intro .features-section-intro-txt {
   font-family: Maven Pro;
   font-weight: 500;
@@ -149,28 +149,28 @@
   line-height: 24px;
   padding: 100px 150px;
 }
-/* line 151, ../_sass/indico.scss */
+/* line 152, ../_sass/indico.scss */
 .features-section .features-section-list {
   background-color: #F0F8FC;
   text-align: left;
 }
-/* line 155, ../_sass/indico.scss */
+/* line 156, ../_sass/indico.scss */
 .features-section .features-section-list .col-content {
   padding: 0 80px;
 }
-/* line 159, ../_sass/indico.scss */
+/* line 160, ../_sass/indico.scss */
 .features-section .features-section-list .features-section-feature {
   clear: both;
   height: 70px;
   padding-top: 50px;
 }
-/* line 168, ../_sass/indico.scss */
+/* line 169, ../_sass/indico.scss */
 .features-section .features-section-list .features-section-feature .features-section-feature-icon {
   width: 62px;
   float: left;
   margin-right: 20px;
 }
-/* line 174, ../_sass/indico.scss */
+/* line 175, ../_sass/indico.scss */
 .features-section .features-section-list .features-section-feature .features-section-feature-description {
   font-family: Maven Pro;
   font-weight: 500;
@@ -180,13 +180,13 @@
 }
 
 @media (min-width: 768px) {
-  /* line 186, ../_sass/indico.scss */
+  /* line 187, ../_sass/indico.scss */
   .col-sm-12 {
     width: 100%;
   }
 }
 @media (min-width: 992px) {
-  /* line 192, ../_sass/indico.scss */
+  /* line 193, ../_sass/indico.scss */
   .col-md-6 {
     width: 50%;
     float: left;
@@ -198,22 +198,22 @@
  * use a background image that includes the opacity (so there would be 
  * no need to apply css opacity).
  */
-/* line 204, ../_sass/indico.scss */
+/* line 205, ../_sass/indico.scss */
 .safety-net-section {
   background-color: #1A4A61;
   height: 347px;
 }
-/* line 208, ../_sass/indico.scss */
+/* line 209, ../_sass/indico.scss */
 .safety-net-section .wrapper {
   position: relative;
 }
-/* line 212, ../_sass/indico.scss */
+/* line 213, ../_sass/indico.scss */
 .safety-net-section .safety-net-content {
   position: absolute;
   top: 4.7em;
   z-index: 1;
 }
-/* line 217, ../_sass/indico.scss */
+/* line 218, ../_sass/indico.scss */
 .safety-net-section .safety-net-content h2 {
   font-family: Maven Pro;
   font-weight: 300;
@@ -221,11 +221,11 @@
   color: #FFFFFF;
   line-height: 43px;
 }
-/* line 226, ../_sass/indico.scss */
+/* line 227, ../_sass/indico.scss */
 .safety-net-section .github-project {
   padding-top: 50px;
 }
-/* line 229, ../_sass/indico.scss */
+/* line 230, ../_sass/indico.scss */
 .safety-net-section .github-project a {
   text-decoration: none;
   border-radius: 40px;
@@ -237,14 +237,23 @@
   padding: 15px 60px;
   border: 2px solid #6AB31D;
 }
-/* line 240, ../_sass/indico.scss */
+/* line 241, ../_sass/indico.scss */
 .safety-net-section .github-project a:visited {
   color: #FFFFFF;
 }
-/* line 245, ../_sass/indico.scss */
+/* line 246, ../_sass/indico.scss */
 .safety-net-section .safety-net-section-fader {
   height: 100%;
   background-image: url("../img/safety_net.png");
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
   opacity: 0.3;
+}
+
+/* line 253, ../_sass/indico.scss */
+a.no-decoration {
+  text-decoration: none;
+}
+/* line 255, ../_sass/indico.scss */
+a.no-decoration:visited {
+  color: #FFFFFF;
 }

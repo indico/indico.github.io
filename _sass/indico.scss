@@ -17,8 +17,9 @@ $blue-color-lighter:#9CD5EF;
 $blue-color-even-lighter: #F0F8FC;
 $blue-cern:         #34AAE0;
 $blue-dark:         #1A4A61;
-$white-color:       #FFFFFF;
+$text-color-white:  #FFFFFF;
 $green-color:       #7ED321;
+$blue-gray-color:   #7A8F99;
 
 .section {
     text-align: center;
@@ -64,7 +65,7 @@ $green-color:       #7ED321;
     font-family: $maven;
     font-weight: $maven-light-300;
     font-size: 48px;
-    color: $white-color;
+    color: $text-color-white;
     line-height: 56px;
 }
 
@@ -76,12 +77,12 @@ $green-color:       #7ED321;
         font-family: $maven;
         font-weight: $maven-medium;
         font-size: 16px;
-        color: $white-color;
+        color: $text-color-white;
         line-height: 25px;
         padding: 15px 60px;
     }
     a:visited {
-        color: $white-color;
+        color: $text-color-white;
     }
 }
 
@@ -218,7 +219,7 @@ $green-color:       #7ED321;
             font-family: $maven;
             font-weight: $maven-light-300;
             font-size: 36px;
-            color: $white-color;
+            color: $text-color-white;
             line-height: 43px;
         }
     }
@@ -232,13 +233,13 @@ $green-color:       #7ED321;
             font-family: $maven;
             font-weight: $maven-medium;
             font-size: 16px;
-            color: $white-color;
+            color: $text-color-white;
             line-height: 25px;
             padding: 15px 60px;
             border: 2px solid #6AB31D;
         }
         a:visited {
-            color: $white-color;
+            color: $text-color-white;
         }
     }
 
@@ -247,4 +248,11 @@ $green-color:       #7ED321;
         background-image: url("../img/safety_net.png");
         @include opacity(0.3);
     }
+}
+
+a.no-decoration {
+    text-decoration: none;
+    &:visited {
+            color: $text-color-white;
+        }
 }

@@ -18,13 +18,21 @@ $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
+$spacing-unit-footer: 60px;
 
 $text-color:       #111;
 $text-color-white: #FFFFFF;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
-$blue-color-light: #297699;
-$blue-color:	   #2D98C8;
+$blue-color:        #2D98C8;
+$blue-color-light:  #297699;
+$blue-color-lighter:#9CD5EF;
+$blue-color-even-lighter: #F0F8FC;
+$blue-cern:         #34AAE0;
+$blue-dark:         #1A4A61;
+$white-color:       #FFFFFF;
+$green-color:       #7ED321;
+$blue-gray-color:   #7A8F99;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
