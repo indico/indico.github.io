@@ -152,13 +152,8 @@ $green-color:       #7ED321;
         background-color: $blue-color-even-lighter;
         text-align: left;
 
-        .col-half {
-            width: 50%;
-            float: left;
-
-            .col-content {
+        .col-content {
                 padding: 80px;
-            }
         }
 
         .features-section-feature {
@@ -183,5 +178,18 @@ $green-color:       #7ED321;
                 line-height: 24px;
             }
         }
+    }
+}
+
+@media (min-width: 768px) {
+    .col-sm-12 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-6 {
+        width: 50%;
+        float: left;
     }
 }
