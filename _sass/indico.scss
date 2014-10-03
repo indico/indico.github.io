@@ -193,3 +193,57 @@ $green-color:       #7ED321;
         float: left;
     }
 }
+
+/**
+ * Uses absolute relative and positions so that the text escapes the
+ * transparent background "prison". Alternative workaround would be to
+ * use a background image that includes the opacity (so there would be 
+ * no need to apply css opacity).
+ */
+.safety-net-section {
+    background-color: $blue-dark;
+    height: 347px;
+    
+    .wrapper {
+        position: relative;  // to escape content from transparent prison
+    }
+
+    .safety-net-content {
+        position: absolute;
+        top: 4.7em;
+        z-index: 1;
+
+        h2 {
+            font-family: $maven;
+            font-weight: $maven-light-300;
+            font-size: 36px;
+            color: $white-color;
+            line-height: 43px;
+        }
+    }
+
+    .github-project {
+        padding-top: 50px;
+
+        a {
+            text-decoration: none;
+            border-radius: 40px;
+            font-family: $maven;
+            font-weight: $maven-medium;
+            font-size: 16px;
+            color: $white-color;
+            line-height: 25px;
+            padding: 15px 60px;
+            border: 2px solid #6AB31D;
+        }
+        a:visited {
+            color: $white-color;
+        }
+    }
+
+    .safety-net-section-fader {
+        height: 100%;
+        background-image: url("../img/safety_net.png");
+        @include opacity(0.3);
+    }
+}
