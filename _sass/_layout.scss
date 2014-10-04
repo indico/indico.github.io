@@ -296,6 +296,12 @@
 /** 6 col grid sustem
  *  Bootstrap-like grid system, using Jekyll's naming conventions.
  */
+
+.grid-col {
+    float: left;
+    padding-left: $spacing-unit / 2;
+}
+
 .col-desk-1 {
     width: -webkit-calc(16.66% - (#{$spacing-unit} / 2));
     width:         calc(16.66% - (#{$spacing-unit} / 2));
