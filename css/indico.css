@@ -7,16 +7,20 @@
   text-align: center;
 }
 
-/* line 31, ../_sass/indico.scss */
+/* line 28, ../_sass/indico.scss */
+.hero-section {
+  background-color: #1A4A61;
+}
+
+/* line 32, ../_sass/indico.scss */
 .hero-home {
   background-image: url("../img/conference_hero.png");
   background-position: center;
   height: 851px;
 }
 
-/* line 37, ../_sass/indico.scss */
+/* line 38, ../_sass/indico.scss */
 .hero-features {
-  background-color: #1A4A61;
   height: 800px;
 }
 
