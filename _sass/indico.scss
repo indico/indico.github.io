@@ -39,6 +39,10 @@ $blue-gray-color:   #7A8F99;
     height: 800px;
 }
 
+.hero-getting-started {
+    height: 620px;
+}
+
 .hero-section-fader {
 	@include background-image(linear-gradient(top, rgba(26,74,97,1) 0%,rgba(26,74,97,0.75) 68%,rgba(26,74,97,1) 100%));
 	height: 100%;
