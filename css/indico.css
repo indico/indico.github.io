@@ -254,12 +254,13 @@
   line-height: 25px;
   padding: 15px 60px;
   border: 2px solid #6AB31D;
+  color: #1A4A61;
 }
-/* line 253, ../_sass/indico.scss */
+/* line 254, ../_sass/indico.scss */
 .safety-net-section .github-project a:visited {
   color: #1A4A61;
 }
-/* line 259, ../_sass/indico.scss */
+/* line 260, ../_sass/indico.scss */
 .safety-net-section .safety-net-content-absolute {
   position: absolute;
   top: 4.7em;
@@ -267,10 +268,14 @@
   color: #FFFFFF;
 }
 /* line 266, ../_sass/indico.scss */
+.safety-net-section .safety-net-content-absolute .github-project {
+  color: #FFFFFF;
+}
+/* line 269, ../_sass/indico.scss */
 .safety-net-section .safety-net-content-absolute .github-project a:visited {
   color: #FFFFFF;
 }
-/* line 272, ../_sass/indico.scss */
+/* line 275, ../_sass/indico.scss */
 .safety-net-section .safety-net-section-fader {
   height: 100%;
   background-image: url("../img/safety_net.png");
@@ -278,21 +283,21 @@
   opacity: 0.3;
 }
 
-/* line 279, ../_sass/indico.scss */
+/* line 282, ../_sass/indico.scss */
 a.no-decoration {
   text-decoration: none;
 }
-/* line 281, ../_sass/indico.scss */
+/* line 284, ../_sass/indico.scss */
 a.no-decoration:visited {
   color: #FFFFFF;
 }
 
-/* line 286, ../_sass/indico.scss */
+/* line 289, ../_sass/indico.scss */
 .bg-blue-dark {
   background-color: #1A4A61;
 }
 
-/* line 290, ../_sass/indico.scss */
+/* line 293, ../_sass/indico.scss */
 .bg-blue-light {
   background-color: #F0F8FC;
 }

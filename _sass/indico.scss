@@ -249,6 +249,7 @@ $blue-gray-color:   #7A8F99;
             line-height: 25px;
             padding: 15px 60px;
             border: 2px solid #6AB31D;
+            color: $blue-dark;
         }
         a:visited {
             color: $blue-dark;
@@ -263,6 +264,8 @@ $blue-gray-color:   #7A8F99;
         color: $text-color-white;
     
         .github-project {
+            color: $text-color-white;
+            
             a:visited {
                 color: $text-color-white;
             }
