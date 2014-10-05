@@ -2,6 +2,8 @@ indico-website
 ==============
 A few words to describe the structure of the site - where to find what.
 
+The structure of the website was created with [Jekyll](http://jekyllrb.com).
+
 The website is not very responsive, since we don't have the designs yet. However I introduced a small grid system of 6 columns (`_layout.html`) using some convensions of Jekyll and used it in some places.
 
 ## Configuration
