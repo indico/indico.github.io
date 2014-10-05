@@ -211,47 +211,34 @@
   line-height: 24px;
 }
 
-@media (min-width: 768px) {
-  /* line 213, ../_sass/indico.scss */
-  .col-sm-12 {
-    width: 100%;
-  }
-}
-@media (min-width: 992px) {
-  /* line 219, ../_sass/indico.scss */
-  .col-md-6 {
-    width: 50%;
-    float: left;
-  }
-}
 /**
  * Uses absolute relative and positions so that the text escapes the
  * transparent background "prison". Alternative workaround would be to
  * use a background image that includes the opacity (so there would be 
  * no need to apply css opacity).
  */
-/* line 231, ../_sass/indico.scss */
+/* line 219, ../_sass/indico.scss */
 .safety-net-section {
   height: 347px;
   color: #1A4A61;
   /** Overide colors when in front page **/
 }
-/* line 235, ../_sass/indico.scss */
+/* line 223, ../_sass/indico.scss */
 .safety-net-section .wrapper {
   position: relative;
 }
-/* line 239, ../_sass/indico.scss */
+/* line 227, ../_sass/indico.scss */
 .safety-net-section h2 {
   font-family: Maven Pro;
   font-weight: 300;
   font-size: 36px;
   line-height: 43px;
 }
-/* line 246, ../_sass/indico.scss */
+/* line 234, ../_sass/indico.scss */
 .safety-net-section .github-project {
   padding-top: 50px;
 }
-/* line 249, ../_sass/indico.scss */
+/* line 237, ../_sass/indico.scss */
 .safety-net-section .github-project a {
   text-decoration: none;
   border-radius: 40px;
@@ -263,26 +250,26 @@
   border: 2px solid #6AB31D;
   color: #1A4A61;
 }
-/* line 260, ../_sass/indico.scss */
+/* line 248, ../_sass/indico.scss */
 .safety-net-section .github-project a:visited {
   color: #1A4A61;
 }
-/* line 266, ../_sass/indico.scss */
+/* line 254, ../_sass/indico.scss */
 .safety-net-section .safety-net-content-absolute {
   position: absolute;
   top: 4.7em;
   z-index: 1;
   color: #FFFFFF;
 }
-/* line 272, ../_sass/indico.scss */
+/* line 260, ../_sass/indico.scss */
 .safety-net-section .safety-net-content-absolute .github-project {
   color: #FFFFFF;
 }
-/* line 275, ../_sass/indico.scss */
+/* line 263, ../_sass/indico.scss */
 .safety-net-section .safety-net-content-absolute .github-project a:visited {
   color: #FFFFFF;
 }
-/* line 281, ../_sass/indico.scss */
+/* line 269, ../_sass/indico.scss */
 .safety-net-section .safety-net-section-fader {
   height: 100%;
   background-image: url("../img/safety_net.png");
@@ -290,26 +277,31 @@
   opacity: 0.3;
 }
 
-/* line 288, ../_sass/indico.scss */
+/* line 276, ../_sass/indico.scss */
+.safety-net-section-blog {
+  height: 210px;
+}
+
+/* line 280, ../_sass/indico.scss */
 a.no-decoration {
   text-decoration: none;
 }
-/* line 290, ../_sass/indico.scss */
+/* line 282, ../_sass/indico.scss */
 a.no-decoration:visited {
   color: #FFFFFF;
 }
 
-/* line 295, ../_sass/indico.scss */
+/* line 287, ../_sass/indico.scss */
 .bg-blue-dark {
   background-color: #1A4A61;
 }
 
-/* line 299, ../_sass/indico.scss */
+/* line 291, ../_sass/indico.scss */
 .bg-blue-light {
   background-color: #F0F8FC;
 }
 
-/* line 303, ../_sass/indico.scss */
+/* line 295, ../_sass/indico.scss */
 .block-center {
   margin: 0 auto;
 }
