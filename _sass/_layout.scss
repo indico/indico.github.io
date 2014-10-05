@@ -215,12 +215,14 @@
     margin-bottom: $spacing-unit;
 }
 
-.blog-post h2 {
-    font-family: $maven;
-    font-weight: $maven-regular;
-    font-size: 20px;
-    color: #1291CF;
-    line-height: 25px;
+.blog-post {
+    h1, h2 {
+        font-family: $maven;
+        font-weight: $maven-regular;
+        font-size: 20px;
+        color: $blue-cern-dark;
+        line-height: 25px;
+    }
 }
 
 .post-title {
@@ -230,6 +232,13 @@
 
     @include media-query($on-laptop) {
         font-size: 36px;
+    }
+}
+
+.blog-back-link {
+    margin-bottom: $spacing-unit;
+    a {
+        color: $blue-cern-dark;
     }
 }
 
