@@ -209,18 +209,6 @@ $blue-gray-color:   #7A8F99;
     }
 }
 
-@media (min-width: 768px) {
-    .col-sm-12 {
-        width: 100%;
-    }
-}
-
-@media (min-width: 992px) {
-    .col-md-6 {
-        width: 50%;
-        float: left;
-    }
-}
 
 /**
  * Uses absolute relative and positions so that the text escapes the
@@ -271,7 +259,7 @@ $blue-gray-color:   #7A8F99;
     
         .github-project {
             color: $text-color-white;
-            
+
             a:visited {
                 color: $text-color-white;
             }
