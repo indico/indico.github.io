@@ -30,6 +30,13 @@
 }
 
 /* line 46, ../_sass/indico.scss */
+.hero-blog {
+  background-image: url("../img/blog_header.png");
+  background-position: center;
+  height: 350px;
+}
+
+/* line 52, ../_sass/indico.scss */
 .hero-section-fader {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFhNGE2MSIvPjxzdG9wIG9mZnNldD0iNjglIiBzdG9wLWNvbG9yPSIjMWE0YTYxIiBzdG9wLW9wYWNpdHk9IjAuNzUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxYTRhNjEiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
@@ -40,17 +47,17 @@
   height: 100%;
 }
 
-/* line 51, ../_sass/indico.scss */
+/* line 57, ../_sass/indico.scss */
 .hero-section-content {
   padding-top: 90px;
 }
 
-/* line 55, ../_sass/indico.scss */
+/* line 61, ../_sass/indico.scss */
 .hero-spotlight {
   margin-top: 80px;
 }
 
-/* line 59, ../_sass/indico.scss */
+/* line 65, ../_sass/indico.scss */
 .hero-spotlight-1 {
   font-family: Maven Pro;
   font-weight: 500;
@@ -59,38 +66,38 @@
   line-height: 25px;
 }
 
-/* line 67, ../_sass/indico.scss */
+/* line 73, ../_sass/indico.scss */
 .hero-spotlight-line {
   border-bottom: 3px solid #9CD5EF;
   width: 20%;
   margin: 20px auto;
 }
 
-/* line 72, ../_sass/indico.scss */
+/* line 78, ../_sass/indico.scss */
 .hero-spotlight-header {
   margin: 50px 0;
 }
 
-/* line 76, ../_sass/indico.scss */
+/* line 82, ../_sass/indico.scss */
 .hero-spotlight-header h1 {
   font-family: Maven Pro;
   font-weight: 300;
   color: #FFFFFF;
 }
 
-/* line 82, ../_sass/indico.scss */
+/* line 88, ../_sass/indico.scss */
 .hero-spotlight-header-home h1 {
   font-size: 48px;
   line-height: 56px;
 }
 
-/* line 87, ../_sass/indico.scss */
+/* line 93, ../_sass/indico.scss */
 .hero-spotlight-header-page h1 {
   font-size: 36px;
   line-height: 43px;
 }
 
-/* line 93, ../_sass/indico.scss */
+/* line 99, ../_sass/indico.scss */
 .hero-spotlight-demo a {
   text-decoration: none;
   border-radius: 40px;
@@ -102,16 +109,16 @@
   line-height: 25px;
   padding: 15px 60px;
 }
-/* line 104, ../_sass/indico.scss */
+/* line 110, ../_sass/indico.scss */
 .hero-spotlight-demo a:visited {
   color: #FFFFFF;
 }
 
-/* line 109, ../_sass/indico.scss */
+/* line 115, ../_sass/indico.scss */
 .hero-spotlight-download {
   margin-top: 30px;
 }
-/* line 112, ../_sass/indico.scss */
+/* line 118, ../_sass/indico.scss */
 .hero-spotlight-download a {
   font-family: Maven Pro;
   font-weight: 500;
@@ -120,12 +127,12 @@
   line-height: 17px;
 }
 
-/* line 120, ../_sass/indico.scss */
+/* line 126, ../_sass/indico.scss */
 .partners-section {
   height: 450px;
   background-color: #34AAE0;
 }
-/* line 124, ../_sass/indico.scss */
+/* line 130, ../_sass/indico.scss */
 .partners-section .partner-carousel {
   font-family: Maven Pro;
   font-weight: 400;
@@ -135,21 +142,21 @@
   /* CERN - "The European: */
 }
 
-/* line 134, ../_sass/indico.scss */
+/* line 140, ../_sass/indico.scss */
 .section-content {
   padding: 70px 0;
 }
 
-/* line 138, ../_sass/indico.scss */
+/* line 144, ../_sass/indico.scss */
 .partner-carousel-item {
   padding: 0px 170px;
 }
-/* line 141, ../_sass/indico.scss */
+/* line 147, ../_sass/indico.scss */
 .partner-carousel-item .partner-carousel-item-text {
   padding-top: 40px;
 }
 
-/* line 147, ../_sass/indico.scss */
+/* line 153, ../_sass/indico.scss */
 .features-section .features-section-title {
   font-family: Maven Pro;
   font-weight: 400;
@@ -157,7 +164,7 @@
   color: #1A4A61;
   line-height: 25px;
 }
-/* line 155, ../_sass/indico.scss */
+/* line 161, ../_sass/indico.scss */
 .features-section .features-section-intro {
   background-image: url("../img/browser_illustration.png");
   background-position: center;
@@ -165,7 +172,7 @@
   background-repeat: no-repeat;
   margin-top: 70px;
 }
-/* line 162, ../_sass/indico.scss */
+/* line 168, ../_sass/indico.scss */
 .features-section .features-section-intro .features-section-intro-txt {
   font-family: Maven Pro;
   font-weight: 500;
@@ -174,28 +181,28 @@
   line-height: 24px;
   padding: 100px 150px;
 }
-/* line 172, ../_sass/indico.scss */
+/* line 178, ../_sass/indico.scss */
 .features-section .features-section-list {
   background-color: #F0F8FC;
   text-align: left;
 }
-/* line 176, ../_sass/indico.scss */
+/* line 182, ../_sass/indico.scss */
 .features-section .features-section-list .col-content {
   padding: 0 80px;
 }
-/* line 180, ../_sass/indico.scss */
+/* line 186, ../_sass/indico.scss */
 .features-section .features-section-list .features-section-feature {
   clear: both;
   height: 70px;
   padding-top: 50px;
 }
-/* line 189, ../_sass/indico.scss */
+/* line 195, ../_sass/indico.scss */
 .features-section .features-section-list .features-section-feature .features-section-feature-icon {
   width: 62px;
   float: left;
   margin-right: 20px;
 }
-/* line 195, ../_sass/indico.scss */
+/* line 201, ../_sass/indico.scss */
 .features-section .features-section-list .features-section-feature .features-section-feature-description {
   font-family: Maven Pro;
   font-weight: 500;
@@ -205,13 +212,13 @@
 }
 
 @media (min-width: 768px) {
-  /* line 207, ../_sass/indico.scss */
+  /* line 213, ../_sass/indico.scss */
   .col-sm-12 {
     width: 100%;
   }
 }
 @media (min-width: 992px) {
-  /* line 213, ../_sass/indico.scss */
+  /* line 219, ../_sass/indico.scss */
   .col-md-6 {
     width: 50%;
     float: left;
@@ -223,28 +230,28 @@
  * use a background image that includes the opacity (so there would be 
  * no need to apply css opacity).
  */
-/* line 225, ../_sass/indico.scss */
+/* line 231, ../_sass/indico.scss */
 .safety-net-section {
   height: 347px;
   color: #1A4A61;
   /** Overide colors when in front page **/
 }
-/* line 229, ../_sass/indico.scss */
+/* line 235, ../_sass/indico.scss */
 .safety-net-section .wrapper {
   position: relative;
 }
-/* line 233, ../_sass/indico.scss */
+/* line 239, ../_sass/indico.scss */
 .safety-net-section h2 {
   font-family: Maven Pro;
   font-weight: 300;
   font-size: 36px;
   line-height: 43px;
 }
-/* line 240, ../_sass/indico.scss */
+/* line 246, ../_sass/indico.scss */
 .safety-net-section .github-project {
   padding-top: 50px;
 }
-/* line 243, ../_sass/indico.scss */
+/* line 249, ../_sass/indico.scss */
 .safety-net-section .github-project a {
   text-decoration: none;
   border-radius: 40px;
@@ -256,26 +263,26 @@
   border: 2px solid #6AB31D;
   color: #1A4A61;
 }
-/* line 254, ../_sass/indico.scss */
+/* line 260, ../_sass/indico.scss */
 .safety-net-section .github-project a:visited {
   color: #1A4A61;
 }
-/* line 260, ../_sass/indico.scss */
+/* line 266, ../_sass/indico.scss */
 .safety-net-section .safety-net-content-absolute {
   position: absolute;
   top: 4.7em;
   z-index: 1;
   color: #FFFFFF;
 }
-/* line 266, ../_sass/indico.scss */
+/* line 272, ../_sass/indico.scss */
 .safety-net-section .safety-net-content-absolute .github-project {
   color: #FFFFFF;
 }
-/* line 269, ../_sass/indico.scss */
+/* line 275, ../_sass/indico.scss */
 .safety-net-section .safety-net-content-absolute .github-project a:visited {
   color: #FFFFFF;
 }
-/* line 275, ../_sass/indico.scss */
+/* line 281, ../_sass/indico.scss */
 .safety-net-section .safety-net-section-fader {
   height: 100%;
   background-image: url("../img/safety_net.png");
@@ -283,21 +290,26 @@
   opacity: 0.3;
 }
 
-/* line 282, ../_sass/indico.scss */
+/* line 288, ../_sass/indico.scss */
 a.no-decoration {
   text-decoration: none;
 }
-/* line 284, ../_sass/indico.scss */
+/* line 290, ../_sass/indico.scss */
 a.no-decoration:visited {
   color: #FFFFFF;
 }
 
-/* line 289, ../_sass/indico.scss */
+/* line 295, ../_sass/indico.scss */
 .bg-blue-dark {
   background-color: #1A4A61;
 }
 
-/* line 293, ../_sass/indico.scss */
+/* line 299, ../_sass/indico.scss */
 .bg-blue-light {
   background-color: #F0F8FC;
+}
+
+/* line 303, ../_sass/indico.scss */
+.block-center {
+  margin: 0 auto;
 }

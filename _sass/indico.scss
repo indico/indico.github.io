@@ -43,6 +43,12 @@ $blue-gray-color:   #7A8F99;
     height: 620px;
 }
 
+.hero-blog {
+    background-image: url("../img/blog_header.png");
+    background-position: center;
+    height: 350px;
+}
+
 .hero-section-fader {
 	@include background-image(linear-gradient(top, rgba(26,74,97,1) 0%,rgba(26,74,97,0.75) 68%,rgba(26,74,97,1) 100%));
 	height: 100%;
@@ -292,4 +298,8 @@ a.no-decoration {
 
 .bg-blue-light {
     background-color: $blue-color-even-lighter;
+}
+
+.block-center {
+    margin: 0 auto;
 }
