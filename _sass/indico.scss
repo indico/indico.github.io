@@ -187,7 +187,7 @@ $blue-gray-color:   #7A8F99;
         .features-section-feature {
             clear: both;
             height: 70px;
-            padding-top: 50px; 
+            padding-top: 50px;
 
             // &:not(:last-child) {
             //     padding-bottom: 50px;
@@ -214,13 +214,13 @@ $blue-gray-color:   #7A8F99;
 /**
  * Uses absolute relative and positions so that the text escapes the
  * transparent background "prison". Alternative workaround would be to
- * use a background image that includes the opacity (so there would be 
+ * use a background image that includes the opacity (so there would be
  * no need to apply css opacity).
  */
 .safety-net-section {
     height: 347px;
     color: $blue-dark;
-    
+
     .wrapper {
         position: relative;  // to escape content from transparent prison
     }
@@ -257,8 +257,8 @@ $blue-gray-color:   #7A8F99;
         top: 4.7em;
         z-index: 1;
         color: $text-color-white;
-    
-        .github-project {
+
+        .github-project a {
             color: $text-color-white;
 
             a:visited {

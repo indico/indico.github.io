@@ -214,7 +214,7 @@
 /**
  * Uses absolute relative and positions so that the text escapes the
  * transparent background "prison". Alternative workaround would be to
- * use a background image that includes the opacity (so there would be 
+ * use a background image that includes the opacity (so there would be
  * no need to apply css opacity).
  */
 /* line 220, ../_sass/indico.scss */
@@ -262,11 +262,11 @@
   color: #FFFFFF;
 }
 /* line 261, ../_sass/indico.scss */
-.safety-net-section .safety-net-content-absolute .github-project {
+.safety-net-section .safety-net-content-absolute .github-project a {
   color: #FFFFFF;
 }
 /* line 264, ../_sass/indico.scss */
-.safety-net-section .safety-net-content-absolute .github-project a:visited {
+.safety-net-section .safety-net-content-absolute .github-project a a:visited {
   color: #FFFFFF;
 }
 /* line 270, ../_sass/indico.scss */
