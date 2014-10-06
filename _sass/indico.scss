@@ -151,6 +151,8 @@ $blue-gray-color:   #7A8F99;
 }
 
 .features-section {
+    background-color: $text-color-white;
+
     .features-section-title {
         font-family: $maven;
         font-weight: $maven-medium;
@@ -221,8 +223,9 @@ $blue-gray-color:   #7A8F99;
     height: 347px;
     color: $blue-dark;
 
-    .wrapper {
+    .safety-net-wrapper {
         position: relative;  // to escape content from transparent prison
+        margin: 0 auto;
     }
 
     h2 {
