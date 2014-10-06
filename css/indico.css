@@ -162,13 +162,10 @@
 
 /* line 162, ../_sass/indico.scss */
 .section-content {
-  padding: 70px 0;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
-/* line 166, ../_sass/indico.scss */
-.partner-carousel-item {
-  padding: 0px 170px;
-}
 /* line 169, ../_sass/indico.scss */
 .partner-carousel-item .partner-carousel-item-text {
   padding-top: 40px;
@@ -201,7 +198,7 @@
   font-size: 18px;
   color: #6D92A3;
   line-height: 24px;
-  padding: 100px 150px;
+  padding: 100px 0;
 }
 /* line 202, ../_sass/indico.scss */
 .features-section .features-section-list {

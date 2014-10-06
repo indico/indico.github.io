@@ -160,11 +160,11 @@ $on-laptop:        800px;
 }
 
 .section-content {
-    padding: 70px 0;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .partner-carousel-item {
-    padding: 0px 170px;
 
     .partner-carousel-item-text {
         padding-top: 40px;
@@ -195,7 +195,7 @@ $on-laptop:        800px;
             font-size: 18px;
             color: #6D92A3;
             line-height: 24px;
-            padding: 100px 150px;
+            padding: 100px 0;
         }
     }
 
