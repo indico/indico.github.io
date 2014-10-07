@@ -252,22 +252,18 @@
   text-align: left;
 }
 /* line 246, ../_sass/indico.scss */
-.features-section .features-section-list .col-content {
-  padding: 0 80px;
-}
-/* line 250, ../_sass/indico.scss */
 .features-section .features-section-list .features-section-feature {
   clear: both;
   height: 70px;
   padding-top: 50px;
 }
-/* line 259, ../_sass/indico.scss */
+/* line 255, ../_sass/indico.scss */
 .features-section .features-section-list .features-section-feature .features-section-feature-icon {
   width: 62px;
   float: left;
   margin-right: 20px;
 }
-/* line 265, ../_sass/indico.scss */
+/* line 261, ../_sass/indico.scss */
 .features-section .features-section-list .features-section-feature .features-section-feature-description {
   font-family: Maven Pro;
   font-weight: 500;
@@ -282,29 +278,29 @@
  * use a background image that includes the opacity (so there would be
  * no need to apply css opacity).
  */
-/* line 283, ../_sass/indico.scss */
+/* line 279, ../_sass/indico.scss */
 .safety-net-section {
   height: 347px;
   color: #1A4A61;
   /** Overide colors when in front page **/
 }
-/* line 287, ../_sass/indico.scss */
+/* line 283, ../_sass/indico.scss */
 .safety-net-section .safety-net-wrapper {
   position: relative;
   margin: 0 auto;
 }
-/* line 292, ../_sass/indico.scss */
+/* line 288, ../_sass/indico.scss */
 .safety-net-section h2 {
   font-family: Maven Pro;
   font-weight: 300;
   font-size: 36px;
   line-height: 43px;
 }
-/* line 299, ../_sass/indico.scss */
+/* line 295, ../_sass/indico.scss */
 .safety-net-section .github-project {
   padding-top: 50px;
 }
-/* line 302, ../_sass/indico.scss */
+/* line 298, ../_sass/indico.scss */
 .safety-net-section .github-project a {
   text-decoration: none;
   border-radius: 40px;
@@ -316,26 +312,26 @@
   border: 2px solid #6AB31D;
   color: #1A4A61;
 }
-/* line 313, ../_sass/indico.scss */
+/* line 309, ../_sass/indico.scss */
 .safety-net-section .github-project a:visited {
   color: #1A4A61;
 }
-/* line 319, ../_sass/indico.scss */
+/* line 315, ../_sass/indico.scss */
 .safety-net-section .safety-net-content-absolute {
   position: absolute;
   top: 4.7em;
   z-index: 1;
   color: #FFFFFF;
 }
-/* line 325, ../_sass/indico.scss */
+/* line 321, ../_sass/indico.scss */
 .safety-net-section .safety-net-content-absolute .github-project a {
   color: #FFFFFF;
 }
-/* line 328, ../_sass/indico.scss */
+/* line 324, ../_sass/indico.scss */
 .safety-net-section .safety-net-content-absolute .github-project a a:visited {
   color: #FFFFFF;
 }
-/* line 334, ../_sass/indico.scss */
+/* line 330, ../_sass/indico.scss */
 .safety-net-section .safety-net-section-fader {
   height: 100%;
   background-image: url("../img/safety_net.png");
@@ -343,31 +339,31 @@
   opacity: 0.3;
 }
 
-/* line 341, ../_sass/indico.scss */
+/* line 337, ../_sass/indico.scss */
 .safety-net-section-blog {
   height: 210px;
 }
 
-/* line 345, ../_sass/indico.scss */
+/* line 341, ../_sass/indico.scss */
 a.no-decoration {
   text-decoration: none;
 }
-/* line 347, ../_sass/indico.scss */
+/* line 343, ../_sass/indico.scss */
 a.no-decoration:visited {
   color: #FFFFFF;
 }
 
-/* line 352, ../_sass/indico.scss */
+/* line 348, ../_sass/indico.scss */
 .bg-blue-dark {
   background-color: #1A4A61;
 }
 
-/* line 356, ../_sass/indico.scss */
+/* line 352, ../_sass/indico.scss */
 .bg-blue-light {
   background-color: #F0F8FC;
 }
 
-/* line 360, ../_sass/indico.scss */
+/* line 356, ../_sass/indico.scss */
 .block-center {
   margin: 0 auto;
 }
