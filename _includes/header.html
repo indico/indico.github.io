@@ -17,13 +17,15 @@
       <div class="trigger">
         {% assign pages = site.pages | sort:"weight" %}
         {% for p in pages %}
-          {% assign class_holder = "" %}
-          {% if p.title %}
-            {% if p.url == page.url %}
-              {% assign class_holder = " page-link-current" %}
+          {% unless p.exclude_from_nav %}
+            {% assign class_holder = "" %}
+            {% if p.title %}
+              {% if p.url == page.url %}
+                {% assign class_holder = " page-link-current" %}
+              {% endif %}
+              <a class="page-link{{ class_holder }}" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
             {% endif %}
-            <a class="page-link{{ class_holder }}" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
-          {% endif %}
+          {% endunless %}
         {% endfor %}
       </div>
     </nav>
