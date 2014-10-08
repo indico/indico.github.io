@@ -84,7 +84,7 @@ $on-laptop:        800px;
  }
 
 .hero-section-content {
-    padding-top: 90px;
+    padding-top: calc(3 * #{$spacing-unit});
 }
 
 .hero-spotlight {
@@ -387,8 +387,63 @@ a.no-decoration {
 
         p {
             font-size: 16px;
-            color: #6D92A3;
+            color: $blue-gray-light;
             line-height: 24px;
         }
     }
+}
+.options-wrapper {
+    position: relative;
+}
+
+.getting-started-options {
+
+    .options-description {
+        font-family: $maven;
+        font-weight: $maven-medium;
+        font-size: 16px;
+        color: $blue-gray-light;
+        line-height: 24px;
+        margin-top: calc(2 * #{$spacing-unit});
+        margin-bottom: calc(2 * #{$spacing-unit});
+    }
+    .option {
+        font-family: $maven;
+        font-weight: $maven-regular;
+        font-size: 14px;
+        color: #1A4A61;
+        line-height: 18px;
+        border-radius: 8px;
+        border: 2px solid #9CD5EF;
+        margin: 0 15px;
+        min-height: 190px;
+        position: relative;
+
+        .wrapper {
+            position: relative;
+        }
+
+        .row {
+
+            img {
+            }
+
+            div {
+                position: absolute;
+                top: calc(4 * #{$spacing-unit});
+                width: 100%;
+            }
+        }
+    }
+}
+
+.getting-started-options {
+    position: absolute;
+    top: calc( 4 * #{$spacing-unit});
+    left: calc(#{$spacing-unit} / 2);
+    min-height: 420px;
+    border-radius: 7px;
+    background: $blue-color-even-lighter;
+    -moz-box-shadow:    0px 1px 0px 0px rgba(25,73,97,0.05), 0px 20px 40px 0px rgba(25,73,97,0.25);
+    box-shadow:         0px 1px 0px 0px rgba(25,73,97,0.05), 0px 20px 40px 0px rgba(25,73,97,0.25);
 }

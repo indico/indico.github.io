@@ -66,7 +66,7 @@
 
 /* line 86, ../_sass/indico.scss */
 .hero-section-content {
-  padding-top: 90px;
+  padding-top: calc(3 * 30px);
 }
 
 /* line 90, ../_sass/indico.scss */
@@ -397,4 +397,55 @@ a.no-decoration:visited {
   font-size: 16px;
   color: #6D92A3;
   line-height: 24px;
+}
+
+/* line 395, ../_sass/indico.scss */
+.options-wrapper {
+  position: relative;
+}
+
+/* line 401, ../_sass/indico.scss */
+.getting-started-options .options-description {
+  font-family: Maven Pro;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6D92A3;
+  line-height: 24px;
+  margin-top: calc(2 * 30px);
+  margin-bottom: calc(2 * 30px);
+}
+/* line 410, ../_sass/indico.scss */
+.getting-started-options .option {
+  font-family: Maven Pro;
+  font-weight: 500;
+  font-size: 14px;
+  color: #1A4A61;
+  line-height: 18px;
+  border-radius: 8px;
+  border: 2px solid #9CD5EF;
+  margin: 0 15px;
+  min-height: 190px;
+  position: relative;
+}
+/* line 422, ../_sass/indico.scss */
+.getting-started-options .option .wrapper {
+  position: relative;
+}
+/* line 431, ../_sass/indico.scss */
+.getting-started-options .option .row div {
+  position: absolute;
+  top: calc(4 * 30px);
+  width: 100%;
+}
+
+/* line 440, ../_sass/indico.scss */
+.getting-started-options {
+  position: absolute;
+  top: calc( 4 * 30px);
+  left: calc(30px / 2);
+  min-height: 420px;
+  border-radius: 7px;
+  background: #F0F8FC;
+  -moz-box-shadow: 0px 1px 0px 0px rgba(25, 73, 97, 0.05), 0px 20px 40px 0px rgba(25, 73, 97, 0.25);
+  box-shadow: 0px 1px 0px 0px rgba(25, 73, 97, 0.05), 0px 20px 40px 0px rgba(25, 73, 97, 0.25);
 }
