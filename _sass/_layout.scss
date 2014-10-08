@@ -285,98 +285,99 @@
 .grid-col {
     float: left;
     padding-left: $spacing-unit / 2;
+    padding-right: $spacing-unit / 2;
 }
 
 .col-desk-1 {
-    width: -webkit-calc(16.66% - (#{$spacing-unit} / 2));
-    width:         calc(16.66% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(16.66% - #{$spacing-unit});
+    width:         calc(16.66% - #{$spacing-unit});
 }
 
 .col-desk-2 {
-    width: -webkit-calc(33.33% - (#{$spacing-unit} / 2));
-    width:         calc(33.33% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(33.33% - #{$spacing-unit});
+    width:         calc(33.33% - #{$spacing-unit});
 }
 
 .col-desk-3 {
-    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-    width:         calc(50% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(50% - #{$spacing-unit});
+    width:         calc(50% - #{$spacing-unit});
 }
 
 .col-desk-4 {
-    width: -webkit-calc(66.66% - (#{$spacing-unit} / 2));
-    width:         calc(66.66% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(66.66% - #{$spacing-unit});
+    width:         calc(66.66% - #{$spacing-unit});
 }
 
 .col-desk-5 {
-    width: -webkit-calc(83.33% - (#{$spacing-unit} / 2));
-    width:         calc(83.33% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(83.33% - #{$spacing-unit});
+    width:         calc(83.33% - #{$spacing-unit});
 }
 
 .col-desk-6 {
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(100% - #{$spacing-unit});
+    width:         calc(100% - #{$spacing-unit});
 }
 
 @include media-query($on-laptop) {
     .col-lapt-1 {
-        width: -webkit-calc(16.66% - (#{$spacing-unit} / 2));
-        width:         calc(16.66% - (#{$spacing-unit} / 2));
+        width: -webkit-calc(16.66% - #{$spacing-unit});
+        width:         calc(16.66% - #{$spacing-unit});
     }
 
     .col-lapt-2 {
-        width: -webkit-calc(33.33% - (#{$spacing-unit} / 2));
-        width:         calc(33.33% - (#{$spacing-unit} / 2));
+        width: -webkit-calc(33.33% - #{$spacing-unit});
+        width:         calc(33.33% - #{$spacing-unit});
     }
 
     .col-lapt-3 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
+        width: -webkit-calc(50% - #{$spacing-unit});
+        width:         calc(50% - #{$spacing-unit});
     }
 
     .col-lapt-4 {
-        width: -webkit-calc(66.66% - (#{$spacing-unit} / 2));
-        width:         calc(66.66% - (#{$spacing-unit} / 2));
+        width: -webkit-calc(66.66% - #{$spacing-unit});
+        width:         calc(66.66% - #{$spacing-unit});
     }
 
     .col-lapt-5 {
-        width: -webkit-calc(83.33% - (#{$spacing-unit} / 2));
-        width:         calc(83.33% - (#{$spacing-unit} / 2));
+        width: -webkit-calc(83.33% - #{$spacing-unit});
+        width:         calc(83.33% - #{$spacing-unit});
     }
 
     .col-lapt-6 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+        width: -webkit-calc(100% - #{$spacing-unit});
+        width:         calc(100% - #{$spacing-unit});
     }
 }
 
 @include media-query($on-palm) {
     .col-palm-1 {
-        width: -webkit-calc(16.66% - (#{$spacing-unit} / 2));
-        width:         calc(16.66% - (#{$spacing-unit} / 2));
+        width: -webkit-calc(16.66% - #{$spacing-unit});
+        width:         calc(16.66% - #{$spacing-unit});
     }
 
     .col-palm-2 {
-        width: -webkit-calc(33.33% - (#{$spacing-unit} / 2));
-        width:         calc(33.33% - (#{$spacing-unit} / 2));
+        width: -webkit-calc(33.33% - #{$spacing-unit});
+        width:         calc(33.33% - #{$spacing-unit});
     }
 
     .col-palm-3 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
+        width: -webkit-calc(50% - #{$spacing-unit});
+        width:         calc(50% - #{$spacing-unit});
     }
 
     .col-palm-4 {
-        width: -webkit-calc(66.66% - (#{$spacing-unit} / 2));
-        width:         calc(66.66% - (#{$spacing-unit} / 2));
+        width: -webkit-calc(66.66% - #{$spacing-unit});
+        width:         calc(66.66% - #{$spacing-unit});
     }
 
     .col-palm-5 {
-        width: -webkit-calc(83.33% - (#{$spacing-unit} / 2));
-        width:         calc(83.33% - (#{$spacing-unit} / 2));
+        width: -webkit-calc(83.33% - #{$spacing-unit});
+        width:         calc(83.33% - #{$spacing-unit});
     }
 
     .col-palm-6 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+        width: -webkit-calc(100% - #{$spacing-unit});
+        width:         calc(100% - #{$spacing-unit});
     }
 }
