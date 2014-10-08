@@ -11,6 +11,9 @@ $maven-regular:    500; // regular = normal
 $maven-light-300:  300; // MavenProLight300-Regular
 $maven-light-200:  200; // maven-pro-light-200
 
+$spacing-unit:     30px;
+$spacing-unit-footer: 60px;
+
 $blue-color:        #2D98C8;
 $blue-color-light:  #297699;
 $blue-color-lighter:#9CD5EF;
@@ -21,6 +24,7 @@ $blue-dark:         #1A4A61;
 $text-color-white:  #FFFFFF;
 $green-color:       #7ED321;
 $blue-gray-color:   #7A8F99;
+$blue-gray-light:   #6D92A3;
 
 $on-palm:          600px;
 $on-laptop:        800px;
@@ -46,7 +50,10 @@ $on-laptop:        800px;
 }
 
 .hero-features {
-    height: 800px;
+    background-image: url("../img/features_hero.png");
+    background-position: center;
+    height: 905px;
+    background-size: cover;
 }
 
 .hero-getting-started {
@@ -200,8 +207,8 @@ $on-laptop:        800px;
 }
 
 .section-content {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: calc(3 * #{$spacing-unit});
+    padding-bottom: calc(3 * #{$spacing-unit});
 }
 
 .partner-carousel-item {
@@ -233,7 +240,7 @@ $on-laptop:        800px;
             font-family: $maven;
             font-weight: $maven-regular;
             font-size: 18px;
-            color: #6D92A3;
+            color: $blue-gray-light;
             line-height: 24px;
             padding: 100px 0;
         }
@@ -355,4 +362,33 @@ a.no-decoration {
 
 .block-center {
     margin: 0 auto;
+}
+
+.block-right {
+    float: right;
+}
+
+.features-section-listed {
+
+    .section-content {
+        padding-top: calc(6 * #{$spacing-unit});
+    }
+
+    .feature-row {
+        font-family: $maven;
+        font-weight: $maven-medium;
+        margin-bottom: calc(3 * #{$spacing-unit});
+
+        h2 {
+            font-size: 20px;
+            color: $blue-dark;
+            line-height: 25px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #6D92A3;
+            line-height: 24px;
+        }
+    }
 }
