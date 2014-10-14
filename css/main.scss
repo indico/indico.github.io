@@ -43,7 +43,9 @@ $grey-color-dark:  darken($grey-color, 25%);
 $on-palm:          600px;
 $on-laptop:        800px;
 
-
+$sm:                768px;
+$md:                992px;
+$lg:                1200px;
 
 // Using media queries with like this:
 // @include media-query($palm) {
