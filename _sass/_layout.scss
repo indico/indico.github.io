@@ -39,13 +39,17 @@
         font-family: $maven;
         font-weight: $maven-medium;
         font-size: 14px;
-        color: $text-color-white;
+        color: $blue-dark;
         line-height: 17px;
         text-decoration: none;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
             margin-left: 40px;
+        }
+
+        @media (min-width: $sm) {
+            color: $text-color-white;
         }
     }
 
@@ -54,7 +58,7 @@
         padding-bottom: 10px;
     }
 
-    @include media-query($on-palm) {
+    @include media-query($sm) {
         position: absolute;
         top: 9px;
         right: 30px;
@@ -67,7 +71,7 @@
             display: block;
             float: right;
             width: 36px;
-            height: 26px;
+            height: 36px;
             line-height: 0;
             padding-top: 10px;
             text-align: center;
@@ -106,7 +110,8 @@
  */
 .site-footer {
     .footer-container {
-        padding: $spacing-unit-footer 0;
+        padding-top: $spacing-unit-footer;
+        padding-bottom: $spacing-unit-footer;
     }
 }
 
@@ -149,8 +154,6 @@
 .footer-col-wrapper {
     font-size: 15px;
     color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
 }
 
 .footer-copyright {
@@ -169,6 +172,13 @@
             margin-left: 25px;
             color: $blue-gray-color;
         }
+    }
+}
+
+.footer-github-buttons {
+    margin-top: $spacing-unit;
+    @media (min-width: $md) {
+        margin-top: calc(#{$spacing-unit} / 2);
     }
 }
 
