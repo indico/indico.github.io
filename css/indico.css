@@ -427,92 +427,109 @@ a.no-decoration:visited {
 }
 
 /* line 421, ../_sass/indico.scss */
+.block-center-abs {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 428, ../_sass/indico.scss */
 .block-right {
   float: right;
 }
 
-/* line 427, ../_sass/indico.scss */
+/* line 434, ../_sass/indico.scss */
 .features-section-listed .section-content {
   padding-top: calc(8 * 30px);
 }
 @media (min-width: 768px) {
-  /* line 427, ../_sass/indico.scss */
+  /* line 434, ../_sass/indico.scss */
   .features-section-listed .section-content {
     padding-top: calc(10 * 30px);
   }
 }
 @media (min-width: 992px) {
-  /* line 427, ../_sass/indico.scss */
+  /* line 434, ../_sass/indico.scss */
   .features-section-listed .section-content {
     padding-top: calc(12 * 30px);
   }
 }
-/* line 439, ../_sass/indico.scss */
+/* line 446, ../_sass/indico.scss */
 .features-section-listed .feature-row {
   font-family: Maven Pro;
   font-weight: 400;
   margin-bottom: calc(3 * 30px);
 }
-/* line 444, ../_sass/indico.scss */
+/* line 451, ../_sass/indico.scss */
 .features-section-listed .feature-row h2 {
   font-size: 20px;
   color: #1A4A61;
   line-height: 25px;
 }
-/* line 450, ../_sass/indico.scss */
+/* line 457, ../_sass/indico.scss */
 .features-section-listed .feature-row p {
   font-size: 16px;
   color: #6D92A3;
   line-height: 24px;
 }
 
-/* line 457, ../_sass/indico.scss */
+/* line 464, ../_sass/indico.scss */
 .options-wrapper {
-  position: relative;
+  margin-top: calc(2 * 30px);
 }
 
-/* line 463, ../_sass/indico.scss */
+/* line 468, ../_sass/indico.scss */
+.getting-started-options {
+  padding: 30px 40px;
+  position: absolute;
+  min-height: 420px;
+  border-radius: 7px;
+  background: #F0F8FC;
+  -moz-box-shadow: 0px 1px 0px 0px rgba(25, 73, 97, 0.05), 0px 20px 40px 0px rgba(25, 73, 97, 0.25);
+  box-shadow: 0px 1px 0px 0px rgba(25, 73, 97, 0.05), 0px 20px 40px 0px rgba(25, 73, 97, 0.25);
+}
+@media (min-width: 768px) {
+  /* line 468, ../_sass/indico.scss */
+  .getting-started-options {
+    padding: 50px 70px;
+  }
+}
+/* line 482, ../_sass/indico.scss */
 .getting-started-options .options-description {
   font-family: Maven Pro;
   font-weight: 400;
   font-size: 16px;
   color: #6D92A3;
   line-height: 24px;
-  margin-top: calc(2 * 30px);
-  margin-bottom: calc(2 * 30px);
 }
-/* line 472, ../_sass/indico.scss */
+/* line 489, ../_sass/indico.scss */
 .getting-started-options .option {
   font-family: Maven Pro;
   font-weight: 500;
   font-size: 14px;
   color: #1A4A61;
   line-height: 18px;
+}
+/* line 496, ../_sass/indico.scss */
+.getting-started-options .option .inner-wrapper {
+  height: 100%;
   border-radius: 8px;
   border: 2px solid #9CD5EF;
-  margin: 0 15px;
-  min-height: 190px;
-  position: relative;
+  padding: 20px;
+  min-height: 160px;
+  margin-top: 20px;
 }
-/* line 484, ../_sass/indico.scss */
-.getting-started-options .option .wrapper {
-  position: relative;
+/* line 507, ../_sass/indico.scss */
+.getting-started-options .option .row img {
+  min-height: 48px;
 }
-/* line 493, ../_sass/indico.scss */
+/* line 511, ../_sass/indico.scss */
 .getting-started-options .option .row div {
-  position: absolute;
-  top: calc(4 * 30px);
-  width: 100%;
+  margin-top: 30px;
 }
 
-/* line 502, ../_sass/indico.scss */
-.getting-started-options {
-  position: absolute;
-  top: calc( 4 * 30px);
-  left: calc(30px / 2);
-  min-height: 420px;
-  border-radius: 7px;
-  background: #F0F8FC;
-  -moz-box-shadow: 0px 1px 0px 0px rgba(25, 73, 97, 0.05), 0px 20px 40px 0px rgba(25, 73, 97, 0.25);
-  box-shadow: 0px 1px 0px 0px rgba(25, 73, 97, 0.05), 0px 20px 40px 0px rgba(25, 73, 97, 0.25);
+/* line 518, ../_sass/indico.scss */
+.download-section {
+  height: 800px;
 }

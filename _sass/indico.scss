@@ -418,6 +418,13 @@ a.no-decoration {
     float: none;
 }
 
+.block-center-abs {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .block-right {
     float: right;
 }
@@ -455,10 +462,22 @@ a.no-decoration {
     }
 }
 .options-wrapper {
-    position: relative;
+    margin-top: calc(2 * #{$spacing-unit});
 }
 
 .getting-started-options {
+
+    padding: 30px 40px;
+    position: absolute;
+    min-height: 420px;
+    border-radius: 7px;
+    background: $blue-color-even-lighter;
+    -moz-box-shadow:    0px 1px 0px 0px rgba(25,73,97,0.05), 0px 20px 40px 0px rgba(25,73,97,0.25);
+    box-shadow:         0px 1px 0px 0px rgba(25,73,97,0.05), 0px 20px 40px 0px rgba(25,73,97,0.25);
+
+    @media(min-width: $sm) {
+        padding: 50px 70px;
+    }
 
     .options-description {
         font-family: $maven;
@@ -466,8 +485,6 @@ a.no-decoration {
         font-size: 16px;
         color: $blue-gray-light;
         line-height: 24px;
-        margin-top: calc(2 * #{$spacing-unit});
-        margin-bottom: calc(2 * #{$spacing-unit});
     }
     .option {
         font-family: $maven;
@@ -475,37 +492,29 @@ a.no-decoration {
         font-size: 14px;
         color: #1A4A61;
         line-height: 18px;
-        border-radius: 8px;
-        border: 2px solid #9CD5EF;
-        margin: 0 15px;
-        min-height: 190px;
-        position: relative;
 
-        .wrapper {
-            position: relative;
+        .inner-wrapper {
+            height: 100%;
+            border-radius: 8px;
+            border: 2px solid #9CD5EF;
+            padding: 20px;
+            min-height: 160px;
+            margin-top: 20px;
         }
 
         .row {
 
             img {
+                min-height: 48px;
             }
 
             div {
-                position: absolute;
-                top: calc(4 * #{$spacing-unit});
-                width: 100%;
+                margin-top: $spacing-unit;
             }
         }
     }
 }
 
-.getting-started-options {
-    position: absolute;
-    top: calc( 4 * #{$spacing-unit});
-    left: calc(#{$spacing-unit} / 2);
-    min-height: 420px;
-    border-radius: 7px;
-    background: $blue-color-even-lighter;
-    -moz-box-shadow:    0px 1px 0px 0px rgba(25,73,97,0.05), 0px 20px 40px 0px rgba(25,73,97,0.25);
-    box-shadow:         0px 1px 0px 0px rgba(25,73,97,0.05), 0px 20px 40px 0px rgba(25,73,97,0.25);
+.download-section {
+    height: 800px;
 }
