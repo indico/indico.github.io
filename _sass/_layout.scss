@@ -8,6 +8,8 @@
     position: absolute;
     width: 100%;
     padding: 10px 0;
+
+    z-index: 1; // move front of some special background images
 }
 
 .site-title {
