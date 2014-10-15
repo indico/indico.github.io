@@ -54,10 +54,41 @@ $lg:                1200px;
 }
 
 .hero-features {
-    background-image: url("../img/features_hero.png");
-    background-position: center;
-    height: 905px;
-    background-size: cover;
+    // background-image: url("../img/features_hero.png");
+    // background-position: center;
+    height: 756px;
+    // background-size: cover;
+
+    .hero-section-wrapper {
+        height: 756px;
+        position: relative;
+    }
+
+    .graphics {
+        height: 450px;
+        width: 100%;
+        background-image: url('../img/graphics.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0;
+        background-size: contain;
+    }
+
+    .graphics-macbook {
+        height: 450px;
+        width: 80%;
+        background-image: url('../img/macbook_air.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        left:0;
+        right:0;
+        bottom: -150px;
+        margin-left:auto;
+        margin-right:auto;
+    }
 }
 
 .hero-getting-started {
@@ -394,7 +425,15 @@ a.no-decoration {
 .features-section-listed {
 
     .section-content {
-        padding-top: calc(6 * #{$spacing-unit});
+        padding-top: calc(8 * #{$spacing-unit});
+
+        @media(min-width: $sm) {
+            padding-top: calc(10 * #{$spacing-unit});
+        }
+
+        @media(min-width: $md) {
+            padding-top: calc(12 * #{$spacing-unit});
+        }
     }
 
     .feature-row {
