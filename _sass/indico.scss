@@ -245,6 +245,11 @@ $lg:                1200px;
     padding-bottom: calc(3 * #{$spacing-unit});
 }
 
+.section-content-short {
+    padding-top: calc(2 * #{$spacing-unit});
+    padding-bottom: calc(2 * #{$spacing-unit});
+}
+
 .partner-carousel-item {
 
     .partner-carousel-item-text {
@@ -324,7 +329,6 @@ $lg:                1200px;
  * no need to apply css opacity).
  */
 .safety-net-section {
-    height: 347px;
     color: $blue-dark;
 
     .safety-net-wrapper {
