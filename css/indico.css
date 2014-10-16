@@ -538,3 +538,20 @@ a.no-decoration:visited {
 .download-section {
   height: 800px;
 }
+
+/* line 526, ../_sass/indico.scss */
+.contact-main-section {
+  font-family: Maven Pro;
+  font-weight: 400;
+  text-align: left;
+}
+/* line 531, ../_sass/indico.scss */
+.contact-main-section h2 {
+  font-size: 14px;
+  color: #1A4A61;
+  line-height: 24px;
+}
+/* line 537, ../_sass/indico.scss */
+.contact-main-section div {
+  color: #7A8F99;
+}

@@ -522,3 +522,19 @@ a.no-decoration {
 .download-section {
     height: 800px;
 }
+
+.contact-main-section {
+    font-family: $maven;
+    font-weight: $maven-medium;
+    text-align: left;
+
+    h2 {
+        font-size: 14px;
+        color: $blue-dark;
+        line-height: 24px;
+    }
+
+    div {
+        color: $blue-gray-color;
+    }
+}
