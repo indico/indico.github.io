@@ -225,7 +225,7 @@ $lg:                1200px;
 }
 
 .partners-section {
-    height: 450px;
+    min-height: 450px;
     background-color: $blue-cern;
 
     .partner-carousel {
@@ -537,5 +537,30 @@ a.no-decoration {
 
     div {
         color: $blue-gray-color;
+    }
+}
+
+#carousel-partners {
+
+    .item {
+        min-height: calc(12 * #{$spacing-unit});
+
+        @media(min-width: $sm) {
+            min-height: calc(10 * #{$spacing-unit});
+        }
+    }
+
+    .carousel-control {
+        background: none;
+        span {
+            position: absolute;
+            top: 50%;
+            right: 50%;
+        }
+    }
+
+    .carousel-indicators {
+        bottom: -$spacing-unit;
+        margin-bottom: 0;
     }
 }

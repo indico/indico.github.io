@@ -219,7 +219,7 @@
 
 /* line 227, ../_sass/indico.scss */
 .partners-section {
-  height: 450px;
+  min-height: 450px;
   background-color: #34AAE0;
 }
 /* line 231, ../_sass/indico.scss */
@@ -555,4 +555,30 @@ a.no-decoration:visited {
 /* line 538, ../_sass/indico.scss */
 .contact-main-section div {
   color: #7A8F99;
+}
+
+/* line 545, ../_sass/indico.scss */
+#carousel-partners .item {
+  min-height: calc(12 * 30px);
+}
+@media (min-width: 768px) {
+  /* line 545, ../_sass/indico.scss */
+  #carousel-partners .item {
+    min-height: calc(10 * 30px);
+  }
+}
+/* line 553, ../_sass/indico.scss */
+#carousel-partners .carousel-control {
+  background: none;
+}
+/* line 555, ../_sass/indico.scss */
+#carousel-partners .carousel-control span {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+}
+/* line 562, ../_sass/indico.scss */
+#carousel-partners .carousel-indicators {
+  bottom: -30px;
+  margin-bottom: 0;
 }
