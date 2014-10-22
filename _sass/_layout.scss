@@ -115,6 +115,20 @@
         padding-top: $spacing-unit-footer;
         padding-bottom: $spacing-unit-footer;
     }
+
+    text-align: center;
+
+    @media(min-width: $md) {
+        text-align: left;
+    }
+
+    .footer-col {
+        margin-top: 50px;
+
+        @media(min-width: $sm) {
+            margin-top: 0;
+        }
+    }
 }
 
 .footer-heading {
@@ -160,19 +174,18 @@
 
 .footer-copyright {
     background-color: $blue-dark;
-    height: 81px;
     font-family: $maven;
     font-weight: $maven-medium;
     font-size: 14px;
     color: $text-color-white;
-    line-height: 81px;
+    line-height: 40px;
+    padding: $spacing-unit 0;
 
     .footer-icons {
-        float: right;
         
         i {
-            margin-left: 25px;
             color: $blue-gray-color;
+            margin: 0 10px;
         }
     }
 }
