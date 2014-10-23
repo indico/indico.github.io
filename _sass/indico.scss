@@ -156,6 +156,15 @@ $lg:                1200px;
     color: $text-color-white;
 }
 
+.hero-spotlight h2 {
+    font-family: $maven;
+    font-weight: $maven-regular;
+    font-size: 20px;
+    color: $blue-color-lighter;
+    line-height: 20px;
+    margin-top: calc(3 * #{$spacing-unit});
+}
+
 .hero-spotlight-header-home h1 {
     font-size: 36px;
     line-height: 56px;
@@ -533,7 +542,7 @@ a.no-decoration {
         .inner-wrapper {
             height: 100%;
             border-radius: 8px;
-            border: 2px solid #9CD5EF;
+            border: 2px solid $blue-color-lighter;
             padding: 20px;
             min-height: 160px;
             margin-top: 20px;
@@ -552,7 +561,7 @@ a.no-decoration {
     }
 }
 
-.download-section {
+.download-section, .main-section {
     height: 800px;
 }
 
@@ -594,5 +603,61 @@ a.no-decoration {
     .carousel-indicators {
         bottom: -$spacing-unit;
         margin-bottom: 0;
+    }
+}
+
+.about-team-wrapper {
+    margin-top: $spacing-unit;
+    position: relative;
+}
+
+.about-team-grid {
+
+    position: absolute;
+    min-height: 420px;
+
+    .team-member {
+
+        background-position: center;
+
+        .team-member-note {
+        
+            width: 100%;
+            margin: 0 -15px;
+            position: absolute;
+            bottom: 0;
+            text-align: left;
+            padding: 10px;
+
+            background-image: -o-linear-gradient(rgba(0,0,0,0.00) 0%, #000000 100%);
+            background-image: -moz-linear-gradient(rgba(0,0,0,0.00) 0%, #000000 100%);
+            background-image: -ms-linear-gradient(rgba(0,0,0,0.00) 0%, #000000 100%);
+            background-image: linear-gradient(rgba(0,0,0,0.00) 0%, #000000 100%);
+
+            font-family: $maven;
+            font-weight: $maven-regular;
+            font-size: 14px;
+            line-height: 18px;
+            color: $blue-color-even-lighter;
+
+            .team-member-name {
+                color: $text-color-white;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .team-member-dev {
+        background-image: url('http://placehold.it/320x320');
+        min-height: 320px;
+    }
+
+    .team-leaders {
+        margin-top: $spacing-unit;
+    }
+
+    .team-member-leader {
+        background-image: url('http://placehold.it/240x240');
+        min-height: 240px;
     }
 }
