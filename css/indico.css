@@ -522,11 +522,12 @@ a.no-decoration:visited {
 /* line 498, ../_sass/indico.scss */
 .options-wrapper {
   margin-top: calc(2 * 30px);
+  position: relative;
 }
 
-/* line 502, ../_sass/indico.scss */
+/* line 503, ../_sass/indico.scss */
 .getting-started-options {
-  padding: 30px 40px;
+  padding: 30px 20px;
   position: absolute;
   min-height: 420px;
   border-radius: 7px;
@@ -534,13 +535,13 @@ a.no-decoration:visited {
   -moz-box-shadow: 0px 1px 0px 0px rgba(25, 73, 97, 0.05), 0px 20px 40px 0px rgba(25, 73, 97, 0.25);
   box-shadow: 0px 1px 0px 0px rgba(25, 73, 97, 0.05), 0px 20px 40px 0px rgba(25, 73, 97, 0.25);
 }
-@media (min-width: 768px) {
-  /* line 502, ../_sass/indico.scss */
+@media (min-width: 992px) {
+  /* line 503, ../_sass/indico.scss */
   .getting-started-options {
     padding: 50px 70px;
   }
 }
-/* line 516, ../_sass/indico.scss */
+/* line 517, ../_sass/indico.scss */
 .getting-started-options .options-description {
   font-family: Maven Pro;
   font-weight: 400;
@@ -548,7 +549,7 @@ a.no-decoration:visited {
   color: #6D92A3;
   line-height: 24px;
 }
-/* line 523, ../_sass/indico.scss */
+/* line 524, ../_sass/indico.scss */
 .getting-started-options .option {
   font-family: Maven Pro;
   font-weight: 500;
@@ -556,7 +557,7 @@ a.no-decoration:visited {
   color: #1A4A61;
   line-height: 18px;
 }
-/* line 530, ../_sass/indico.scss */
+/* line 531, ../_sass/indico.scss */
 .getting-started-options .option .inner-wrapper {
   height: 100%;
   border-radius: 8px;
@@ -565,58 +566,58 @@ a.no-decoration:visited {
   min-height: 160px;
   margin-top: 20px;
 }
-/* line 541, ../_sass/indico.scss */
+/* line 542, ../_sass/indico.scss */
 .getting-started-options .option .row img {
   min-height: 48px;
 }
-/* line 545, ../_sass/indico.scss */
+/* line 546, ../_sass/indico.scss */
 .getting-started-options .option .row div {
   margin-top: 30px;
 }
 
-/* line 552, ../_sass/indico.scss */
+/* line 553, ../_sass/indico.scss */
 .download-section {
   height: 800px;
 }
 
-/* line 556, ../_sass/indico.scss */
+/* line 557, ../_sass/indico.scss */
 .contact-main-section {
   font-family: Maven Pro;
   font-weight: 400;
   text-align: left;
 }
-/* line 561, ../_sass/indico.scss */
+/* line 562, ../_sass/indico.scss */
 .contact-main-section h2 {
   font-size: 14px;
   color: #1A4A61;
   line-height: 24px;
 }
-/* line 567, ../_sass/indico.scss */
+/* line 568, ../_sass/indico.scss */
 .contact-main-section div {
   color: #7A8F99;
 }
 
-/* line 574, ../_sass/indico.scss */
+/* line 575, ../_sass/indico.scss */
 #carousel-partners .item {
   min-height: calc(12 * 30px);
 }
 @media (min-width: 768px) {
-  /* line 574, ../_sass/indico.scss */
+  /* line 575, ../_sass/indico.scss */
   #carousel-partners .item {
     min-height: calc(10 * 30px);
   }
 }
-/* line 582, ../_sass/indico.scss */
+/* line 583, ../_sass/indico.scss */
 #carousel-partners .carousel-control {
   background: none;
 }
-/* line 584, ../_sass/indico.scss */
+/* line 585, ../_sass/indico.scss */
 #carousel-partners .carousel-control span {
   position: absolute;
   top: 50%;
   right: 50%;
 }
-/* line 591, ../_sass/indico.scss */
+/* line 592, ../_sass/indico.scss */
 #carousel-partners .carousel-indicators {
   bottom: -30px;
   margin-bottom: 0;
