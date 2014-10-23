@@ -536,7 +536,7 @@ a.no-decoration {
         font-family: $maven;
         font-weight: $maven-regular;
         font-size: 14px;
-        color: #1A4A61;
+        color: $blue-dark;
         line-height: 18px;
 
         .inner-wrapper {
@@ -561,7 +561,7 @@ a.no-decoration {
     }
 }
 
-.download-section, .main-section {
+.download-section {
     height: 800px;
 }
 
@@ -659,5 +659,47 @@ a.no-decoration {
     .team-member-leader {
         background-image: url('http://placehold.it/240x240');
         min-height: 240px;
+    }
+}
+
+.about-us-main-section {
+    padding-top: calc(80 * #{$spacing-unit});
+    text-align: center;
+
+    @media(min-width: $sm) {
+        padding-top: calc(37 * #{$spacing-unit});
+    }
+
+    @media(min-width: $md) {
+        padding-top: calc(25 * #{$spacing-unit});
+        text-align: left;
+    }
+}
+
+.contr-list {
+    font-family: $maven;
+    font-weight: $maven-regular;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: calc(2 * #{$spacing-unit});
+
+    @media(min-width: $sm) {
+        margin-top: $spacing-unit;
+    }
+
+    h2 {
+        color: $blue-dark;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    ul.contr-list-names {
+        color: $blue-gray-light;
+        list-style: none;
+        margin-left: 0;
+
+        .contr-list-names-date {
+            color: $blue-cern;
+        }
     }
 }

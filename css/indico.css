@@ -588,7 +588,7 @@ a.no-decoration:visited {
 }
 
 /* line 564, ../_sass/indico.scss */
-.download-section, .main-section {
+.download-section {
   height: 800px;
 }
 
@@ -686,4 +686,54 @@ a.no-decoration:visited {
 .about-team-grid .team-member-leader {
   background-image: url("http://placehold.it/240x240");
   min-height: 240px;
+}
+
+/* line 665, ../_sass/indico.scss */
+.about-us-main-section {
+  padding-top: calc(80 * 30px);
+  text-align: center;
+}
+@media (min-width: 768px) {
+  /* line 665, ../_sass/indico.scss */
+  .about-us-main-section {
+    padding-top: calc(37 * 30px);
+  }
+}
+@media (min-width: 992px) {
+  /* line 665, ../_sass/indico.scss */
+  .about-us-main-section {
+    padding-top: calc(25 * 30px);
+    text-align: left;
+  }
+}
+
+/* line 679, ../_sass/indico.scss */
+.contr-list {
+  font-family: Maven Pro;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: calc(2 * 30px);
+}
+@media (min-width: 768px) {
+  /* line 679, ../_sass/indico.scss */
+  .contr-list {
+    margin-top: 30px;
+  }
+}
+/* line 690, ../_sass/indico.scss */
+.contr-list h2 {
+  color: #1A4A61;
+  font-size: 14px;
+  line-height: 24px;
+}
+/* line 696, ../_sass/indico.scss */
+.contr-list ul.contr-list-names {
+  color: #6D92A3;
+  list-style: none;
+  margin-left: 0;
+}
+/* line 701, ../_sass/indico.scss */
+.contr-list ul.contr-list-names .contr-list-names-date {
+  color: #34AAE0;
 }
