@@ -69,7 +69,7 @@ $lg:                1200px;
         height: 450px;
         width: 100%;
         background-image: url('../img/graphics.png');
-        background-position: center;
+        background-position: center bottom;
         background-repeat: no-repeat;
         position: absolute;
         bottom: 0;
@@ -80,15 +80,19 @@ $lg:                1200px;
         height: 450px;
         width: 80%;
         background-image: url('../img/macbook_air.png');
-        background-position: center;
+        background-position: center bottom;
         background-repeat: no-repeat;
         background-size: contain;
         position: absolute;
         left:0;
         right:0;
-        bottom: -150px;
+        bottom: inherit;
         margin-left:auto;
         margin-right:auto;
+
+        @media(min-width: $sm) {
+            bottom: -150px;
+        }
     }
 }
 
@@ -455,21 +459,39 @@ a.no-decoration {
         }
     }
 
+    .features-list > .feature-row:nth-child(even) img {
+        float: none;
+
+        @media(min-width: $md) {
+            float: right;
+        }        
+    }
+
     .feature-row {
         font-family: $maven;
         font-weight: $maven-medium;
         margin-bottom: calc(3 * #{$spacing-unit});
+        text-align: center;
 
         h2 {
             font-size: 20px;
             color: $blue-dark;
             line-height: 25px;
+            margin-top: 40px;
+
+            @media(min-width: $md) {
+                margin-top: 0;
+            }
         }
 
         p {
             font-size: 16px;
             color: $blue-gray-light;
             line-height: 24px;
+        }
+
+        @media(min-width: $md) {
+            text-align: left;
         }
     }
 }
