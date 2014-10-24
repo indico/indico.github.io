@@ -568,12 +568,21 @@ a.no-decoration {
 .contact-main-section {
     font-family: $maven;
     font-weight: $maven-medium;
-    text-align: left;
+    text-align: center;
+
+    @media(min-width: $md) {
+        text-align: left;
+    }
 
     h2 {
         font-size: 14px;
         color: $blue-dark;
         line-height: 24px;
+        margin-top: calc(2 * #{$spacing-unit});
+
+        @media(min-width: $sm) {
+            margin-top: 0;
+        }
     }
 
     div {
