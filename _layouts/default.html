@@ -13,8 +13,11 @@
 
     {% include footer.html %}
 
+    <script type="text/javascript" src="{{ "/js/github-buttons.js" | prepend: site.baseurl }}"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+    {% if page.permalink == '/blog/' %}
+      <script src="{{ "/js/infinite-jekyll.js" | prepend: site.baseurl }}"></script>
+    {% endif %}
   </body>
-  <script type="text/javascript" src="{{ "/js/github-buttons.js" | prepend: site.baseurl }}"></script>
-  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
 </html>

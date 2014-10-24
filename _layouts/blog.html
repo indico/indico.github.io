@@ -1,9 +1,9 @@
 ---
 layout: blog_default
 ---
-<div class="blog-post-list">
-  {% for post in site.posts %}
-    <div class="blog-post blog-post-frame">
+<div class="blog-post-list posts">
+  {% for post in site.posts limit: 2 %}
+    <div class="blog-post blog-post-frame post">
         <header class="post-header">
           <h2>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -17,3 +17,4 @@ layout: blog_default
     </div>
   {% endfor %}
 </div>
+<div class="infinite-spinner"></div>
