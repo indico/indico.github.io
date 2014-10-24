@@ -2,7 +2,7 @@
 layout: blog_default
 comments: true
 ---
-<div class="blog-back-link"><a href="{{ site.baseurl }}/blog/"><i class="fa fa-long-arrow-left"></i> Back to all posts</a></div>
+<div class="blog-navigation-links blog-navigation-links-top"><a href="{{ site.baseurl }}/blog/">&larr; Back to all posts</a></div>
 <div class="blog-post blog-post-frame">
   <header class="post-header">
     <h1>{{ page.title }}</h1>
@@ -26,5 +26,13 @@ comments: true
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  {% endif %}
+</div>
+<div class="blog-navigation-links blog-navigation-links-bot ">
+  {% if page.previous %} 
+    <a class="blog-prev-post" rel="prev" href="{{ page.previous.url }}">&larr; Previous post</a>
+  {% endif %}
+  {% if page.next %} 
+    <a class="blog-next-post" rel="next" href="{{ page.next.url }}">Next post &rarr;</a>
   {% endif %}
 </div>

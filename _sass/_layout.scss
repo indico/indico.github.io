@@ -267,10 +267,19 @@
     }
 }
 
-.blog-back-link {
+.blog-navigation-links a {
+    color: $blue-cern-dark;
+}
+
+.blog-navigation-links-top {
     margin-bottom: $spacing-unit;
-    a {
-        color: $blue-cern-dark;
+}
+
+.blog-navigation-links-bot {
+    margin-top: $spacing-unit;
+
+    .blog-next-post {
+        float: right;
     }
 }
 
