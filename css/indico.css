@@ -735,7 +735,7 @@ a.no-decoration:visited {
   }
 }
 /* line 699, ../_sass/indico.scss */
-.contr-list h2 {
+.contr-list h2.contr-list-header {
   color: #1A4A61;
   font-size: 14px;
   line-height: 24px;
