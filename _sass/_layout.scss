@@ -2,27 +2,10 @@
  * Site header
  */
 .site-header {
-    border-bottom: 1px solid $blue-color-light;
-
     // Positioning context for the mobile navigation icon
     position: absolute;
     width: 100%;
-    padding: 10px 0;
-
     z-index: 1; // move front of some special background images
-}
-
-.site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
-
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
 }
 
 .header-logo {
@@ -30,82 +13,116 @@
 }
 
 .site-nav {
-    float: right;
-    line-height: 56px;
+    background-color: $blue-dark;
+    border-bottom: 1px solid $blue-color-light;
 
-    .menu-icon {
-        display: none;
+    .navbar-wrapper {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .navbar-nav {
+
+        li:not(:last-child) a {
+            @media(max-width: $sm - 1) {
+                border-bottom: 1px solid $blue-color-light;
+            }
+        }
+
+        li>a {
+            color: $text-color-white;
+            padding: 10px 0px;
+            margin: 20px 20px;
+
+
+
+            @media(max-width: $sm - 1) {
+                padding: 30px 20px;
+                margin: 0;
+                text-align: center;
+
+                &:hover {
+                    background-color: $blue-color;
+                }
+            }
+        }
+
+        li>a:hover {
+            color: $text-color-white;
+        }
+        .active>a {
+            background-color: transparent;
+        }
+    }
+
+    .navbar-brand {
+        height: 100%;
+        margin-top: 4px;
+    }
+
+    .navbar-toggle {
+        border: 0;
+        margin: 22px 15px;
+        width: 100px;
+
+        .icon-bars {
+            float: left;
+
+            > .icon-bar {
+                background-color: $blue-color;
+
+                &:first-child {
+                    margin-top: 2px;
+                }
+            }
+        }
+
+        &:hover {
+            background-color: transparent;
+        }
+
+        .menu-label {
+            float: left;
+            font-family: $maven;
+            font-weight: $maven-medium;
+            font-size: 14px;
+            color: #FFFFFF;
+            line-height: 17px;
+            margin-left: 10px;
+        }
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid $blue-color-light;
+        @media(min-width: $sm) {
+            border-top: 0;
+        }
     }
 
     .page-link {
         font-family: $maven;
         font-weight: $maven-medium;
         font-size: 14px;
-        color: $blue-dark;
+        color: $text-color-white;
         line-height: 17px;
         text-decoration: none;
-
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 40px;
-        }
-
-        @media (min-width: $sm) {
-            color: $text-color-white;
-        }
     }
 
     .page-link-current {
-        border-bottom: 3px solid $blue-color;
-        padding-bottom: 10px;
+        @media(max-width: $sm - 1) {
+            background-color: $blue-color;
+        }
+
+        @media(min-width: $sm) {
+            border-bottom: 3px solid $blue-color;
+            padding-bottom: 10px;
+        }
     }
 
-    @include media-query($sm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 36px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
+    .navbar-nav {
+        margin: 0px -15px;
     }
 }
-
-
 
 /**
  * Site footer
