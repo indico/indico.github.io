@@ -3,16 +3,28 @@
  * Integration with compass for easier gradients.
  */
 /* line 42, ../_sass/indico.scss */
+.dark-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: none;
+  z-index: 1000;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+
+/* line 52, ../_sass/indico.scss */
 .section {
   text-align: center;
 }
 
-/* line 46, ../_sass/indico.scss */
+/* line 56, ../_sass/indico.scss */
 .hero-section {
   background-color: #1A4A61;
 }
 
-/* line 50, ../_sass/indico.scss */
+/* line 60, ../_sass/indico.scss */
 .hero-home {
   background-image: url("../img/conference_hero1.png");
   background-position: center;
@@ -20,16 +32,16 @@
   height: 851px;
 }
 
-/* line 57, ../_sass/indico.scss */
+/* line 67, ../_sass/indico.scss */
 .hero-features {
   height: 756px;
 }
-/* line 63, ../_sass/indico.scss */
+/* line 73, ../_sass/indico.scss */
 .hero-features .hero-section-wrapper {
   height: 756px;
   position: relative;
 }
-/* line 68, ../_sass/indico.scss */
+/* line 78, ../_sass/indico.scss */
 .hero-features .graphics {
   height: 450px;
   width: 100%;
@@ -40,7 +52,7 @@
   bottom: 0;
   background-size: contain;
 }
-/* line 79, ../_sass/indico.scss */
+/* line 89, ../_sass/indico.scss */
 .hero-features .graphics-macbook {
   height: 450px;
   width: 80%;
@@ -56,41 +68,41 @@
   margin-right: auto;
 }
 @media (min-width: 768px) {
-  /* line 79, ../_sass/indico.scss */
+  /* line 89, ../_sass/indico.scss */
   .hero-features .graphics-macbook {
     bottom: -150px;
   }
 }
 
-/* line 99, ../_sass/indico.scss */
+/* line 109, ../_sass/indico.scss */
 .hero-getting-started {
   height: 620px;
   background-image: url("../img/getting_started_bg.png");
   background-position: center;
 }
 
-/* line 105, ../_sass/indico.scss */
+/* line 115, ../_sass/indico.scss */
 .hero-blog {
   background-image: url("../img/blog_header.png");
   background-position: center;
   height: 350px;
 }
 
-/* line 111, ../_sass/indico.scss */
+/* line 121, ../_sass/indico.scss */
 .hero-contact {
   background-image: url("../img/contact.png");
   background-position: center;
   height: 705px;
 }
 
-/* line 117, ../_sass/indico.scss */
+/* line 127, ../_sass/indico.scss */
 .hero-about {
   background-image: url("../img/worldmap.png");
   background-position: center;
   height: 705px;
 }
 
-/* line 123, ../_sass/indico.scss */
+/* line 133, ../_sass/indico.scss */
 .hero-section-fader {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFhNGE2MSIvPjxzdG9wIG9mZnNldD0iNjglIiBzdG9wLWNvbG9yPSIjMWE0YTYxIiBzdG9wLW9wYWNpdHk9IjAuNzUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxYTRhNjEiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
@@ -101,17 +113,17 @@
   height: 100%;
 }
 
-/* line 128, ../_sass/indico.scss */
+/* line 138, ../_sass/indico.scss */
 .hero-section-content {
   padding-top: calc(3 * 30px);
 }
 
-/* line 132, ../_sass/indico.scss */
+/* line 142, ../_sass/indico.scss */
 .hero-spotlight {
   margin-top: 80px;
 }
 
-/* line 136, ../_sass/indico.scss */
+/* line 146, ../_sass/indico.scss */
 .hero-spotlight-1 {
   font-family: Maven Pro;
   font-weight: 500;
@@ -120,26 +132,26 @@
   line-height: 25px;
 }
 
-/* line 144, ../_sass/indico.scss */
+/* line 154, ../_sass/indico.scss */
 .hero-spotlight-line {
   border-bottom: 3px solid #9CD5EF;
   width: 20%;
   margin: 20px auto;
 }
 
-/* line 149, ../_sass/indico.scss */
+/* line 159, ../_sass/indico.scss */
 .hero-spotlight-header {
   margin: 50px 0;
 }
 
-/* line 153, ../_sass/indico.scss */
+/* line 163, ../_sass/indico.scss */
 .hero-spotlight-header h1 {
   font-family: Maven Pro;
   font-weight: 300;
   color: #FFFFFF;
 }
 
-/* line 159, ../_sass/indico.scss */
+/* line 169, ../_sass/indico.scss */
 .hero-spotlight h2 {
   font-family: Maven Pro;
   font-weight: 500;
@@ -149,31 +161,31 @@
   margin-top: calc(3 * 30px);
 }
 
-/* line 168, ../_sass/indico.scss */
+/* line 178, ../_sass/indico.scss */
 .hero-spotlight-header-home h1 {
   font-size: 36px;
   line-height: 56px;
 }
 @media (min-width: 992px) {
-  /* line 168, ../_sass/indico.scss */
+  /* line 178, ../_sass/indico.scss */
   .hero-spotlight-header-home h1 {
     font-size: 48px;
   }
 }
 
-/* line 177, ../_sass/indico.scss */
+/* line 187, ../_sass/indico.scss */
 .hero-spotlight-header-page h1 {
   font-size: 28px;
   line-height: 43px;
 }
 @media (min-width: 768px) {
-  /* line 177, ../_sass/indico.scss */
+  /* line 187, ../_sass/indico.scss */
   .hero-spotlight-header-page h1 {
     font-size: 36px;
   }
 }
 
-/* line 187, ../_sass/indico.scss */
+/* line 197, ../_sass/indico.scss */
 .hero-spotlight-demo a {
   text-decoration: none;
   border-radius: 40px;
@@ -185,16 +197,16 @@
   line-height: 25px;
   padding: 15px 60px;
 }
-/* line 198, ../_sass/indico.scss */
+/* line 208, ../_sass/indico.scss */
 .hero-spotlight-demo a:visited {
   color: #FFFFFF;
 }
 
-/* line 203, ../_sass/indico.scss */
+/* line 213, ../_sass/indico.scss */
 .hero-spotlight-download {
   margin-top: 30px;
 }
-/* line 206, ../_sass/indico.scss */
+/* line 216, ../_sass/indico.scss */
 .hero-spotlight-download a {
   font-family: Maven Pro;
   font-weight: 500;
@@ -203,7 +215,7 @@
   line-height: 17px;
 }
 
-/* line 214, ../_sass/indico.scss */
+/* line 224, ../_sass/indico.scss */
 .hero-spotlight-text {
   font-family: Maven Pro;
   font-weight: 400;
@@ -212,11 +224,11 @@
   line-height: 25px;
 }
 
-/* line 222, ../_sass/indico.scss */
+/* line 232, ../_sass/indico.scss */
 .hero-spotlight-button-lg {
   padding-top: 50px;
 }
-/* line 225, ../_sass/indico.scss */
+/* line 235, ../_sass/indico.scss */
 .hero-spotlight-button-lg a {
   text-decoration: none;
   border-radius: 40px;
@@ -229,18 +241,18 @@
   color: #FFFFFF;
 }
 @media screen and (max-width: 600px) {
-  /* line 225, ../_sass/indico.scss */
+  /* line 235, ../_sass/indico.scss */
   .hero-spotlight-button-lg a {
     font-size: 18px;
   }
 }
 
-/* line 242, ../_sass/indico.scss */
+/* line 252, ../_sass/indico.scss */
 .partners-section {
   min-height: 450px;
   background-color: #34AAE0;
 }
-/* line 246, ../_sass/indico.scss */
+/* line 256, ../_sass/indico.scss */
 .partners-section .partner-carousel {
   font-family: Maven Pro;
   font-weight: 400;
@@ -249,34 +261,34 @@
   line-height: 24px;
 }
 @media (min-width: 768px) {
-  /* line 246, ../_sass/indico.scss */
+  /* line 256, ../_sass/indico.scss */
   .partners-section .partner-carousel {
     font-size: 18px;
   }
 }
 
-/* line 259, ../_sass/indico.scss */
+/* line 269, ../_sass/indico.scss */
 .section-content {
   padding-top: calc(3 * 30px);
   padding-bottom: calc(3 * 30px);
 }
 
-/* line 264, ../_sass/indico.scss */
+/* line 274, ../_sass/indico.scss */
 .section-content-short {
   padding-top: calc(2 * 30px);
   padding-bottom: calc(2 * 30px);
 }
 
-/* line 271, ../_sass/indico.scss */
+/* line 281, ../_sass/indico.scss */
 .partner-carousel-item .partner-carousel-item-text {
   padding-top: 40px;
 }
 
-/* line 276, ../_sass/indico.scss */
+/* line 286, ../_sass/indico.scss */
 .features-section {
   background-color: #FFFFFF;
 }
-/* line 279, ../_sass/indico.scss */
+/* line 289, ../_sass/indico.scss */
 .features-section .features-section-title {
   font-family: Maven Pro;
   font-weight: 400;
@@ -284,7 +296,7 @@
   color: #1A4A61;
   line-height: 25px;
 }
-/* line 287, ../_sass/indico.scss */
+/* line 297, ../_sass/indico.scss */
 .features-section .features-section-intro {
   background-image: url("../img/browser_illustration.png");
   background-position: center;
@@ -294,12 +306,12 @@
   margin-top: 20px;
 }
 @media (min-width: 768px) {
-  /* line 287, ../_sass/indico.scss */
+  /* line 297, ../_sass/indico.scss */
   .features-section .features-section-intro {
     margin-top: 70px;
   }
 }
-/* line 299, ../_sass/indico.scss */
+/* line 309, ../_sass/indico.scss */
 .features-section .features-section-intro .features-section-intro-txt {
   font-family: Maven Pro;
   font-weight: 500;
@@ -309,26 +321,26 @@
   padding: 100px 0;
 }
 @media (min-width: 768px) {
-  /* line 299, ../_sass/indico.scss */
+  /* line 309, ../_sass/indico.scss */
   .features-section .features-section-intro .features-section-intro-txt {
     font-size: 18px;
   }
 }
-/* line 313, ../_sass/indico.scss */
+/* line 323, ../_sass/indico.scss */
 .features-section .features-section-list {
   background-color: #F0F8FC;
   text-align: left;
 }
-/* line 317, ../_sass/indico.scss */
+/* line 327, ../_sass/indico.scss */
 .features-section .features-section-list .features-section-feature {
   min-height: 156px;
   padding-top: 50px;
 }
-/* line 325, ../_sass/indico.scss */
+/* line 335, ../_sass/indico.scss */
 .features-section .features-section-list .features-section-feature .features-section-feature-icon {
   text-align: center;
 }
-/* line 329, ../_sass/indico.scss */
+/* line 339, ../_sass/indico.scss */
 .features-section .features-section-list .features-section-feature .features-section-feature-description {
   font-family: Maven Pro;
   font-weight: 500;
@@ -339,7 +351,7 @@
   text-align: center;
 }
 @media (min-width: 992px) {
-  /* line 329, ../_sass/indico.scss */
+  /* line 339, ../_sass/indico.scss */
   .features-section .features-section-list .features-section-feature .features-section-feature-description {
     margin-top: 0;
     text-align: left;
@@ -352,17 +364,17 @@
  * use a background image that includes the opacity (so there would be
  * no need to apply css opacity).
  */
-/* line 354, ../_sass/indico.scss */
+/* line 364, ../_sass/indico.scss */
 .safety-net-section {
   color: #1A4A61;
   /** Overide colors when in front page **/
 }
-/* line 357, ../_sass/indico.scss */
+/* line 367, ../_sass/indico.scss */
 .safety-net-section .safety-net-wrapper {
   position: relative;
   margin: 0 auto;
 }
-/* line 362, ../_sass/indico.scss */
+/* line 372, ../_sass/indico.scss */
 .safety-net-section h2 {
   font-family: Maven Pro;
   font-weight: 300;
@@ -370,24 +382,24 @@
   line-height: 35px;
 }
 @media (min-width: 768px) {
-  /* line 362, ../_sass/indico.scss */
+  /* line 372, ../_sass/indico.scss */
   .safety-net-section h2 {
     font-size: 30px;
     line-height: 38px;
   }
 }
 @media (min-width: 992px) {
-  /* line 362, ../_sass/indico.scss */
+  /* line 372, ../_sass/indico.scss */
   .safety-net-section h2 {
     font-size: 36px;
     line-height: 43px;
   }
 }
-/* line 379, ../_sass/indico.scss */
+/* line 389, ../_sass/indico.scss */
 .safety-net-section .github-project {
   padding-top: 50px;
 }
-/* line 382, ../_sass/indico.scss */
+/* line 392, ../_sass/indico.scss */
 .safety-net-section .github-project a {
   text-decoration: none;
   border-radius: 40px;
@@ -399,11 +411,11 @@
   border: 2px solid #6AB31D;
   color: #1A4A61;
 }
-/* line 393, ../_sass/indico.scss */
+/* line 403, ../_sass/indico.scss */
 .safety-net-section .github-project a:visited {
   color: #1A4A61;
 }
-/* line 399, ../_sass/indico.scss */
+/* line 409, ../_sass/indico.scss */
 .safety-net-section .safety-net-content-absolute {
   position: absolute;
   top: 4.7em;
@@ -412,15 +424,15 @@
   z-index: 1;
   color: #FFFFFF;
 }
-/* line 407, ../_sass/indico.scss */
+/* line 417, ../_sass/indico.scss */
 .safety-net-section .safety-net-content-absolute .github-project a {
   color: #FFFFFF;
 }
-/* line 410, ../_sass/indico.scss */
+/* line 420, ../_sass/indico.scss */
 .safety-net-section .safety-net-content-absolute .github-project a a:visited {
   color: #FFFFFF;
 }
-/* line 416, ../_sass/indico.scss */
+/* line 426, ../_sass/indico.scss */
 .safety-net-section .safety-net-section-fader {
   height: 100%;
   background-image: url("../img/safety_net.png");
@@ -428,38 +440,38 @@
   opacity: 0.3;
 }
 
-/* line 423, ../_sass/indico.scss */
+/* line 433, ../_sass/indico.scss */
 .safety-net-section-home {
   height: 347px;
 }
 
-/* line 427, ../_sass/indico.scss */
+/* line 437, ../_sass/indico.scss */
 a.no-decoration {
   text-decoration: none;
 }
-/* line 429, ../_sass/indico.scss */
+/* line 439, ../_sass/indico.scss */
 a.no-decoration:visited {
   color: #FFFFFF;
 }
 
-/* line 434, ../_sass/indico.scss */
+/* line 444, ../_sass/indico.scss */
 .bg-blue-dark {
   background-color: #1A4A61;
 }
 
-/* line 438, ../_sass/indico.scss */
+/* line 448, ../_sass/indico.scss */
 .bg-blue-light {
   background-color: #F0F8FC;
 }
 
-/* line 442, ../_sass/indico.scss */
+/* line 452, ../_sass/indico.scss */
 .block-center {
   margin-left: auto;
   margin-right: auto;
   float: none;
 }
 
-/* line 448, ../_sass/indico.scss */
+/* line 458, ../_sass/indico.scss */
 .block-center-abs {
   left: 0;
   right: 0;
@@ -467,45 +479,45 @@ a.no-decoration:visited {
   margin-right: auto;
 }
 
-/* line 455, ../_sass/indico.scss */
+/* line 465, ../_sass/indico.scss */
 .block-right {
   float: right;
 }
 
-/* line 461, ../_sass/indico.scss */
+/* line 471, ../_sass/indico.scss */
 .features-section-listed .section-content {
   padding-top: calc(8 * 30px);
 }
 @media (min-width: 768px) {
-  /* line 461, ../_sass/indico.scss */
+  /* line 471, ../_sass/indico.scss */
   .features-section-listed .section-content {
     padding-top: calc(10 * 30px);
   }
 }
 @media (min-width: 992px) {
-  /* line 461, ../_sass/indico.scss */
+  /* line 471, ../_sass/indico.scss */
   .features-section-listed .section-content {
     padding-top: calc(12 * 30px);
   }
 }
-/* line 473, ../_sass/indico.scss */
+/* line 483, ../_sass/indico.scss */
 .features-section-listed .features-list > .feature-row:nth-child(even) img {
   float: none;
 }
 @media (min-width: 992px) {
-  /* line 473, ../_sass/indico.scss */
+  /* line 483, ../_sass/indico.scss */
   .features-section-listed .features-list > .feature-row:nth-child(even) img {
     float: right;
   }
 }
-/* line 481, ../_sass/indico.scss */
+/* line 491, ../_sass/indico.scss */
 .features-section-listed .feature-row {
   font-family: Maven Pro;
   font-weight: 400;
   margin-bottom: calc(3 * 30px);
   text-align: center;
 }
-/* line 487, ../_sass/indico.scss */
+/* line 497, ../_sass/indico.scss */
 .features-section-listed .feature-row h2 {
   font-size: 20px;
   color: #1A4A61;
@@ -513,36 +525,36 @@ a.no-decoration:visited {
   margin-top: 40px;
 }
 @media (min-width: 992px) {
-  /* line 487, ../_sass/indico.scss */
+  /* line 497, ../_sass/indico.scss */
   .features-section-listed .feature-row h2 {
     margin-top: 0;
   }
 }
-/* line 498, ../_sass/indico.scss */
+/* line 508, ../_sass/indico.scss */
 .features-section-listed .feature-row img {
   border-radius: 8px;
   border: 2px solid #9CD5EF;
 }
-/* line 503, ../_sass/indico.scss */
+/* line 513, ../_sass/indico.scss */
 .features-section-listed .feature-row p {
   font-size: 16px;
   color: #6D92A3;
   line-height: 24px;
 }
 @media (min-width: 992px) {
-  /* line 481, ../_sass/indico.scss */
+  /* line 491, ../_sass/indico.scss */
   .features-section-listed .feature-row {
     text-align: left;
   }
 }
 
-/* line 514, ../_sass/indico.scss */
+/* line 524, ../_sass/indico.scss */
 .options-wrapper {
   margin-top: calc(2 * 30px);
   position: relative;
 }
 
-/* line 519, ../_sass/indico.scss */
+/* line 529, ../_sass/indico.scss */
 .getting-started-options {
   padding: 30px 20px;
   position: absolute;
@@ -553,12 +565,12 @@ a.no-decoration:visited {
   box-shadow: 0px 1px 0px 0px rgba(25, 73, 97, 0.05), 0px 20px 40px 0px rgba(25, 73, 97, 0.25);
 }
 @media (min-width: 992px) {
-  /* line 519, ../_sass/indico.scss */
+  /* line 529, ../_sass/indico.scss */
   .getting-started-options {
     padding: 50px 70px;
   }
 }
-/* line 533, ../_sass/indico.scss */
+/* line 543, ../_sass/indico.scss */
 .getting-started-options .options-description {
   font-family: Maven Pro;
   font-weight: 400;
@@ -566,7 +578,7 @@ a.no-decoration:visited {
   color: #6D92A3;
   line-height: 24px;
 }
-/* line 540, ../_sass/indico.scss */
+/* line 550, ../_sass/indico.scss */
 .getting-started-options .option {
   font-family: Maven Pro;
   font-weight: 500;
@@ -574,7 +586,7 @@ a.no-decoration:visited {
   color: #1A4A61;
   line-height: 18px;
 }
-/* line 547, ../_sass/indico.scss */
+/* line 557, ../_sass/indico.scss */
 .getting-started-options .option .inner-wrapper {
   height: 100%;
   border-radius: 8px;
@@ -583,33 +595,33 @@ a.no-decoration:visited {
   min-height: 160px;
   margin-top: 20px;
 }
-/* line 558, ../_sass/indico.scss */
+/* line 568, ../_sass/indico.scss */
 .getting-started-options .option .row img {
   min-height: 48px;
 }
-/* line 562, ../_sass/indico.scss */
+/* line 572, ../_sass/indico.scss */
 .getting-started-options .option .row div {
   margin-top: 30px;
 }
 
-/* line 569, ../_sass/indico.scss */
+/* line 579, ../_sass/indico.scss */
 .download-section {
   height: 800px;
 }
 
-/* line 573, ../_sass/indico.scss */
+/* line 583, ../_sass/indico.scss */
 .contact-main-section {
   font-family: Maven Pro;
   font-weight: 400;
   text-align: center;
 }
 @media (min-width: 992px) {
-  /* line 573, ../_sass/indico.scss */
+  /* line 583, ../_sass/indico.scss */
   .contact-main-section {
     text-align: left;
   }
 }
-/* line 582, ../_sass/indico.scss */
+/* line 592, ../_sass/indico.scss */
 .contact-main-section h2 {
   font-size: 14px;
   color: #1A4A61;
@@ -617,58 +629,58 @@ a.no-decoration:visited {
   margin-top: calc(2 * 30px);
 }
 @media (min-width: 768px) {
-  /* line 582, ../_sass/indico.scss */
+  /* line 592, ../_sass/indico.scss */
   .contact-main-section h2 {
     margin-top: 0;
   }
 }
-/* line 593, ../_sass/indico.scss */
+/* line 603, ../_sass/indico.scss */
 .contact-main-section div {
   color: #7A8F99;
 }
 
-/* line 600, ../_sass/indico.scss */
+/* line 610, ../_sass/indico.scss */
 #carousel-partners .item {
   min-height: calc(12 * 30px);
 }
 @media (min-width: 768px) {
-  /* line 600, ../_sass/indico.scss */
+  /* line 610, ../_sass/indico.scss */
   #carousel-partners .item {
     min-height: calc(10 * 30px);
   }
 }
-/* line 608, ../_sass/indico.scss */
+/* line 618, ../_sass/indico.scss */
 #carousel-partners .carousel-control {
   background: none;
 }
-/* line 610, ../_sass/indico.scss */
+/* line 620, ../_sass/indico.scss */
 #carousel-partners .carousel-control span {
   position: absolute;
   top: 50%;
   right: 50%;
 }
-/* line 617, ../_sass/indico.scss */
+/* line 627, ../_sass/indico.scss */
 #carousel-partners .carousel-indicators {
   bottom: -30px;
   margin-bottom: 0;
 }
 
-/* line 623, ../_sass/indico.scss */
+/* line 633, ../_sass/indico.scss */
 .about-team-wrapper {
   margin-top: 30px;
   position: relative;
 }
 
-/* line 628, ../_sass/indico.scss */
+/* line 638, ../_sass/indico.scss */
 .about-team-grid {
   position: absolute;
   min-height: 420px;
 }
-/* line 633, ../_sass/indico.scss */
+/* line 643, ../_sass/indico.scss */
 .about-team-grid .team-member {
   background-position: center;
 }
-/* line 637, ../_sass/indico.scss */
+/* line 647, ../_sass/indico.scss */
 .about-team-grid .team-member .team-member-note {
   width: 100%;
   margin: 0 -15px;
@@ -686,46 +698,46 @@ a.no-decoration:visited {
   line-height: 18px;
   color: #F0F8FC;
 }
-/* line 657, ../_sass/indico.scss */
+/* line 667, ../_sass/indico.scss */
 .about-team-grid .team-member .team-member-note .team-member-name {
   color: #FFFFFF;
   font-size: 18px;
 }
-/* line 664, ../_sass/indico.scss */
+/* line 674, ../_sass/indico.scss */
 .about-team-grid .team-member-dev {
   background-image: url("http://placehold.it/320x320");
   min-height: 320px;
 }
-/* line 669, ../_sass/indico.scss */
+/* line 679, ../_sass/indico.scss */
 .about-team-grid .team-leaders {
   margin-top: 30px;
 }
-/* line 673, ../_sass/indico.scss */
+/* line 683, ../_sass/indico.scss */
 .about-team-grid .team-member-leader {
   background-image: url("http://placehold.it/240x240");
   min-height: 240px;
 }
 
-/* line 679, ../_sass/indico.scss */
+/* line 689, ../_sass/indico.scss */
 .about-us-main-section {
   padding-top: calc(80 * 30px);
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 679, ../_sass/indico.scss */
+  /* line 689, ../_sass/indico.scss */
   .about-us-main-section {
     padding-top: calc(37 * 30px);
   }
 }
 @media (min-width: 992px) {
-  /* line 679, ../_sass/indico.scss */
+  /* line 689, ../_sass/indico.scss */
   .about-us-main-section {
     padding-top: calc(25 * 30px);
     text-align: left;
   }
 }
 
-/* line 693, ../_sass/indico.scss */
+/* line 703, ../_sass/indico.scss */
 .contr-list {
   font-family: Maven Pro;
   font-weight: 500;
@@ -734,24 +746,24 @@ a.no-decoration:visited {
   margin-top: calc(2 * 30px);
 }
 @media (min-width: 768px) {
-  /* line 693, ../_sass/indico.scss */
+  /* line 703, ../_sass/indico.scss */
   .contr-list {
     margin-top: 30px;
   }
 }
-/* line 704, ../_sass/indico.scss */
+/* line 714, ../_sass/indico.scss */
 .contr-list h2.contr-list-header {
   color: #1A4A61;
   font-size: 14px;
   line-height: 24px;
 }
-/* line 710, ../_sass/indico.scss */
+/* line 720, ../_sass/indico.scss */
 .contr-list ul.contr-list-names {
   color: #6D92A3;
   list-style: none;
   margin-left: 0;
 }
-/* line 715, ../_sass/indico.scss */
+/* line 725, ../_sass/indico.scss */
 .contr-list ul.contr-list-names .contr-list-names-date {
   color: #34AAE0;
 }

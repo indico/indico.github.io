@@ -5,7 +5,7 @@
     // Positioning context for the mobile navigation icon
     position: absolute;
     width: 100%;
-    z-index: 1; // move front of some special background images
+    z-index: 2000; // move front of some special background images
 }
 
 .header-logo {
@@ -219,7 +219,7 @@
  * Page content
  */
 .page-content {
-    // padding: $spacing-unit 0;
+    position: relative;
 }
 
 .page-heading {

@@ -6,8 +6,8 @@
   <body>
 
     {% include header.html %}
-
     <div class="page-content">
+      <div class="dark-overlay"></div>
       {{ content }}
     </div>
 
@@ -19,5 +19,17 @@
     {% if page.permalink == '/blog/' %}
       <script src="{{ "/js/infinite-jekyll.js" | prepend: site.baseurl }}"></script>
     {% endif %}
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.navbar-toggle').on('click', function(){
+          if($(this).hasClass('collapsed')) {
+            $('.dark-overlay').css('display','initial');
+          }
+          else {
+            $('.dark-overlay').css('display','none');
+          }
+        });
+      });
+    </script>
   </body>
 </html>
