@@ -29,6 +29,12 @@
             $('.dark-overlay').css('display','none');
           }
         });
+
+        $('.page-content').on('click',function(){
+          $('.collapse').collapse('hide');
+          $('.navbar-toggle').addClass('collapsed');
+          $('.dark-overlay').css('display','none');
+        })
       });
     </script>
   </body>
