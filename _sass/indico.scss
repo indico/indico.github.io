@@ -39,6 +39,10 @@ $lg:                1200px;
     }
 }
 
+body {
+    position: relative;
+}
+
 .dark-overlay {
     position: absolute;
     width: 100%;

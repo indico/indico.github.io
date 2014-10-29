@@ -4,10 +4,10 @@
   {% include head.html %}
 
   <body>
+    <div class="dark-overlay"></div>
 
     {% include header.html %}
     <div class="page-content">
-      <div class="dark-overlay"></div>
       {{ content }}
     </div>
 
@@ -30,7 +30,7 @@
           }
         });
 
-        $('.page-content').on('click',function(){
+        $('.dark-overlay').on('click',function(){
           $('.collapse').collapse('hide');
           $('.navbar-toggle').addClass('collapsed');
           $('.dark-overlay').css('display','none');
