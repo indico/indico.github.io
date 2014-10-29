@@ -70,7 +70,7 @@ $(function() {
     var postURL = postURLs[index];
 		
     $.get(postURL, function(data) {
-      $(data).find(".post").appendTo(".posts");
+      $(data).find(".post").addClass("blog-post blog-post-frame").appendTo(".posts");
       callback();
     });
   }
