@@ -70,6 +70,8 @@ $(function() {
     var postURL = postURLs[index];
 		
     $.get(postURL, function(data) {
+      // Take only the .post element, (without the disqus comments)
+      // and add the extra 2 classes, so it is displayed correctly.
       $(data).find(".post").addClass("blog-post blog-post-frame").appendTo(".posts");
       callback();
     });
