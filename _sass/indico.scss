@@ -479,12 +479,12 @@ a.no-decoration {
  */
 .hero-section {
     background-color: $blue-dark;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-home {
     background-image: url("../img/conference_hero1.png");
-    background-position: center;
-    background-repeat: no-repeat;
     height: 851px;
 }
 
@@ -530,25 +530,21 @@ a.no-decoration {
 .hero-getting-started {
     height: 620px;
     background-image: url("../img/getting_started_bg.png");
-    background-position: center;
 }
 
 .hero-blog {
-    background-image: url("../img/blog_header.png");
-    background-position: center;
     height: 350px;
+    background-image: url("../img/blog_header.png");
 }
 
 .hero-contact {
-    background-image: url("../img/contact.png");
-    background-position: center;
     height: 705px;
+    background-image: url("../img/contact.png");
 }
 
 .hero-about {
-    background-image: url("../img/worldmap.png");
-    background-position: center;
     height: 705px;
+    background-image: url("../img/worldmap.png");
 }
 
 .hero-section-fader {
