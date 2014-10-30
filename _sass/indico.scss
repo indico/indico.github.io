@@ -10,8 +10,8 @@ $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $maven:            Maven Pro;
-$maven-medium:     400;
-$maven-regular:    500; // regular = normal
+$maven-regular:    400; // regular = normal
+$maven-medium:     500;
 $maven-light-300:  300; // MavenProLight300-Regular
 $maven-light-200:  200; // maven-pro-light-200
 
@@ -24,12 +24,14 @@ $brand-color:       #2a7ae2;
 $blue-color:        #2D98C8;
 $blue-color-light:  #297699;
 $blue-color-lighter:#9CD5EF;
+$blue-color-lighter-2:    #B0DDF1;
 $blue-color-even-lighter: #F0F8FC;
 $blue-cern:         #34AAE0;
 $blue-cern-dark:    #1291CF;
 $blue-dark:         #1A4A61;
 $text-color-white:  #FFFFFF;
-$green-color:       #7ED321;
+$green-color-bright:#7ED321;
+$green-color:       #6AB31D;
 $blue-gray-color:   #7A8F99;
 $blue-gray-light:   #6D92A3;
 $grey-color:        #828282;
@@ -111,6 +113,10 @@ body {
             padding: 10px 0px;
             margin: 20px 20px;
 
+            &:hover {
+                color: $blue-color;
+            }
+
             @media(max-width: $sm - 1) {
                 padding: 30px 20px;
                 margin: 0;
@@ -118,13 +124,11 @@ body {
 
                 &:hover {
                     background-color: $blue-color;
+                    color: $text-color-white;
                 }
             }
         }
 
-        li>a:hover {
-            color: $text-color-white;
-        }
         .active>a {
             background-color: transparent;
         }
@@ -200,6 +204,7 @@ body {
     }
 }
 
+
 /**
  * Site footer
  */
@@ -242,7 +247,7 @@ body {
     list-style: none;
     margin: 30px 0 0 0;
     font-family: $maven;
-    font-weight: $maven-medium;
+    font-weight: $maven-regular;
     font-size: 14px;
     color: $blue-dark;
     line-height: 14px;
@@ -255,6 +260,11 @@ body {
 
     a {
         color: $blue-dark;
+
+        &:hover {
+            color: $blue-color;
+            text-decoration: none;
+        }
     }
 
 
@@ -268,17 +278,20 @@ body {
 .footer-copyright {
     background-color: $blue-dark;
     font-family: $maven;
-    font-weight: $maven-medium;
+    font-weight: $maven-regular;
     font-size: 14px;
     color: $text-color-white;
     line-height: 40px;
     padding: $spacing-unit 0;
 
     .footer-icons {
-        
         i {
             color: $blue-gray-color;
             margin: 0 10px;
+
+            &:hover {
+                color: $text-color-white;
+            }
         }
     }
 }
@@ -314,7 +327,6 @@ body {
 }
 
 
-
 /**
  * Blog
  */
@@ -339,7 +351,7 @@ body {
 
 .blog-post {
     font-family: $maven;
-    font-weight: $maven-medium;
+    font-weight: $maven-regular;
     color: $blue-dark;
 
     h1, h2 {
@@ -352,6 +364,11 @@ body {
 
 .blog-navigation-links a {
     color: $blue-cern-dark;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 .blog-navigation-links-top {
@@ -567,6 +584,7 @@ a.no-decoration {
 .hero-spotlight-header h1 {
     font-family: $maven;
     font-weight: $maven-light-300;
+    -webkit-font-smoothing: antialiased;
     color: $text-color-white;
 }
 
@@ -580,6 +598,8 @@ a.no-decoration {
 }
 
 .hero-spotlight-header-home h1 {
+    font-weight: $maven-regular;
+    -webkit-font-smoothing: auto;
     font-size: 36px;
     line-height: 56px;
 
@@ -601,16 +621,25 @@ a.no-decoration {
     a {
         text-decoration: none;
         border-radius: 40px;
-        background: $green-color;
+        background: $green-color-bright;
         font-family: $maven;
         font-weight: $maven-medium;
         font-size: 16px;
         color: $text-color-white;
         line-height: 25px;
         padding: 15px 60px;
-    }
-    a:visited {
-        color: $text-color-white;
+
+        &:hover {
+            background: $green-color;
+        }
+
+        &:active {
+            @include opacity(0.5);
+        }
+
+        &:visited {
+            color: $text-color-white;
+        }
     }
 }
 
@@ -622,12 +651,18 @@ a.no-decoration {
         font-weight: $maven-regular;
         font-size: 14px;
         color: $blue-color-lighter;
-        line-height: 17px;    }
+        line-height: 17px;
+
+        &:hover {
+            color: $text-color-white;
+            text-decoration: none;
+        }
+    }
 }
 
 .hero-spotlight-text {
     font-family: $maven;
-    font-weight: $maven-medium;
+    font-weight: $maven-regular;
     font-size: 18px;
     color: $text-color-white;
     line-height: 25px;
@@ -644,7 +679,7 @@ a.no-decoration {
         font-size: 36px;
         line-height: 25px;
         padding: 15px 60px;
-        border: 2px solid #6AB31D;
+        border: 2px solid $green-color;
         color: $text-color-white;
 
         @media(max-width: $sm) {
@@ -653,13 +688,17 @@ a.no-decoration {
     }
 }
 
+
+/**
+ * Home page
+ */
 .partners-section {
     min-height: 450px;
     background-color: $blue-cern;
 
     .partner-carousel {
         font-family: $maven;
-        font-weight: $maven-medium;
+        font-weight: $maven-regular;
         font-size: 14px;
         color: #FFFFFF;
         line-height: 24px;
@@ -670,9 +709,6 @@ a.no-decoration {
     }
 }
 
-/**
- * Home page
- */
 #carousel-partners {
 
     .item {
@@ -710,7 +746,7 @@ a.no-decoration {
 
     .features-section-title {
         font-family: $maven;
-        font-weight: $maven-medium;
+        font-weight: $maven-regular;
         font-size: 20px;
         color: $blue-dark;
         line-height: 25px;
@@ -789,6 +825,7 @@ a.no-decoration {
     h2 {
         font-family: $maven;
         font-weight: $maven-light-300;
+        -webkit-font-smoothing: antialiased;
         font-size: 28px;
         line-height: 35px;
 
@@ -800,6 +837,15 @@ a.no-decoration {
         @media (min-width: $md) {
             font-size: 36px;
             line-height: 43px;
+        }
+
+        a {
+            color: $blue-color;
+
+            &:hover{
+                color: $blue-gray-light;
+                text-decoration: none;
+            }
         }
     }
 
@@ -814,11 +860,20 @@ a.no-decoration {
             font-size: 16px;
             line-height: 25px;
             padding: 15px 60px;
-            border: 2px solid #6AB31D;
+            border: 2px solid $green-color;
             color: $blue-dark;
-        }
-        a:visited {
-            color: $blue-dark;
+
+            &:hover {
+                background: $green-color;
+            }
+
+            &:active {
+                @include opacity(0.5);
+            }
+
+            &:visited {
+                color: $blue-dark;
+            }
         }
     }
 
@@ -878,7 +933,7 @@ a.no-decoration {
 
     .feature-row {
         font-family: $maven;
-        font-weight: $maven-medium;
+        font-weight: $maven-regular;
         margin-bottom: calc(3 * #{$spacing-unit});
         text-align: center;
 
@@ -920,6 +975,8 @@ a.no-decoration {
 
 .getting-started-options {
 
+    font-family: $maven;
+    font-weight: $maven-regular;
     padding: 30px 20px;
     position: absolute;
     min-height: 420px;
@@ -933,15 +990,11 @@ a.no-decoration {
     }
 
     .options-description {
-        font-family: $maven;
-        font-weight: $maven-medium;
         font-size: 16px;
         color: $blue-gray-light;
         line-height: 24px;
     }
     .option {
-        font-family: $maven;
-        font-weight: $maven-regular;
         font-size: 14px;
         color: $blue-dark;
         line-height: 18px;
@@ -953,6 +1006,11 @@ a.no-decoration {
             padding: 20px;
             min-height: 160px;
             margin-top: 20px;
+
+            &:hover {
+                background-color: $blue-color-lighter-2; 
+                cursor: pointer;
+            }
         }
 
         .row {
@@ -977,7 +1035,7 @@ a.no-decoration {
  */
 .contact-main-section {
     font-family: $maven;
-    font-weight: $maven-medium;
+    font-weight: $maven-regular;
     text-align: center;
 
     @media(min-width: $md) {
