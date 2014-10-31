@@ -861,14 +861,12 @@ a.no-decoration {
 
             &:hover {
                 background: $green-color;
+                color: $text-color-white; 
             }
 
             &:active {
                 @include opacity(0.5);
-            }
-
-            &:visited {
-                color: $blue-dark;
+                color: $text-color-white;
             }
         }
     }
@@ -894,6 +892,7 @@ a.no-decoration {
     .safety-net-section-fader {
         height: 100%;
         background-image: url("../img/safety_net.png");
+        background-size: cover;
         @include opacity(0.3);
     }
 }
@@ -1101,7 +1100,24 @@ a.no-decoration {
 
     .team-member-dev {
         background-image: url('http://placehold.it/320x320');
+        background-size: cover;
         min-height: 320px;
+    }
+
+    .team-member-project-manager {
+        background-image: url('../img/people/pedroferreira.jpg');
+    }
+
+    .team-member-developer-1 {
+        background-image: url('../img/people/adrianmonnich.jpg');
+    }
+
+    .team-member-developer-3 {
+        background-image: url('../img/people/iliastrichopoulos.jpg');
+    }
+
+    .team-member-developer-4 {
+        background-image: url('../img/people/tommasopapini.jpg');
     }
 
     .team-leaders {
