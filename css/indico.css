@@ -1601,35 +1601,39 @@ a.no-decoration:visited {
   background-image: url("../img/people/tommasopapini.jpg");
 }
 /* line 1123, ../_sass/indico.scss */
+.about-team-grid .team-member-developer-5 {
+  background-image: url("../img/people/jacquesdafflon.jpg");
+}
+/* line 1127, ../_sass/indico.scss */
 .about-team-grid .team-leaders {
   margin-top: 30px;
 }
-/* line 1127, ../_sass/indico.scss */
+/* line 1131, ../_sass/indico.scss */
 .about-team-grid .team-member-leader {
   background-image: url("http://placehold.it/240x240");
   min-height: 240px;
 }
 
-/* line 1133, ../_sass/indico.scss */
+/* line 1137, ../_sass/indico.scss */
 .about-us-main-section {
   padding-top: calc(80 * 30px);
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 1133, ../_sass/indico.scss */
+  /* line 1137, ../_sass/indico.scss */
   .about-us-main-section {
     padding-top: calc(37 * 30px);
   }
 }
 @media (min-width: 992px) {
-  /* line 1133, ../_sass/indico.scss */
+  /* line 1137, ../_sass/indico.scss */
   .about-us-main-section {
     padding-top: calc(25 * 30px);
     text-align: left;
   }
 }
 
-/* line 1147, ../_sass/indico.scss */
+/* line 1151, ../_sass/indico.scss */
 .contr-list {
   font-family: Maven Pro;
   font-weight: 400;
@@ -1638,24 +1642,24 @@ a.no-decoration:visited {
   margin-top: calc(2 * 30px);
 }
 @media (min-width: 768px) {
-  /* line 1147, ../_sass/indico.scss */
+  /* line 1151, ../_sass/indico.scss */
   .contr-list {
     margin-top: 30px;
   }
 }
-/* line 1158, ../_sass/indico.scss */
+/* line 1162, ../_sass/indico.scss */
 .contr-list h2.contr-list-header {
   color: #1A4A61;
   font-size: 14px;
   line-height: 24px;
 }
-/* line 1164, ../_sass/indico.scss */
+/* line 1168, ../_sass/indico.scss */
 .contr-list ul.contr-list-names {
   color: #6D92A3;
   list-style: none;
   margin-left: 0;
 }
-/* line 1169, ../_sass/indico.scss */
+/* line 1173, ../_sass/indico.scss */
 .contr-list ul.contr-list-names .contr-list-names-date {
   color: #34AAE0;
 }
