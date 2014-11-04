@@ -33,9 +33,9 @@ comments: true
 </div>
 <div class="blog-navigation-links blog-navigation-links-bot ">
   {% if page.previous %} 
-    <a class="blog-prev-post" rel="prev" href="{{ page.previous.url }}">&larr; Previous post</a>
+    <a class="blog-prev-post" rel="prev" href="{{ page.previous.url | prepend: site.baseurl}}">&larr; Previous post</a>
   {% endif %}
   {% if page.next %} 
-    <a class="blog-next-post" rel="next" href="{{ page.next.url }}">Next post &rarr;</a>
+    <a class="blog-next-post" rel="next" href="{{ page.next.url | prepend: site.baseurl}}">Next post &rarr;</a>
   {% endif %}
 </div>
