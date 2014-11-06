@@ -1585,55 +1585,59 @@ a.no-decoration:visited {
   min-height: 320px;
 }
 /* line 1107, ../_sass/indico.scss */
-.about-team-grid .team-member-project-manager {
-  background-image: url("../img/people/pedroferreira.jpg");
-}
-/* line 1111, ../_sass/indico.scss */
-.about-team-grid .team-member-developer-1 {
-  background-image: url("../img/people/adrianmonnich.jpg");
-}
-/* line 1115, ../_sass/indico.scss */
-.about-team-grid .team-member-developer-3 {
-  background-image: url("../img/people/iliastrichopoulos.jpg");
-}
-/* line 1119, ../_sass/indico.scss */
-.about-team-grid .team-member-developer-4 {
-  background-image: url("../img/people/tommasopapini.jpg");
-}
-/* line 1123, ../_sass/indico.scss */
-.about-team-grid .team-member-developer-5 {
-  background-image: url("../img/people/jacquesdafflon.jpg");
-}
-/* line 1127, ../_sass/indico.scss */
-.about-team-grid .team-leaders {
-  margin-top: 30px;
-}
-/* line 1131, ../_sass/indico.scss */
 .about-team-grid .team-member-leader {
   background-image: url("http://placehold.it/240x240");
   min-height: 240px;
 }
+/* line 1112, ../_sass/indico.scss */
+.about-team-grid .team-member-project-manager {
+  background-image: url("../img/people/pedroferreira.jpg");
+}
+/* line 1116, ../_sass/indico.scss */
+.about-team-grid .team-member-developer-1 {
+  background-image: url("../img/people/adrianmonnich.jpg");
+}
+/* line 1120, ../_sass/indico.scss */
+.about-team-grid .team-member-developer-3 {
+  background-image: url("../img/people/iliastrichopoulos.jpg");
+}
+/* line 1124, ../_sass/indico.scss */
+.about-team-grid .team-member-developer-4 {
+  background-image: url("../img/people/tommasopapini.jpg");
+}
+/* line 1128, ../_sass/indico.scss */
+.about-team-grid .team-member-developer-5 {
+  background-image: url("../img/people/jacquesdafflon.jpg");
+}
+/* line 1132, ../_sass/indico.scss */
+.about-team-grid .team-member-leader-group {
+  background-image: url("../img/people/timsmith.jpg");
+}
+/* line 1136, ../_sass/indico.scss */
+.about-team-grid .team-leaders {
+  margin-top: 30px;
+}
 
-/* line 1137, ../_sass/indico.scss */
+/* line 1141, ../_sass/indico.scss */
 .about-us-main-section {
   padding-top: calc(80 * 30px);
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 1137, ../_sass/indico.scss */
+  /* line 1141, ../_sass/indico.scss */
   .about-us-main-section {
     padding-top: calc(37 * 30px);
   }
 }
 @media (min-width: 992px) {
-  /* line 1137, ../_sass/indico.scss */
+  /* line 1141, ../_sass/indico.scss */
   .about-us-main-section {
     padding-top: calc(25 * 30px);
     text-align: left;
   }
 }
 
-/* line 1151, ../_sass/indico.scss */
+/* line 1155, ../_sass/indico.scss */
 .contr-list {
   font-family: Maven Pro;
   font-weight: 400;
@@ -1642,24 +1646,24 @@ a.no-decoration:visited {
   margin-top: calc(2 * 30px);
 }
 @media (min-width: 768px) {
-  /* line 1151, ../_sass/indico.scss */
+  /* line 1155, ../_sass/indico.scss */
   .contr-list {
     margin-top: 30px;
   }
 }
-/* line 1162, ../_sass/indico.scss */
+/* line 1166, ../_sass/indico.scss */
 .contr-list h2.contr-list-header {
   color: #1A4A61;
   font-size: 14px;
   line-height: 24px;
 }
-/* line 1168, ../_sass/indico.scss */
+/* line 1172, ../_sass/indico.scss */
 .contr-list ul.contr-list-names {
   color: #6D92A3;
   list-style: none;
   margin-left: 0;
 }
-/* line 1173, ../_sass/indico.scss */
+/* line 1177, ../_sass/indico.scss */
 .contr-list ul.contr-list-names .contr-list-names-date {
   color: #34AAE0;
 }

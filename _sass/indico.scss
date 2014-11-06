@@ -1104,6 +1104,11 @@ a.no-decoration {
         min-height: 320px;
     }
 
+    .team-member-leader {
+        background-image: url('http://placehold.it/240x240');
+        min-height: 240px;
+    }
+
     .team-member-project-manager {
         background-image: url('../img/people/pedroferreira.jpg');
     }
@@ -1124,13 +1129,12 @@ a.no-decoration {
         background-image: url('../img/people/jacquesdafflon.jpg');
     }
 
-    .team-leaders {
-        margin-top: $spacing-unit;
+    .team-member-leader-group {
+        background-image: url('../img/people/timsmith.jpg');
     }
 
-    .team-member-leader {
-        background-image: url('http://placehold.it/240x240');
-        min-height: 240px;
+    .team-leaders {
+        margin-top: $spacing-unit;
     }
 }
 
