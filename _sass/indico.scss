@@ -679,7 +679,7 @@ a.no-decoration {
         color: $text-color-white;
 
         @media(max-width: $sm) {
-            font-size: 18px;
+            font-size: 17px;
         }
     }
 }
@@ -867,6 +867,10 @@ a.no-decoration {
             &:active {
                 @include opacity(0.5);
                 color: $text-color-white;
+            }
+
+            @media(max-width: $sm) {
+                font-size: 15px;
             }
         }
     }
