@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: BLOG
+title: Blog
 permalink: /blog/
 weight: 15
 ---

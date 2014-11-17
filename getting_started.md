@@ -1,6 +1,6 @@
 ---
 layout: getting_started
-title: GETTING STARTED
+title: Getting Started
 permalink: /getting-started/
 weight: 10
 ---

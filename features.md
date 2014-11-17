@@ -1,6 +1,6 @@
 ---
 layout: features
-title: FEATURES
+title: Features
 permalink: /features/
 weight: 5
 ---
