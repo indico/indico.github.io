@@ -79,6 +79,10 @@ body {
     @include opacity(0.5);
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 
 /**
  * Site header
