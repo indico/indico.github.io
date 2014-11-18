@@ -10,10 +10,11 @@ $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $maven:            Maven Pro;
-$maven-regular:    400; // regular = normal
-$maven-medium:     500;
-$maven-light-300:  300; // MavenProLight300-Regular
-$maven-light-200:  200; // maven-pro-light-200
+$source-code:      Source Code Pro;
+$regular:    400; // regular = normal
+$medium:     500;
+$light-300:  300; // MavenProLight300-Regular
+$light-200:  200; // maven-pro-light-200
 
 $spacing-unit:        30px;
 $spacing-unit-footer: 60px;
@@ -37,6 +38,8 @@ $blue-gray-light:   #6D92A3;
 $grey-color:        #828282;
 $grey-color-light:  lighten($grey-color, 40%);
 $grey-color-dark:   darken($grey-color, 25%);
+$gray-white:        #F6F8F9;
+$gray-white-dark:   #E3E5E6;
 
 $on-palm:   600px;
 $on-laptop: 800px;
@@ -164,7 +167,7 @@ body {
         .menu-label {
             float: left;
             font-family: $maven;
-            font-weight: $maven-medium;
+            font-weight: $medium;
             font-size: 14px;
             color: #FFFFFF;
             line-height: 17px;
@@ -182,7 +185,7 @@ body {
 
     .page-link {
         font-family: $maven;
-        font-weight: $maven-medium;
+        font-weight: $medium;
         font-size: 14px;
         color: $text-color-white;
         line-height: 17px;
@@ -237,7 +240,7 @@ body {
 
 .footer-col-title {
     font-family: $maven;
-    font-weight: $maven-medium;
+    font-weight: $medium;
     font-size: 14px;
     color: $blue-gray-color;
     line-height: 17px;
@@ -248,7 +251,7 @@ body {
     list-style: none;
     margin: 30px 0 0 0;
     font-family: $maven;
-    font-weight: $maven-regular;
+    font-weight: $regular;
     font-size: 14px;
     color: $blue-dark;
     line-height: 14px;
@@ -279,7 +282,7 @@ body {
 .footer-copyright {
     background-color: $blue-dark;
     font-family: $maven;
-    font-weight: $maven-regular;
+    font-weight: $regular;
     font-size: 14px;
     color: $text-color-white;
     line-height: 40px;
@@ -352,11 +355,11 @@ body {
 
 .blog-post {
     font-family: $maven;
-    font-weight: $maven-regular;
+    font-weight: $regular;
     color: $blue-dark;
 
     h1, h2 {
-        font-weight: $maven-regular;
+        font-weight: $regular;
         font-size: 20px;
         line-height: 25px;
         color: $blue-cern-dark;
@@ -563,7 +566,7 @@ a.no-decoration {
 
 .hero-spotlight-1 {
     font-family: $maven;
-    font-weight: $maven-regular;
+    font-weight: $regular;
     font-size: 18px;
     color: $blue-color-lighter;
     line-height: 25px;
@@ -580,14 +583,14 @@ a.no-decoration {
 
 .hero-spotlight-header h1 {
     font-family: $maven;
-    font-weight: $maven-light-300;
+    font-weight: $light-300;
     -webkit-font-smoothing: antialiased;
     color: $text-color-white;
 }
 
 .hero-spotlight h2 {
     font-family: $maven;
-    font-weight: $maven-regular;
+    font-weight: $regular;
     font-size: 20px;
     color: $blue-color-lighter;
     line-height: 20px;
@@ -595,7 +598,7 @@ a.no-decoration {
 }
 
 .hero-spotlight-header-home h1 {
-    font-weight: $maven-regular;
+    font-weight: $regular;
     -webkit-font-smoothing: auto;
     font-size: 36px;
     line-height: 56px;
@@ -620,7 +623,7 @@ a.no-decoration {
         border-radius: 40px;
         background: $green-color-bright;
         font-family: $maven;
-        font-weight: $maven-medium;
+        font-weight: $medium;
         font-size: 16px;
         color: $text-color-white;
         line-height: 25px;
@@ -645,7 +648,7 @@ a.no-decoration {
 
     a {
         font-family: $maven;
-        font-weight: $maven-regular;
+        font-weight: $regular;
         font-size: 14px;
         color: $blue-color-lighter;
         line-height: 17px;
@@ -659,7 +662,7 @@ a.no-decoration {
 
 .hero-spotlight-text {
     font-family: $maven;
-    font-weight: $maven-regular;
+    font-weight: $regular;
     font-size: 18px;
     color: $text-color-white;
     line-height: 25px;
@@ -672,7 +675,7 @@ a.no-decoration {
         text-decoration: none;
         border-radius: 40px;
         font-family: $maven;
-        font-weight: $maven-regular;
+        font-weight: $regular;
         font-size: 36px;
         line-height: 25px;
         padding: 15px 60px;
@@ -695,7 +698,7 @@ a.no-decoration {
 
     .partner-carousel {
         font-family: $maven;
-        font-weight: $maven-regular;
+        font-weight: $regular;
         font-size: 14px;
         color: #FFFFFF;
         line-height: 24px;
@@ -743,7 +746,7 @@ a.no-decoration {
 
     .features-section-title {
         font-family: $maven;
-        font-weight: $maven-regular;
+        font-weight: $regular;
         font-size: 20px;
         color: $blue-dark;
         line-height: 25px;
@@ -763,7 +766,7 @@ a.no-decoration {
 
         .features-section-intro-txt {
             font-family: $maven;
-            font-weight: $maven-regular;
+            font-weight: $regular;
             font-size: 14px;
             color: $blue-gray-light;
             line-height: 24px;
@@ -789,7 +792,7 @@ a.no-decoration {
 
             .features-section-feature-description {
                 font-family: $maven;
-                font-weight: $maven-regular;
+                font-weight: $regular;
                 font-size: 16px;
                 color: $blue-dark;
                 line-height: 24px;
@@ -821,7 +824,7 @@ a.no-decoration {
 
     h2 {
         font-family: $maven;
-        font-weight: $maven-light-300;
+        font-weight: $light-300;
         -webkit-font-smoothing: antialiased;
         font-size: 28px;
         line-height: 35px;
@@ -853,7 +856,7 @@ a.no-decoration {
             text-decoration: none;
             border-radius: 40px;
             font-family: $maven;
-            font-weight: $maven-medium;
+            font-weight: $medium;
             font-size: 16px;
             line-height: 25px;
             padding: 15px 60px;
@@ -933,7 +936,7 @@ a.no-decoration {
 
     .feature-row {
         font-family: $maven;
-        font-weight: $maven-regular;
+        font-weight: $regular;
         margin-bottom: calc(3 * #{$spacing-unit});
         text-align: center;
 
@@ -976,7 +979,7 @@ a.no-decoration {
 .getting-started-options {
 
     font-family: $maven;
-    font-weight: $maven-regular;
+    font-weight: $regular;
     padding: 30px 20px;
     position: absolute;
     min-height: 420px;
@@ -996,8 +999,11 @@ a.no-decoration {
     }
     .option {
         font-size: 14px;
-        color: $blue-dark;
         line-height: 18px;
+
+        a {
+            color: $blue-dark;
+        }
 
         .inner-wrapper {
             height: 100%;
@@ -1026,8 +1032,48 @@ a.no-decoration {
     }
 }
 
+%paragraph-whatever {
+    font-size: 16px;
+    color: $blue-gray-light;
+}
+
 .download-section {
-    height: 800px;
+    margin-top: calc(7 * #{$spacing-unit});
+    font-family: $maven;
+    font-weight: $regular;
+    line-height: 24px;
+
+    section {
+
+        &:not(:first-child) {
+            margin-top: calc(3 * #{$spacing-unit});
+        }
+        h2.header {
+            font-size: 20px;
+            color: $blue-dark;
+            line-height: 25px;
+        }
+
+        p.content {
+            font-size: 16px;
+            color: $blue-gray-light;
+        }
+
+        ol {
+            color: $blue-gray-light;
+        }
+
+        p.code {
+            background: $gray-white;
+            border: 1px solid $gray-white-dark;
+            border-radius: 7px;
+            font-family: $source-code;
+            font-weight: $regular;
+            font-size: 14px;
+            color: $blue-dark;
+            padding: 10px;
+        }
+    }
 }
 
 /**
@@ -1035,7 +1081,7 @@ a.no-decoration {
  */
 .contact-main-section {
     font-family: $maven;
-    font-weight: $maven-regular;
+    font-weight: $regular;
     text-align: center;
 
     @media(min-width: $md) {
@@ -1091,7 +1137,7 @@ a.no-decoration {
             background-image: linear-gradient(rgba(0,0,0,0.00) 0%, #000000 100%);
 
             font-family: $maven;
-            font-weight: $maven-regular;
+            font-weight: $regular;
             font-size: 14px;
             line-height: 18px;
             color: $blue-color-even-lighter;
@@ -1159,7 +1205,7 @@ a.no-decoration {
 
 .contr-list {
     font-family: $maven;
-    font-weight: $maven-regular;
+    font-weight: $regular;
     font-size: 14px;
     line-height: 24px;
     margin-top: calc(2 * #{$spacing-unit});

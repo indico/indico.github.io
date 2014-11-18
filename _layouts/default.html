@@ -19,6 +19,12 @@
     {% if page.permalink == '/blog/' %}
       <script src="{{ "/js/infinite-jekyll.js" | prepend: site.baseurl }}"></script>
     {% endif %}
+    {% if page.permalink == '/getting-started/' %}
+      <script src="{{ "/js/jquery.smoothscroll.min.js" | prepend: site.baseurl }}"></script>
+      <script type="text/javascript">
+        $('html').smoothScroll();
+      </script>
+    {% endif %}
     <script type="text/javascript">
       $(document).ready(function(){
         $('.navbar-toggle').on('click', function(){
