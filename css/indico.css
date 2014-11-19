@@ -473,7 +473,7 @@ body {
 }
 
 /* line 82, ../_sass/indico.scss */
-.uppercase {
+.uppercase, .site-nav .navbar-nav li > a {
   text-transform: uppercase;
 }
 
@@ -513,7 +513,6 @@ body {
   color: #FFFFFF;
   padding: 10px 0px;
   margin: 20px 20px;
-  text-transform: uppercase;
 }
 /* line 124, ../_sass/indico.scss */
 .site-nav .navbar-nav li > a:hover {
