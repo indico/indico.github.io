@@ -1601,8 +1601,10 @@ a.no-decoration:visited {
 /* line 1125, ../_sass/indico.scss */
 .about-team-grid .team-member {
   background-position: center;
+  background-image: url("../img/person_placeholder.gif");
+  background-size: cover;
 }
-/* line 1129, ../_sass/indico.scss */
+/* line 1131, ../_sass/indico.scss */
 .about-team-grid .team-member .team-member-note {
   width: 100%;
   margin: 0 -15px;
@@ -1620,71 +1622,64 @@ a.no-decoration:visited {
   line-height: 18px;
   color: #F0F8FC;
 }
-/* line 1149, ../_sass/indico.scss */
+/* line 1151, ../_sass/indico.scss */
 .about-team-grid .team-member .team-member-note .team-member-name {
   color: #FFFFFF;
   font-size: 18px;
 }
-/* line 1156, ../_sass/indico.scss */
+/* line 1158, ../_sass/indico.scss */
 .about-team-grid .team-member-dev {
-  background-image: url("http://placehold.it/320x320");
-  background-size: cover;
   min-height: 320px;
 }
 /* line 1162, ../_sass/indico.scss */
 .about-team-grid .team-member-leader {
-  background-image: url("http://placehold.it/240x240");
   min-height: 240px;
 }
-/* line 1167, ../_sass/indico.scss */
+/* line 1166, ../_sass/indico.scss */
 .about-team-grid .team-member-project-manager {
   background-image: url("../img/people/pedroferreira.jpg");
 }
-/* line 1171, ../_sass/indico.scss */
+/* line 1170, ../_sass/indico.scss */
 .about-team-grid .team-member-developer-1 {
   background-image: url("../img/people/adrianmonnich.jpg");
 }
-/* line 1175, ../_sass/indico.scss */
+/* line 1174, ../_sass/indico.scss */
 .about-team-grid .team-member-developer-3 {
   background-image: url("../img/people/iliastrichopoulos.jpg");
 }
-/* line 1179, ../_sass/indico.scss */
+/* line 1178, ../_sass/indico.scss */
 .about-team-grid .team-member-developer-4 {
   background-image: url("../img/people/tommasopapini.jpg");
 }
-/* line 1183, ../_sass/indico.scss */
+/* line 1182, ../_sass/indico.scss */
 .about-team-grid .team-member-developer-5 {
   background-image: url("../img/people/jacquesdafflon.jpg");
 }
-/* line 1187, ../_sass/indico.scss */
-.about-team-grid .team-member-leader-group {
-  background-image: url("../img/people/timsmith.jpg");
-}
-/* line 1191, ../_sass/indico.scss */
+/* line 1190, ../_sass/indico.scss */
 .about-team-grid .team-leaders {
   margin-top: 30px;
 }
 
-/* line 1196, ../_sass/indico.scss */
+/* line 1195, ../_sass/indico.scss */
 .about-us-main-section {
   padding-top: calc(80 * 30px);
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 1196, ../_sass/indico.scss */
+  /* line 1195, ../_sass/indico.scss */
   .about-us-main-section {
     padding-top: calc(37 * 30px);
   }
 }
 @media (min-width: 992px) {
-  /* line 1196, ../_sass/indico.scss */
+  /* line 1195, ../_sass/indico.scss */
   .about-us-main-section {
     padding-top: calc(25 * 30px);
     text-align: left;
   }
 }
 
-/* line 1210, ../_sass/indico.scss */
+/* line 1209, ../_sass/indico.scss */
 .contr-list {
   font-family: Maven Pro;
   font-weight: 400;
@@ -1693,24 +1688,24 @@ a.no-decoration:visited {
   margin-top: calc(2 * 30px);
 }
 @media (min-width: 768px) {
-  /* line 1210, ../_sass/indico.scss */
+  /* line 1209, ../_sass/indico.scss */
   .contr-list {
     margin-top: 30px;
   }
 }
-/* line 1221, ../_sass/indico.scss */
+/* line 1220, ../_sass/indico.scss */
 .contr-list h2.contr-list-header {
   color: #1A4A61;
   font-size: 14px;
   line-height: 24px;
 }
-/* line 1227, ../_sass/indico.scss */
+/* line 1226, ../_sass/indico.scss */
 .contr-list ul.contr-list-names {
   color: #6D92A3;
   list-style: none;
   margin-left: 0;
 }
-/* line 1232, ../_sass/indico.scss */
+/* line 1231, ../_sass/indico.scss */
 .contr-list ul.contr-list-names .contr-list-names-date {
   color: #34AAE0;
 }

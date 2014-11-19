@@ -1125,6 +1125,8 @@ a.no-decoration {
     .team-member {
 
         background-position: center;
+        background-image: url('../img/person_placeholder.gif');
+        background-size: cover;
 
         .team-member-note {
         
@@ -1154,13 +1156,10 @@ a.no-decoration {
     }
 
     .team-member-dev {
-        background-image: url('http://placehold.it/320x320');
-        background-size: cover;
         min-height: 320px;
     }
 
     .team-member-leader {
-        background-image: url('http://placehold.it/240x240');
         min-height: 240px;
     }
 
@@ -1185,7 +1184,7 @@ a.no-decoration {
     }
 
     .team-member-leader-group {
-        background-image: url('../img/people/timsmith.jpg');
+        // background-image: url('../img/people/timsmith.jpg');
     }
 
     .team-leaders {
