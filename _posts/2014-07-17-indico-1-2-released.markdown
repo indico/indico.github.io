@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Indico v1.2 released"
-date:   2014-01-01 20:24:31
+title:  "Indico 1.2 released"
+date:   2014-07-17 17:36
 author: "Pedro Ferreira"
 categories: indico update
 ---
@@ -9,4 +9,4 @@ It is with great enthusiasm that we announce the world wide release of Indico 1.
 
 Full details available in our [GitHub site][github].
 
-[github]:      http://github.com/indico/indico
+[github]:      http://github.com/indico/indico/releases/tag/v1.2.0
