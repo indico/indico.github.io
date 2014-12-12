@@ -7,7 +7,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://indico.github.io" # the base hostname & protocol for your site
 twitter_username: indico_project
-github_username:  indico
+github_username: indico
 disqus_shortname: mydevindicowebsite
 
 # Build settings
