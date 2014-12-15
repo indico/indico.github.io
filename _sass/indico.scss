@@ -456,6 +456,10 @@ a {
 .section-content {
     padding-top: calc(3 * #{$spacing-unit});
     padding-bottom: calc(3 * #{$spacing-unit});
+
+    h2.title {
+        text-align: center;
+    }
 }
 
 .section-content-short {
