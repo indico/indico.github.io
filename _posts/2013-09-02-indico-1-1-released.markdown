@@ -2,7 +2,7 @@
 layout: post
 title:  "Indico 1.1 released"
 date:   2013-09-02 14:47
-author: "Pedro Ferreira"
+author: "Indico Team"
 categories: indico update
 ---
 It is with great pleasure that we announce that **Indico 1.1** has been released.
