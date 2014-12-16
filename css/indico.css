@@ -478,7 +478,7 @@ a:hover {
 }
 
 /* line 89, ../_sass/indico.scss */
-.uppercase, .site-nav .navbar-nav li > a {
+.uppercase, .site-nav .navbar-nav li > a, .features-section-listed .feature-row h2 {
   text-transform: uppercase;
 }
 
@@ -1445,12 +1445,14 @@ a.no-decoration:visited {
     margin-top: 0;
   }
 }
-/* line 977, ../_sass/indico.scss */
+/* line 979, ../_sass/indico.scss */
 .features-section-listed .feature-row img {
+  cursor: pointer;
   border-radius: 8px;
   border: 2px solid #9CD5EF;
+  max-width: 300px;
 }
-/* line 982, ../_sass/indico.scss */
+/* line 986, ../_sass/indico.scss */
 .features-section-listed .feature-row p {
   font-size: 16px;
   color: #6D92A3;
@@ -1466,13 +1468,13 @@ a.no-decoration:visited {
 /**
  * Getting Started page
  */
-/* line 997, ../_sass/indico.scss */
+/* line 1001, ../_sass/indico.scss */
 .options-wrapper {
   margin-top: calc(2 * 30px);
   position: relative;
 }
 
-/* line 1002, ../_sass/indico.scss */
+/* line 1006, ../_sass/indico.scss */
 .getting-started-options {
   font-family: Maven Pro;
   font-weight: 400;
@@ -1485,27 +1487,27 @@ a.no-decoration:visited {
   box-shadow: 0px 1px 0px 0px rgba(25, 73, 97, 0.05), 0px 20px 40px 0px rgba(25, 73, 97, 0.25);
 }
 @media (min-width: 992px) {
-  /* line 1002, ../_sass/indico.scss */
+  /* line 1006, ../_sass/indico.scss */
   .getting-started-options {
     padding: 50px 70px;
   }
 }
-/* line 1018, ../_sass/indico.scss */
+/* line 1022, ../_sass/indico.scss */
 .getting-started-options .options-description {
   font-size: 16px;
   color: #6D92A3;
   line-height: 24px;
 }
-/* line 1023, ../_sass/indico.scss */
+/* line 1027, ../_sass/indico.scss */
 .getting-started-options .option {
   font-size: 14px;
   line-height: 18px;
 }
-/* line 1027, ../_sass/indico.scss */
+/* line 1031, ../_sass/indico.scss */
 .getting-started-options .option a {
   color: #1A4A61;
 }
-/* line 1031, ../_sass/indico.scss */
+/* line 1035, ../_sass/indico.scss */
 .getting-started-options .option .inner-wrapper {
   height: 100%;
   border-radius: 8px;
@@ -1514,47 +1516,47 @@ a.no-decoration:visited {
   min-height: 160px;
   margin-top: 20px;
 }
-/* line 1039, ../_sass/indico.scss */
+/* line 1043, ../_sass/indico.scss */
 .getting-started-options .option .inner-wrapper:hover {
   background-color: #B0DDF1;
   cursor: pointer;
 }
-/* line 1047, ../_sass/indico.scss */
+/* line 1051, ../_sass/indico.scss */
 .getting-started-options .option .row img {
   min-height: 48px;
 }
-/* line 1051, ../_sass/indico.scss */
+/* line 1055, ../_sass/indico.scss */
 .getting-started-options .option .row div {
   margin-top: 30px;
 }
 
-/* line 1063, ../_sass/indico.scss */
+/* line 1067, ../_sass/indico.scss */
 .download-section {
   margin-top: calc(7 * 30px);
   font-family: Maven Pro;
   font-weight: 400;
   line-height: 24px;
 }
-/* line 1071, ../_sass/indico.scss */
+/* line 1075, ../_sass/indico.scss */
 .download-section section:not(:first-child) {
   margin-top: calc(3 * 30px);
 }
-/* line 1074, ../_sass/indico.scss */
+/* line 1078, ../_sass/indico.scss */
 .download-section section h2.header {
   font-size: 20px;
   color: #1A4A61;
   line-height: 25px;
 }
-/* line 1080, ../_sass/indico.scss */
+/* line 1084, ../_sass/indico.scss */
 .download-section section p.content {
   font-size: 16px;
   color: #6D92A3;
 }
-/* line 1085, ../_sass/indico.scss */
+/* line 1089, ../_sass/indico.scss */
 .download-section section ol {
   color: #6D92A3;
 }
-/* line 1089, ../_sass/indico.scss */
+/* line 1093, ../_sass/indico.scss */
 .download-section section p.code {
   background: #F6F8F9;
   border: 1px solid #E3E5E6;
@@ -1569,19 +1571,19 @@ a.no-decoration:visited {
 /**
  * Contact Us page
  */
-/* line 1105, ../_sass/indico.scss */
+/* line 1109, ../_sass/indico.scss */
 .contact-main-section {
   font-family: Maven Pro;
   font-weight: 400;
   text-align: center;
 }
 @media (min-width: 992px) {
-  /* line 1105, ../_sass/indico.scss */
+  /* line 1109, ../_sass/indico.scss */
   .contact-main-section {
     text-align: left;
   }
 }
-/* line 1114, ../_sass/indico.scss */
+/* line 1118, ../_sass/indico.scss */
 .contact-main-section h2 {
   font-size: 14px;
   color: #1A4A61;
@@ -1589,12 +1591,12 @@ a.no-decoration:visited {
   margin-top: calc(2 * 30px);
 }
 @media (min-width: 768px) {
-  /* line 1114, ../_sass/indico.scss */
+  /* line 1118, ../_sass/indico.scss */
   .contact-main-section h2 {
     margin-top: 0;
   }
 }
-/* line 1125, ../_sass/indico.scss */
+/* line 1129, ../_sass/indico.scss */
 .contact-main-section div {
   color: #7A8F99;
 }
@@ -1602,24 +1604,24 @@ a.no-decoration:visited {
 /**
  * About Us page
  */
-/* line 1134, ../_sass/indico.scss */
+/* line 1138, ../_sass/indico.scss */
 .about-team-wrapper {
   margin-top: 30px;
   position: relative;
 }
 
-/* line 1139, ../_sass/indico.scss */
+/* line 1143, ../_sass/indico.scss */
 .about-team-grid {
   position: absolute;
   min-height: 420px;
 }
-/* line 1144, ../_sass/indico.scss */
+/* line 1148, ../_sass/indico.scss */
 .about-team-grid .team-member {
   background-position: center;
   background-image: url("../img/person_placeholder.gif");
   background-size: cover;
 }
-/* line 1150, ../_sass/indico.scss */
+/* line 1154, ../_sass/indico.scss */
 .about-team-grid .team-member .team-member-note {
   width: 100%;
   margin: 0 -15px;
@@ -1637,76 +1639,76 @@ a.no-decoration:visited {
   line-height: 18px;
   color: #F0F8FC;
 }
-/* line 1170, ../_sass/indico.scss */
+/* line 1173, ../_sass/indico.scss */
 .about-team-grid .team-member .team-member-note .team-member-name {
   color: #FFFFFF;
   font-size: 18px;
 }
-/* line 1177, ../_sass/indico.scss */
+/* line 1180, ../_sass/indico.scss */
 .about-team-grid .team-member-dev {
   min-height: 320px;
 }
-/* line 1181, ../_sass/indico.scss */
+/* line 1184, ../_sass/indico.scss */
 .about-team-grid .team-member-leader {
   min-height: 240px;
 }
-/* line 1185, ../_sass/indico.scss */
+/* line 1188, ../_sass/indico.scss */
 .about-team-grid .team-member-project-manager {
   background-image: url("../img/people/pedroferreira.jpg");
 }
-/* line 1189, ../_sass/indico.scss */
+/* line 1192, ../_sass/indico.scss */
 .about-team-grid .team-member-developer-1 {
   background-image: url("../img/people/adrianmonnich.jpg");
 }
-/* line 1193, ../_sass/indico.scss */
+/* line 1196, ../_sass/indico.scss */
 .about-team-grid .team-member-developer-2 {
   background-image: url("../img/people/alejandroaviles.jpg");
 }
-/* line 1197, ../_sass/indico.scss */
+/* line 1200, ../_sass/indico.scss */
 .about-team-grid .team-member-developer-3 {
   background-image: url("../img/people/iliastrichopoulos.jpg");
 }
-/* line 1201, ../_sass/indico.scss */
+/* line 1204, ../_sass/indico.scss */
 .about-team-grid .team-member-developer-4 {
   background-image: url("../img/people/tommasopapini.jpg");
 }
-/* line 1205, ../_sass/indico.scss */
+/* line 1208, ../_sass/indico.scss */
 .about-team-grid .team-member-developer-5 {
   background-image: url("../img/people/jacquesdafflon.jpg");
 }
-/* line 1209, ../_sass/indico.scss */
+/* line 1212, ../_sass/indico.scss */
 .about-team-grid .team-member-leader-group {
   background-image: url("../img/people/timsmith.jpg");
 }
-/* line 1213, ../_sass/indico.scss */
+/* line 1216, ../_sass/indico.scss */
 .about-team-grid .team-member-leader-section {
   background-image: url("../img/people/thomasbaron.jpg");
 }
-/* line 1217, ../_sass/indico.scss */
+/* line 1220, ../_sass/indico.scss */
 .about-team-grid .team-leaders {
   margin-top: 30px;
 }
 
-/* line 1222, ../_sass/indico.scss */
+/* line 1225, ../_sass/indico.scss */
 .about-us-main-section {
   padding-top: calc(80 * 30px);
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 1222, ../_sass/indico.scss */
+  /* line 1225, ../_sass/indico.scss */
   .about-us-main-section {
     padding-top: calc(37 * 30px);
   }
 }
 @media (min-width: 992px) {
-  /* line 1222, ../_sass/indico.scss */
+  /* line 1225, ../_sass/indico.scss */
   .about-us-main-section {
     padding-top: calc(25 * 30px);
     text-align: left;
   }
 }
 
-/* line 1236, ../_sass/indico.scss */
+/* line 1239, ../_sass/indico.scss */
 .contr-list {
   font-family: Maven Pro;
   font-weight: 400;
@@ -1715,24 +1717,24 @@ a.no-decoration:visited {
   margin-top: calc(2 * 30px);
 }
 @media (min-width: 768px) {
-  /* line 1236, ../_sass/indico.scss */
+  /* line 1239, ../_sass/indico.scss */
   .contr-list {
     margin-top: 30px;
   }
 }
-/* line 1247, ../_sass/indico.scss */
+/* line 1250, ../_sass/indico.scss */
 .contr-list h2.contr-list-header {
   color: #1A4A61;
   font-size: 14px;
   line-height: 24px;
 }
-/* line 1253, ../_sass/indico.scss */
+/* line 1256, ../_sass/indico.scss */
 .contr-list ul.contr-list-names {
   color: #6D92A3;
   list-style: none;
   margin-left: 0;
 }
-/* line 1258, ../_sass/indico.scss */
+/* line 1261, ../_sass/indico.scss */
 .contr-list ul.contr-list-names .contr-list-names-date {
   color: #34AAE0;
 }

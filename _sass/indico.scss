@@ -728,7 +728,7 @@ a.no-decoration {
 
         @media (min-width: $sm) {
                 font-size: 18px;
-        }        
+        }
     }
 }
 
@@ -954,7 +954,7 @@ a.no-decoration {
 
         @media(min-width: $md) {
             float: right;
-        }        
+        }
     }
 
     .feature-row {
@@ -972,11 +972,15 @@ a.no-decoration {
             @media(min-width: $md) {
                 margin-top: 0;
             }
+
+            @extend .uppercase;
         }
 
         img {
+            cursor: pointer;
             border-radius: 8px;
             border: 2px solid #9CD5EF;
+            max-width: 300px;
         }
 
         p {
@@ -1037,7 +1041,7 @@ a.no-decoration {
             margin-top: 20px;
 
             &:hover {
-                background-color: $blue-color-lighter-2; 
+                background-color: $blue-color-lighter-2;
                 cursor: pointer;
             }
         }
@@ -1148,7 +1152,6 @@ a.no-decoration {
         background-size: cover;
 
         .team-member-note {
-        
             width: 100%;
             margin: 0 -15px;
             position: absolute;
