@@ -546,19 +546,27 @@ a.no-decoration {
     .graphics-macbook {
         height: 450px;
         width: 80%;
-        background-image: url('../img/macbook_air.png');
-        background-position: center bottom;
-        background-repeat: no-repeat;
-        background-size: contain;
         position: absolute;
         left:0;
         right:0;
         bottom: inherit;
         margin-left:auto;
         margin-right:auto;
+        white-space: nowrap;
 
         @media(min-width: $sm) {
             bottom: -150px;
+        }
+
+        .helper {
+            height: 100%;
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        img {
+            cursor: pointer;
+            vertical-align: bottom;
         }
     }
 }

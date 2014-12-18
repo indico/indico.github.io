@@ -15,7 +15,10 @@ layout: default
             </div>
         </div>
         <div class="graphics"></div>
-        <div class="graphics-macbook"></div>
+        <div class="graphics-macbook" >
+            <span class="helper"></span>
+            <img src="{{ site.baseurl }}/img/macbook_air.png" data-toggle="lightbox" data-remote="{{ site.baseurl }}/img/macbook_air_full.png">
+        </div>
     </div>
 </section>
 <section class="features-section-listed">
@@ -91,7 +94,7 @@ layout: default
                 </div>
                 <div class="row feature-row">
                     <div class="col-md-6">
-                        <img src="{{ site.baseurl }}/img/examples/6/1-collab_tools_small.png" data-remote="{{ site.baseurl }}/img/examples/6/1-collab_tools_full.png" title="Collaborative Tools">
+                        <img data-toggle="lightbox" src="{{ site.baseurl }}/img/examples/6/1-collab_tools_small.png" data-remote="{{ site.baseurl }}/img/examples/6/1-collab_tools_full.png" title="Collaborative Tools">
                     </div>
                     <div class="col-md-6">
                         <h2>Integration with Collaborative Tools</h2>
@@ -100,7 +103,7 @@ layout: default
                 </div>
                 <div class="row feature-row">
                     <div class="col-md-6 col-md-push-6">
-                        <img src="{{ site.baseurl }}/img/examples/5/1-rest_api_small.png" data-remote="{{ site.baseurl }}/img/examples/5/1-rest_api_full.png" title="REST API">
+                        <img data-toggle="lightbox" src="{{ site.baseurl }}/img/examples/5/1-rest_api_small.png" data-remote="{{ site.baseurl }}/img/examples/5/1-rest_api_full.png" title="REST API">
                     </div>
                     <div class="col-md-6 col-md-pull-6">
                         <h2>Powerful REST API</h2>
@@ -126,7 +129,7 @@ layout: default
 
 <script type="text/javascript">
     $(function() {
-        $(document).delegate('.features-section-listed .feature-row img', 'click', function(event) {
+        $(document).delegate('*[data-toggle=lightbox]', 'click', function(event) {
             event.preventDefault(); $(this).ekkoLightbox();
         });
     })
