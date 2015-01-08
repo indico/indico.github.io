@@ -1082,10 +1082,14 @@ a.no-decoration {
 }
 
 .download-section {
-    margin-top: calc(7 * #{$spacing-unit});
     font-family: $maven;
     font-weight: $regular;
     line-height: 24px;
+    margin-top: calc(18 * #{$spacing-unit});
+
+    @media(min-width: $sm) {
+        margin-top: calc(7 * #{$spacing-unit});
+    }
 
     section {
 
