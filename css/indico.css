@@ -1703,38 +1703,42 @@ a.no-decoration:visited {
   background-image: url("../img/people/jacquesdafflon.jpg");
 }
 /* line 1237, ../_sass/indico.scss */
+.about-team-grid .team-member-developer-6 {
+  background-image: url("../img/people/michalkolodziejski.jpg");
+}
+/* line 1241, ../_sass/indico.scss */
 .about-team-grid .team-member-leader-group {
   background-image: url("../img/people/timsmith.jpg");
 }
-/* line 1241, ../_sass/indico.scss */
+/* line 1245, ../_sass/indico.scss */
 .about-team-grid .team-member-leader-section {
   background-image: url("../img/people/thomasbaron.jpg");
 }
-/* line 1245, ../_sass/indico.scss */
+/* line 1249, ../_sass/indico.scss */
 .about-team-grid .team-leaders {
   margin-top: 30px;
 }
 
-/* line 1250, ../_sass/indico.scss */
+/* line 1254, ../_sass/indico.scss */
 .about-us-main-section {
   padding-top: calc(80 * 30px);
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 1250, ../_sass/indico.scss */
+  /* line 1254, ../_sass/indico.scss */
   .about-us-main-section {
     padding-top: calc(37 * 30px);
   }
 }
 @media (min-width: 992px) {
-  /* line 1250, ../_sass/indico.scss */
+  /* line 1254, ../_sass/indico.scss */
   .about-us-main-section {
     padding-top: calc(25 * 30px);
     text-align: left;
   }
 }
 
-/* line 1264, ../_sass/indico.scss */
+/* line 1268, ../_sass/indico.scss */
 .contr-list {
   font-family: Maven Pro;
   font-weight: 400;
@@ -1743,24 +1747,24 @@ a.no-decoration:visited {
   margin-top: calc(2 * 30px);
 }
 @media (min-width: 768px) {
-  /* line 1264, ../_sass/indico.scss */
+  /* line 1268, ../_sass/indico.scss */
   .contr-list {
     margin-top: 30px;
   }
 }
-/* line 1275, ../_sass/indico.scss */
+/* line 1279, ../_sass/indico.scss */
 .contr-list h2.contr-list-header {
   color: #1A4A61;
   font-size: 14px;
   line-height: 24px;
 }
-/* line 1281, ../_sass/indico.scss */
+/* line 1285, ../_sass/indico.scss */
 .contr-list ul.contr-list-names {
   color: #6D92A3;
   list-style: none;
   margin-left: 0;
 }
-/* line 1286, ../_sass/indico.scss */
+/* line 1290, ../_sass/indico.scss */
 .contr-list ul.contr-list-names .contr-list-names-date {
   color: #34AAE0;
 }
