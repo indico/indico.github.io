@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
  Indico Project Official site - Indico is a powerful event (meetings, conferences, lectures)
  management system developed at CERN
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://indico.github.io" # the base hostname & protocol for your site
+url: "http://indico-software.org" # the base hostname & protocol for your site
 twitter_username: indico_project
 github_username: indico
 disqus_shortname: indico-project
