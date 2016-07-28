@@ -10,5 +10,8 @@ twitter_username: indico_project
 github_username: indico
 disqus_shortname: indico-project
 
+gems:
+  - jekyll-feed
+
 # Build settings
 markdown: kramdown
