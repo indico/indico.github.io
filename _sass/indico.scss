@@ -386,11 +386,17 @@ a {
     font-weight: $regular;
     color: $blue-dark;
 
-    h1, h2 {
+    h1, h2, h3 {
         font-weight: $regular;
         font-size: 20px;
         line-height: 25px;
         color: $blue-cern-dark;
+        margin-top: 25px;
+    }
+
+    h3 {
+        font-size: 18px;
+        color: $blue-cern;
     }
 }
 
@@ -417,6 +423,14 @@ a {
 
 .post-content {
     margin-bottom: $spacing-unit;
+
+    img {
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.2);
+    }
+
+    table td:not(:last-child) {
+        padding-right: 10px;
+    }
 }
 
 .infinite-spinner {
@@ -426,7 +440,7 @@ a {
   border-radius: 40px;
   background-color: #333;
   margin: 60px auto;
-  
+
   -webkit-animation: scaleout 1.0s infinite ease-in-out;
   animation: scaleout 1.0s infinite ease-in-out;
 }
@@ -909,7 +923,7 @@ a.no-decoration {
 
             &:hover {
                 background: $green-color;
-                color: $text-color-white; 
+                color: $text-color-white;
             }
 
             &:active {
