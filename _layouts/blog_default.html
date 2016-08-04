@@ -34,3 +34,12 @@ layout: default
         </div>
     </div>
 </section>
+
+<script type="text/javascript">
+    $(function() {
+        $(document).delegate('*.post-content img', 'click', function(event) {
+            $(this).data('remote', $(this).attr('src'))
+            event.preventDefault(); $(this).ekkoLightbox();
+        });
+    })
+</script>
