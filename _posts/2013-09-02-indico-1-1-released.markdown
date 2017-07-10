@@ -7,7 +7,7 @@ categories: indico update
 ---
 It is with great pleasure that we announce that **Indico 1.1** has been released.
 
-**81 tickets** have been closed for this release. The full list is available [here][tickets]:
+**81 tickets** have been closed for this release.
 
 Here are some of the most relevant ones:
 
@@ -43,5 +43,4 @@ Another important fact is that any 1.1+ Indico setup can pair up with ​[Indico
 
 We hope you like it!
 
-[tickets]:  http://indico-software.org/query?group=status&milestone=v1.1
 [mobile]:   https://github.com/indico/indico-mobile
