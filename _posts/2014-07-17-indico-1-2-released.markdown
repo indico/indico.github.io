@@ -9,4 +9,4 @@ It is with great enthusiasm that we announce the world wide release of Indico 1.
 
 Full details available in our [GitHub site][github].
 
-[github]:      http://github.com/indico/indico/releases/tag/v1.2.0
+[github]:      https://github.com/indico/indico/releases/tag/v1.2.0

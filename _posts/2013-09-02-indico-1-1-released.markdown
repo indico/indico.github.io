@@ -44,4 +44,4 @@ Another important fact is that any 1.1+ Indico setup can pair up with ​[Indico
 We hope you like it!
 
 [tickets]:  http://indico-software.org/query?group=status&milestone=v1.1
-[mobile]:   http://github.com/indico/indico-mobile
+[mobile]:   https://github.com/indico/indico-mobile
