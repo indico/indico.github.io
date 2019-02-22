@@ -1,8 +1,8 @@
 ---
-layout: post
-title:  "Support for IPython/Jupyter Notebooks"
-date:   2015-11-03 18:00
-author: "Indico Team"
+layout:     post
+title:      "Support for IPython/Jupyter Notebooks"
+date:       2015-11-03 18:00
+author:     "Indico Team"
 categories: indico update notebooks
 ---
 

@@ -1,8 +1,8 @@
 ---
-layout: post
-title:  "Indico 2.1 released"
-date:   2018-05-16 14:00
-author: "Indico Team"
+layout:     post
+title:      "Indico 2.1 released"
+date:       2018-05-16 14:00
+author:     "Indico Team"
 categories: indico update release milestone
 ---
 
