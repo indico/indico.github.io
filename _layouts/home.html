@@ -33,47 +33,42 @@ layout: default
                 <div id="carousel-partners" class="carousel slide" data-ride="carousel" data-interval="false">
                   <!-- Indicators -->
                   <ol class="carousel-indicators">
-                    <li data-target="#carousel-partners" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-partners" data-slide-to="1"></li>
-                </ol>
+                    {% assign num_testimonials = page.testimonials | size %}
+                    {% for n in (1..num_testimonials) %}
+                      <li data-target="#carousel-partners" data-slide-to="{{ n | minus: 1 }}"
+                          {% if n == 1 %}class="active"{% endif %}>
+                      </li>
+                    {% endfor %}
+                  </ol>
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <div class="row">
-                            <div class="col-sm-8 col-xs-9 block-center">
-                                <div class="partner-carousel-item-img">
-                                    <img src="{{ site.baseurl }}/img/cern_logo_white.png">
-                                </div>
-                                <div class="partner-carousel-item-text">
-                                    <p>Indico is used every day at CERN to manage more than 300&nbsp;000 events of different complexities and 200 meeting and conference rooms.</p>
-
-                                    <p>CERN - “The European Organization for Nuclear Research is located at the heart of Europe, astride the Franco-Swiss border. It is known not only for its flagship project (the Large Hadron Collider or LHC), but also for being the place where Sir Tim Berners-Lee created the World Wide Web in 1989.”</p>
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                        {% for testimonial in page.testimonials %}
+                            <div class="item {% if forloop.first %}active{% endif %}">
+                                <div class="row">
+                                    <div class="col-sm-8 col-xs-9 block-center">
+                                        <div class="partner-carousel-item-img">
+                                            <img src="{{ testimonial.logo | prepend: '/img/logos/' | relative_url }}"
+                                                 alt="{{ testimonial.name }} Logo"
+                                                 class="{{ testimonial.logo_class }}"">
+                                        </div>
+                                        <div class="partner-carousel-item-text">
+                                            {% for line in testimonial.text %}
+                                                <p>{{ line | markdownify }}</p>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-sm-8 col-xs-9 block-center">
-                                <div class="partner-carousel-item-img">
-                                    <h2>LHC</h2>
-                                </div>
-                                <div class="partner-carousel-item-text">
-                                    <p>Indico has been adopted by all major LHC experiments as their tool of choice for meeting organisation and information sharing.</p>
-                                    <p>The Large Hadron Collider - “Believed to be the most complex machine ever built by humankind, the LHC brings together thousands of physicists and engineers from all over the world with the aim of studying the Higgs boson, searching for supersymmetry and for dark matter, among others.”</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-partners" role="button" data-slide="prev">
-                    <span class="fa fa-angle-left fa-2x"></span>
-                </a>
-                <a class="right carousel-control" href="#carousel-partners" role="button" data-slide="next">
-                    <span class="fa fa-angle-right fa-2x"></span>
-                </a>
+                        {% endfor %}
+                  </div>
+                  <!-- Controls -->
+                  <a class="left carousel-control" href="#carousel-partners" role="button" data-slide="prev">
+                      <span class="fa fa-angle-left fa-2x"></span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-partners" role="button" data-slide="next">
+                      <span class="fa fa-angle-right fa-2x"></span>
+                  </a>
             </div>
         </div>
     </div>

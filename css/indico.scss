@@ -746,18 +746,17 @@ a.no-decoration {
  * Home page
  */
 .partners-section {
-    min-height: 450px;
+    min-height: 500px;
     background-color: $blue-cern;
 
     .partner-carousel {
         font-family: $maven;
         font-weight: $regular;
-        font-size: 14px;
+        font-size: 13px;
         color: #FFFFFF;
-        line-height: 24px;
 
         @media (min-width: $sm) {
-                font-size: 18px;
+            font-size: 15px;
         }
     }
 }
@@ -784,6 +783,15 @@ a.no-decoration {
     .carousel-indicators {
         bottom: -$spacing-unit;
         margin-bottom: 0;
+    }
+}
+
+.partner-carousel-item-img img {
+    max-height: 100px;
+    margin-bottom: 20px;
+
+    &.horizontal {
+        max-height: 75px;
     }
 }
 
