@@ -14,7 +14,7 @@ comments: true
       {{ content }}
     </article>
   </div>
-  {% if page.comments and (page.permalink != "/blog/") %}
+  {% if page.comments and page.permalink != "/blog/" %}
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -32,10 +32,10 @@ comments: true
   {% endif %}
 </div>
 <div class="blog-navigation-links blog-navigation-links-bot ">
-  {% if page.previous %} 
+  {% if page.previous %}
     <a class="blog-prev-post" rel="prev" href="{{ page.previous.url | prepend: site.baseurl}}">&larr; Previous post</a>
   {% endif %}
-  {% if page.next %} 
+  {% if page.next %}
     <a class="blog-next-post" rel="next" href="{{ page.next.url | prepend: site.baseurl}}">Next post &rarr;</a>
   {% endif %}
 </div>
