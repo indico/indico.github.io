@@ -113,11 +113,6 @@ a {
     background-color: $blue-dark;
     border-bottom: 1px solid $blue-color-light;
 
-    .navbar-wrapper {
-        margin-left: -15px;
-        margin-right: -15px;
-    }
-
     .navbar-nav {
 
         li:not(:last-child) a {
@@ -206,6 +201,8 @@ a {
         color: $text-color-white;
         line-height: 17px;
         text-decoration: none;
+        background: none;
+        border: none;
     }
 
     .page-link-current {
@@ -1005,6 +1002,10 @@ a.no-decoration {
         margin-bottom: calc(3 * #{$spacing-unit});
         text-align: center;
 
+        .feature-description {
+            vertical-align: middle;
+        }
+
         h2 {
             font-size: 20px;
             color: $blue-dark;
@@ -1019,10 +1020,9 @@ a.no-decoration {
         }
 
         img {
-            cursor: pointer;
             border-radius: 8px;
             border: 2px solid #9CD5EF;
-            max-width: 300px;
+            max-width: 600px;
         }
 
         p {
@@ -1069,7 +1069,7 @@ a.no-decoration {
     .option {
         font-size: 14px;
         line-height: 18px;
-
+        margin-top: 20px;
         a {
             color: $blue-dark;
         }
@@ -1080,7 +1080,6 @@ a.no-decoration {
             border: 2px solid $blue-color-lighter;
             padding: 20px;
             min-height: 160px;
-            margin-top: 20px;
 
             &:hover {
                 background-color: $blue-color-lighter-2;

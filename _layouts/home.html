@@ -44,9 +44,9 @@ layout: default
                   <!-- Wrapper for slides -->
                   <div class="carousel-inner">
                         {% for testimonial in page.testimonials %}
-                            <div class="item {% if forloop.first %}active{% endif %}">
-                                <div class="row">
-                                    <div class="col-sm-8 col-xs-9 block-center">
+                            <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                                <div class="row justify-content-center">
+                                    <div class="col-sm-8 col-9">
                                         <div class="partner-carousel-item-img">
                                             <img src="{{ testimonial.logo | prepend: '/img/logos/' | relative_url }}"
                                                  alt="{{ testimonial.name }} Logo"
@@ -63,11 +63,11 @@ layout: default
                         {% endfor %}
                   </div>
                   <!-- Controls -->
-                  <a class="left carousel-control" href="#carousel-partners" role="button" data-slide="prev">
-                      <span class="fa fa-angle-left fa-2x"></span>
+                  <a class="carousel-control-prev" href="#carousel-partners" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
                   </a>
-                  <a class="right carousel-control" href="#carousel-partners" role="button" data-slide="next">
-                      <span class="fa fa-angle-right fa-2x"></span>
+                  <a class="carousel-control-next" href="#carousel-partners" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon"></span>
                   </a>
             </div>
         </div>
@@ -75,15 +75,13 @@ layout: default
 </section>
 <section class="features-section section">
     <div class="section-content container">
-        <div class="row">
-            <div class="col-md-9 col-xm-12 block-center">
+        <div class="row justify-content-center ">
+            <div class="col-md-9 col-xm-12">
                 <h2 class="features-section-title">
                     Robust and Scalable Event Management
                 </h2>
                 <div class="features-section-intro">
-                    <div class="row">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/yo8rgg9dOcc" frameborder="0" allowfullscreen></iframe>
-                    </div>
                 </div>
             </div>
         </div>
@@ -92,81 +90,96 @@ layout: default
         <div class="section-content wrapper">
             <h2 class="hero-spotlight-1 uppercase title">Main Features</h2>
             <div class="row">
-                <div class="col-lg-10 col-sm-11 col-xs-9 block-center">
+                <div class="col-lg-10 col-sm-11 col-9 block-center">
                     <div class="row">
-                        <div class="col-xs-12">
+                        <div class="col-12">
                             <div class="row">
-                                <div class="features-section-feature col-sm-6 col-xs-12">
-                                    <span class="features-section-feature-icon col-md-4 col-xs-12">
-                                        <img src="{{ site.baseurl }}/img/feature_icon_1.png">
-                                    </span>
-                                    <span class="features-section-feature-description col-md-8 col-xs-12">
-                                        <p>Event-organisation workflow that fits lectures, meetings, workshops and conferences</p>
-                                    </span>
+                                <div class="features-section-feature col-sm-6 col-12">
+                                    <div class="row">
+                                        <span class="features-section-feature-icon col-md-4 col-12">
+                                            <img src="{{ site.baseurl }}/img/feature_icon_1.png">
+                                        </span>
+                                        <span class="features-section-feature-description col-md-8 col-12">
+                                            <p>Event-organisation workflow that fits lectures, meetings, workshops and conferences</p>
+                                        </span>
+                                    </div>
                                 </div>
-                                <div class="features-section-feature col-sm-6 col-xs-12">
-                                    <span class="features-section-feature-icon col-md-4 col-xs-12">
-                                        <img src="{{ site.baseurl }}/img/feature_icon_3.png">
-                                    </span>
-                                    <span class="features-section-feature-description col-md-8 col-xs-12">
-                                        <p>Multi-granular tree-based protection scheme</p>
-                                    </span>
+                                <div class="features-section-feature col-sm-6 col-12">
+                                    <div class="row">
+                                        <span class="features-section-feature-icon col-md-4 col-12">
+                                            <img src="{{ site.baseurl }}/img/feature_icon_3.png">
+                                        </span>
+                                        <span class="features-section-feature-description col-md-8 col-12">
+                                            <p>Multi-granular tree-based protection scheme</p>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="features-section-feature col-sm-6 col-xs-12">
-                                    <span class="features-section-feature-icon col-md-4 col-xs-12">
-                                        <img src="{{ site.baseurl }}/img/feature_icon_2.png">
-                                    </span>
-                                    <span class="features-section-feature-description col-md-8 col-xs-12">
-                                        <p>Easy upload and retrieval of presentations, papers and other documents</p>
-                                    </span>
+                                <div class="features-section-feature col-sm-6 col-12">
+                                    <div class="row">
+                                        <span class="features-section-feature-icon col-md-4 col-12">
+                                            <img src="{{ site.baseurl }}/img/feature_icon_2.png">
+                                        </span>
+                                        <span class="features-section-feature-description col-md-8 col-12">
+                                            <p>Easy upload and retrieval of presentations, papers and other documents</p>
+                                        </span>
+                                    </div>
                                 </div>
-                                <div class="features-section-feature col-sm-6 col-xs-12">
-                                    <span class="features-section-feature-icon col-md-4 col-xs-12">
-                                        <img src="{{ site.baseurl }}/img/feature_icon_8.png">
-                                    </span>
-                                    <span class="features-section-feature-description col-md-8 col-xs-12">
-                                        <p>Permanent archival of all event material and metadata</p>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="features-section-feature col-sm-6 col-xs-12">
-                                    <span class="features-section-feature-icon col-md-4 col-xs-12">
-                                        <img src="{{ site.baseurl }}/img/feature_icon_4.png">
-                                    </span>
-                                    <span class="features-section-feature-description col-md-8 col-xs-12">
-                                        <p>Reviewing functionalities for conference papers</p>
-                                    </span>
-                                </div>
-                                <div class="features-section-feature col-sm-6 col-xs-12">
-                                    <span class="features-section-feature-icon col-md-4 col-xs-12">
-                                        <img src="{{ site.baseurl }}/img/feature_icon_6.png">
-                                    </span>
-                                    <span class="features-section-feature-description col-md-8 col-xs-12">
-                                        <p>Full coverage of the conference lifecycle</p>
-                                    </span>
+                                <div class="features-section-feature col-sm-6 col-12">
+                                    <div class="row">
+                                        <span class="features-section-feature-icon col-md-4 col-12">
+                                            <img src="{{ site.baseurl }}/img/feature_icon_8.png">
+                                        </span>
+                                        <span class="features-section-feature-description col-md-8 col-12">
+                                            <p>Permanent archival of all event material and metadata</p>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="features-section-feature col-sm-6 col-xs-12">
-                                    <span class="features-section-feature-icon col-md-4 col-xs-12">
-                                        <img src="{{ site.baseurl }}/img/feature_icon_5.png">
-                                    </span>
-                                    <span class="features-section-feature-description col-md-8 col-xs-12">
-                                        <p>Room booking and management</p>
-                                    </span>
+                                <div class="features-section-feature col-sm-6 col-12">
+                                    <div class="row">
+                                        <span class="features-section-feature-icon col-md-4 col-12">
+                                            <img src="{{ site.baseurl }}/img/feature_icon_4.png">
+                                        </span>
+                                        <span class="features-section-feature-description col-md-8 col-12">
+                                            <p>Reviewing functionalities for conference papers</p>
+                                        </span>
+                                    </div>
                                 </div>
-                                <div class="features-section-feature col-sm-6 col-xs-12">
-                                    <span class="features-section-feature-icon col-md-4 col-xs-12">
-                                        <img src="{{ site.baseurl }}/img/feature_icon_7.png">
-                                    </span>
-                                    <span class="features-section-feature-description col-md-8 col-xs-12">
-                                        <p>Integration with several collaborative tools</p>
-                                    </span>
+                                <div class="features-section-feature col-sm-6 col-12">
+                                    <div class="row">
+                                        <span class="features-section-feature-icon col-md-4 col-12">
+                                            <img src="{{ site.baseurl }}/img/feature_icon_6.png">
+                                        </span>
+                                        <span class="features-section-feature-description col-md-8 col-12">
+                                            <p>Full coverage of the conference lifecycle</p>
+                                        </span>
+                                    </div>
                                 </div>
-
+                            </div>
+                            <div class="row">
+                                <div class="features-section-feature col-sm-6 col-12">
+                                    <div class="row">
+                                        <span class="features-section-feature-icon col-md-4 col-12">
+                                            <img src="{{ site.baseurl }}/img/feature_icon_5.png">
+                                        </span>
+                                        <span class="features-section-feature-description col-md-8 col-12">
+                                            <p>Room booking and management</p>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="features-section-feature col-sm-6 col-12">
+                                    <div class="row">
+                                        <span class="features-section-feature-icon col-md-4 col-12">
+                                            <img src="{{ site.baseurl }}/img/feature_icon_7.png">
+                                        </span>
+                                        <span class="features-section-feature-description col-md-8 col-12">
+                                            <p>Integration with several collaborative tools</p>
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -178,7 +191,7 @@ layout: default
 <section class="safety-net-section safety-net-section-home section bg-blue-dark">
     <div class="safety-net-wrapper container">
         <div class="row">
-            <div class="col-sm-9 col-xs-12 block-center">
+            <div class="col-sm-9 col-12 block-center">
                 <div class="safety-net-content-absolute">
                     <h2>Indico is Open Source software. It's free to use and easy to modify!</h2>
                     <div class="github-project">
