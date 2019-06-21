@@ -2,12 +2,15 @@
 # Indico specific stylesheet
 ---
 
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
 // Variables
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
+$lora: Noto Sans, sans-serif;
 $maven:            Maven Pro;
 $source-code:      Source Code Pro;
 $regular:    400; // regular = normal
@@ -533,10 +536,10 @@ a.no-decoration {
 }
 
 .hero-features {
-    height: 756px;
+    height: 400px;
 
     .hero-section-wrapper {
-        height: 756px;
+        height: 400px;
         position: relative;
     }
 
@@ -975,6 +978,7 @@ a.no-decoration {
  * Features page
  */
 .features-section-listed {
+    margin-top: 40px;
 
     .section-content {
         padding-top: calc(8 * #{$spacing-unit});
@@ -997,38 +1001,48 @@ a.no-decoration {
     }
 
     .feature-row {
-        font-family: $maven;
-        font-weight: $regular;
         margin-bottom: calc(3 * #{$spacing-unit});
         text-align: center;
 
-        .feature-description {
-            vertical-align: middle;
-        }
+        .description {
+            font-family: $lora;
+            padding: 5px 60px;
 
-        h2 {
-            font-size: 20px;
-            color: $blue-dark;
-            line-height: 25px;
-            margin-top: 40px;
+            h2 {
+                font-weight: bold;
+                color: $blue-dark;
+                font-size: 28px;
 
-            @media(min-width: $md) {
-                margin-top: 0;
+                @media(min-width: $md) {
+                    margin-top: 0;
+                }
+
+                .highlight {
+                    color: $blue-color;
+                }
             }
 
-            @extend .uppercase;
+            p {
+                font-size: 16px;
+                color: $grey-color;
+                line-height: 24px;
+            }
+
+            .options-list {
+                font-size: 16px;
+                font-weight: bold;
+                color: $blue-dark;
+                line-height: 35px;
+
+                .underlined {
+                    border-bottom: 1px solid lighten($blue-color, 20%);
+                }
+            }
         }
 
         img {
-            border-radius: 8px;
-            border: 2px solid #9CD5EF;
             max-width: 600px;
-        }
-
-        p {
-            font-size: 16px;
-            color: $blue-gray-light;
-            line-height: 24px;
+            box-shadow: 1px 1px 2px 2px #ccc;
         }
 
         @media(min-width: $md) {
