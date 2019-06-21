@@ -1,47 +1,33 @@
 <header class="site-header">
-
-  <nav class="navbar navbar-default navbar-static-top site-nav" role="navigation">
+  <nav class="navbar navbar-expand-sm site-nav">
     <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-xm-12 block-center">
-          <div class="navbar-wrapper">
-          <div class="navbar-header">
-            <a href="#" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <div class="icon-bars">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </div>
+      <a class="navbar-brand" href="{{ site.baseurl }}">
+        <img class="header-logo" src="{{ site.baseurl }}/img/indico-blue-white.png">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+            <img src="{{ site.baseurl }}/img/hamburger-menu.png">
+        </span>
+      </button>
 
-              <span class="menu-label">MENU</span>
-            </a>
-            <a class="navbar-brand" href="{{ site.baseurl }}/">
-              <img class="header-logo" src="{{site.baseurl}}/img/indico-blue-white.png">
-            </a>
-          </div>
-
-
-          <div class="collapse navbar-collapse" id="navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-              {% assign pages = site.pages | sort:"weight" %}
-              {% for p in pages %}
-                {% unless p.exclude_from_nav %}
-                  {% assign class_holder = "" %}
-                  {% if p.title %}
-                    {% if p.url == page.url %}
-                      {% assign class_holder = " page-link-current" %}
-                    {% endif %}
-                    <li><a class="page-link{{ class_holder }}" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></li>
-                  {% endif %}
-                {% endunless %}
-              {% endfor %}
-            </ul>
-          </div>
-        </div>
-        </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          {% assign pages = site.pages | sort:"weight" %}
+          {% for p in pages %}
+            {% unless p.exclude_from_nav %}
+              {% assign class_holder = "" %}
+              {% if p.title %}
+                {% if p.url == page.url %}
+                  {% assign class_holder = " page-link-current" %}
+                {% endif %}
+                <li class="nav-item">
+                  <a class="page-link{{ class_holder }}" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
+                </li>
+              {% endif %}
+            {% endunless %}
+          {% endfor %}
+        </ul>
       </div>
     </div>
   </nav>
-
 </header>
