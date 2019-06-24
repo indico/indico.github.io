@@ -602,6 +602,11 @@ a.no-decoration {
     background-image: url("../img/worldmap.png");
 }
 
+.hero-roadmap {
+    height: 350px;
+    background-image: url("../img/roadmap.png");
+}
+
 .hero-section-fader {
     background-image: -webkit-linear-gradient(top, rgba(26,74,97,1) 0%,rgba(26,74,97,0.75) 68%,rgba(26,74,97,1) 100%);
     background-image: -moz-linear-gradient(top, rgba(26,74,97,1) 0%,rgba(26,74,97,0.75) 68%,rgba(26,74,97,1) 100%);
