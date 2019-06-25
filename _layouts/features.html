@@ -13,11 +13,6 @@ layout: default
                 </div>
             </div>
         </div>
-        {% comment %} <div class="graphics"></div> {% endcomment %}
-        {% comment %} <div class="graphics-macbook" >
-            <span class="helper"></span>
-            <img src="{{ site.baseurl }}/img/macbook_air.png" data-toggle="lightbox" data-remote="{{ site.baseurl }}/img/macbook_air_full.png">
-        </div> {% endcomment %}
     </div>
 </section>
 <section class="features-section-listed container-fluid">
@@ -30,7 +25,7 @@ layout: default
                     </div>
                     <div class="col-md-6 {% cycle "", "order-first" %} d-flex align-items-center description">
                         <div>
-                            <h2><span class="highlight">{{ feature.highlight }}</span> {{ feature.name }}</h2>
+                            <h2>{{ feature.name }}</h2>
                             <p>{{ feature.text }}</p>
                             <div class="options-list">
                                 {%- for item in feature.items -%}
