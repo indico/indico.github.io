@@ -536,50 +536,8 @@ a.no-decoration {
 }
 
 .hero-features {
-    height: 400px;
-
-    .hero-section-wrapper {
-        height: 400px;
-        position: relative;
-    }
-
-    .graphics {
-        height: 450px;
-        width: 100%;
-        background-image: url('../img/graphics.png');
-        background-position: center bottom;
-        background-repeat: no-repeat;
-        position: absolute;
-        bottom: 0;
-        background-size: contain;
-    }
-
-    .graphics-macbook {
-        height: 450px;
-        width: 80%;
-        position: absolute;
-        left:0;
-        right:0;
-        bottom: inherit;
-        margin-left:auto;
-        margin-right:auto;
-        white-space: nowrap;
-
-        @media(min-width: $sm) {
-            bottom: -150px;
-        }
-
-        .helper {
-            height: 100%;
-            vertical-align: middle;
-            display: inline-block;
-        }
-
-        img {
-            cursor: pointer;
-            vertical-align: bottom;
-        }
-    }
+    height: 350px;
+    background-image: url("../img/feature_hero3.png");
 }
 
 .hero-getting-started {
