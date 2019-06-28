@@ -92,23 +92,18 @@ layout: default
             <div class="row">
                 <div class="col-lg-10 col-sm-11 col-9 block-center">
                     <div class="row">
-                        <div class="col-12">
-                            <div class="row">
-                                {%- for feature in page.main_features -%}
-                                    <div class="features-section-feature col-sm-6 col-12">
-                                        <div class="row">
-                                            <span class="features-section-feature-icon col-md-4 col-12">
-                                                <img src="{{ site.baseurl }}/img/{{feature.icon}}">
-                                            </span>
-                                            <span class="features-section-feature-description col-md-8 col-12">
-                                                <p>{{ feature.description }}</p>
-                                            </span>
-                                        </div>
-                                    </div>
-                                {%- endfor -%}
+                        {%- for feature in page.main_features -%}
+                            <div class="features-section-feature col-sm-6 col-12">
+                                <div class="row justify-content-center">
+                                    <span class="features-section-feature-icon col-md-4 col-12">
+                                        <img src="{{ site.baseurl }}/img/{{feature.icon}}">
+                                    </span>
+                                    <span class="features-section-feature-description col-md-8 col-12">
+                                        <p>{{ feature.description }}</p>
+                                    </span>
                                 </div>
                             </div>
-                        </div>
+                        {%- endfor -%}
                     </div>
                 </div>
             </div>

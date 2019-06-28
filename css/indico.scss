@@ -818,10 +818,14 @@ a.no-decoration {
 
             .features-section-feature-icon {
                 text-align: center;
+
+                img {
+                    max-width: 70px;
+                }
             }
 
             .features-section-feature-description {
-                padding-top: 20px;
+                padding-top: 10px;
                 font-family: $maven;
                 font-weight: $regular;
                 font-size: 16px;
