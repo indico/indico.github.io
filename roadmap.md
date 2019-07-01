@@ -4,16 +4,12 @@ title: Roadmap
 permalink: /roadmap/
 weight: 20
 ---
-
-# Indico Roadmap 🛣
-
-This is a summary of all development foreseen in Indico in the short/medium term.
-
 ## 2019
 
 ### ~~Indico 2.2~~ [✅](https://github.com/indico/indico/projects/2)
 
 > *Fully funded by CERN.*
+
 * [New Room Booking UI](https://getindico.io/indico/update/release/milestone/2019/02/22/indico-2-2-news.html)
 - And better integration with Event module
 * New event log interface;
@@ -23,7 +19,8 @@ This is a summary of all development foreseen in Indico in the short/medium term
 ### **Indico 2.3** [⚒](https://github.com/indico/indico/projects/3)
 
 > *Mostly funded by CERN, in collaboration with the [JACoW collaboration](http://jacow.org/).
-Some contributions from IEEE.*
+> Some contributions from IEEE.*
+
 * **Abstract Reviewing** improvements (e.g. invitation/confirmation workflows)
 - *incl. a couple sponsored by IEEE* (e.g. [3346](https://github.com/indico/indico/issues/3346))
 * **Paper Reviewing** improvements (webhook-based integration with external workflows)
@@ -48,8 +45,9 @@ Some contributions from IEEE.*
 * Python 3.8 (which will come out still in 2019)
     - Python 2 no longer supported
 
-#### Still to schedule (but foreseen in 2020)
+### Still to schedule (but foreseen in 2020)
 > Funded by CERN
+
 * Unlisted events (not connected to any category) (~Mar 2020);
 * Indico as the missing piece in Groupware:
 - Improved home page with dashboard;
@@ -59,7 +57,7 @@ Some contributions from IEEE.*
 * CalDAV bridge;
 * Lightweight registrations (~Sep 2020);
 
-## :warning: Help needed
+### Help needed
 
 We are trying as much as possible to find ways of solving these pending issues in due time. If you believe you could **help with any of those**, don't hesitate to [let us know](mailto:indico-team@cern.ch).
 

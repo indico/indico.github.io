@@ -1292,3 +1292,36 @@ a.no-decoration {
         }
     }
 }
+
+// Roadmap
+
+.roadmap {
+    justify-content: center;
+    padding-top: 20px;
+
+    h2 {
+        font-size: 40px;
+        text-align: center;
+        color: $blue-dark;
+        padding: 20px;
+        border-bottom: 1px solid $blue-cern;
+    }
+
+    h3 {
+        margin-top: 20px;
+        padding: 10px;
+        text-align: center;
+        color: $blue-color;
+    }
+
+    blockquote {
+        border: None;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    ul {
+        margin-left: 60px;
+        text-align: left;
+    }
+}
