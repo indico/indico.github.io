@@ -7,7 +7,7 @@ features:
   - id: 1
     name: Manage events of different complexity
     text: |
-        Indico provides different feature sets according to your needs. You will never need to bring with that USB flash drive ever again, or email yourself PPT files. Your participants will be able to easily find what is going on in your organization and access presentation materials from anywhere.
+        In Indico you can organise all kinds of events. It provides workflows that let you easily:
     items:
       - title: Organize seminars
         image: lecture.png
@@ -73,18 +73,7 @@ features:
   - id: 6
     name: Integration with Collaborative Tools
     text: |
-        Web-driven meetings are great, but video-conferencing makes them even more productive. Indico seamlessly integrates with Vidyo, allowing participants to connect with a single click. There is also built-in support for Jabber/XMPP chat rooms that can be associated to events.
-    items:
-      - title: Registration
-        image: lecture.png
-      - title: Abstract submission
-        image: meeting.png
-      - title: Papers
-        image: conference.png
-  - id: 7
-    name: Powerful REST API
-    text: |
-        Indico won’t keep your data hostage. We believe in open collaborative platforms, and this is why we provide a simple and powerful REST API that allows for easy retrieval of information. The API is in constant expansion. You can also export your event data from your favorite scheduling/calendaring app, through iCal feeds.
+        Web-driven meetings are great, but video-conferencing makes them even more productive. Indico seamlessly integrates with Vidyo, allowing participants to connect with a single click. 
     items:
       - title: Registration
         image: lecture.png
