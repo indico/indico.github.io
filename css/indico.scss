@@ -3,13 +3,14 @@
 ---
 
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 // Variables
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
+$quicksand: Quicksand, sans-serif;
 $lora: Noto Sans, sans-serif;
 $maven:            Maven Pro;
 $source-code:      Source Code Pro;
@@ -947,8 +948,6 @@ a.no-decoration {
  * Features page
  */
 .features-section-listed {
-    margin-top: 40px;
-
     .section-content {
         padding-top: calc(8 * #{$spacing-unit});
 
@@ -972,21 +971,17 @@ a.no-decoration {
     .feature-row {
         margin-bottom: calc(3 * #{$spacing-unit});
         text-align: center;
+        margin-top: 60px;
 
         .description {
             flex-direction: column;
             align-items: flex-start;
-            font-family: $lora;
+            font-family: $quicksand;
             padding: 5px 60px;
 
             h2 {
                 font-weight: bold;
-                color: $blue-dark;
                 font-size: 28px;
-
-                @media(min-width: $md) {
-                    margin-top: 0;
-                }
             }
 
             p {
@@ -995,25 +990,22 @@ a.no-decoration {
                 line-height: 24px;
             }
 
-            .options-list {
-                font-size: 16px;
-                font-weight: bold;
-                color: $blue-color;
-                line-height: 35px;
+            .light {
+                color: lighten($blue-cern, 20%);
+            }
 
-                .options-list-item {
-                    cursor: pointer;
+            .standard {
+                color: $blue-color-light;
+            }
 
-                    :hover{
-                        color: darken($blue-color, 20%);
-                    }
-                }
+            .dark {
+                color: $blue-cern-dark;
             }
         }
 
         img {
-            box-shadow: 1px 1px 2px 2px #ccc;
-            max-height: 600px;
+            box-shadow: 2px 2px 5px 1px rgba(209,201,209,1);
+            max-height: 500px;
         }
 
         @media(min-width: $md) {
