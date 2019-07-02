@@ -17,14 +17,15 @@ layout: default
 </section>
 <section class="features-section-listed container-fluid">
     <div class="row justify-content-center">
-        <div class="col-md-7 col-12 block-center">
+        <div class="col-md-8 col-12 block-center">
             {%- for feature in page.features -%}
                 <div class="row justify-content-center feature-row">
                     <div class="col-md-7 col-12">
+                        <img id="{{ feature.id }}" src="{{ site.baseurl }}/img/features/{{ feature.image }}">
                     </div>
                     <div class="col-md-5 col-12 {% cycle "", "order-md-first" %} d-flex align-items-center description">
                         <div>
-                            <h2>{{ feature.name }}</h2>
+                            <h2 class={% cycle "light", "dark", "standard" %}>{{ feature.name }}</h2>
                             <p>{{ feature.text }}</p>
                         </div>
                     </div>

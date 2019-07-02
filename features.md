@@ -8,6 +8,7 @@ features:
     name: Events of different complexity
     text: |
         In Indico you can organize all kinds of events. It provides workflows that let you easily manage small seminars and meetings as well as more complicated workshops and conferences.
+    image: 01.png
   - id: 2
     name: Full conference lifecycle
     text: |
