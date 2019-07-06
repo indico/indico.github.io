@@ -19,13 +19,38 @@ layout: default
     <div class="row justify-content-center">
         <div class="col-md-8 col-12 block-center">
             {%- for feature in page.features -%}
-                <div class="row justify-content-center feature-row">
+                <div class="row justify-content-center feature-row {% cycle "green", "dark", "standard" %}">
                     <div class="col-md-7 col-12">
-                        <img id="{{ feature.id }}" src="{{ site.baseurl }}/img/features/{{ feature.image }}">
+                        <div id="carousel-feature-{{ feature.id }}" class="carousel slide carousel-feature" data-ride="carousel" data-interval="false">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                            {% assign num_images = feature.images | size %}
+                            {% for n in (1..num_images) %}
+                                <li data-target="#carousel-feature-{{ feature.id }}" data-slide-to="{{ n | minus: 1 }}"
+                                    {% if n == 1 %}class="active"{% endif %}>
+                                </li>
+                            {% endfor %}
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                {% for image in feature.images %}
+                                    <div class="carousel-item feature-carousel-item {% if forloop.first %}active{% endif %}">
+                                        <img src="{{ image | prepend: '/img/features/' | relative_url }}">
+                                    </div>
+                                {% endfor %}
+                            </div>
+                            <!-- Controls -->
+                            <a class="carousel-control-prev" href="#carousel-feature-{{ feature.id }}" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-feature-{{ feature.id }}" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-md-5 col-12 {% cycle "", "order-md-first" %} d-flex align-items-center description">
                         <div>
-                            <h2 class={% cycle "light", "dark", "standard" %}>{{ feature.name }}</h2>
+                            <h2>{{ feature.name }}</h2>
                             <p>{{ feature.text }}</p>
                         </div>
                     </div>

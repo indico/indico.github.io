@@ -43,6 +43,7 @@ $grey-color-light:  lighten($grey-color, 40%);
 $grey-color-dark:   darken($grey-color, 25%);
 $gray-white:        #F6F8F9;
 $gray-white-dark:   #E3E5E6;
+$turquoise: #2f9c8d;
 
 $on-palm:   600px;
 $on-laptop: 800px;
@@ -948,6 +949,10 @@ a.no-decoration {
  * Features page
  */
 .features-section-listed {
+    margin-top: 30px;
+    background-image: url('../img/features_background.png');
+    background-repeat: no-repeat;
+
     .section-content {
         padding-top: calc(8 * #{$spacing-unit});
 
@@ -974,6 +979,7 @@ a.no-decoration {
         margin-top: 60px;
 
         .description {
+            margin-top: 20px;
             flex-direction: column;
             align-items: flex-start;
             font-family: $quicksand;
@@ -989,28 +995,65 @@ a.no-decoration {
                 color: $grey-color;
                 line-height: 24px;
             }
-
-            .light {
-                color: lighten($blue-cern, 20%);
-            }
-
-            .standard {
-                color: $blue-color-light;
-            }
-
-            .dark {
-                color: $blue-cern-dark;
-            }
         }
 
-        img {
-            box-shadow: 2px 2px 5px 1px rgba(209,201,209,1);
-            max-height: 500px;
+        .carousel-feature {
+
+            .item {
+                min-height: calc(12 * #{$spacing-unit});
+        
+                @media(min-width: $sm) {
+                    min-height: calc(10 * #{$spacing-unit});
+                }
+            }
+        
+            .carousel-control {
+                background: none;
+                span {
+                    position: absolute;
+                    top: 20%;
+                    right: 20%;
+                }
+            }
+            
+            .carousel-inner {
+                box-shadow: 1px 1px 2px 1px lighten($blue-gray-light, 30%);
+                max-height: 500px;
+            }
+        
+            .carousel-indicators {
+                bottom: -$spacing-unit;
+                margin-bottom: 0;
+            }
         }
 
         @media(min-width: $md) {
             text-align: left;
-        }
+        }     
+    }
+
+    .green {
+        color: $turquoise;
+    }
+
+    .green .carousel-indicators li {
+        background-color: $turquoise;
+    }
+
+    .standard {
+        color: $blue-color-light;
+    }
+
+    .standard .carousel-indicators li {
+        background-color: $blue-color-light;
+    }
+
+    .dark {
+        color: $blue-cern-dark;
+    }
+
+    .dark .carousel-indicators li {
+        background-color: $blue-cern-dark;
     }
 }
 
