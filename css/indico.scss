@@ -965,13 +965,6 @@ a.no-decoration {
         }
     }
 
-    .features-list > .feature-row:nth-child(even) img {
-        float: none;
-
-        @media(min-width: $md) {
-            float: right;
-        }
-    }
 
     .feature-row {
         margin-bottom: calc(3 * #{$spacing-unit});
@@ -998,23 +991,8 @@ a.no-decoration {
         }
 
         .carousel-feature {
-
-            .item {
-                min-height: calc(12 * #{$spacing-unit});
-        
-                @media(min-width: $sm) {
-                    min-height: calc(10 * #{$spacing-unit});
-                }
-            }
-        
-            .carousel-control {
-                background: none;
-                span {
-                    position: absolute;
-                    top: 20%;
-                    right: 20%;
-                }
-            }
+            margin-left: 25px;
+            margin-right: 25px;
             
             .carousel-inner {
                 box-shadow: 1px 1px 2px 1px lighten($blue-gray-light, 30%);
@@ -1024,6 +1002,20 @@ a.no-decoration {
             .carousel-indicators {
                 bottom: -$spacing-unit;
                 margin-bottom: 0;
+            }
+
+            .carousel-control-prev {
+                margin-left: -15%;
+            }
+
+            .carousel-control-next {
+                margin-right: -15%;
+            }
+
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                opacity: 0.2;
+                filter: brightness(0.2);
             }
         }
 
@@ -1040,6 +1032,14 @@ a.no-decoration {
         background-color: $turquoise;
     }
 
+    .green .carousel-control-prev-icon {
+        color: $turquoise;
+    }
+
+    .green .carousel-control-next-icon {
+        color: $turquoise;
+    }
+
     .standard {
         color: $blue-color-light;
     }
@@ -1048,12 +1048,28 @@ a.no-decoration {
         background-color: $blue-color-light;
     }
 
+    .standard .carousel-control-prev-icon {
+        color: $blue-color-light;
+    }
+
+    .standard .carousel-control-next-icon {
+        color: $blue-color-light;
+    }
+
     .dark {
         color: $blue-cern-dark;
     }
 
     .dark .carousel-indicators li {
         background-color: $blue-cern-dark;
+    }
+
+    .dark .carousel-control-prev-icon {
+        color:  $blue-cern-dark;
+    }
+
+    .dark .carousel-control-next-icon {
+        color:  $blue-cern-dark;
     }
 }
 

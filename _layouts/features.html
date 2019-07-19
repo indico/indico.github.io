@@ -34,16 +34,16 @@ layout: default
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
                                 {% for image in feature.images %}
-                                    <div class="carousel-item feature-carousel-item {% if forloop.first %}active{% endif %}">
+                                    <div class="carousel-item {% if forloop.first %}active{% endif %}">
                                         <img src="{{ image | prepend: '/img/features/' | relative_url }}">
                                     </div>
                                 {% endfor %}
                             </div>
                             <!-- Controls -->
-                            <a class="carousel-control-prev" href="#carousel-feature-{{ feature.id }}" role="button" data-slide="prev">
+                            <a class="carousel-control carousel-control-prev" href="#carousel-feature-{{ feature.id }}" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon"></span>
                             </a>
-                            <a class="carousel-control-next" href="#carousel-feature-{{ feature.id }}" role="button" data-slide="next">
+                            <a class="carousel-control carousel-control-next" href="#carousel-feature-{{ feature.id }}" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon"></span>
                             </a>
                         </div>
