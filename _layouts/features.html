@@ -17,10 +17,10 @@ layout: default
 </section>
 <section class="features-section-listed container-fluid">
     <div class="row justify-content-center">
-        <div class="col-md-8 col-12 block-center">
+        <div class="col-sm-8 col-12 block-center">
             {%- for feature in page.features -%}
                 <div class="row justify-content-center feature-row {% cycle "green", "dark", "standard" %}">
-                    <div class="col-md-7 col-12">
+                    <div class="col-lg-7 col-12">
                         <div id="carousel-feature-{{ feature.id }}" class="carousel slide carousel-feature" data-ride="carousel" data-interval="false">
                             <!-- Indicators -->
                             <ol class="carousel-indicators">
@@ -48,7 +48,7 @@ layout: default
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-5 col-12 {% cycle "", "order-md-first" %} d-flex align-items-center description">
+                    <div class="col-lg-5 col-12 {% cycle "", "order-lg-first" %} d-flex align-items-center description">
                         <div>
                             <h2>{{ feature.name }}</h2>
                             <p>{{ feature.text }}</p>

@@ -991,12 +991,13 @@ a.no-decoration {
         }
 
         .carousel-feature {
-            margin-left: 25px;
-            margin-right: 25px;
+            margin-left: 5%;
+            margin-right: 5%;
+            max-height: 500px;
+            max-width: 700px;
             
             .carousel-inner {
                 box-shadow: 1px 1px 2px 1px lighten($blue-gray-light, 30%);
-                max-height: 500px;
             }
         
             .carousel-indicators {
@@ -1004,12 +1005,16 @@ a.no-decoration {
                 margin-bottom: 0;
             }
 
+            .carousel-control-prev, .carousel-control-next {
+                transition: none;
+            }
+
             .carousel-control-prev {
-                margin-left: -15%;
+                margin-left: -12%;
             }
 
             .carousel-control-next {
-                margin-right: -15%;
+                margin-right: -12%;
             }
 
             .carousel-control-prev-icon,
@@ -1019,7 +1024,7 @@ a.no-decoration {
             }
         }
 
-        @media(min-width: $md) {
+        @media(min-width: $lg) {
             text-align: left;
         }     
     }
