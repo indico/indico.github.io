@@ -35,7 +35,7 @@ layout: default
                             <div class="carousel-inner">
                                 {% for image in feature.images %}
                                     <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                                        <img src="{{ image | prepend: '/img/features/' | relative_url }}">
+                                        <img data-toggle="lightbox" data-gallery="{{ feature.name }}" data-remote="{{ image | prepend: '/img/features/' | relative_url }}" src="{{ image | prepend: '/img/features/' | relative_url }}">
                                     </div>
                                 {% endfor %}
                             </div>
