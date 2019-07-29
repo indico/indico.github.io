@@ -540,7 +540,7 @@ a.no-decoration {
 
 .hero-features {
     height: 350px;
-    background-image: url("../img/feature_hero3.png");
+    background-image: url("../img/features.png");
 }
 
 .hero-getting-started {
@@ -566,6 +566,11 @@ a.no-decoration {
 .hero-roadmap {
     height: 350px;
     background-image: url("../img/roadmap.png");
+}
+
+.hero-resources {
+    height: 350px;
+    background-image: url("../img/resources.png");
 }
 
 .hero-section-fader {
@@ -995,11 +1000,11 @@ a.no-decoration {
             margin-right: 5%;
             max-height: 500px;
             max-width: 700px;
-            
+
             .carousel-inner {
                 box-shadow: 1px 1px 2px 1px lighten($blue-gray-light, 30%);
             }
-        
+
             .carousel-indicators {
                 bottom: -$spacing-unit;
                 margin-bottom: 0;
@@ -1026,7 +1031,7 @@ a.no-decoration {
 
         @media(min-width: $lg) {
             text-align: left;
-        }     
+        }
     }
 
     .green {
@@ -1380,5 +1385,65 @@ a.no-decoration {
     ul {
         margin-left: 60px;
         text-align: left;
+    }
+}
+
+// Resources
+
+.resources {
+    justify-content: center;
+    margin-top: 40px;
+
+    .resource-card {
+        background: white;
+        box-shadow: 1px 1px 2px 1px #cbd8de;
+        // border: 1px solid darken($gray-white, 10%);
+        margin-bottom: 2.25em;
+        position: relative;
+        display: block;
+        height: 150px;
+
+        .resource-card-content {
+            padding: 20px;
+
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                max-height: 50px;
+                max-width: 70px;
+            }
+
+            h4 {
+                margin-bottom: 10px;
+                color: $blue-dark;
+            }
+
+            p {
+                color: gray;
+            }
+        }
+    }
+
+    .resource-card:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        right: 0;
+        bottom: 0;
+        height: 1.5px;
+        background: linear-gradient(to right, #0054b5, #3dd8ff);
+        transition: width .250s ease-in-out;
+    }
+
+    .resource-card:hover::after {
+        width: 100%;
+        left: 0;
+        background: linear-gradient(to right, #0054b5, #3dd8ff);
+    }
+
+    .related-libraries {
+        text-align: center;
+        margin: 20px;
     }
 }
