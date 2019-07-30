@@ -1390,11 +1390,9 @@ a.no-decoration {
     .resource-card {
         background: white;
         box-shadow: 1px 1px 2px 1px #cbd8de;
-        // border: 1px solid darken($gray-white, 10%);
         margin-bottom: 2.25em;
         position: relative;
         display: block;
-        height: 150px;
 
         .resource-card-content {
             padding: 20px;
@@ -1404,7 +1402,7 @@ a.no-decoration {
                 margin-left: auto;
                 margin-right: auto;
                 max-height: 50px;
-                max-width: 70px;
+                max-width: 60px;
             }
 
             h4 {
@@ -1439,5 +1437,11 @@ a.no-decoration {
         text-align: center;
         margin: 20px;
         color: $blue-color;
+    }
+
+    .related-libraries-summary {
+        text-align: center;
+        margin: 20px;
+        color: grey;
     }
 }
