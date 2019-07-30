@@ -4,29 +4,34 @@ title: Resources
 permalink: /resources/
 weight: 20
 resources:
-  - name: GitHub page
+  - name: GitHub
     link: https://github.com/indico/indico
-    logo: github_logo.png
+    logo: github.png
     summary: Visit our GitHub project site. You can report issues there.
-  - name: Indico forum
+  - name: Community forum
     link: https://talk.getindico.io
-    logo: discourse_logo.png
-    summary: Join many of Indico administratos on our forum to seek advice, discuss your development ideas or just say hi!
+    logo: discourse.png
+    summary: Join other Indico administrators on our forum to seek advice or discuss your ideas
   - name: Getting started
     link: https://docs.getindico.io
-    logo: indico_logo.png
-    summary: Learn how to set up your own Indico instance or discover how to use Indico API
+    logo: indico.png
+    summary: Learn how to set up your own Indico instance or discover how to use the Indico API
   - name: User's guide
     link: https://learn.getindico.io
-    logo: indico_logo.png
+    logo: indico.png
     summary: Discover all Indico features with video walkthroughs and tutorials
   - name: Indico plugins
     link: https://github.com/indico/indico-plugins
-    logo: github_logo.png
-    summary: Study available Indico plugins providing additional functionality like teleconferencing or processing payments
+    logo: github.png
+    summary: Study available Indico plugins providing additional functionality like videoconferencing
 related_libraries:
   - name: Flask Multipass
     link: https://flask-multipass.readthedocs.io/
-    logo: multipass_logo.png
-    summary: Created by Indico developers library allowing to provide different authentication systems in Flask applications
+    logo: multipass.png
+    summary: Use multiple authentication systems in your Flask application
+  - name: Flask PluginEngine
+    link: https://flask-pluginengine.readthedocs.io/
+    logo: pluginengine.png
+    summary: Define different plugins in your Flask applications
+
 ---
