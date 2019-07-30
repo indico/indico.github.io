@@ -1427,10 +1427,18 @@ a.no-decoration {
         transition: width .250s ease-in-out;
     }
 
-    .resource-card:hover::after {
-        width: 100%;
-        left: 0;
-        background: linear-gradient(to right, #0054b5, #3dd8ff);
+    @media(hover: hover) {
+        .resource-card:hover::after {
+            width: 100%;
+            left: 0;
+            background: linear-gradient(to right, #0054b5, #3dd8ff);
+        }
+    }
+
+    @media (hover: none) {
+        a:hover {
+            background: inherit;
+        }
     }
 
     .related-libraries {
