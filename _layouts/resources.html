@@ -18,7 +18,7 @@ layout: default
         <div class="row">
             {%- for resource in page.resources -%}
                 <div class="col-md-6">
-                    <a class="resource-card" href="{{ resource.link }}" target="_blank">
+                    <a class="resource-card" href="{{ resource.link }}" target="_blank" rel="noopener noreferrer">
                         <div class="resource-card-content">
                             <div class="row justify-content-center">
                                 <div class="col-3">
@@ -35,6 +35,7 @@ layout: default
             {%- endfor -%}
             <div class="col-12">
                 <h3 class="related-libraries">Related libraries</h3>
+                <div class="related-libraries-summary">Provided by Indico developers</div>
             </div>
             {%- for resource in page.related_libraries -%}
                 <div class="col-md-6">
