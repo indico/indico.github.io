@@ -11,10 +11,10 @@ weight: 20
 > *Fully funded by CERN.*
 
 * [New Room Booking UI](https://getindico.io/indico/update/release/milestone/2019/02/22/indico-2-2-news.html)
-- And better integration with Event module
+    - And better integration with Event module
 * New event log interface;
 * New Technologies: Webpack, ES6, React, Redux
-- starting process towards gradually retiring jQuery and legacy JS;
+    - starting process towards gradually retiring jQuery and legacy JS;
 
 ### **Indico 2.3** [⚒](https://github.com/indico/indico/projects/3)
 
@@ -22,23 +22,24 @@ weight: 20
 > Some contributions from IEEE.*
 
 * **Abstract Reviewing** improvements (e.g. invitation/confirmation workflows)
-- *incl. a couple sponsored by IEEE* (e.g. [3346](https://github.com/indico/indico/issues/3346))
+    - *incl. a couple sponsored by IEEE* (e.g. [3346](https://github.com/indico/indico/issues/3346))
 * **Paper Reviewing** improvements (webhook-based integration with external workflows)
 * [**Category-linked user groups**](https://github.com/indico/indico/issues/3040) (*sponsored by IEEE*)
 * **Technology**:
-- allowing our custom made CSS co-exist with SemanticUI
-- starting process towards gradually retiring custom CSS (focusing improvements in our SemanticUI theme)
+    - allowing our custom made CSS co-exist with SemanticUI
+    - starting process towards gradually retiring custom CSS (focusing improvements in our SemanticUI theme)
 
 ### PoC/Sprints 🧬🏃‍♀️
-* [New standalone solution for **Search**](https://talk.getindico.io/t/search-plugin-development/744) (*FNAL + BNL*)
-- Plus new Search UI (*CERN*, end of Summer)
-* [Webhooks for notifications](https://github.com/indico/indico/pull/3944) (compatible with CERN Push Notifications);
-* Meeting scheduling tool (similar to Doodle, *CERN*);
-* [Better registration statistics](https://github.com/indico/indico/issues/3341) (*CERN + IEEE*);
+ * [New standalone solution for **Search**](https://talk.getindico.io/t/search-plugin-development/744) (*FNAL + BNL*)
+   - Plus new Search UI (*CERN*, end of Summer)
+ * [Webhooks for notifications](https://github.com/indico/indico/pull/3944) (compatible with CERN Push Notifications);
+ * Meeting scheduling tool (similar to Doodle, *CERN*);
+ * [Better registration statistics](https://github.com/indico/indico/issues/3341) (*CERN + IEEE*);
 
 ### CERN-specific
-* CERN Access Plugin - registration of license plates;
+ * CERN Access Plugin - registration of license plates;
 
+---
 ## 2020
 
 ### Indico 3
@@ -50,10 +51,10 @@ weight: 20
 
 * Unlisted events (not connected to any category) (~Mar 2020);
 * Indico as the missing piece in Groupware:
-- Improved home page with dashboard;
-- Layered view based on favourite categories/events;
-- "Stub events" with no date;
-- Easier event creation/invite workflow;
+    - Improved home page with dashboard;
+    - Layered view based on favourite categories/events;
+    - "Stub events" with no date;
+    - Easier event creation/invite workflow;
 * CalDAV bridge;
 * Lightweight registrations (~Sep 2020);
 
@@ -63,6 +64,7 @@ We are trying as much as possible to find ways of solving these pending issues i
 
 * [Tools to assist in GDPR compliance](https://github.com/indico/indico/issues/1415);
 
+---
 ## Future
 
 * User Interfaces
