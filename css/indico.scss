@@ -1094,7 +1094,7 @@ a.no-decoration {
         height: 200px;
         display: block;
         border: 1px solid $brand-color;
-        border-radius: 5px;
+        border-radius: 10px;
         background: rgba(0, 0, 0, 0.3);
         display: flex;
         flex-direction: column;
@@ -1400,77 +1400,76 @@ a.no-decoration {
     justify-content: center;
     margin-top: 40px;
 
-    .resource-card {
-        background: white;
-        box-shadow: 1px 1px 2px 1px #cbd8de;
-        margin-bottom: 2.25em;
-        position: relative;
-        display: block;
-        padding: 20px;
-        border-radius: 5px;
+    .resources-section {
+        margin-top: 20px;
+        width: 100%;
 
-        img {
+        .section-title {
+            text-align: center;
+            margin-bottom: 20px;
+            color: $blue-color;
+        }
+
+        .resource-card {
+            background: white;
+            box-shadow: 1px 1px 2px 1px #cbd8de;
+            margin-bottom: 2.25em;
+            position: relative;
             display: block;
-            margin-left: auto;
-            margin-right: auto;
-            max-height: 50px;
-            max-width: 60px;
-        }
+            padding: 20px;
+            border-radius: 5px;
 
-        h4 {
-            margin-bottom: 10px;
-            color: $blue-dark;
-        }
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                max-height: 50px;
+                max-width: 60px;
+            }
 
-        p {
-            color: gray;
-        }
-    }
-
-    .resource-card:after {
-        content: '';
-        position: absolute;
-        width: 0;
-        right: 0;
-        bottom: 0;
-        height: 2px;
-        background: linear-gradient(to right, #0054b5, #3dd8ff);
-        transition: width .250s ease-in-out;
-    }
-
-    @media(hover: hover) {
-        .resource-card:hover {
             h4 {
-                color: darken($blue-dark, 8%);
+                margin-bottom: 10px;
+                color: $blue-dark;
             }
 
             p {
-                color: darken(gray, 8%);
+                color: gray;
             }
         }
 
-        .resource-card:hover::after {
-            width: 100%;
-            left: 0;
+        .resource-card:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            right: 0;
+            bottom: 0;
+            height: 2px;
             background: linear-gradient(to right, #0054b5, #3dd8ff);
+            transition: width .250s ease-in-out;
         }
-    }
 
-    @media (hover: none) {
-        a:hover {
-            background: inherit;
+        @media(hover: hover) {
+            .resource-card:hover {
+                h4 {
+                    color: darken($blue-dark, 8%);
+                }
+
+                p {
+                    color: darken(gray, 8%);
+                }
+            }
+
+            .resource-card:hover::after {
+                width: 100%;
+                left: 0;
+                background: linear-gradient(to right, #0054b5, #3dd8ff);
+            }
         }
-    }
 
-    .related-libraries {
-        text-align: center;
-        margin: 20px;
-        color: $blue-color;
-    }
-
-    .related-libraries-summary {
-        text-align: center;
-        margin: 20px;
-        color: grey;
+        @media (hover: none) {
+            a:hover {
+                background: inherit;
+            }
+        }
     }
 }
