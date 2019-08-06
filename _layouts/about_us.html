@@ -16,60 +16,24 @@ layout: default
             <div class="row about-team-wrapper">
                 <div class="about-team-grid col-md-10 col-11 block-center-abs">
                     <div class="row">
-                        <div class="team-member team-member-dev col-md-4 col-sm-6 col-12 team-member-project-manager">
-                            <div class="team-member-note">
-                                <div class="team-member-name">Pedro Ferreira</div>
-                                <div class="team-member-pos">Project Manager</div>
+                        {%- for member in page.current_members -%}
+                            <div class="team-member team-member-dev col-md-4 col-sm-6 col-12" style="background-image: url({{ site.baseurl }}/img/people/{{ member.photo }})">
+                                <div class="team-member-note">
+                                    <div class="team-member-name">{{ member.name }}</div>
+                                    <div>{{ member.position }}</div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="team-member team-member-dev col-md-4 col-sm-6 col-12 team-member-developer-1">
-                            <div class="team-member-note">
-                                <div class="team-member-name">Adrian Mönnich</div>
-                                <div class="team-member-pos">Developer</div>
-                            </div>
-                        </div>
-                        <div class="team-member team-member-dev col-md-4 col-sm-6 col-12 team-member-developer-2">
-                            <div class="team-member-note">
-                                <div class="team-member-name">Marco Vidal</div>
-                                <div class="team-member-pos">Developer</div>
-                            </div>
-                        </div>
-                        <div class="team-member team-member-dev col-md-4 col-sm-6 col-12 col-centered team-member-developer-3">
-                            <div class="team-member-note">
-                                <div class="team-member-name">Michał Kołodziejski</div>
-                                <div class="team-member-pos">Developer</div>
-                            </div>
-                        </div>
-                        <div class="team-member team-member-dev col-md-4 col-sm-6 col-12 col-centered team-member-developer-4">
-                            <div class="team-member-note">
-                                <div class="team-member-name">Natalia Juszka</div>
-                                <div class="team-member-pos">Developer</div>
-                            </div>
-                        </div>
-                        <div class="team-member team-member-dev col-md-4 col-sm-6 col-12 col-centered team-member-developer-5">
-                            <div class="team-member-note">
-                                <div class="team-member-name">Panagiota Poulopoulou</div>
-                                <div class="team-member-pos">Developer</div>
-                            </div>
-                        </div>
+                        {%- endfor -%}
                     </div>
-                    <div class="row team-leaders">
-                        <div class="col-md-6 col-sm-9 col-8 block-center">
-                            <div class="row">
-                                <div class="team-member team-member-leader team-member-leader-group col-md-6 col-sm-6 col-12">
-                                    <div class="team-member-note">
-                                        <div class="team-member-name">Tim Smith</div>
-                                        <div class="team-member-pos">Group Leader, IT-CDA</div>
-                                    </div>
-                                </div>
-                                <div class="team-member team-member-leader team-member-leader-section col-md-6 col-sm-6 col-12">
-                                    <div class="team-member-note">
-                                        <div class="team-member-name">Thomas Baron</div>
-                                        <div class="team-member-pos">Section Leader, IT-CDA-IC</div>
-                                    </div>
+                    <div class="row team-leaders justify-content-center">
+                        {%- for member in page.managers -%}
+                            <div class="team-member team-member-leader col-md-3 col-sm-6 col-12" style="background-image: url({{ site.baseurl }}/img/people/{{ member.photo }})">
+                                <div class="team-member-note">
+                                    <div class="team-member-name">{{ member.name }}</div>
+                                    <div>{{ member.position }}</div>
                                 </div>
                             </div>
-                        </div>
+                        {%- endfor -%}
                     </div>
                 </div>
             </div>
@@ -85,38 +49,12 @@ layout: default
                         <div class="contr-list text-center">
                             <h2 class="contr-list-header">LONG-TIME CONTRIBUTORS</h2>
                             <ul class="contr-list-names">
-                                <li>
-                                    <span class="contr-list-names-name">Ilias Trichopoulos</span>
-                                    <span class="contr-list-names-date">2014-2017</span>
-                                </li>
-                                <li>
-                                    <span class="contr-list-names-name">Alejandro Avilés</span>
-                                    <span class="contr-list-names-date">2013-2017</span>
-                                </li>
-                                <li>
-                                    <span class="contr-list-names-name">José Benito Gonzalez</span>
-                                    <span class="contr-list-names-date">2003-2006, Project Manager 2007-2014</span>
-                                </li>
-                                <li>
-                                    <span class="contr-list-names-name">Alberto Resco Perez</span>
-                                    <span class="contr-list-names-date">2011-2014</span>
-                                </li>
-                                <li>
-                                    <span class="contr-list-names-name">David Bourillot</span>
-                                    <span class="contr-list-names-date">2004-2008</span>
-                                </li>
-                                <li>
-                                    <span class="contr-list-names-name">Jean-Yves Le Meur</span>
-                                    <span class="contr-list-names-date">2002-2004</span>
-                                </li>
-                                <li>
-                                    <span class="contr-list-names-name">Hector Sanchez</span>
-                                    <span class="contr-list-names-date">2002-2004</span>
-                                </li>
-                                <li>
-                                    <span class="contr-list-names-name">Eric Simon</span>
-                                    <span class="contr-list-names-date">2002-2004</span>
-                                </li>
+                                {%- for member in page.long_time_contributors -%}
+                                    <li>
+                                        <span>{{ member.name }}</span>
+                                        <span class="contr-list-names-date">{{ member.dates }}</span>
+                                    </li>
+                                {%- endfor -%}
                             </ul>
                         </div>
                     </div>
@@ -126,202 +64,24 @@ layout: default
                         <div class="contr-list">
                             <h2 class="contr-list-header">CONTRIBUTORS</h2>
                             <div class="row">
-                                <div class="col-sm-6">
-                                    <ul class="contr-list-names">
-                                        <li>
-                                            <span class="contr-list-names-name">Ergys Dona</span>
-                                            <span class="contr-list-names-date">2018</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">David Andreev</span>
-                                            <span class="contr-list-names-date">2016-2017</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Florian Vessaz</span>
-                                            <span class="contr-list-names-date">2016</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Jacques Dafflon</span>
-                                            <span class="contr-list-names-date">2014-2015</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Tommaso Papini</span>
-                                            <span class="contr-list-names-date">2013-2014</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Francesca Martelli</span>
-                                            <span class="contr-list-names-date">2014</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Marcel Balle</span>
-                                            <span class="contr-list-names-date">2014</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Bernard Kolobara</span>
-                                            <span class="contr-list-names-date">2013</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Ferhat Elmas</span>
-                                            <span class="contr-list-names-date">2013</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Iason Andriopoulos</span>
-                                            <span class="contr-list-names-date">2013</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Pedro Gaudencio</span>
-                                            <span class="contr-list-names-date">2013</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Jakub Trzaskoma</span>
-                                            <span class="contr-list-names-date">2012-2013</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Ana Clara Lacerda de Siqueira</span>
-                                            <span class="contr-list-names-date">2012</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Christophe Wachter</span>
-                                            <span class="contr-list-names-date">2012</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Claude Bossy</span>
-                                            <span class="contr-list-names-date">2012</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Cyril Pecoraro</span>
-                                            <span class="contr-list-names-date">2012</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Matt Pugh</span>
-                                            <span class="contr-list-names-date">2011-2012</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Abdul Hafeth Salah</span>
-                                            <span class="contr-list-names-date">2011</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Anamaria Costache</span>
-                                            <span class="contr-list-names-date">2011</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Giuseppe Certo</span>
-                                            <span class="contr-list-names-date">2011</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Jurand Nogiec</span>
-                                            <span class="contr-list-names-date">2011</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Marius Damarackas</span>
-                                            <span class="contr-list-names-date">2011</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Stefan Petrovski</span>
-                                            <span class="contr-list-names-date">2011</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Leszek Syroka</span>
-                                            <span class="contr-list-names-date">2010-2011</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-6">
-                                    <ul class="contr-list-names">
-                                        <li>
-                                            <span class="contr-list-names-name">Alexis Castilla Hernández</span>
-                                            <span class="contr-list-names-date">2010-2011</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Daniel Hugo Cámpora Pérez</span>
-                                            <span class="contr-list-names-date">2010</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Davide Galimberti</span>
-                                            <span class="contr-list-names-date">2010</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Ian Rolewicz</span>
-                                            <span class="contr-list-names-date">2010</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Nikolche Mihajlovski</span>
-                                            <span class="contr-list-names-date">2010</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">David Martin Clavo</span>
-                                            <span class="contr-list-names-date">2006, 2008-2010</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Cesar Muñoz</span>
-                                            <span class="contr-list-names-date">2009-2010</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Cvetelina Angelova</span>
-                                            <span class="contr-list-names-date">2009-2010</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Erik Ragnerstam</span>
-                                            <span class="contr-list-names-date">2009</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Jeremy Nguyen Xuan</span>
-                                            <span class="contr-list-names-date">2009</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Juan Alonso</span>
-                                            <span class="contr-list-names-date">2009</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Martin Tverdal</span>
-                                            <span class="contr-list-names-date">2009</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Pascal Vogt</span>
-                                            <span class="contr-list-names-date">2008</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Pierre-Luc Hemery</span>
-                                            <span class="contr-list-names-date">2008</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Piia-Maria Sinkkonnen</span>
-                                            <span class="contr-list-names-date">2008</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Marion Albertini</span>
-                                            <span class="contr-list-names-date">2007-2008</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Alexandre Delhay</span>
-                                            <span class="contr-list-names-date">2007</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Nicolas Michel</span>
-                                            <span class="contr-list-names-date">2007</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Tomas Novotny</span>
-                                            <span class="contr-list-names-date">2007</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Piotr Wlodarek</span>
-                                            <span class="contr-list-names-date">2006-2007</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Emilio Villar Castillo</span>
-                                            <span class="contr-list-names-date">2006</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Vanessa Turney</span>
-                                            <span class="contr-list-names-date">2005</span>
-                                        </li>
-                                        <li>
-                                            <span class="contr-list-names-name">Ewa Banaszek</span>
-                                            <span class="contr-list-names-date">2005</span>
-                                        </li>
-                                    </ul>
-                                </div>
+                                {%- assign second_column_end = page.contributors | size -%}
+                                {%- assign second_column_start = second_column_end | divided_by: 2 | plus: 1 -%}
+                                {%- assign first_column_end = second_column_start | minus: 1 -%}
+                                {%- assign first_column_start = 1 -%}
+                                {%- for member in page.contributors -%}
+                                    {%- if forloop.index == first_column_start or forloop.index == second_column_start -%}
+                                        <div class="col-sm-6">
+                                            <ul class="contr-list-names">
+                                    {%- endif -%}
+                                                <li>
+                                                    <span>{{ member.name }}</span>
+                                                    <span class="contr-list-names-date">{{ member.dates }}</span>
+                                                </li>
+                                    {%- if forloop.index == first_column_end or forloop.index == second_column_end -%}
+                                            </ul>
+                                        </div>
+                                    {%- endif -%}
+                                {%- endfor -%}
                             </div>
                         </div>
                     </div>
@@ -331,18 +91,12 @@ layout: default
                         <div class="contr-list text-center">
                             <h2 class="contr-list-header">OTHER CONTRIBUTORS</h2>
                             <ul class="contr-list-names">
-                                <li>
-                                    <span class="contr-list-names-name">Jeremy Herr</span>
-                                    <span class="contr-list-names-date">2010</span>
-                                </li>
-                                <li>
-                                    <span class="contr-list-names-name">Jim Fromm</span>
-                                    <span class="contr-list-names-date">2007</span>
-                                </li>
-                                <li>
-                                    <span class="contr-list-names-name">João Fernandes</span>
-                                    <span class="contr-list-names-date">2006</span>
-                                </li>
+                                {%- for member in page.other_contributors -%}
+                                    <li>
+                                        <span>{{ member.name }}</span>
+                                        <span class="contr-list-names-date">{{ member.dates }}</span>
+                                    </li>
+                                {%- endfor -%}
                             </ul>
                         </div>
                     </div>
