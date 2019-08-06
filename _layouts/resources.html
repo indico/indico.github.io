@@ -16,43 +16,27 @@ layout: default
   <div class="row justify-content-center">
     <div class="col-11">
         <div class="row">
-            {%- for resource in page.resources -%}
-                <div class="col-md-6">
-                    <a class="resource-card" href="{{ resource.link }}" target="_blank" rel="noopener noreferrer">
-                        <div class="resource-card-content">
-                            <div class="row justify-content-center">
-                                <div class="col-3">
-                                    <img src="{{ resource.logo | prepend: '/img/logos/' | relative_url }}"></img>
-                                </div>
-                                <div class="col-9">
-                                    <h4>{{ resource.name }}</h3>
-                                    <p>{{ resource.summary }}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            {%- endfor -%}
-            <div class="col-12">
-                <h3 class="related-libraries">Related libraries</h3>
-                <div class="related-libraries-summary">Provided by Indico developers</div>
-            </div>
-            {%- for resource in page.related_libraries -%}
-                <div class="col-md-6">
-                    <a class="resource-card" href="{{ resource.link }}" target="_blank">
-                        <div class="resource-card-content">
-                            <div class="row justify-content-center">
-                                <div class="col-3">
-                                    <img src="{{ resource.logo | prepend: '/img/logos/' | relative_url }}"></img>
-                                </div>
-                                <div class="col-9">
-                                    <h4>{{ resource.name }}</h3>
-                                    <p>{{ resource.summary }}</p>
+            {%- for section in page.sections -%}
+                {%- if section.title -%}
+                    <h3 class="col-12 related-libraries">{{ section.title }}</h3>
+                {%- endif -%}
+                {%- for resource in section.resources -%}
+                    <div class="col-md-6">
+                        <a class="resource-card" href="{{ resource.link }}" target="_blank" rel="noopener noreferrer">
+                            <div class="resource-card-content">
+                                <div class="row justify-content-center">
+                                    <div class="col-3">
+                                        <img src="{{ resource.logo | prepend: '/img/logos/' | relative_url }}"></img>
+                                    </div>
+                                    <div class="col-9">
+                                        <h4>{{ resource.name }}</h3>
+                                        <p>{{ resource.summary }}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
+                {%- endfor -%}
             {%- endfor -%}
         </div>
     </div>
