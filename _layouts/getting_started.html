@@ -4,65 +4,45 @@ layout: default
 <section class="hero-section section hero-getting-started">
     <div class="hero-section-content">
         <div class="hero-spotlight container">
-            <div class="row">
-                <div class="col-md-9 col-11 block-center">
+            <div class="row justify-content-center">
+                <div class="col-md-9 col-11">
                     <div class="hero-spotlight-header hero-spotlight-header-page">
                         <h1>Getting started with Indico</h1>
                     </div>
                 </div>
             </div>
-            <div class="row options-wrapper">
-                <div class="getting-started-options col-md-9 col-12 block-center-abs">
-                    <div class="row">
-                        <div class="options-description col-12 block-center">
-                            Indico has a few easy ways to quickly get started, each one appealing to a different skill level and use-case. Read through to see what suits your particular needs.
+            <div class="row justify-content-center getting-started-options">
+                <div class="col-md-6 col-12">
+                    <a class="option-card" href="https://docs.getindico.io/en/stable/installation/">
+                        <div class="row justify-content-center">
+                            <div class="col-3">
+                                <img src="{{ site.baseurl }}/img/own_machine.png">
+                            </div>
+                            <div class="col-9">
+                                <h4>Install Indico</h4>
+                                <p>Follow installation guide to set up your own Indico instance</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row options-wrapper">
-                        <div class="option col-sm-6 col-12">
-                            <a href="#installing-indico">
-                                <div class="inner-wrapper">
-                                    <div class="row justify-content-center">
-                                        <img src="{{ site.baseurl }}/img/own_machine.png">
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12">INSTALL INDICO ON YOUR MACHINE</div>
-                                    </div>
-                                </div>
-                            </a>
+                    </a>
+                </div>
+                <div class="col-md-6 col-12">
+                    <a class="option-card" href="https://sandbox.getindico.io">
+                        <div class="row justify-content-center">
+                            <div class="col-3">
+                                <img src="{{ site.baseurl }}/img/sandbox.png">
+                            </div>
+                            <div class="col-9">
+                                <h4>Try it out</h4>
+                                <p>Discover functionalities on Indico sandbox</p>
+                            </div>
                         </div>
-                        <div class="option col-sm-6 col-12">
-                            <a href="https://sandbox.getindico.io">
-                                <div class="inner-wrapper">
-                                    <div class="row justify-content-center">
-                                        <img src="{{ site.baseurl }}/img/sandbox.png">
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12">TRY IT OUT (SANDBOX)</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="download-section">
-    <div class="section-content container">
-        <div class="row">
-            <div class="col-md-8 col-xm-12 block-center">
-                <section id="installing-indico">
-                    <h2 class="header">Installing Indico</h2>
-                    <p class="content">Installing Indico is quite simple, just follow our <a href="https://docs.getindico.io/en/latest/installation/production/" title="Production Installation guide">Installation Guide</a>!</p>
-                    <p class="content">The project is available from the <a href="https://pypi.python.org/pypi/indico" title="Indico at PyPI">Python Package Index (PyPI)</a>.</p>
-                </section>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="safety-net-section section bg-blue-light">
+<section class="safety-net-section section bg-white">
     <div class="section-content container">
         <div class="row">
             <div class="col-md-8 col-xm-12 block-center">

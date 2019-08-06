@@ -505,6 +505,10 @@ a.no-decoration {
     background-color: $blue-color-even-lighter;
 }
 
+.bg-white {
+    background-color: white;
+}
+
 .block-center {
     margin-left: auto;
     margin-right: auto;
@@ -544,7 +548,7 @@ a.no-decoration {
 }
 
 .hero-getting-started {
-    height: 620px;
+    height: 800px;
     background-image: url("../img/hero/getting_started.png");
 }
 
@@ -1079,113 +1083,58 @@ a.no-decoration {
 /**
  * Getting Started page
  */
-.options-wrapper {
-    margin-top: calc(2 * #{$spacing-unit});
-    position: relative;
-}
 
-.getting-started-options {
+ .getting-started-options {
+     font-family: $noto;
+     margin:100px 10px;
 
-    font-family: $maven;
-    font-weight: $regular;
-    padding: 30px 20px;
-    position: absolute;
-    min-height: 420px;
-    border-radius: 7px;
-    background: $blue-color-even-lighter;
-    -moz-box-shadow:    0px 1px 0px 0px rgba(25,73,97,0.05), 0px 20px 40px 0px rgba(25,73,97,0.25);
-    box-shadow:         0px 1px 0px 0px rgba(25,73,97,0.05), 0px 20px 40px 0px rgba(25,73,97,0.25);
+    .option-card {
+        margin: 30px;
+        padding: 30px;
+        height: 200px;
+        display: block;
+        border: 1px solid $brand-color;
+        border-radius: 5px;
+        background: rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
 
-    @media(min-width: $md) {
-        padding: 50px 70px;
-    }
-
-    .options-description {
-        font-size: 16px;
-        color: $blue-gray-light;
-        line-height: 24px;
-    }
-    .option {
-        font-size: 14px;
-        line-height: 18px;
-        margin-top: 20px;
-        a {
-            color: $blue-dark;
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50px;
+            height: 50px;
         }
 
-        .inner-wrapper {
-            height: 100%;
-            border-radius: 8px;
-            border: 2px solid $blue-color-lighter;
-            padding: 20px;
-            min-height: 160px;
-
-            &:hover {
-                background-color: $blue-color-lighter-2;
-                cursor: pointer;
-            }
+        h4 {
+            margin-bottom: 10px;
+            color: #00A4E4;
         }
 
-        .row {
-
-            img {
-                min-height: 48px;
-            }
-
-            div {
-                margin-top: $spacing-unit;
-            }
+        p {
+            color: darken($gray-white, 10%);
         }
     }
-}
 
-%paragraph-whatever {
-    font-size: 16px;
-    color: $blue-gray-light;
-}
-
-.download-section {
-    font-family: $maven;
-    font-weight: $regular;
-    line-height: 24px;
-    margin-top: calc(18 * #{$spacing-unit});
-
-    @media(min-width: $sm) {
-        margin-top: calc(7 * #{$spacing-unit});
-    }
-
-    section {
-
-        &:not(:first-child) {
-            margin-top: calc(3 * #{$spacing-unit});
-        }
-        h2.header {
-            font-size: 20px;
-            color: $blue-dark;
-            line-height: 25px;
+    @media(hover: hover) {
+        .option-card:hover {
+            background: rgba(0, 0, 0, 0.4);
         }
 
-        p.content {
-            font-size: 16px;
-            color: $blue-gray-light;
-        }
-
-        ol {
-            color: $blue-gray-light;
-        }
-
-        p.code {
-            background: $gray-white;
-            border: 1px solid $gray-white-dark;
-            border-radius: 7px;
-            font-family: $source-code;
-            font-weight: $regular;
-            font-size: 14px;
-            color: $blue-dark;
-            padding: 10px;
+        .resource-card:hover::after {
+            width: 100%;
+            left: 0;
+            background: linear-gradient(to right, #0054b5, #3dd8ff);
         }
     }
-}
+
+ }
+
+
 
 /**
  * Contact Us page
