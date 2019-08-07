@@ -7,8 +7,7 @@ layout: default
             <div class="row">
                 <div class="col-md-9 col-xm-12 block-center hero-spotlight">
                     <div class="hero-spotlight-header hero-spotlight-header-page">
-                        <h1>Organise meetings, workshops and conferences across the globe.
-                        </h1>
+                        <h1>Organise meetings, workshops and conferences across the globe.</h1>
                     </div>
                 </div>
             </div>
@@ -20,35 +19,36 @@ layout: default
         <div class="col-sm-8 col-12 block-center">
             {%- for feature in page.features -%}
                 <div class="row justify-content-center feature-row {% cycle "green", "dark", "standard" %}">
-                    <div class="col-lg-7 col-12">
-                        <div id="carousel-feature-{{ feature.id }}" class="carousel slide carousel-feature" data-ride="carousel" data-interval="false">
-                            <!-- Indicators -->
-                            <ol class="carousel-indicators">
-                            {% assign num_images = feature.images | size %}
-                            {% for n in (1..num_images) %}
-                                <li data-target="#carousel-feature-{{ feature.id }}" data-slide-to="{{ n | minus: 1 }}"
-                                    {% if n == 1 %}class="active"{% endif %}>
-                                </li>
-                            {% endfor %}
-                            </ol>
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner">
-                                {% for image in feature.images %}
-                                    <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                                        <img data-toggle="lightbox" data-gallery="{{ feature.name }}" data-remote="{{ image | prepend: '/img/features/' | relative_url }}" src="{{ image | prepend: '/img/features/' | relative_url }}">
-                                    </div>
-                                {% endfor %}
+                    <div class="col-xl-5 col-12">
+                        {%- assign num_images = feature.images | size -%}
+                        {%- if num_images == 1 -%}
+                            <img class="feature-screenshot" data-toggle="lightbox" data-gallery="{{ feature.name }}" data-remote="{{ feature.images.first | prepend: '/img/features/' | relative_url }}" src="{{ feature.images.first | prepend: '/img/features/' | relative_url }}"></img>
+                        {%- else -%}
+                            <div id="carousel-feature-{{ feature.id }}" class="carousel slide feature-screenshot" data-ride="carousel" data-interval="false">
+                                <ol class="carousel-indicators">
+                                    {% for n in (1..num_images) %}
+                                        <li data-target="#carousel-feature-{{ feature.id }}" data-slide-to="{{ n | minus: 1 }}"
+                                            {% if n == 1 %}class="active"{% endif %}>
+                                        </li>
+                                    {% endfor %}
+                                </ol>
+                                <div class="carousel-inner">
+                                    {% for image in feature.images %}
+                                        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                                            <img data-toggle="lightbox" data-gallery="{{ feature.name }}" data-remote="{{ image | prepend: '/img/features/' | relative_url }}" src="{{ image | prepend: '/img/features/' | relative_url }}">
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                                <a class="carousel-control carousel-control-prev" href="#carousel-feature-{{ feature.id }}" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control carousel-control-next" href="#carousel-feature-{{ feature.id }}" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
                             </div>
-                            <!-- Controls -->
-                            <a class="carousel-control carousel-control-prev" href="#carousel-feature-{{ feature.id }}" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon"></span>
-                            </a>
-                            <a class="carousel-control carousel-control-next" href="#carousel-feature-{{ feature.id }}" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon"></span>
-                            </a>
-                        </div>
+                        {%- endif -%}
                     </div>
-                    <div class="col-lg-5 col-12 {% cycle "", "order-lg-first" %} d-flex align-items-center description">
+                    <div class="col-xl-5 col-12 {% cycle "", "order-xl-first" %} d-flex align-items-center description">
                         <div>
                             <h2>{{ feature.name }}</h2>
                             <p>{{ feature.text }}</p>
