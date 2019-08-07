@@ -974,7 +974,6 @@ a.no-decoration {
         margin-top: 60px;
 
         .description {
-            margin-top: 20px;
             flex-direction: column;
             align-items: flex-start;
             font-family: $quicksand;
@@ -992,11 +991,11 @@ a.no-decoration {
             }
         }
 
-        .carousel-feature {
+        .feature-screenshot {
             margin-left: 5%;
             margin-right: 5%;
             max-height: 500px;
-            max-width: 700px;
+            margin-bottom: 40px;
 
             .carousel-inner {
                 box-shadow: 1px 1px 2px 1px lighten($blue-gray-light, 30%);
