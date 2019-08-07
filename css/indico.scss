@@ -955,7 +955,9 @@ a.no-decoration {
     background-image: url('../img/features_background.png');
     background-repeat: no-repeat;
     background-size: contain;
-
+    background-color: white;
+    background-position: center;
+     
     .section-content {
         padding-top: calc(8 * #{$spacing-unit});
 
