@@ -17,7 +17,7 @@ layout: default
                 <div class="about-team-grid col-md-10 col-11 block-center-abs">
                     <div class="row">
                         {%- for member in page.current_members -%}
-                            <div class="team-member team-member-dev col-md-4 col-sm-6 col-12" style="background-image: url({{ site.baseurl }}/img/people/{{ member.photo }})">
+                            <div class="team-member team-member-dev col-md-4 col-sm-6 col-12" style="background-image: url({{ member.photo | prepend: 'img/people/' | relative_url }})">
                                 <div class="team-member-note">
                                     <div class="team-member-name">{{ member.name }}</div>
                                     <div>{{ member.position }}</div>
@@ -27,7 +27,7 @@ layout: default
                     </div>
                     <div class="row team-leaders justify-content-center">
                         {%- for member in page.managers -%}
-                            <div class="team-member team-member-leader col-md-3 col-sm-6 col-12" style="background-image: url({{ site.baseurl }}/img/people/{{ member.photo }})">
+                            <div class="team-member team-member-leader col-md-3 col-sm-6 col-12" style="background-image: url({{ member.photo | prepend: 'img/people/' | relative_url }})">
                                 <div class="team-member-note">
                                     <div class="team-member-name">{{ member.name }}</div>
                                     <div>{{ member.position }}</div>
