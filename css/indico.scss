@@ -954,6 +954,7 @@ a.no-decoration {
     margin-top: 30px;
     background-image: url('../img/features_background.png');
     background-repeat: no-repeat;
+    background-size: contain;
 
     .section-content {
         padding-top: calc(8 * #{$spacing-unit});
