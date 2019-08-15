@@ -2,8 +2,9 @@
 # Indico specific stylesheet
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
 // Variables
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
@@ -11,9 +12,9 @@ $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $quicksand: Quicksand, sans-serif;
-$noto: Noto Sans, sans-serif;
 $maven:            Maven Pro;
-$source-code:      Source Code Pro;
+$ubuntu: 'Ubuntu', sans-serif;
+
 $regular:    400; // regular = normal
 $medium:     500;
 $light-300:  300; // MavenProLight300-Regular
@@ -586,9 +587,7 @@ a.no-decoration {
 }
 
 .hero-spotlight-1 {
-    font-family: $maven;
-    font-weight: $regular;
-    font-size: 18px;
+    font-family: $ubuntu;
     color: $blue-color-lighter;
     line-height: 25px;
 }
@@ -603,8 +602,7 @@ a.no-decoration {
 }
 
 .hero-spotlight-header h1 {
-    font-family: $maven;
-    font-weight: $light-300;
+    font-family: $ubuntu;
     -webkit-font-smoothing: antialiased;
     color: $text-color-white;
 }
@@ -772,12 +770,10 @@ a.no-decoration {
 }
 
 .features-section {
+    font-family: $ubuntu;
     background-color: $text-color-white;
 
     .features-section-title {
-        font-family: $maven;
-        font-weight: $regular;
-        font-size: 20px;
         color: $blue-dark;
         line-height: 25px;
         margin-bottom: 2em;
@@ -799,8 +795,6 @@ a.no-decoration {
         margin-top: 0px;
 
         .features-section-intro-txt {
-            font-family: $maven;
-            font-weight: $regular;
             font-size: 14px;
             color: $blue-gray-light;
             line-height: 24px;
@@ -830,8 +824,7 @@ a.no-decoration {
 
             .features-section-feature-description {
                 padding-top: 10px;
-                font-family: $maven;
-                font-weight: $regular;
+                font-family: $quicksand;
                 font-size: 16px;
                 color: $blue-dark;
                 line-height: 24px;
@@ -861,7 +854,7 @@ a.no-decoration {
     }
 
     h2 {
-        font-family: $maven;
+        font-family: $ubuntu;
         font-weight: $light-300;
         -webkit-font-smoothing: antialiased;
         font-size: 28px;
@@ -893,8 +886,7 @@ a.no-decoration {
         a {
             text-decoration: none;
             border-radius: 40px;
-            font-family: $maven;
-            font-weight: $medium;
+            font-family: $ubuntu;
             font-size: 16px;
             line-height: 25px;
             padding: 15px 60px;
@@ -957,7 +949,7 @@ a.no-decoration {
     background-size: contain;
     background-color: white;
     background-position: center;
-     
+
     .section-content {
         padding-top: calc(8 * #{$spacing-unit});
 
@@ -983,8 +975,8 @@ a.no-decoration {
             padding: 5px 60px;
 
             h2 {
-                font-weight: bold;
                 font-size: 28px;
+                font-family: $ubuntu;
             }
 
             p {
@@ -1087,7 +1079,7 @@ a.no-decoration {
  */
 
  .getting-started-options {
-     font-family: $noto;
+     font-family: $quicksand;
      margin:100px 10px;
 
     .option-card {
@@ -1095,7 +1087,7 @@ a.no-decoration {
         padding: 30px;
         height: 200px;
         display: block;
-        border: 1px solid $brand-color;
+        border: 0.5px solid $blue-gray-light;
         border-radius: 10px;
         background: rgba(0, 0, 0, 0.3);
         display: flex;
@@ -1115,6 +1107,7 @@ a.no-decoration {
         h4 {
             margin-bottom: 10px;
             color: #00A4E4;
+            font-weight: bold;
         }
 
         p {
@@ -1273,7 +1266,7 @@ a.no-decoration {
     justify-content: center;
     margin-top: 60px;
     margin-bottom: 30px;
-    font-family: $noto;
+    font-family: $quicksand;
 
     .container {
         background-color: white;
@@ -1282,8 +1275,8 @@ a.no-decoration {
 
         h2 {
             text-align: left;
+            font-family: $ubuntu;
             color: white;
-            font-weight: bold;
             font-size: 1.5em;
             border-bottom: 1px solid;
             padding: 10px 40px;
@@ -1291,10 +1284,10 @@ a.no-decoration {
         }
 
         h3 {
+            font-family: $ubuntu;
             padding: 10px;
             text-align: center;
             color: $brand-color;
-            font-weight: bold;
             margin-top: 40px;
 
             del {
@@ -1369,6 +1362,7 @@ a.no-decoration {
 .resources {
     justify-content: center;
     margin-top: 40px;
+    font-family: $quicksand;
 
     .resources-section {
         margin-top: 20px;
@@ -1376,8 +1370,9 @@ a.no-decoration {
 
         .section-title {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
             color: $blue-color;
+            font-weight: bold;
         }
 
         .resource-card {
@@ -1400,6 +1395,8 @@ a.no-decoration {
             h4 {
                 margin-bottom: 10px;
                 color: $blue-dark;
+
+                font-family: $ubuntu;
             }
 
             p {
