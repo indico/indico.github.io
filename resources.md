@@ -16,7 +16,7 @@ sections:
     - name: Getting started
       link: https://docs.getindico.io
       logo: indico.png
-      summary: Learn how to set up your own Indico instance or discover how to use the Indico API
+      summary: Learn how to set up an Indico instance or discover how to use the Indico API
     - name: User's guide
       link: https://learn.getindico.io
       logo: indico.png
