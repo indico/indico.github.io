@@ -608,8 +608,7 @@ a.no-decoration {
 }
 
 .hero-spotlight h2 {
-    font-family: $maven;
-    font-weight: $regular;
+    font-family: $ubuntu;
     font-size: 20px;
     color: $blue-color-lighter;
     line-height: 20px;
@@ -617,7 +616,6 @@ a.no-decoration {
 }
 
 .hero-spotlight-header-home h1 {
-    font-weight: $regular;
     -webkit-font-smoothing: auto;
     font-size: 36px;
     line-height: 56px;
@@ -666,7 +664,7 @@ a.no-decoration {
     margin-top: 30px;
 
     a {
-        font-family: $maven;
+        font-family: $quicksand;
         font-weight: $regular;
         font-size: 14px;
         color: $blue-color-lighter;
@@ -771,8 +769,7 @@ a.no-decoration {
 
 .features-section {
     font-family: $ubuntu;
-    background-color: $text-color-white;
-
+    background: #dae5eb;
     .features-section-title {
         color: $blue-dark;
         line-height: 25px;
@@ -790,25 +787,14 @@ a.no-decoration {
     }
 
 
-    .features-section-intro {
-        height: 350px;
-        margin-top: 0px;
-
-        .features-section-intro-txt {
-            font-size: 14px;
-            color: $blue-gray-light;
-            line-height: 24px;
-            padding: 100px 0;
-
-            @media (min-width: $sm) {
-                font-size: 18px;
-            }
-        }
-    }
-
     .features-section-list {
         background-color: $text-color-white;
         text-align: left;
+
+        .list-title {
+            color: $blue-dark;
+            text-align: center;
+        }
 
         .features-section-feature {
             min-height: 156px;
