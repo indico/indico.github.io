@@ -18,8 +18,8 @@ body {
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
-    color: $text-color;
-    background-color: $background-color;
+    color: $black;
+    background-color: $white-dark;
     -webkit-text-size-adjust: 100%;
 }
 
@@ -89,15 +89,15 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $brand;
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: darken($brand, 15%);
     }
 
     &:hover {
-        color: $text-color;
+        color: darken($brand, 30%);
         text-decoration: underline;
     }
 }
@@ -108,8 +108,8 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
+    color: $gray;
+    border-left: 4px solid $gray-light;
     padding-left: $spacing-unit / 2;
     font-size: 18px;
     letter-spacing: -1px;
@@ -128,7 +128,7 @@ blockquote {
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $grey-color-light;
+    border: 1px solid $gray-light;
     border-radius: 3px;
     background-color: #eef;
 }
@@ -198,7 +198,7 @@ pre {
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: $gray;
         }
     }
 }

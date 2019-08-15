@@ -12,39 +12,33 @@ $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $quicksand: Quicksand, sans-serif;
-$maven:            Maven Pro;
-$ubuntu: 'Ubuntu', sans-serif;
-
-$regular:    400; // regular = normal
-$medium:     500;
-$light-300:  300; // MavenProLight300-Regular
-$light-200:  200; // maven-pro-light-200
+$maven: Maven Pro;
+$ubuntu: Ubuntu, sans-serif;
 
 $spacing-unit:        30px;
-$spacing-unit-footer: 60px;
 
-$text-color:        #111;
-$background-color:  #fdfdfd;
-$brand-color:       #2a7ae2;
-$blue-color:        #2D98C8;
-$blue-color-light:  #297699;
-$blue-color-lighter:#9CD5EF;
-$blue-color-lighter-2:    #B0DDF1;
-$blue-color-even-lighter: #F0F8FC;
+// Palette
+$white:             #FFF;
+$white-dark:        #FDFDFD;
+$black:             #111;
+$brand:             #2A7AE2;
+$indico-blue:       #00A4E4;
+$blue:              #2D98C8;
+$blue-dark:         #297699;
+$blue-darker:       #1A4A61;
+$blue-light:        #9CD5EF;
+$blue-lighter:      #D8E3E8;
 $blue-cern:         #34AAE0;
 $blue-cern-dark:    #1291CF;
-$blue-dark:         #1A4A61;
-$text-color-white:  #FFFFFF;
-$green-color-bright:#7ED321;
-$green-color:       #6AB31D;
-$blue-gray-color:   #7A8F99;
+$blue-gray:         #7A8F99;
 $blue-gray-light:   #6D92A3;
-$grey-color:        #828282;
-$grey-color-light:  lighten($grey-color, 40%);
-$grey-color-dark:   darken($grey-color, 25%);
-$gray-white:        #F6F8F9;
-$gray-white-dark:   #E3E5E6;
-$turquoise: #2f9c8d;
+$turquoise:         #2F9C8D;
+$green-bright:      #7ED321;
+$green:             #6AB31D;
+$gray:              #828282;
+$gray-light:        #B5B5B5;
+$gray-dark:         #333;
+$blue-gradient:     linear-gradient(to right, #0054B5, #3DD8FF);
 
 $on-palm:   600px;
 $on-laptop: 800px;
@@ -116,26 +110,26 @@ a {
 }
 
 .site-nav {
-    background-color: $blue-dark;
-    border-bottom: 1px solid $blue-color-light;
+    background-color: $blue-darker;
+    border-bottom: 1px solid $blue-dark;
 
     .navbar-nav {
 
         li:not(:last-child) a {
             // One pixel smaller since the navbar expands at $sm - 1
             @media(max-width: $sm - 1) {
-                border-bottom: 1px solid $blue-color-light;
+                border-bottom: 1px solid $blue-dark;
             }
         }
 
         li>a {
-            color: $text-color-white;
+            color: $white;
             padding: 10px 0px;
             margin: 20px 20px;
             @extend .uppercase;
 
             &:hover {
-                color: $blue-color;
+                color: $blue;
             }
 
             @media(max-width: $sm - 1) {
@@ -144,8 +138,8 @@ a {
                 text-align: center;
 
                 &:hover {
-                    background-color: $blue-color;
-                    color: $text-color-white;
+                    background-color: $blue;
+                    color: $white;
                 }
             }
         }
@@ -169,7 +163,7 @@ a {
             float: left;
 
             > .icon-bar {
-                background-color: $blue-color;
+                background-color: $blue;
 
                 &:first-child {
                     margin-top: 2px;
@@ -180,20 +174,10 @@ a {
         &:focus, &:hover {
             background-color: transparent;
         }
-
-        .menu-label {
-            float: left;
-            font-family: $maven;
-            font-weight: $medium;
-            font-size: 14px;
-            color: #FFFFFF;
-            line-height: 17px;
-            margin-left: 10px;
-        }
     }
 
     .navbar-collapse {
-        border-top: 1px solid $blue-color-light;
+        border-top: 1px solid $blue-dark;
 
         @media(min-width: $sm) {
             border-top: 0;
@@ -202,9 +186,9 @@ a {
 
     .page-link {
         font-family: $maven;
-        font-weight: $medium;
+        font-weight: 500;
         font-size: 14px;
-        color: $text-color-white;
+        color: $white;
         line-height: 17px;
         text-decoration: none;
         background: none;
@@ -213,11 +197,11 @@ a {
 
     .page-link-current {
         @media(max-width: $sm - 1) {
-            background-color: $blue-color;
+            background-color: $blue;
         }
 
         @media(min-width: $sm) {
-            border-bottom: 3px solid $blue-color;
+            border-bottom: 3px solid $blue;
             padding-bottom: 10px;
         }
     }
@@ -233,11 +217,11 @@ a {
  */
 .site-footer {
     .footer-container {
-        padding-top: $spacing-unit-footer;
-        padding-bottom: $spacing-unit-footer;
+        padding-top: calc(2 * #{$spacing-unit});
+        padding-bottom: calc(2 * #{$spacing-unit});
     }
 
-    background-color: $blue-dark;
+    background-color: $blue-darker;
     text-align: center;
 
     @media(min-width: $md) {
@@ -253,16 +237,10 @@ a {
     }
 }
 
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
-}
-
 .footer-col-title {
     font-family: $maven;
-    font-weight: $medium;
     font-size: 14px;
-    color: $blue-gray-color;
+    color: $blue-gray;
     line-height: 17px;
 }
 
@@ -274,14 +252,12 @@ a {
     }
 }
 
-.footer-col-list,
-.social-media-list {
+.footer-col-list {
     list-style: none;
     margin: 30px 0 0 0;
-    font-family: $maven;
-    font-weight: $regular;
+    font-family: $quicksand;
     font-size: 14px;
-    color: $blue-dark;
+    color: $blue-darker;
     line-height: 14px;
 
     li {
@@ -291,10 +267,10 @@ a {
     }
 
     a {
-        color: $text-color-white;
+        color: $white;
 
         &:hover {
-            color: $blue-color;
+            color: $blue;
             text-decoration: none;
         }
     }
@@ -304,25 +280,24 @@ a {
 
 .footer-col-wrapper {
     font-size: 15px;
-    color: $grey-color;
+    color: $gray;
 }
 
 .footer-copyright {
-    background-color: $blue-dark;
-    font-family: $maven;
-    font-weight: $regular;
+    background-color: $blue-darker;
+    font-family: $quicksand;
     font-size: 14px;
-    color: $text-color-white;
+    color: $white;
     line-height: 40px;
     padding: $spacing-unit 0;
 
     .footer-icons {
         i {
-            color: $blue-gray-color;
+            color: $blue-gray;
             margin: 0 10px;
 
             &:hover {
-                color: $text-color-white;
+                color: $white;
             }
         }
     }
@@ -344,13 +319,9 @@ a {
     position: relative;
 }
 
-.page-heading {
-    font-size: 20px;
-}
-
 .post-meta {
     font-size: $small-font-size;
-    color: $grey-color;
+    color: $gray;
 }
 
 .post-link {
@@ -382,12 +353,11 @@ a {
 }
 
 .blog-post {
-    font-family: $maven;
-    font-weight: $regular;
-    color: $blue-dark;
+    font-family: $quicksand;
+    color: $blue-darker;
 
     h1, h2, h3 {
-        font-weight: $regular;
+        font-family: $ubuntu;
         font-size: 20px;
         line-height: 25px;
         color: $blue-cern-dark;
@@ -494,16 +464,12 @@ a {
 a.no-decoration {
     text-decoration: none;
     &:visited {
-            color: $text-color-white;
+            color: $white;
         }
 }
 
-.bg-blue-dark {
-    background-color: $blue-dark;
-}
-
 .bg-blue-light {
-    background-color: $blue-color-even-lighter;
+    background-color: $blue-lighter;
 }
 
 .bg-white {
@@ -523,17 +489,12 @@ a.no-decoration {
     margin-right: auto;
 }
 
-.block-right {
-    float: right;
-}
-
-
 
 /**
  * Hero sections
  */
 .hero-section {
-    background-color: $blue-dark;
+    background-color: $blue-darker;
     background-position: center;
     background-size: cover;
 }
@@ -588,15 +549,16 @@ a.no-decoration {
 
 .hero-spotlight-1 {
     font-family: $ubuntu;
-    color: $blue-color-lighter;
+    color: $blue-light;
     line-height: 25px;
 }
 
 .hero-spotlight-line {
-    border-bottom: 3px solid $blue-color-lighter;
+    border-bottom: 3px solid $blue-light;
     width: 20%;
     margin: 20px auto;
 }
+
 .hero-spotlight-header {
     margin: 50px 0;
 }
@@ -604,13 +566,13 @@ a.no-decoration {
 .hero-spotlight-header h1 {
     font-family: $ubuntu;
     -webkit-font-smoothing: antialiased;
-    color: $text-color-white;
+    color: $white;
 }
 
 .hero-spotlight h2 {
     font-family: $ubuntu;
     font-size: 20px;
-    color: $blue-color-lighter;
+    color: $blue-light;
     line-height: 20px;
     margin-top: calc(3 * #{$spacing-unit});
 }
@@ -638,16 +600,15 @@ a.no-decoration {
     a {
         text-decoration: none;
         border-radius: 40px;
-        background: $green-color-bright;
+        background: $green-bright;
         font-family: $maven;
-        font-weight: $medium;
         font-size: 16px;
-        color: $text-color-white;
+        color: $white;
         line-height: 25px;
         padding: 15px 60px;
 
         &:hover {
-            background: $green-color;
+            background: $green;
         }
 
         &:active {
@@ -655,7 +616,7 @@ a.no-decoration {
         }
 
         &:visited {
-            color: $text-color-white;
+            color: $white;
         }
     }
 }
@@ -665,23 +626,21 @@ a.no-decoration {
 
     a {
         font-family: $quicksand;
-        font-weight: $regular;
         font-size: 14px;
-        color: $blue-color-lighter;
+        color: $blue-light;
         line-height: 17px;
 
         &:hover {
-            color: $text-color-white;
+            color: $white;
             text-decoration: none;
         }
     }
 }
 
 .hero-spotlight-text {
-    font-family: $maven;
-    font-weight: $regular;
+    font-family: $quicksand;
     font-size: 18px;
-    color: $text-color-white;
+    color: $white;
     line-height: 25px;
 }
 
@@ -691,13 +650,12 @@ a.no-decoration {
     a {
         text-decoration: none;
         border-radius: 40px;
-        font-family: $maven;
-        font-weight: $regular;
+        font-family: $quicksand;
         font-size: 36px;
         line-height: 25px;
         padding: 15px 60px;
-        border: 2px solid $green-color;
-        color: $text-color-white;
+        border: 2px solid $green;
+        color: $white;
 
         @media(max-width: $sm) {
             font-size: 17px;
@@ -714,10 +672,9 @@ a.no-decoration {
     background-color: $blue-cern;
 
     .partner-carousel {
-        font-family: $maven;
-        font-weight: $regular;
+        font-family: $quicksand;
         font-size: 13px;
-        color: #FFFFFF;
+        color: $white;
 
         @media (min-width: $sm) {
             font-size: 15px;
@@ -769,9 +726,10 @@ a.no-decoration {
 
 .features-section {
     font-family: $ubuntu;
-    background: #dae5eb;
+    background: $blue-lighter;
+
     .features-section-title {
-        color: $blue-dark;
+        color: $blue-darker;
         line-height: 25px;
         margin-bottom: 2em;
     }
@@ -788,11 +746,11 @@ a.no-decoration {
 
 
     .features-section-list {
-        background-color: $text-color-white;
+        background-color: $white;
         text-align: left;
 
         .list-title {
-            color: $blue-dark;
+            color: $blue-darker;
             text-align: center;
         }
 
@@ -812,7 +770,7 @@ a.no-decoration {
                 padding-top: 10px;
                 font-family: $quicksand;
                 font-size: 16px;
-                color: $blue-dark;
+                color: $blue-darker;
                 line-height: 24px;
                 margin-top: 20px;
 
@@ -832,7 +790,7 @@ a.no-decoration {
  * no need to apply css opacity).
  */
 .safety-net-section {
-    color: $blue-dark;
+    color: $blue-darker;
 
     .safety-net-wrapper {
         position: relative;  // to escape content from transparent prison
@@ -841,7 +799,6 @@ a.no-decoration {
 
     h2 {
         font-family: $ubuntu;
-        font-weight: $light-300;
         -webkit-font-smoothing: antialiased;
         font-size: 28px;
         line-height: 35px;
@@ -857,7 +814,7 @@ a.no-decoration {
         }
 
         a {
-            color: $blue-color;
+            color: $blue;
 
             &:hover{
                 color: $blue-gray-light;
@@ -876,17 +833,17 @@ a.no-decoration {
             font-size: 16px;
             line-height: 25px;
             padding: 15px 60px;
-            border: 2px solid $green-color;
-            color: $blue-dark;
+            border: 2px solid $green;
+            color: $blue-darker;
 
             &:hover {
-                background: $green-color;
-                color: $text-color-white;
+                background: $green;
+                color: $white;
             }
 
             &:active {
                 opacity: 0.5;
-                color: $text-color-white;
+                color: $white;
             }
 
             @media(max-width: $sm) {
@@ -902,13 +859,13 @@ a.no-decoration {
         left: 15px;     // same as bootstrap col padding
         right: 15px;    // same as bootstrap col padding
         z-index: 1;
-        color: $text-color-white;
+        color: $white;
 
         .github-project a {
-            color: $text-color-white;
+            color: $white;
 
             a:visited {
-                color: $text-color-white;
+                color: $white;
             }
         }
     }
@@ -967,7 +924,7 @@ a.no-decoration {
 
             p {
                 font-size: 16px;
-                color: $grey-color;
+                color: $gray;
                 line-height: 24px;
             }
         }
@@ -1028,19 +985,19 @@ a.no-decoration {
     }
 
     .standard {
-        color: $blue-color-light;
+        color: $blue-dark;
     }
 
     .standard .carousel-indicators li {
-        background-color: $blue-color-light;
+        background-color: $blue-dark;
     }
 
     .standard .carousel-control-prev-icon {
-        color: $blue-color-light;
+        color: $blue-dark;
     }
 
     .standard .carousel-control-next-icon {
-        color: $blue-color-light;
+        color: $blue-dark;
     }
 
     .dark {
@@ -1073,7 +1030,7 @@ a.no-decoration {
         padding: 30px;
         height: 200px;
         display: block;
-        border: 0.5px solid $blue-gray-light;
+        border: 0.5px solid $indico-blue;
         border-radius: 10px;
         background: rgba(0, 0, 0, 0.3);
         display: flex;
@@ -1092,12 +1049,12 @@ a.no-decoration {
 
         h4 {
             margin-bottom: 10px;
-            color: #00A4E4;
+            color: $indico-blue;
             font-weight: bold;
         }
 
         p {
-            color: darken($gray-white, 10%);
+            color: $gray-light;
         }
     }
 
@@ -1109,7 +1066,7 @@ a.no-decoration {
         .resource-card:hover::after {
             width: 100%;
             left: 0;
-            background: linear-gradient(to right, #0054b5, #3dd8ff);
+            background: $blue-gradient;
         }
     }
 
@@ -1121,8 +1078,7 @@ a.no-decoration {
  * Contact Us page
  */
 .contact-main-section {
-    font-family: $maven;
-    font-weight: $regular;
+    font-family: $quicksand;
     text-align: center;
 
     @media(min-width: $md) {
@@ -1131,7 +1087,7 @@ a.no-decoration {
 
     h2 {
         font-size: 14px;
-        color: $blue-dark;
+        color: $blue-darker;
         line-height: 24px;
         margin-top: calc(2 * #{$spacing-unit});
 
@@ -1141,7 +1097,7 @@ a.no-decoration {
     }
 
     div {
-        color: $blue-gray-color;
+        color: $blue-gray;
     }
 }
 
@@ -1173,19 +1129,18 @@ a.no-decoration {
             text-align: left;
             padding: 10px;
 
-            background-image: -o-linear-gradient(rgba(0,0,0,0.00) 0%, #000000 100%);
-            background-image: -moz-linear-gradient(rgba(0,0,0,0.00) 0%, #000000 100%);
-            background-image: -ms-linear-gradient(rgba(0,0,0,0.00) 0%, #000000 100%);
-            background-image: linear-gradient(rgba(0,0,0,0.00) 0%, #000000 100%);
+            background-image: -o-linear-gradient(rgba(0,0,0,0.00) 0%, $black 100%);
+            background-image: -moz-linear-gradient(rgba(0,0,0,0.00) 0%, $black 100%);
+            background-image: -ms-linear-gradient(rgba(0,0,0,0.00) 0%, $black 100%);
+            background-image: linear-gradient(rgba(0,0,0,0.00) 0%, $black 100%);
 
-            font-family: $maven;
-            font-weight: $regular;
+            font-family: $quicksand;
             font-size: 14px;
             line-height: 18px;
-            color: $blue-color-even-lighter;
+            color: $blue-lighter;
 
             .team-member-name {
-                color: $text-color-white;
+                color: $white;
                 font-size: 18px;
             }
         }
@@ -1219,8 +1174,7 @@ a.no-decoration {
 }
 
 .contr-list {
-    font-family: $maven;
-    font-weight: $regular;
+    font-family: $quicksand;
     font-size: 14px;
     line-height: 24px;
     margin-top: calc(2 * #{$spacing-unit});
@@ -1230,7 +1184,7 @@ a.no-decoration {
     }
 
     h2.contr-list-header {
-        color: $blue-dark;
+        color: $blue-darker;
         font-size: 14px;
         line-height: 24px;
     }
@@ -1257,7 +1211,7 @@ a.no-decoration {
     .container {
         background-color: white;
         padding: 0;
-        border-bottom: 2px solid $blue-color-lighter;
+        border-bottom: 2px solid $blue-light;
 
         h2 {
             text-align: left;
@@ -1266,18 +1220,18 @@ a.no-decoration {
             font-size: 1.5em;
             border-bottom: 1px solid;
             padding: 10px 40px;
-            background-color: lighten($blue-color, 20%);
+            background-color: lighten($blue, 20%);
         }
 
         h3 {
             font-family: $ubuntu;
             padding: 10px;
             text-align: center;
-            color: $brand-color;
+            color: $brand;
             margin-top: 40px;
 
             del {
-                color: lighten($brand-color, 20%);
+                color: lighten($brand, 20%);
             }
         }
 
@@ -1301,7 +1255,7 @@ a.no-decoration {
 
             li {
                 margin: 0 0 12px 0;
-                color: $blue-dark;
+                color: $blue-darker;
 
                 strong {
                     font-weight: bold;
@@ -1315,19 +1269,19 @@ a.no-decoration {
 
         hr {
             margin-top: 50px;
-            background-color: $background-color;
+            background-color: $white-dark;
             display: block;
             height: 30px;
-            border-top: 2px solid $blue-color-lighter;
+            border-top: 2px solid $blue-light;
         }
 
         a {
-            color: $blue-color;
+            color: $blue;
         }
 
         @media(hover: hover) {
             a:hover {
-                color: darken($blue-color, 10%);
+                color: darken($blue, 10%);
                 text-decoration: underline;
             }
         }
@@ -1337,7 +1291,7 @@ a.no-decoration {
             width: 60%;
             text-align: left;
             margin-bottom: 20px;
-            color: $blue-dark;
+            color: $blue-darker;
         }
     }
 
@@ -1357,13 +1311,13 @@ a.no-decoration {
         .section-title {
             text-align: center;
             margin-bottom: 40px;
-            color: $blue-color;
+            color: $blue;
             font-weight: bold;
         }
 
         .resource-card {
             background: white;
-            box-shadow: 1px 1px 2px 1px #cbd8de;
+            box-shadow: 1px 1px 2px 1px $blue-lighter;
             margin-bottom: 2.25em;
             position: relative;
             display: block;
@@ -1380,7 +1334,7 @@ a.no-decoration {
 
             h4 {
                 margin-bottom: 10px;
-                color: $blue-dark;
+                color: $blue-darker;
 
                 font-family: $ubuntu;
             }
@@ -1397,14 +1351,14 @@ a.no-decoration {
             right: 0;
             bottom: 0;
             height: 2px;
-            background: linear-gradient(to right, #0054b5, #3dd8ff);
+            background: $blue-gradient;
             transition: width .250s ease-in-out;
         }
 
         @media(hover: hover) {
             .resource-card:hover {
                 h4 {
-                    color: darken($blue-dark, 8%);
+                    color: darken($blue-darker, 8%);
                 }
 
                 p {
@@ -1415,7 +1369,7 @@ a.no-decoration {
             .resource-card:hover::after {
                 width: 100%;
                 left: 0;
-                background: linear-gradient(to right, #0054b5, #3dd8ff);
+                background: $blue-gradient;
             }
         }
 
