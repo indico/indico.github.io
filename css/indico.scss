@@ -43,9 +43,11 @@ $blue-gradient:     linear-gradient(to right, #0054B5, #3DD8FF);
 $on-palm:   600px;
 $on-laptop: 800px;
 
-$sm:    768px;
-$md:    992px;
-$lg:    1200px;
+$sm:    576px;
+$md:    768px;
+$lg:    992px;
+$xl:    1200px;
+
 
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
@@ -512,6 +514,10 @@ a.no-decoration {
 .hero-getting-started {
     height: 800px;
     background-image: url("../img/hero/getting_started.png");
+
+    @media (max-width: $lg) {
+        height: 1000px;
+    }
 }
 
 .hero-blog {
@@ -1036,7 +1042,7 @@ a.no-decoration {
 
  .getting-started-options {
      font-family: $quicksand;
-     margin:100px 10px;
+     margin: 100px 10px;
 
     .option-card {
         margin: 30px;
@@ -1081,6 +1087,10 @@ a.no-decoration {
             left: 0;
             background: $blue-gradient;
         }
+    }
+
+    @media(max-width: $lg) {
+        margin: 40px 10px;
     }
 
  }
@@ -1319,7 +1329,6 @@ a.no-decoration {
 
     .resources-section {
         margin-top: 20px;
-        width: 100%;
 
         .section-title {
             text-align: center;
