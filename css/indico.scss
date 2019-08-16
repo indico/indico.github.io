@@ -917,15 +917,17 @@ a.no-decoration {
 
 
     .feature-row {
-        margin-bottom: calc(3 * #{$spacing-unit});
+        margin-bottom: calc(2 * #{$spacing-unit});
         text-align: center;
-        margin-top: 60px;
+        margin-top: calc(2 * #{$spacing-unit});
+
 
         .description {
             flex-direction: column;
             align-items: flex-start;
             font-family: $quicksand;
-            padding: 5px 60px;
+            padding: 10px 60px;
+            margin-top: 20px;
 
             h2 {
                 font-size: 28px;
@@ -940,10 +942,11 @@ a.no-decoration {
         }
 
         .feature-screenshot {
-            margin-left: 5%;
-            margin-right: 5%;
+            padding-left: 5%;
+            padding-right: 5%;
             max-height: 500px;
             margin-bottom: 40px;
+            width: 100%;
 
             .carousel-inner {
                 box-shadow: 1px 1px 2px 1px lighten($blue-gray-light, 30%);
@@ -954,16 +957,16 @@ a.no-decoration {
                 margin-bottom: 0;
             }
 
-            .carousel-control-prev, .carousel-control-next {
+            .carousel-control {
                 transition: none;
             }
 
             .carousel-control-prev {
-                margin-left: -12%;
+                left: -7%;
             }
 
             .carousel-control-next {
-                margin-right: -12%;
+                right: -7%;
             }
 
             .carousel-control-prev-icon,
