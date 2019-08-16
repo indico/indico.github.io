@@ -970,10 +970,16 @@ a.no-decoration {
 
             .carousel-control-prev {
                 left: -7%;
+                @media(max-width: $sm) {
+                    display: none;
+                }
             }
 
             .carousel-control-next {
                 right: -7%;
+                @media(max-width: $sm) {
+                    display: none;
+                }
             }
 
             .carousel-control-prev-icon,
