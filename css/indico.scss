@@ -740,7 +740,6 @@ a.no-decoration {
 
     .features-section-title {
         color: $blue-darker;
-        line-height: 25px;
         margin-bottom: 2em;
     }
 
@@ -782,11 +781,12 @@ a.no-decoration {
                 font-size: 16px;
                 color: $blue-darker;
                 line-height: 24px;
-                margin-top: 20px;
+                text-align: left;
+                margin-top: 0;
 
-                @media(min-width: $md) {
-                    margin-top: 0;
-                    text-align: left;
+                @media(max-width: $sm) {
+                    text-align: center;
+                    margin-top: 20px;
                 }
             }
         }
