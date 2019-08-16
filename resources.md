@@ -21,6 +21,14 @@ sections:
       link: https://learn.getindico.io
       logo: indico.png
       summary: Discover all Indico features with video walkthroughs and tutorials
+    - name: Contact
+      link: https://getindico.io/contact
+      logo: indico.png
+      summary: Get in touch with indico developers and maintainers of CERN instance
+    - name: About us
+      link: https://getindico.io/about
+      logo: indico.png
+      summary: Learn more about Indico team members and collaborators
   - title: Plugins
     resources:
     - name: Vidyo
