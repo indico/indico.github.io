@@ -543,6 +543,14 @@ a.no-decoration {
     padding-top: calc(3 * #{$spacing-unit});
 }
 
+.hero-section-content-centered {
+    padding-top: calc(3 * #{$spacing-unit});
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 .hero-spotlight {
     margin-top: 80px;
 }
@@ -561,12 +569,14 @@ a.no-decoration {
 
 .hero-spotlight-header {
     margin: 50px 0;
-}
-
-.hero-spotlight-header h1 {
+    width: 100%;
     font-family: $ubuntu;
-    -webkit-font-smoothing: antialiased;
-    color: $white;
+
+    h1 {
+        color: $white;
+        margin-bottom: 0;
+    }
+
 }
 
 .hero-spotlight h2 {
