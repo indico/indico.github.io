@@ -16,7 +16,11 @@ layout: default
                     <div class="col-xl-5 col-12">
                         {%- assign num_images = feature.images | size -%}
                         {%- if num_images == 1 -%}
-                            <img class="feature-screenshot" data-toggle="lightbox" data-gallery="{{ feature.name }}" data-remote="{{ feature.images.first | prepend: '/img/features/' | relative_url }}" src="{{ feature.images.first | prepend: '/img/features/' | relative_url }}"></img>
+                            <img class="feature-screenshot"
+                                 data-toggle="lightbox"
+                                 data-gallery="{{ feature.name }}"
+                                 data-remote="{{ feature.images.first | prepend: '/img/features/' | relative_url }}"
+                                 src="{{ feature.images.first | prepend: '/img/features/' | relative_url }}" />
                         {%- else -%}
                             <div id="carousel-feature-{{ feature.id }}" class="carousel slide feature-screenshot" data-ride="carousel" data-interval="false">
                                 <ol class="carousel-indicators">
@@ -29,7 +33,10 @@ layout: default
                                 <div class="carousel-inner">
                                     {% for image in feature.images %}
                                         <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                                            <img data-toggle="lightbox" data-gallery="{{ feature.name }}" data-remote="{{ image | prepend: '/img/features/' | relative_url }}" src="{{ image | prepend: '/img/features/' | relative_url }}">
+                                            <img data-toggle="lightbox"
+                                                 data-gallery="{{ feature.name }}"
+                                                 data-remote="{{ image | prepend: '/img/features/' | relative_url }}"
+                                                 src="{{ image | prepend: '/img/features/' | relative_url }}" />
                                         </div>
                                     {% endfor %}
                                 </div>
