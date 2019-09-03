@@ -4,7 +4,7 @@ title: Roadmap
 permalink: /roadmap/
 weight: 20
 ---
-## 2019
+## 📍2019
 
 ### ~~Indico 2.2~~ [✅](https://github.com/indico/indico/projects/2)
 
@@ -39,8 +39,7 @@ weight: 20
 ### CERN-specific
  * CERN Access Plugin - registration of license plates;
 
----
-## 2020
+## 📍2020
 
 ### Indico 3
 * Python 3.8 (which will come out still in 2019)
@@ -64,8 +63,7 @@ We are trying as much as possible to find ways of solving these pending issues i
 
 * [Tools to assist in GDPR compliance](https://github.com/indico/indico/issues/1415);
 
----
-## Future
+## 📍Future
 
 * User Interfaces
 * Responsive interfaces that work OK on mobile
