@@ -11,42 +11,42 @@ $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$quicksand: Quicksand, sans-serif;
-$maven: Maven Pro;
-$ubuntu: Ubuntu, sans-serif;
+$quicksand:        Quicksand, sans-serif;
+$maven:            Maven Pro;
+$ubuntu:           Ubuntu, sans-serif;
 
-$spacing-unit:        30px;
+$spacing-unit:     30px;
 
 // Palette
-$white:             #FFF;
-$white-dark:        #FDFDFD;
-$black:             #111;
-$brand:             #2A7AE2;
-$indico-blue:       #00A4E4;
-$blue:              #2D98C8;
-$blue-dark:         #297699;
-$blue-darker:       #1A4A61;
-$blue-light:        #9CD5EF;
-$blue-lighter:      #D8E3E8;
-$blue-cern:         #34AAE0;
-$blue-cern-dark:    #1291CF;
-$blue-gray:         #7A8F99;
-$blue-gray-light:   #6D92A3;
-$turquoise:         #2F9C8D;
-$green-bright:      #7ED321;
-$green:             #6AB31D;
-$gray:              #828282;
-$gray-light:        #B5B5B5;
-$gray-dark:         #333;
-$blue-gradient:     linear-gradient(to right, #0054B5, #3DD8FF);
+$white:            #FFF;
+$white-dark:       #FDFDFD;
+$black:            #111;
+$brand:            #2A7AE2;
+$indico-blue:      #00A4E4;
+$blue:             #2D98C8;
+$blue-dark:        #297699;
+$blue-darker:      #1A4A61;
+$blue-light:       #9CD5EF;
+$blue-lighter:     #D8E3E8;
+$blue-cern:        #34AAE0;
+$blue-cern-dark:   #1291CF;
+$blue-gray:        #7A8F99;
+$blue-gray-light:  #6D92A3;
+$turquoise:        #2F9C8D;
+$green-bright:     #7ED321;
+$green:            #6AB31D;
+$gray:             #828282;
+$gray-light:       #B5B5B5;
+$gray-dark:        #6e6e6e;
+$blue-gradient:    linear-gradient(to right, #0054B5, #3DD8FF);
 
-$on-palm:   600px;
-$on-laptop: 800px;
+$on-palm:          600px;
+$on-laptop:        800px;
 
-$sm:    576px;
-$md:    768px;
-$lg:    992px;
-$xl:    1200px;
+$sm:               576px;
+$md:               768px;
+$lg:               992px;
+$xl:               1200px;
 
 
 @mixin media-query($device) {
@@ -1234,34 +1234,32 @@ a.no-decoration {
 
 .roadmap {
     justify-content: center;
-    margin-top: 60px;
     margin-bottom: 30px;
     font-family: $quicksand;
 
     .container {
         background-color: white;
         padding: 0;
-        border-bottom: 2px solid $blue-light;
 
         h2 {
-            text-align: left;
+            margin-top: 60px;
+            text-align: center;
             font-family: $ubuntu;
-            color: white;
-            font-size: 1.5em;
-            border-bottom: 1px solid;
-            padding: 10px 40px;
-            background-color: lighten($blue, 20%);
+            color: $blue-cern;
+            font-size: 2.5em;
+            padding: 20px 40px;
+            padding-left: 2px;
         }
 
         h3 {
             font-family: $ubuntu;
             padding: 10px;
             text-align: center;
-            color: $brand;
-            margin-top: 40px;
+            color: $gray-dark;
+            margin-top: 60px;
 
             del {
-                color: lighten($brand, 20%);
+                color: $gray-light;
             }
         }
 
@@ -1292,7 +1290,14 @@ a.no-decoration {
                 }
 
                 ul {
-                    width: 80%;
+                    width: 100%;
+
+                    li {
+                        margin: 5px 0;
+                        color: $gray;
+                        text-align: left;
+                        list-style-type: none;
+                    }
                 }
             }
         }
