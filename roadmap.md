@@ -16,7 +16,7 @@ weight: 20
 * New Technologies: Webpack, ES6, React, Redux
     - starting process towards gradually retiring jQuery and legacy JS;
 
-### **Indico 2.3** [⚒](https://github.com/indico/indico/projects/3)
+### **Indico 2.3** [⚒️](https://github.com/indico/indico/projects/3)
 
 > *Mostly funded by CERN, in collaboration with the [JACoW collaboration](http://jacow.org/).
 > Some contributions from IEEE.*
