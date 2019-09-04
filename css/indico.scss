@@ -5,6 +5,10 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 
+@font-face {
+    font-family: Twemoji;
+    src: url('fonts/twittercoloremoji.woff') format('woff');
+}
 // Variables
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
@@ -1238,25 +1242,29 @@ a.no-decoration {
     font-family: $quicksand;
 
     .container {
-        background-color: white;
+        background-color: $white;
         padding: 0;
 
         h2 {
+            border-bottom: 1px solid #f5e8cb;
+            border-top: 1px solid #f5e8cb;
             margin-top: 60px;
             text-align: center;
-            font-family: $ubuntu;
-            color: $blue-cern;
-            font-size: 2.5em;
+            font-family: Twemoji, Quicksand;
+            color: $blue-dark;
+            font-size: 3em;
             padding: 20px 40px;
             padding-left: 2px;
+            background-color: lighten(#f5e8cb, 10%);
         }
 
         h3 {
-            font-family: $ubuntu;
+            font-family: Twemoji, Ubuntu;
             padding: 10px;
             text-align: center;
             color: $gray-dark;
             margin-top: 60px;
+            font-weight: bold;
 
             del {
                 color: $gray-light;
