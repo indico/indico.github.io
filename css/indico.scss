@@ -6,8 +6,15 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 
 @font-face {
-    font-family: Twemoji;
-    src: url('fonts/twittercoloremoji.woff') format('woff');
+    font-family: 'twitter_color_emojiregular';
+    src: url('./../fonts/twittercoloremoji-svginot-webfont.eot');
+    src: url('./../fonts/twittercoloremoji-svginot-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./../fonts/twittercoloremoji-svginot-webfont.woff2') format('woff2'),
+         url('./../fonts/twittercoloremoji-svginot-webfont.woff') format('woff'),
+         url('./../fonts/twittercoloremoji-svginot-webfont.ttf') format('truetype'),
+         url('./../fonts/twittercoloremoji-svginot-webfont.svg#twitter_color_emojiregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 // Variables
 $base-font-family: Helvetica, Arial, sans-serif;
@@ -1248,7 +1255,7 @@ a.no-decoration {
         h2 {
             margin-top: 60px;
             text-align: center;
-            font-family: Twemoji, Quicksand;
+            font-family: 'twitter_color_emojiregular', Quicksand;
             color: $blue-dark;
             font-size: 3em;
             padding: 20px 40px;
@@ -1257,7 +1264,7 @@ a.no-decoration {
         }
 
         h3 {
-            font-family: Twemoji, Ubuntu;
+            font-family: 'twitter_color_emojiregular', Ubuntu;
             padding: 10px;
             text-align: center;
             color: $gray-dark;
