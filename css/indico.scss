@@ -1250,6 +1250,11 @@ a.no-decoration {
             padding: 20px 40px;
             padding-left: 2px;
             background-color: $white-blue;
+
+            img {
+                width: 35px;
+                height: 35px;
+            }
         }
 
         h3 {
@@ -1262,6 +1267,11 @@ a.no-decoration {
 
             del {
                 color: $gray-light;
+            }
+
+            img {
+                width: 25px;
+                height: 25px;
             }
         }
 
