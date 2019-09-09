@@ -4,9 +4,9 @@ title: Roadmap
 permalink: /roadmap/
 weight: 20
 ---
-## 📍2019
+## :pushpin:2019
 
-### ~~Indico 2.2~~ [✅](https://github.com/indico/indico/projects/2)
+### ~~Indico 2.2~~ [:heavy_check_mark:](https://github.com/indico/indico/projects/2)
 
 > *Fully funded by CERN.*
 
@@ -16,7 +16,7 @@ weight: 20
 * New Technologies: Webpack, ES6, React, Redux
     - starting process towards gradually retiring jQuery and legacy JS;
 
-### **Indico 2.3** [⚒️](https://github.com/indico/indico/projects/3)
+### **Indico 2.3** [:hammer_and_pick:](https://github.com/indico/indico/projects/3)
 
 > *Mostly funded by CERN, in collaboration with the [JACoW collaboration](http://jacow.org/).
 > Some contributions from IEEE.*
@@ -29,7 +29,7 @@ weight: 20
     - allowing our custom made CSS co-exist with SemanticUI
     - starting process towards gradually retiring custom CSS (focusing improvements in our SemanticUI theme)
 
-### PoC/Sprints 🧬🏃‍♀️
+### PoC/Sprints :runner:
  * [New standalone solution for **Search**](https://talk.getindico.io/t/search-plugin-development/744) (*FNAL + BNL*)
    - Plus new Search UI (*CERN*, end of Summer)
  * [Webhooks for notifications](https://github.com/indico/indico/pull/3944) (compatible with CERN Push Notifications);
@@ -39,7 +39,7 @@ weight: 20
 ### CERN-specific
  * CERN Access Plugin - registration of license plates;
 
-## 📍2020
+## :pushpin:2020
 
 ### Indico 3
 * Python 3.8 (which will come out still in 2019)
@@ -63,7 +63,7 @@ We are trying as much as possible to find ways of solving these pending issues i
 
 * [Tools to assist in GDPR compliance](https://github.com/indico/indico/issues/1415);
 
-## 📍Future
+## :pushpin:Future
 
 * User Interfaces
 * Responsive interfaces that work OK on mobile
