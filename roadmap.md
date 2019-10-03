@@ -66,10 +66,10 @@ We are trying as much as possible to find ways of solving these pending issues i
 ## :pushpin:Future
 
 * User Interfaces
-* Responsive interfaces that work OK on mobile
-* Greater Accessibility (screenreaders, colourblind users, etc...)
+    - Responsive interfaces that work OK on mobile
+    - Greater Accessibility (screenreaders, colourblind users, etc...)
 * Conferences
-* Billing - [Implementing conference receipts](https://github.com/indico/indico/issues/751);
+    - Billing - [Implementing conference receipts](https://github.com/indico/indico/issues/751);
 * Technologies
-* Getting rid of Angular.js in Registration Form (reimplementing in React?)
-* Getting rid of legacy JS in timetable interface (React?)
+    - Getting rid of Angular.js in Registration Form (reimplementing in React?)
+    - Getting rid of legacy JS in timetable interface (React?)
