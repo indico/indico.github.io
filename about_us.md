@@ -10,9 +10,6 @@ current_members:
     - name: Adrian Mönnich
       position: Developer
       photo: adrianmonnich.jpg
-    - name: Marco Vidal
-      position: Developer
-      photo: marcovidal.jpg
     - name: Michał Kołodziejski
       position: Developer
       photo: michalkolodziejski.jpg
@@ -30,6 +27,8 @@ managers:
       position: Section Leader, IT-CDA-IC
       photo: thomasbaron.jpg
 long_time_contributors:
+    - name: Marco Vidal
+      dates: 2016-2019
     - name: Ilias Trichopoulos
       dates: 2014-2017
     - name: Alejandro Avilés
