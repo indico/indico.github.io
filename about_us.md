@@ -8,7 +8,7 @@ current_members:
       position: Project Manager
       photo: pedroferreira.jpg
     - name: Adrian Mönnich
-      position: Developer
+      position: Lead Developer
       photo: adrianmonnich.jpg
     - name: Michał Kołodziejski
       position: Developer
