@@ -15,7 +15,7 @@ layout: default
             </div>
             <div class="row about-team-wrapper">
                 <div class="about-team-grid col-md-10 col-11 block-center-abs">
-                    <div class="row">
+                    <div class="row justify-content-center">
                         {%- for member in page.current_members -%}
                             <div class="team-member team-member-dev col-md-4 col-sm-6 col-12" style="background-image: url({{ member.photo | prepend: 'img/people/' | relative_url }})">
                                 <div class="team-member-note">
