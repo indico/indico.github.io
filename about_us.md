@@ -19,6 +19,9 @@ current_members:
     - name: Panagiota Poulopoulou
       position: Developer
       photo: panagiotapoulopoulou.jpg
+    - name: Parth Shandilya
+      position: Developer
+      photo: parthshandilya.jpg
 managers:
     - name: Tim Smith
       position: Group Leader, IT-CDA
