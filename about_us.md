@@ -22,6 +22,9 @@ current_members:
     - name: Parth Shandilya
       position: Developer
       photo: parthshandilya.jpg
+    - name: Lea Tschiersch
+      position: Developer
+      photo: leatschiersch.jpg
 managers:
     - name: Tim Smith
       position: Group Leader, IT-CDA
