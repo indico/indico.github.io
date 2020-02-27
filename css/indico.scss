@@ -1136,13 +1136,15 @@ a.no-decoration {
  * About Us page
  */
 .about-team-wrapper {
-    margin-top: $spacing-unit;
-    position: relative;
+    margin-top: -40px;
+
+    @media(max-width: $md) {
+        margin-top: 20px;
+    }
 }
 
 .about-team-grid {
 
-    position: absolute;
     min-height: 420px;
 
     .team-member {
@@ -1190,15 +1192,9 @@ a.no-decoration {
 }
 
 .about-us-main-section {
-    padding-top: calc(80 * #{$spacing-unit});
     text-align: center;
 
-    @media(min-width: $sm) {
-        padding-top: calc(37 * #{$spacing-unit});
-    }
-
     @media(min-width: $md) {
-        padding-top: calc(25 * #{$spacing-unit});
         text-align: left;
     }
 }
