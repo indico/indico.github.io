@@ -13,9 +13,6 @@ current_members:
     - name: Michał Kołodziejski
       position: Developer
       photo: michalkolodziejski.jpg
-    - name: Natalia Juszka
-      position: Developer
-      photo: nataliajuszka.jpg
     - name: Panagiota Poulopoulou
       position: Developer
       photo: panagiotapoulopoulou.jpg
@@ -33,6 +30,8 @@ managers:
       position: Section Leader, IT-CDA-IC
       photo: thomasbaron.jpg
 long_time_contributors:
+    - name: Natalia Juszka
+      dates: 2017-2020
     - name: Marco Vidal
       dates: 2016-2019
     - name: Ilias Trichopoulos
