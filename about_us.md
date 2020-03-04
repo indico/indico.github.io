@@ -22,6 +22,9 @@ current_members:
     - name: Lea Tschiersch
       position: Developer
       photo: leatschiersch.jpg
+    - name: Pedro Lourenço
+      position: Developer
+      photo: pedrolourenco.jpg
 managers:
     - name: Tim Smith
       position: Group Leader, IT-CDA
