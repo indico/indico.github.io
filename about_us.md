@@ -16,9 +16,6 @@ current_members:
     - name: Panagiota Poulopoulou
       position: Developer
       photo: panagiotapoulopoulou.jpg
-    - name: Parth Shandilya
-      position: Developer
-      photo: parthshandilya.jpg
     - name: Lea Tschiersch
       position: Developer
       photo: leatschiersch.jpg
@@ -54,6 +51,8 @@ long_time_contributors:
     - name: Eric Simon
       dates: 2002-2004
 contributors:
+    - name: Parth Shandilya
+      dates: 2020
     - name: Ergys Dona
       dates: 2018
     - name: David Andreev
