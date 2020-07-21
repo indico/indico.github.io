@@ -13,6 +13,7 @@ disqus_shortname: indico-project
 plugins:
   - jekyll-feed
   - jemoji
+  - premonition
 
 # Build settings
 markdown: kramdown
