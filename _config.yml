@@ -17,3 +17,15 @@ plugins:
 
 # Build settings
 markdown: kramdown
+
+premonition:
+  types:
+    contribution:
+      template: |
+        <div class="premonition {% if meta.style %}{{meta.style}} {% endif %}{{type}}">
+          <i class="fas {% if attrs contains 'fa-icon' and attrs.fa-icon != "" %}{{ attrs.fa-icon }}{% else %}{{ "fa-star" }}{% endif %}"></i>
+          <div class="content">
+            {% if header %}<p class="header">{{title}}</p>{% endif %}{{content}}
+          </div>
+        </div>
+      default_title: "Community Contribution"
