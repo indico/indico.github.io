@@ -1,0 +1,25 @@
+name: Build and Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [source]
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: ${{ runner.os }}-gems-
+
+      - uses: indico/jekyll-deploy-action@master
+        with:
+          provider: 'github'
+          token: ${{ secrets.INDICO_BOT_TOKEN }}
+          branch: 'master'
+          cname: 'getindico.io'
+          actor: 'indico-bot'
