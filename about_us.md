@@ -24,6 +24,8 @@ managers:
       position: Section Leader, IT-CDA-IC
       photo: thomasbaron.jpg
 long_time_contributors:
+    - name: Michal Kolodziejski
+      dates: 2017-2020
     - name: Natalia Juszka
       dates: 2017-2020
     - name: Marco Vidal
