@@ -10,12 +10,6 @@ current_members:
     - name: Adrian Mönnich
       position: Lead Developer
       photo: adrianmonnich.jpg
-    - name: Michał Kołodziejski
-      position: Developer
-      photo: michalkolodziejski.jpg
-    - name: Panagiota Poulopoulou
-      position: Developer
-      photo: panagiotapoulopoulou.jpg
     - name: Lea Tschiersch
       position: Developer
       photo: leatschiersch.jpg
