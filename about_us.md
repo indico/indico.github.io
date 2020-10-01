@@ -24,6 +24,8 @@ managers:
       position: Section Leader, IT-CDA-IC
       photo: thomasbaron.jpg
 long_time_contributors:
+    - name: Panagiota Poulopoulou
+      dates: 2018-2020
     - name: Michal Kolodziejski
       dates: 2017-2020
     - name: Natalia Juszka
