@@ -7,7 +7,7 @@ features:
   - id: 1
     name: Events of different complexity
     text: |
-        In Indico you can organize all kinds of events. It provides workflows that let you easily manage small seminars and meetings as well as more complicated workshops and conferences. Indico will agregate and store all events of your institue. You can quickly have a look at the events that are happening this week, or search for a specific keyword.
+        In Indico you can organize all kinds of events. It provides workflows that let you easily manage small seminars and meetings as well as more complicated workshops and conferences. Indico will aggregate and store all events of your institute. You can quickly have a look at the events that are happening this week, or search for a specific keyword.
     images: 
       - 11.png
       - 12.png
