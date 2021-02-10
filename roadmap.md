@@ -22,7 +22,7 @@ weight: 20
 * [**Unlisted events**](https://github.com/indico/indico/issues/4294)
 * [New standalone solution for **Search**](https://talk.getindico.io/t/search-plugin-development/744) (*FNAL + BNL*)
    - Plus new Search UI
-* Python 3.8
+* Python 3.9
     - :warning: Python 2 will no longer be supported
 
 ### PoC/Sprints :runner:
