@@ -10,9 +10,6 @@ current_members:
     - name: Adrian Mönnich
       position: Lead Developer
       photo: adrianmonnich.jpg
-    - name: Lea Tschiersch
-      position: Developer
-      photo: leatschiersch.jpg
     - name: Pedro Lourenço
       position: Developer
       photo: pedrolourenco.jpg
@@ -49,6 +46,8 @@ long_time_contributors:
     - name: Eric Simon
       dates: 2002-2004
 contributors:
+    - name: Lea Tschiersch
+      dates: 2020-2021
     - name: Parth Shandilya
       dates: 2020
     - name: Ergys Dona
