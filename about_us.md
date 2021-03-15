@@ -5,10 +5,10 @@ permalink: /about/
 exclude_from_nav: true
 current_members:
     - name: Pedro Ferreira
-      position: Project Manager
+      position: Product Manager
       photo: pedroferreira.jpg
     - name: Adrian Mönnich
-      position: Lead Developer
+      position: Lead Developer, Project Manager
       photo: adrianmonnich.jpg
     - name: Pedro Lourenço
       position: Developer
