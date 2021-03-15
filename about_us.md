@@ -13,6 +13,9 @@ current_members:
     - name: Pedro Lourenço
       position: Developer
       photo: pedrolourenco.jpg
+    - name: Javier Ferrer
+      position: Developer
+      photo: javierferrer.jpg
 managers:
     - name: Tim Smith
       position: Group Leader, IT-CDA
