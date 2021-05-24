@@ -9,6 +9,7 @@ url: "https://getindico.io" # the base hostname & protocol for your site
 twitter_username: getindico
 github_username: indico
 disqus_shortname: indico-project
+future: true
 
 plugins:
   - jekyll-feed
