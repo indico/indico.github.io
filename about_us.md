@@ -16,6 +16,9 @@ current_members:
     - name: Javier Ferrer
       position: Developer
       photo: javierferrer.jpg
+    - name: Tomas Roun
+      position: Developer
+      photo: tomasroun.jpg
 managers:
     - name: Tim Smith
       position: Group Leader, IT-CDA
