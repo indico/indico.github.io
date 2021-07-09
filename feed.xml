@@ -1,0 +1,1229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Indico Project</title>
+    <description>Indico Project Official site - Indico is a powerful event (meetings, conferences, lectures) management system developed at CERN
+</description>
+    <link>https://getindico.io/</link>
+    <atom:link href="https://getindico.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 09 Jul 2021 16:05:16 +0000</pubDate>
+    <lastBuildDate>Fri, 09 Jul 2021 16:05:16 +0000</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>Indico 3.0 🔍</title>
+        <description>&lt;p&gt;It’s with great pleasure that we announce the deployment of &lt;strong&gt;Indico 3.0&lt;/strong&gt; at CERN and thus a major step towards a public release. It is a very important milestone in the history of the Project. Two ground-breaking developments happened during these last months, one of them very visible, while the other one not directly noticeable but nonetheless of vital importance.
+But lets get to it!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;a-brand-new-search&quot;&gt;A brand-new Search&lt;/h2&gt;
+
+&lt;p&gt;For many years, Indico used, at CERN, a proprietary solution based on Sharepoint Search. This was very useful in the past, as it allowed us to save resources and focus on other parts of the product. It had, however, the inconvenience of not providing an out-of-the-box solution to other Indico users around the world. Those had to find their own solutions or just conform to using Indico without a proper “search” option.&lt;/p&gt;
+
+&lt;p&gt;But that will no longer be the case. Thanks to a &lt;strong&gt;collective community effort&lt;/strong&gt; spearheaded by CERN but which also included colleagues from Fermilab and BNL, we managed to produce a &lt;strong&gt;new reusable search module for Indico&lt;/strong&gt;, backed by Elasticsearch. The backend of this module is based on &lt;a href=&quot;https://github.com/inveniosoftware-contrib/citadel-search&quot;&gt;Citadel&lt;/a&gt;, an &lt;a href=&quot;https://invenio-software.org/&quot;&gt;Invenio&lt;/a&gt;-based microservice which is made possible by our colleagues in IT-CDA-WF and IT-CDA-DR. Many thanks to them for this cross-section collaboration which will &lt;strong&gt;greatly benefit the community as a whole&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021-05-24-indico-3-0-news/upload_dbba1af2ed099883a0d07cd41b681596.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The main advantages of this new search interface, from the user’s point of view, are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;New Indico-native interface&lt;/strong&gt; - an interface which is integrated with Indico in a tighter way (as opposed to the previous one, which was “embedded” into the tool);&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;New text-based search options&lt;/strong&gt; - you can search by based on a specific field, by prefixing your keyword with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;field:&lt;/code&gt;. For instance, to look for all events named “Indico developers review meeting”, you would write &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;title:&quot;Indico developers review meeting&quot;&lt;/code&gt;;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;You can now search within Notes/Minutes&lt;/strong&gt; - this is a long-awaited feature which is now made possible by this new search engine.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021-05-24-indico-3-0-news/upload_8d52447aec89a9349871376f081b2cff.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Smaller Indico instances that may not need such a powerful search engine and prefer the simplicity of not deploying a separate microservice will also benefit from a &lt;strong&gt;basic integrated search&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;user-avatars-in-more-places&quot;&gt;User avatars in more places&lt;/h2&gt;
+
+&lt;p&gt;Back in Indico 2.3 we first allowed you to set your own profile photo/gravatar/identicon. We are now extending its usage to more parts of the application:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Lists of participants in Meetings;&lt;/li&gt;
+  &lt;li&gt;Reviewing timelines;&lt;/li&gt;
+  &lt;li&gt;Event logs;&lt;/li&gt;
+  &lt;li&gt;User menu in newer interfaces.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021-05-24-indico-3-0-news/upload_1c38aeeb4dc13c60ae17f9c91590e581.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021-05-24-indico-3-0-news/upload_19b12a9179595162ce846d2c1f742569.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;mixed-categories&quot;&gt;Mixed categories&lt;/h2&gt;
+
+&lt;p&gt;In the past categories were restricted to contain either events or subcategories. This is no longer the case; any category may now contain a mix of both events and subcategories. To ease the transition for category managers, the update restricts event creation in all categories that have subcategories, so by default only category managers will be able to create events in those categories.&lt;/p&gt;
+
+&lt;h2 id=&quot;password-checks&quot;&gt;Password checks&lt;/h2&gt;
+
+&lt;p&gt;If you are running Indico with local accounts, you will be happy to know that it now checks user passwords against the &lt;a href=&quot;https://haveibeenpwned.com/&quot;&gt;Have I Been Pwned&lt;/a&gt; API. Firstly, whenever your users try to use a password which has been compromised, Indico will refuse to take it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021-05-24-indico-3-0-news/upload_0b1ea787da79fb34f90152f35b4ee134.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then, if a password currently being used by a user is compromised, they will be asked to change it next time they log in.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021-05-24-indico-3-0-news/upload_499ab57c93f0fbccdf15a37eca97167e.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;other-nice-things&quot;&gt;Other nice things&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We now allow &lt;strong&gt;adding groups/roles as “authorized abstract submitters”&lt;/strong&gt;;&lt;/li&gt;
+  &lt;li&gt;Paper peer reviewing and Editing data can now &lt;strong&gt;be exported to JSON&lt;/strong&gt;;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Contribution duration fields&lt;/strong&gt; now use a widget similar to the &lt;strong&gt;time picker&lt;/strong&gt; that makes selecting durations easier;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;iCal/ICS&lt;/strong&gt; files can now be &lt;strong&gt;automatically attached&lt;/strong&gt; to &lt;strong&gt;registration confirmation and event reminder emails&lt;/strong&gt;;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Lots of fixes in iCal&lt;/strong&gt; support - ICS files now include contact data, event logo URL and, when exporting sessions/contributions, the UID of the corresponding event;&lt;/li&gt;
+  &lt;li&gt;When cloning events, &lt;strong&gt;surveys may now be cloned&lt;/strong&gt; as well;&lt;/li&gt;
+  &lt;li&gt;There are &lt;strong&gt;new meeting themes&lt;/strong&gt; with numbered entries (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;standard_numbered&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;standard_numbered_inline_minutes&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;python-3-&quot;&gt;Python 3 🐍&lt;/h2&gt;
+
+&lt;p&gt;Although this is an important change, it is one which is practically invisible to regular users. Indico is now using Python 3.9, abandoning the deprecated 2.7 version. In order to celebrate this transition, we decided to &lt;strong&gt;increase Indico’s major version number to 3&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;We hope you will enjoy Indico 3!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 24 May 2021 16:20:00 +0000</pubDate>
+        <link>https://getindico.io/indico/release/2021/05/24/indico-3-0-news.html</link>
+        <guid isPermaLink="true">https://getindico.io/indico/release/2021/05/24/indico-3-0-news.html</guid>
+        
+        
+        <category>indico</category>
+        
+        <category>release</category>
+        
+      </item>
+    
+      <item>
+        <title>Indico 2.3 - Made at home 🏠</title>
+        <description>&lt;p&gt;We are very proud to announce &lt;strong&gt;version 2.3&lt;/strong&gt; of Indico which will be coming soon. This is the product of many months of development effort which encompassed, among others, the greatest world-wide lockdown ever seen.
+But even during the peak of the pandemic, Indico development never ceased, thanks to the resilience of the team and the help of the community.&lt;/p&gt;
+
+&lt;p&gt;The result is one of the richest Indico updates seen to date, with the new &lt;strong&gt;Paper Editing&lt;/strong&gt; workflow representing the bulk of the effort but also including a plethora of improvements and fixes in &lt;strong&gt;various parts of the application&lt;/strong&gt;, in great part thanks to &lt;strong&gt;contributions from the Community&lt;/strong&gt;. In this regard, we would like to thank in particular the team managing Indico at the &lt;strong&gt;United Nations Office at Geneva&lt;/strong&gt; for their contributions back to the Indico code base, as well as &lt;strong&gt;IEEE&lt;/strong&gt; for having funded some of the developments.&lt;/p&gt;
+
+&lt;p&gt;You will find below a list of the most relevant features. The &lt;a href=&quot;https://docs.getindico.io/en/latest/changelog/#version-2-3&quot;&gt;release changelog&lt;/a&gt; provides a full account of all improvements and bug fixes.&lt;/p&gt;
+
+&lt;h2 id=&quot;editing-module&quot;&gt;Editing Module&lt;/h2&gt;
+
+&lt;p&gt;The flagship feature of this Indico release is the brand-new &lt;strong&gt;Editing&lt;/strong&gt; module. It is meant to augment the features offered by the already existing &lt;strong&gt;Peer reviewing&lt;/strong&gt; module (previously called &lt;strong&gt;Paper Reviewing&lt;/strong&gt;), by providing an integrated and customizable workflow for &lt;strong&gt;Academic Paper Editing&lt;/strong&gt;, as well as associated materials (posters and slides).&lt;/p&gt;
+
+&lt;h3 id=&quot;choose-what-to-review&quot;&gt;Choose what to review&lt;/h3&gt;
+
+&lt;p&gt;You may choose which files in your contribution you would like to be reviewed - would you like to review the slides of all presentations? No problem.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_ee3a0c1752278cc8a160ba0a49fa550e.png&quot; alt=&quot;&quot; width=&quot;70%&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;decide-which-files-are-accepted&quot;&gt;Decide which files are accepted&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_e9fcd6d3980b50db120aeae80e944898.png&quot; alt=&quot;&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The new &lt;strong&gt;Editing&lt;/strong&gt; module introduces the concept of &lt;strong&gt;File type&lt;/strong&gt;. Not only can you decide which file extensions are accepted and which naming conventions have to be followed, you can also decide which files are necessary for reviewing to be possible.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_668672f31d04c600bc23580753b2d3b1.png&quot; alt=&quot;&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;wait-for-the-files-to-arrive&quot;&gt;Wait for the files to arrive&lt;/h3&gt;
+
+&lt;p&gt;Indico will &lt;strong&gt;enforce&lt;/strong&gt; the file extensions and name format defined above.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_b813f9d7735baf2043153c8065e112d2.png&quot; alt=&quot;&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;review-the-submitted-material&quot;&gt;Review the submitted material&lt;/h3&gt;
+
+&lt;p&gt;Whether it’s &lt;strong&gt;papers, posters or slides&lt;/strong&gt;, you will be able to request and suggest changes, as well as accept or reject the submission.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_2f447ecd122e23e436d07c42b6538d02.png&quot; alt=&quot;&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;registration&quot;&gt;Registration&lt;/h2&gt;
+
+&lt;h3 id=&quot;registration-status-in-contribution-list&quot;&gt;Registration Status in Contribution List&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_3265e63d8cee027f50c1795a5be05315.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Thanks to this feature, it is now easy to see whether your speakers have already &lt;strong&gt;registered or not&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;reset-registration-approval&quot;&gt;Reset Registration Approval&lt;/h3&gt;
+
+&lt;p&gt;Event managers now can &lt;strong&gt;reset the approval state&lt;/strong&gt; of an event registrant.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_d3cde1a11665018bc1a073ea58551daa.png&quot; alt=&quot;&quot; width=&quot;70%&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;premonition contribution&quot;&gt;
+  &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;p class=&quot;header&quot;&gt;Community Contribution&lt;/p&gt;&lt;p&gt;Feature kindly contributed by the &lt;strong&gt;United Nations Office in Geneva&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&quot;withdraw-registration&quot;&gt;Withdraw Registration&lt;/h3&gt;
+
+&lt;p&gt;Registrants can now withdraw their registrations.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_23ffc700d74211ea966ffc942509878f.png&quot; alt=&quot;&quot; width=&quot;70%&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;premonition contribution&quot;&gt;
+  &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;p class=&quot;header&quot;&gt;Community Contribution&lt;/p&gt;&lt;p&gt;Feature kindly contributed by the &lt;strong&gt;United Nations Office in Geneva&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;contributions-and-timetable&quot;&gt;Contributions and Timetable&lt;/h2&gt;
+
+&lt;h3 id=&quot;draft-state-for-contribution-list&quot;&gt;“Draft” state for Contribution List&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_fbfc85fb57d8af26b7c374205d876ed7.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;Contribution List&lt;/strong&gt; of new events will from now on be, &lt;strong&gt;by default&lt;/strong&gt;, in &lt;strong&gt;“Draft” state&lt;/strong&gt;. This ensures that contributions and all related menu items (e.g. Contribution List, Author List, Speaker List, Timetable) will be hidden from visitors. Whenever you are ready to publish your timetable, you can switch it to &lt;strong&gt;“Published” state&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;premonition info&quot;&gt;
+  &lt;i class=&quot;premonition pn-info&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;p class=&quot;header&quot;&gt;Attention&lt;/p&gt;&lt;p&gt;This is only valid for newly-created events. Old events will remain in “Published” state unless changed.&lt;/p&gt;
+
+
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;programme-codes&quot;&gt;Programme Codes&lt;/h3&gt;
+
+&lt;p&gt;Indico can now generate &lt;strong&gt;programme codes&lt;/strong&gt; for (sub-)contributions, session and session blocks, based on &lt;strong&gt;pre-configured sequences&lt;/strong&gt;. These codes can be bulk-assigned and used to identify the corresponding event structures.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_f59b8014840c40c07268e21dda2b6350.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;subcontribution-management&quot;&gt;Subcontribution Management&lt;/h3&gt;
+
+&lt;p&gt;Subcontributions can now be managed from the event’s display area.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/subcontrib_display.png&quot; alt=&quot;&quot; width=&quot;20%&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;protection-and-acls&quot;&gt;Protection and ACLs&lt;/h2&gt;
+
+&lt;h3 id=&quot;limit-access-to-registrants&quot;&gt;Limit access to Registrants&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_a9261e822dbd56d898266868aadea80b.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A highly requested feature since some time, events can now be set as accessible to &lt;strong&gt;registrants/participants only&lt;/strong&gt;.
+It is now also possible to restrict invididual &lt;strong&gt;materials&lt;/strong&gt; and &lt;strong&gt;custom conference menu items&lt;/strong&gt; (links and pages) to registered users.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_556a2762227542e52c21d769f4618aba.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;category-roles&quot;&gt;Category Roles&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_c4044866bad8f5b03ace5bdc065ce366.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Category-specific groups of users (&lt;strong&gt;Category Roles&lt;/strong&gt;) can now be created. They can be used across the category, allowing for more efficient protection of your events.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_692b96675216cd986525e414d6507c15.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;These list of roles can also be imported from CSV files.&lt;/p&gt;
+
+&lt;div class=&quot;premonition contribution&quot;&gt;
+  &lt;i class=&quot;fas fa-money-check-alt&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;p class=&quot;header&quot;&gt;Community Sponsorship&lt;/p&gt;&lt;p&gt;Feature kindly sponsored by &lt;strong&gt;IEEE&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&quot;import-roles-from-csv-file&quot;&gt;Import Roles from CSV file&lt;/h3&gt;
+
+&lt;p&gt;User lists for roles (including new “Category Roles”) can now be &lt;strong&gt;imported from CSV files&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_898b75bc5c2e47276f415da7f9cd7df5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;add-myself-button&quot;&gt;“Add myself” button&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_ff6dae3dfc69cbc9f6c62b8f11353169.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can now easily &lt;strong&gt;add yourself&lt;/strong&gt; to any author list (abstracts/contributions).&lt;/p&gt;
+
+&lt;div class=&quot;premonition contribution&quot;&gt;
+  &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;p class=&quot;header&quot;&gt;Community Contribution&lt;/p&gt;&lt;p&gt;Feature kindly contributed by &lt;a href=&quot;https://github.com/jgrigera&quot;&gt;&lt;strong&gt;@jgrigera&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&quot;clearer-display-of-implicit-permissions&quot;&gt;Clearer display of implicit permissions&lt;/h3&gt;
+
+&lt;p&gt;Some roles may imply, by definition, having access to the event. Indico now displays those in a clear way.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_25a707900a02fed7c1f681151e855d80.png&quot; alt=&quot;&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;abstracts&quot;&gt;Abstracts&lt;/h2&gt;
+
+&lt;h3 id=&quot;editing-permissions&quot;&gt;Editing Permissions&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_d8d876740d1b2b44edd99de76da6bd78.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A recurring problem with some events was that allowing all (co-authors) to edit an abstract was undesirable. This behaviour can now be fine-tuned. You get to choose you can edit an abstract and later get submission rights over the resulting contribution.&lt;/p&gt;
+
+&lt;h3 id=&quot;affiliation-checks&quot;&gt;Affiliation checks&lt;/h3&gt;
+
+&lt;p&gt;When assigning papers to reviewers/judges managers are now shown the affiliation of the person in question, as well as a warning in case it overlaps with that of the paper.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_0b969e1d53b8ea96d6f154df9b58a318.png&quot; alt=&quot;&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;download-book-of-abstracts-in-latex&quot;&gt;Download Book of Abstracts in LaTeX&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_dbf54dd6da1e32c8f32a0eb4882c5d04.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you need to make changes to your &lt;strong&gt;Book of Abstracts&lt;/strong&gt; before having it published/printed, you now can &lt;strong&gt;extract the LaTeX source code&lt;/strong&gt; directly from Indico!&lt;/p&gt;
+
+&lt;div class=&quot;premonition contribution&quot;&gt;
+  &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;p class=&quot;header&quot;&gt;Community Contribution&lt;/p&gt;&lt;p&gt;Feature kindly contributed by &lt;strong&gt;&lt;a href=&quot;https://github.com/bpedersen2&quot;&gt;@bpedersen2&lt;/a&gt; (MLZ)&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&quot;upload-custom-boa&quot;&gt;Upload Custom BoA&lt;/h3&gt;
+
+&lt;p&gt;Once you have a custom Book of Abstracts, you can upload it to Indico and replace the automatically-generated one.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/custom_boa.png&quot; alt=&quot;&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;track-groups&quot;&gt;Track Groups&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_e1a4941ce79e4c2af26b3468fb5db597.png&quot; alt=&quot;&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can now group tracks together. “&lt;strong&gt;Track groups&lt;/strong&gt;” allow you to have more fine-grained control over your abstracts while keeping things organized.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;room-booking&quot;&gt;Room Booking&lt;/h2&gt;
+
+&lt;h3 id=&quot;quick-cancel&quot;&gt;“Quick Cancel”&lt;/h3&gt;
+
+&lt;p&gt;Booking reminder e-mails now include a link to a “&lt;strong&gt;quick cancel&lt;/strong&gt;” dialog.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_b88db712f6d1bf9fbd8459ba87d54c29.png&quot; alt=&quot;&quot; width=&quot;50%&quot; /&gt;
+&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_3ad9a7f54be53524f82cd71e529431e0.png&quot; alt=&quot;&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;profile&quot;&gt;Profile&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_83002f0b612f569b90eba89549e30be1.png&quot; alt=&quot;&quot; width=&quot;70%&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;profile-photo&quot;&gt;Profile Photo&lt;/h3&gt;
+
+&lt;p&gt;You can now &lt;strong&gt;set a photo&lt;/strong&gt; on your Indico profile. We plan to slowly start using this image in places where your name shows up.&lt;/p&gt;
+
+&lt;div class=&quot;premonition note&quot;&gt;
+  &lt;i class=&quot;premonition pn-note&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;p class=&quot;header&quot;&gt;Note&lt;/p&gt;&lt;p&gt;This is obviously &lt;strong&gt;opt-in&lt;/strong&gt;  and there is &lt;strong&gt;no synchronization&lt;/strong&gt; with any identity providers (e.g. LDAP, CERN profile…).&lt;/p&gt;
+
+
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;premonition contribution&quot;&gt;
+  &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;p class=&quot;header&quot;&gt;Community Contribution&lt;/p&gt;&lt;p&gt;Feature kindly contributed by the &lt;a href=&quot;https://github.com/UNOG-Indico&quot;&gt;&lt;strong&gt;United Nations Office in Geneva&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&quot;improved-profile-layout&quot;&gt;Improved Profile Layout&lt;/h3&gt;
+
+&lt;p&gt;Still recognizable, but more spacious and more usable!&lt;/p&gt;
+
+&lt;h3 id=&quot;download-events-in-icsical&quot;&gt;Download Events in ICS/iCal&lt;/h3&gt;
+
+&lt;p&gt;You can now download an ICS feed with the events on your profile. This allows you to keep track of your Indico events on your mobile phone on favourite desktop Calendaring application.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;events&quot;&gt;Events&lt;/h2&gt;
+
+&lt;h3 id=&quot;import-data-from-another-event&quot;&gt;Import data from another Event&lt;/h3&gt;
+
+&lt;p&gt;It is now possible to import data from other events. This includes the event’s timetable, registrations, reminders
+and many other things.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/import_from_event.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;premonition contribution&quot;&gt;
+  &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;p class=&quot;header&quot;&gt;Community Contribution&lt;/p&gt;&lt;p&gt;Feature kindly contributed by the &lt;a href=&quot;https://github.com/UNOG-Indico&quot;&gt;&lt;strong&gt;United Nations Office in Geneva&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&quot;override-map-url&quot;&gt;Override Map URL&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_1ab6706a860282efa93e107da23a480f.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can now &lt;strong&gt;override the Map URL&lt;/strong&gt; which will show up on your event’s &lt;strong&gt;display page&lt;/strong&gt;. Before you could only have a map URL for rooms managed by Indico.&lt;/p&gt;
+
+&lt;div class=&quot;premonition contribution&quot;&gt;
+  &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;p class=&quot;header&quot;&gt;Community Contribution&lt;/p&gt;&lt;p&gt;Feature kindly contributed by the &lt;a href=&quot;https://github.com/UNOG-Indico&quot;&gt;&lt;strong&gt;United Nations Office in Geneva&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&quot;filter-event-log&quot;&gt;Filter Event Log&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_e407f9c8092cea93a4730b2a6304fc2b.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The event log now allows filtering by &lt;strong&gt;related entries&lt;/strong&gt;. This only applies to new log entries.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_b2c97ae425dd751b0e48a3acae79cf4a.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;premonition contribution&quot;&gt;
+  &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;p class=&quot;header&quot;&gt;Community Contribution&lt;/p&gt;&lt;p&gt;Feature kindly contributed by the &lt;a href=&quot;https://github.com/UNOG-Indico&quot;&gt;&lt;strong&gt;United Nations Office in Geneva&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;ui-improvements&quot;&gt;UI Improvements&lt;/h2&gt;
+
+&lt;h3 id=&quot;navigate-button&quot;&gt;“Navigate” Button&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_8017ee4db3dae4a76ac260435a79e1c0.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The new &lt;strong&gt;Navigate&lt;/strong&gt; button allows you to quickly search for categories and access them directly.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_17945d5805d85a305a3976d5412d99c2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;premonition contribution&quot;&gt;
+  &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;p class=&quot;header&quot;&gt;Community Contribution&lt;/p&gt;&lt;p&gt;Feature kindly contributed by the &lt;a href=&quot;https://github.com/UNOG-Indico&quot;&gt;&lt;strong&gt;United Nations Office in Geneva&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&quot;better-time-picker&quot;&gt;Better time picker&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_b0183feb40f8602e954b3f180111a9ba.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We regularly get feedback from users who have &lt;strong&gt;issues&lt;/strong&gt; with their browser’s &lt;strong&gt;default time picker&lt;/strong&gt; widget (most often on Microsoft Edge). This could result in some users being locked in to AM/PM instead of 24h, or even “buggy” behaviour.&lt;/p&gt;
+
+&lt;p&gt;In order to save some of our users from that frustration, we have decided to use an &lt;strong&gt;Indico-specific time picker widget&lt;/strong&gt;. We still believe general-purpose browser-based widgets are the way to go, but unfortunately not all browsers are fully there yet.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;administration&quot;&gt;Administration&lt;/h2&gt;
+
+&lt;h3 id=&quot;block-user&quot;&gt;Block User&lt;/h3&gt;
+
+&lt;p&gt;There is now an interface to block a user.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-07-22-indico-2-3-news/upload_b7a6413a1199413bab5063870dd566a6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;technical-improvements&quot;&gt;Technical Improvements&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;React and SemanticUI now usable across the whole application
+    &lt;ul&gt;
+      &lt;li&gt;Richer user interfaces with little effort&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Lots of new template hooks&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 22 Jul 2020 15:00:00 +0000</pubDate>
+        <link>https://getindico.io/indico/update/release/milestone/2020/07/22/indico-2-3-news.html</link>
+        <guid isPermaLink="true">https://getindico.io/indico/update/release/milestone/2020/07/22/indico-2-3-news.html</guid>
+        
+        
+        <category>indico</category>
+        
+        <category>update</category>
+        
+        <category>release</category>
+        
+        <category>milestone</category>
+        
+      </item>
+    
+      <item>
+        <title>Introducing Indico 2.2 - featuring completely new room booking system!</title>
+        <description>&lt;p&gt;Indico 2.2 is coming soon and we would like to introduce the new features to you. If you’re using Indico to manage room bookings, we are sure that you will particularly appreciate this release.
+Organizers of events and conferences always need to take care of booking spaces with specific requirements. We wanted to make this task much easier and better connected with Indico events.&lt;/p&gt;
+
+&lt;h2 id=&quot;new-layout&quot;&gt;New layout&lt;/h2&gt;
+
+&lt;p&gt;The new Room Booking system has a completely new layout. The landing page let’s you start the booking directly and set up basic parameters from there. We also simplified the page menu. Now there are 3 basic pages:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Book a room&lt;/strong&gt; - the option you will probably use the most,&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;List of rooms&lt;/strong&gt; - giving an overview and details about rooms and&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Bookings&lt;/strong&gt; where you can consult already existing bookings.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2019-02-22-indico-2-2-news/landing.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;easy-results-filtering&quot;&gt;Easy results filtering&lt;/h2&gt;
+
+&lt;p&gt;To make the booking process easier we provide a &lt;strong&gt;filter bar&lt;/strong&gt; that updates the available rooms results in real time (no need for another click to see room availability anymore!). It’s possible to filter by building, provided equipment, capacity etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2019-02-22-indico-2-2-news/filter.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;On the booking page there’s also a map, showing the location of rooms on the list. It’s also possible to search for the room on the map and limit the results to what’s visible (click &lt;em&gt;Show only rooms in this area&lt;/em&gt;) or book rooms directly from the map.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2019-02-22-indico-2-2-news/bookroom.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The search results can be consulted in two different views: &lt;strong&gt;list view&lt;/strong&gt; (above) and &lt;strong&gt;timeline view&lt;/strong&gt; (below).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2019-02-22-indico-2-2-news/timeline1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The timeline view gives you a better idea about room availability on specific dates and during particular time intervals. It allows you to display the results in &lt;strong&gt;day&lt;/strong&gt;, &lt;strong&gt;week&lt;/strong&gt; and &lt;strong&gt;month&lt;/strong&gt; time frames.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2019-02-22-indico-2-2-news/timeline2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;alternative-booking-suggestions&quot;&gt;Alternative booking suggestions&lt;/h2&gt;
+
+&lt;p&gt;We are aware of how difficult it can be to find an available room matching your criteria. To simplify the process, Indico will now sometimes suggest rooms that are a near match. That means that if shortening or slightly changing the time of your booking would make it viable, then Indico will let your know about it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2019-02-22-indico-2-2-news/planb.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;splitting-a-booking&quot;&gt;Splitting a booking&lt;/h2&gt;
+
+&lt;p&gt;The new Room Booking adds an option to modify a recurring booking, even if it has already started. Splitting will &lt;strong&gt;keep&lt;/strong&gt; the occurrences that already took place, &lt;strong&gt;cancel&lt;/strong&gt; all the future ones and create &lt;strong&gt;new&lt;/strong&gt; ones at the new times.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2019-02-22-indico-2-2-news/splitting.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;booking-from-events&quot;&gt;Booking from events&lt;/h2&gt;
+
+&lt;p&gt;Over the years, we got a lot of suggestions from users wanting a tighter link between &lt;strong&gt;events&lt;/strong&gt; and &lt;strong&gt;rooms&lt;/strong&gt;. This is why we added the possibility to make a quick booking on event creation. Indico will immediately let you know whether the room you picked is &lt;strong&gt;free&lt;/strong&gt; and ask you whether you’d like to &lt;strong&gt;book it&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2019-02-22-indico-2-2-news/eventlink1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When you’re booking a room, Indico will let you know if you have any event scheduled for given time and propose to link it automatically to the booking.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2019-02-22-indico-2-2-news/eventlink2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We have also improved the interface that allows rooms to be booked for an event. And in addition to contributions, you can now also book rooms for session blocks.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2019-02-22-indico-2-2-news/eventlink3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We hope you will like this release. As usual, feel free to contact us if you have any comments/suggestions!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 22 Feb 2019 10:00:00 +0000</pubDate>
+        <link>https://getindico.io/indico/update/release/milestone/2019/02/22/indico-2-2-news.html</link>
+        <guid isPermaLink="true">https://getindico.io/indico/update/release/milestone/2019/02/22/indico-2-2-news.html</guid>
+        
+        
+        <category>indico</category>
+        
+        <category>update</category>
+        
+        <category>release</category>
+        
+        <category>milestone</category>
+        
+      </item>
+    
+      <item>
+        <title>Indico 2.1 released</title>
+        <description>&lt;p&gt;It is with great enthusiasm that we announce the release of Indico 2.1.&lt;/p&gt;
+
+&lt;p&gt;Full details available in our &lt;a href=&quot;https://talk.getindico.io/t/indico-2-1-stable/241&quot;&gt;forum post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We hope you will like this stable release. As usual, feel free to &lt;a href=&quot;/contact&quot;&gt;contact us&lt;/a&gt; if you have any comments/suggestions!&lt;/p&gt;
+</description>
+        <pubDate>Wed, 16 May 2018 14:00:00 +0000</pubDate>
+        <link>https://getindico.io/indico/update/release/milestone/2018/05/16/indico-2-1-released.html</link>
+        <guid isPermaLink="true">https://getindico.io/indico/update/release/milestone/2018/05/16/indico-2-1-released.html</guid>
+        
+        
+        <category>indico</category>
+        
+        <category>update</category>
+        
+        <category>release</category>
+        
+        <category>milestone</category>
+        
+      </item>
+    
+      <item>
+        <title>Indico 2.1 - even more useful!</title>
+        <description>&lt;p&gt;We’d like to give you a tour of the upcoming Indico 2.1. If you use Indico mainly to organize large conferences, we’re sure
+that you will particularly appreciate this release.&lt;/p&gt;
+
+&lt;h2 id=&quot;new-role-system&quot;&gt;New Role System&lt;/h2&gt;
+
+&lt;p&gt;Conferences often involve dozens of organizers with very different roles. It’s extremely important to make sure who does what
+and who is supposed to have access to different parts of an event. We would like to have an Indico where you can define exactly
+what each of the organizers will be able to do and do so to a reasonable level of details. This is why we are introducing a new
+&lt;strong&gt;role system&lt;/strong&gt; and allowing &lt;strong&gt;fine-grained permissions&lt;/strong&gt; to be assigned to roles, groups and users.&lt;/p&gt;
+
+&lt;h3 id=&quot;new-permission-widget&quot;&gt;New Permission Widget&lt;/h3&gt;
+
+&lt;p&gt;For now, you will find that the permissions we’re including are not yet as fine grained as they should, but we will be gradually
+adding new options over the next few releases.&lt;/p&gt;
+
+&lt;p&gt;Still, you will find that the “Protection” dialog will look a bit different. We’ve merged the manager, access control and submitter
+lists into a single one which offers you and immediate view over everyone who can access your event in any way.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-03-28-indico-2-1-news/permissions1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;roles-and-participants&quot;&gt;Roles and Participants&lt;/h3&gt;
+
+&lt;p&gt;The old “Roles” page has been renamed &lt;strong&gt;Participant Roles&lt;/strong&gt;. Like before, it will list all persons who are somehow involved with the
+conference (e.g. as chairs, speakers or playing any other particular role) and now also their respective “custom” roles (as defined by
+you).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-03-28-indico-2-1-news/participants1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A new page, called &lt;strong&gt;Role Settings&lt;/strong&gt; will actually list all the roles that exist in the conference and allow you to add, delete or modify
+existing roles.&lt;/p&gt;
+
+&lt;h2 id=&quot;new-abstractpaper-question-types&quot;&gt;New Abstract/Paper Question Types&lt;/h2&gt;
+
+&lt;p&gt;One of the shortcomings of the abstract and paper reviewing modules has always been the fact that they’re limited to rating based on a scale.
+That is not the case anymore. From now on, you’ll be able to have &lt;strong&gt;yes/no&lt;/strong&gt; and &lt;strong&gt;free text&lt;/strong&gt; questions.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-03-28-indico-2-1-news/questions1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;importing-useful-data&quot;&gt;Importing Useful Data&lt;/h2&gt;
+
+&lt;p&gt;One particular kind of request we often get comes from organizers who have registered their participants through a 3rd party system (sometimes
+belonging to a PCO - Professional Conference Organizer) and who would like to import their data into Indico. In order to help users in that
+situation, we have introduced a new &lt;strong&gt;Import from CSV&lt;/strong&gt; feature for event registrations.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-03-28-indico-2-1-news/import1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This feature currently only supports basic form fields (name, affiliation, position, phone number and e-mail) but we intend to extend it to to
+other field types in the future.&lt;/p&gt;
+
+&lt;p&gt;We have also implemented a mechanism that enables an organizer to &lt;strong&gt;import contributions&lt;/strong&gt;, also from a CSV file, including time information.&lt;/p&gt;
+
+&lt;h2 id=&quot;other-tools-for-conference-organizers&quot;&gt;Other Tools for Conference Organizers&lt;/h2&gt;
+
+&lt;p&gt;We have implemented as well a few other tools that we are sure many of our users will appreciate:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Contribution cloning&lt;/strong&gt;, which will allow you to easy replicate a contribution (e.g. with the aim of placing a copy in a different session);&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Custom session types&lt;/strong&gt; (until now there were only “Poster” and “Oral” options);&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Private Abstract/Contribution types&lt;/strong&gt;, which only you can assign;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Abstract Field visibility&lt;/strong&gt; - decide who can see and edit your abstract fields;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;New Abstract/Paper question types&lt;/strong&gt; - you can now have yes/no questions and&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-03-28-indico-2-1-news/tools1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-03-28-indico-2-1-news/tools2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We hope you will like this release. As usual, feel free to &lt;a href=&quot;/contact&quot;&gt;contact us&lt;/a&gt; if you have any comments/suggestions!&lt;/p&gt;
+</description>
+        <pubDate>Wed, 28 Mar 2018 13:00:00 +0000</pubDate>
+        <link>https://getindico.io/indico/update/release/milestone/2018/03/28/indico-2-1-news.html</link>
+        <guid isPermaLink="true">https://getindico.io/indico/update/release/milestone/2018/03/28/indico-2-1-news.html</guid>
+        
+        
+        <category>indico</category>
+        
+        <category>update</category>
+        
+        <category>release</category>
+        
+        <category>milestone</category>
+        
+      </item>
+    
+      <item>
+        <title>Indico 2.0 is here! 🎉</title>
+        <description>&lt;h1 id=&quot;indico-20-is-now-stable-and-ready-to-be-used&quot;&gt;Indico 2.0 is now stable and ready to be used!&lt;/h1&gt;
+
+&lt;p&gt;After several years of hard work and more than 11 intermediate versions, &lt;strong&gt;Indico 2.0&lt;/strong&gt;, the first stable version of the Indico 2 release series is now
+&lt;strong&gt;publicly&lt;/strong&gt; available and the &lt;strong&gt;officially&lt;/strong&gt; supported version.
+We’ve already shown you many of the new feature along the way (we advise you to read the last few posts), but there are a few resources we’d like to
+highlight:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Our brand new &lt;a href=&quot;https://learn.getindico.io&quot;&gt;User Documentation Site&lt;/a&gt;;&lt;/li&gt;
+  &lt;li&gt;Our new &lt;a href=&quot;https://docs.getindico.io&quot;&gt;Technical Documentation Site&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Our also new &lt;a href=&quot;https://talk.getindico.io&quot;&gt;Community Forum&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We hope you will enjoy this new stable Indico release. Stay tuned for more updates through the &lt;a href=&quot;/contact&quot;&gt;usual channels&lt;/a&gt;!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 12 Jan 2018 13:00:00 +0000</pubDate>
+        <link>https://getindico.io/indico/update/release/milestone/2018/01/12/indico-2-0-news.html</link>
+        <guid isPermaLink="true">https://getindico.io/indico/update/release/milestone/2018/01/12/indico-2-0-news.html</guid>
+        
+        
+        <category>indico</category>
+        
+        <category>update</category>
+        
+        <category>release</category>
+        
+        <category>milestone</category>
+        
+      </item>
+    
+      <item>
+        <title>Indico 1.9.10 - what's new?</title>
+        <description>&lt;p&gt;Indico keeps moving forward! The main focus of this release was the complete re-engineering of our &lt;strong&gt;Paper Reviewing&lt;/strong&gt; module. The following list summarizes the new features and improvements that are included in the 1.9.10 release, one step before the long-awaited 2.0 release.&lt;/p&gt;
+
+&lt;h2 id=&quot;submitting-papers&quot;&gt;Submitting papers&lt;/h2&gt;
+
+&lt;p&gt;Submitting a paper has never before been as easy and straightforward as it is now. Once the call for papers opens, users can submit their papers through the &lt;strong&gt;Call for Papers&lt;/strong&gt; page of the conference:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2017-03-20-indico-1-9-10-news/call_for_abstracts.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Another entry point for submitting a paper for a contribution is the &lt;strong&gt;contribution page&lt;/strong&gt; itself.&lt;/p&gt;
+
+&lt;p&gt;The paper submission form has also been simplified. Once the user submits their paper, it is marked as &lt;em&gt;Submitted&lt;/em&gt;, the corresponding managers and reviewers are notified and the reviewing process begins.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2017-03-20-indico-1-9-10-news/submit_paper_dialog.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;paper-timeline&quot;&gt;Paper timeline&lt;/h3&gt;
+
+&lt;p&gt;A new feature that we are very proud to announce is the paper timeline page. Submitters, reviewers, judges and managers can all access this page and be informed of the &lt;strong&gt;current status&lt;/strong&gt; of the paper. Moreover, this page provides a &lt;strong&gt;timeline&lt;/strong&gt; indicating all the steps that the paper went through until it reaches its final stage. Last but not least, this page also serves as a &lt;strong&gt;communication hub&lt;/strong&gt; between submitters-judges and reviewers-judges by allowing comments for every paper revision submitted. Users can submit new revisions of their paper, reviewers can submit their reviews and comments and the judges can easily make a decision by having all the necessary information in one page.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;1st revision&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;2nd revision&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/2017-03-20-indico-1-9-10-news/paper_timeline.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/2017-03-20-indico-1-9-10-news/paper_timeline_accepted.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;reviewing-papers&quot;&gt;Reviewing papers&lt;/h2&gt;
+
+&lt;p&gt;In the &lt;strong&gt;Reviewing Area&lt;/strong&gt; of the conference, the reviewers can have a general overview of the papers that need to be reviewed and the reviewed ones.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2017-03-20-indico-1-9-10-news/reviewing_area.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;judging-papers&quot;&gt;Judging papers&lt;/h2&gt;
+
+&lt;p&gt;Similarly to the Reviewing Area, the &lt;strong&gt;Judging Area&lt;/strong&gt; of the conference provides an overview of the submitted papers to the judges. It lists the papers that the judge is assigned to, allowing them to make a decision but also to assign/unassign content and layout reviewers.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2017-03-20-indico-1-9-10-news/judging_area.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;call-for-papers-settings&quot;&gt;Call for Papers settings&lt;/h2&gt;
+
+&lt;p&gt;Major changes also affected the &lt;strong&gt;management area&lt;/strong&gt; of the paper reviewing feature. In the dashboard page of the Call for Papers, the manager can find available options and configuration settings, all grouped in a way to reduce complexity and improve discoverability. These include the activation of reviewing types (content, layout) and configuration of deadlines, the management of the paper templates, the configuration of the reviewing settings and teams and other necessary options.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2017-03-20-indico-1-9-10-news/call_for_papers_mgmt.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the &lt;strong&gt;reviewing settings&lt;/strong&gt; dialog, one can manage the reviewing questions of each reviewing type, the announcement of the Call for Papers but also the email notification settings.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2017-03-20-indico-1-9-10-news/reviewing_settings_dialog.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The interface for configuring the &lt;strong&gt;reviewing teams&lt;/strong&gt; and the &lt;strong&gt;competences&lt;/strong&gt; of each person is split into 2 dialogs. The competences dialog allows the manager to edit the competences of the reviewing team members quickly and easily:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Reviewing Teams&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Competences&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/2017-03-20-indico-1-9-10-news/reviewing_teams.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/2017-03-20-indico-1-9-10-news/competences.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;paper-assignment&quot;&gt;Paper assignment&lt;/h2&gt;
+
+&lt;p&gt;Apart from the Judging Area in the display area of the conference, managers can also assign papers to the corresponding reviewers and judges through the &lt;strong&gt;paper assignment&lt;/strong&gt; page.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2017-03-20-indico-1-9-10-news/paper_assignment.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;paper-email-notifications&quot;&gt;Paper email notifications&lt;/h2&gt;
+
+&lt;p&gt;Yet another eye-candy is the new HTML layout of the emails sent through Indico related to the paper reviewing process.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2017-03-20-indico-1-9-10-news/email.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;event-cloning&quot;&gt;Event cloning&lt;/h2&gt;
+
+&lt;p&gt;The complex interface for cloning an event has now been simplified with our new &lt;strong&gt;step-by-step guide&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2017-03-20-indico-1-9-10-news/event_cloning.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;That’s all for now! We hope you will like the changes this release introduces and of course, we are looking forward to your feedback!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 Mar 2017 13:00:00 +0000</pubDate>
+        <link>https://getindico.io/indico/update/release/2017/03/20/indico-1-9-10-news.html</link>
+        <guid isPermaLink="true">https://getindico.io/indico/update/release/2017/03/20/indico-1-9-10-news.html</guid>
+        
+        
+        <category>indico</category>
+        
+        <category>update</category>
+        
+        <category>release</category>
+        
+      </item>
+    
+      <item>
+        <title>Indico 1.9.9 - what's new?</title>
+        <description>&lt;p&gt;The following list summarizes the new features and improvements included in the Indico 1.9.9 release.
+Improvements were done mostly regarding the abstract submission and abstract reviewing workflow.
+The new interface provides users with more intuitive features and give more flexibility to event managers.&lt;/p&gt;
+
+&lt;h2 id=&quot;abstract-submittedwithdrawn-email-notification&quot;&gt;Abstract submitted/withdrawn email notification&lt;/h2&gt;
+
+&lt;p&gt;It is now possible to send email notification also when an abstract was submitted or withdrawn.
+There is also the possibility to choose from different email templates that can be used as a base for the email
+notification.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2016-11-29-indico-1-9-9-news/notif.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;global-reviewersconveners&quot;&gt;Global reviewers/conveners&lt;/h2&gt;
+
+&lt;p&gt;A new concept of “global reviewers/conveners” was introduced. It allows managers to give global reviewing rights to
+selected users, allowing them not only to review abstracts of a selected track but to review abstracts in all tracks of
+the event. The distinction between reviewers and conveners is now also much clearer:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Reviewers provide an assessment of the abstract. They can consult only their own reviews.&lt;/li&gt;
+  &lt;li&gt;Conveners can read all reviews in their tracks. If the event has been configured accordingly, they can also accept or
+reject abstracts on behalf of the event organizers/managers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2016-11-29-indico-1-9-9-news/global.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;exclude-questions-from-abstract-reviewing-score&quot;&gt;Exclude questions from abstract reviewing score&lt;/h2&gt;
+
+&lt;p&gt;When configuring abstract reviewing questions, one can now add questions whose responses will not be included in the
+average of all scores of abstract reviews.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2016-11-29-indico-1-9-9-news/exclude.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;submission-reviewing-and-judgment-instructions&quot;&gt;Submission, reviewing and judgment instructions&lt;/h2&gt;
+
+&lt;p&gt;Very often organizers wish to provide specific instructions that should be read before an abstract is submitted,
+reviewed or judged. A new feature allows managers to provide a text that will be displayed whenever one of those actions
+is about to be performed.&lt;/p&gt;
+
+&lt;h2 id=&quot;abstract-submission-announcement&quot;&gt;Abstract submission announcement&lt;/h2&gt;
+
+&lt;p&gt;When abstract submission is open, a nicely formatted message is displayed at the overview page of an event, notifying
+users that they can start submitting their abstracts.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2016-11-29-indico-1-9-9-news/overview.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;call-for-abstracts-page&quot;&gt;“Call for Abstracts” page&lt;/h2&gt;
+
+&lt;p&gt;The new integrated “Call for Abstract” page is a place where users can conveniently find all information regarding the
+abstract submission process, as well as a list of abstracts they’ve authored/submitted.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2016-11-29-indico-1-9-9-news/CFA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;new-abstract-timeline&quot;&gt;New Abstract timeline&lt;/h2&gt;
+
+&lt;p&gt;The biggest addition in version 1.9.9 is probably the new visual representation of the abstract reviewing process. The
+timeline provides an easy overview of the abstract reviews as well as the overall score of the abstract.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2016-11-29-indico-1-9-9-news/ntimeline1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Reviewers can easily add a review stating their opinion whether the abstract should be accepted, rejected, merged,
+marked as duplicate or moved to another track.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2016-11-29-indico-1-9-9-news/ntimeline2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For judges (event managers) there is a review summary at the end of the timeline. This provides them with an overview
+that facilitates the decision process.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2016-11-29-indico-1-9-9-news/ntimeline3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;reviewing-area&quot;&gt;Reviewing area&lt;/h2&gt;
+
+&lt;p&gt;Reviewers and conveners have now access to a new “reviewing area” where they can easily see in what tracks they are
+reviewers/conveners of, as well as how many abstracts they reviewed or still need to review.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2016-11-29-indico-1-9-9-news/reviewing_area.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 29 Nov 2016 15:00:00 +0000</pubDate>
+        <link>https://getindico.io/indico/update/release/2016/11/29/indico-1-9-9-news.html</link>
+        <guid isPermaLink="true">https://getindico.io/indico/update/release/2016/11/29/indico-1-9-9-news.html</guid>
+        
+        
+        <category>indico</category>
+        
+        <category>update</category>
+        
+        <category>release</category>
+        
+      </item>
+    
+      <item>
+        <title>Indico 1.9.8 - what's new?</title>
+        <description>&lt;p&gt;Once again, a new version of Indico is released with a lot of user interface improvements especially (but not only) in category-related pages. This brings us one step closer to our Indico v2.0 destination! We are certain that these new changes will improve the way you interact with Indico and we are looking forward to your feedback. Let’s have a look!&lt;/p&gt;
+
+&lt;h2 id=&quot;category-logo&quot;&gt;Category logo&lt;/h2&gt;
+
+&lt;p&gt;Categories can now have a logo which is displayed above the contents of the category.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2016-07-28-indico-1-9-8-news/category-logo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;category-events-overview-and-calendar&quot;&gt;Category events overview and calendar&lt;/h2&gt;
+&lt;p&gt;In the process of improving the user experience on the category pages, the events overview page as well as the calendar page are becoming more and more friendly, following our users’ feedback.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Before&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;After&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/2016-07-28-indico-1-9-8-news/category-event-overview-before.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/2016-07-28-indico-1-9-8-news/category-event-overview-after.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Before&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;After&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/2016-07-28-indico-1-9-8-news/category-calendar-before.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/2016-07-28-indico-1-9-8-news/category-calendar-after.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;category-navigation&quot;&gt;Category navigation&lt;/h2&gt;
+&lt;p&gt;One of the most frequent actions users perform on Indico is creating new events, as well as selecting a category where the event will be created. Navigation of Indico categories has been redesigned completely, providing a clean, fast and easy way to find a category. Try out the new search functionality: simply search using the category title and categories that match will show up. Note that your favourite categories will always appear at the top of the list.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Before&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;After&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/2016-07-28-indico-1-9-8-news/category-navigator-before.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/2016-07-28-indico-1-9-8-news/category-navigator-after.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;category-management&quot;&gt;Category management&lt;/h2&gt;
+&lt;p&gt;Several improvements and simplifications took place in the category management area, allowing managers to create, configure, move and delete categories in a more efficient way.&lt;/p&gt;
+
+&lt;h3 id=&quot;contents&quot;&gt;Contents&lt;/h3&gt;
+&lt;p&gt;By editing a category the manager enters the management area and specifically the &lt;strong&gt;Contents&lt;/strong&gt; page where the list of subcategories/events is presented.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Before&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;After&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/2016-07-28-indico-1-9-8-news/category-contents-before.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/2016-07-28-indico-1-9-8-news/category-contents-after.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;settings&quot;&gt;Settings&lt;/h3&gt;
+&lt;p&gt;The Category Settings form has been moved to the standalone &lt;strong&gt;Settings&lt;/strong&gt; page, using a modern form layout with an easy drag-and-drop functionality for uploading the category icon and logo:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2016-07-28-indico-1-9-8-news/category-settings.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;protection&quot;&gt;Protection&lt;/h3&gt;
+&lt;p&gt;In the same scope, the layout of the &lt;strong&gt;Protection&lt;/strong&gt; page has also been improved, following the new UI standards.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Before&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;After&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/2016-07-28-indico-1-9-8-news/category-protection-before.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/2016-07-28-indico-1-9-8-news/category-protection-after.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;category-defined-event-headers&quot;&gt;Category-defined event headers&lt;/h3&gt;
+
+&lt;p&gt;A new feature introduced in the &lt;strong&gt;Settings&lt;/strong&gt; page of a category is the one of the &lt;strong&gt;custom event headers&lt;/strong&gt;. This allows the display of a custom info/warning/danger message at the top of every event inside the specific category.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2016-07-28-indico-1-9-8-news/category-event-header-1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2016-07-28-indico-1-9-8-news/category-event-header-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;movingdeleting&quot;&gt;Moving/deleting&lt;/h2&gt;
+&lt;p&gt;The actions of moving and deleting the current category are now always accessible from the icons right next to its title, in all category management pages. This new feature makes the old &lt;strong&gt;Tools&lt;/strong&gt; page obsolete and thus it has been removed.&lt;/p&gt;
+
+&lt;h3 id=&quot;moving-categoriesevents&quot;&gt;Moving categories/events&lt;/h3&gt;
+&lt;p&gt;Moving the contents of a category (subcategories or events) has never been easier. From the &lt;strong&gt;Contents&lt;/strong&gt; page, the manager has the options of moving a single or multiple categories/events to a new destination with only a few clicks. The interface for moving category contents reuses the aforementioned &lt;em&gt;category navigator&lt;/em&gt; component inside a dialog for a consistent and beautiful layout&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Before&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;After&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/2016-07-28-indico-1-9-8-news/move-category-before.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/2016-07-28-indico-1-9-8-news/move-category-after.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Something that shouldn’t go unmentioned is that users can move their events/categories from one category to another without the requirement of being the manager of the parent category. This means that if the user &lt;em&gt;John Doe&lt;/em&gt; is the manager of an event in the category &lt;em&gt;A&lt;/em&gt;, he can move it to category &lt;em&gt;B&lt;/em&gt; without asking the manager of the category &lt;em&gt;A&lt;/em&gt; to do this action for him.&lt;/p&gt;
+
+&lt;h3 id=&quot;splitting-category-into-2-sub-categories&quot;&gt;Splitting category into 2 sub-categories&lt;/h3&gt;
+&lt;p&gt;A new feature in the category management area is the one of splitting a category into 2 separate categories. More specifically, the manager can select a number of rows from the category’s contents and click on the &lt;em&gt;split&lt;/em&gt; button located at the top right corner of the table. This will move the selected categories/events into the first new category and the rest into the second.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2016-07-28-indico-1-9-8-news/split-category.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;meeting-pages&quot;&gt;Meeting pages&lt;/h2&gt;
+&lt;p&gt;Our main objective is to always satisfy the needs of our users and keep developing our software based on the feedback we get. The meeting page is one of the most common screens a user faces during their interaction with Indico and we put a lot of effort into polishing its interface and functionalities.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2016-07-28-indico-1-9-8-news/meeting-page.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;These are the most significant changes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A very frequent problem during meetings is that the projectors cannot always display properly all color variations. We are now using &lt;strong&gt;darker tones&lt;/strong&gt; with higher contrast to ensure that the meeting page will be displayed properly, independently of the screen type.&lt;/li&gt;
+  &lt;li&gt;The &lt;strong&gt;consistent use of bold typefaces&lt;/strong&gt; improves the readability and discoverability of the important items of the page.&lt;/li&gt;
+  &lt;li&gt;Improvements in the visual hierarchy of the timetable entries came along with a &lt;strong&gt;better indentation of sub-contributions&lt;/strong&gt; inside a contribution block.&lt;/li&gt;
+  &lt;li&gt;The rendering of the &lt;strong&gt;break blocks&lt;/strong&gt; and the &lt;strong&gt;edit buttons&lt;/strong&gt; is now &lt;strong&gt;more discrete&lt;/strong&gt; in order to retain the focus of the user to the rest of the timetable entries.&lt;/li&gt;
+  &lt;li&gt;The &lt;strong&gt;clear separation between days&lt;/strong&gt; helps the user track down the day of interest faster.&lt;/li&gt;
+  &lt;li&gt;The &lt;strong&gt;attachment icon&lt;/strong&gt; next to the list of uploaded materials has been removed, since the layout of the materials themselves is enough to distinguish them.&lt;/li&gt;
+  &lt;li&gt;A new feature for this release is the option to get a &lt;strong&gt;direct link for a timetable block&lt;/strong&gt; just by clicking next to the block’s title. You can then forward the link to a colleague and the page will open with focus on the selected block.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;event-creation-page&quot;&gt;Event creation page&lt;/h2&gt;
+&lt;p&gt;Another very common page for the managers of the events is the event creation page. You might have noticed that during the latest Indico releases the page started using some new user interface components, improving the way you select a location for the event, the selection of chairpersons, etc. Now, the event creation form appears in a beautiful compact dialog:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Before&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;After&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/2016-07-28-indico-1-9-8-news/event-creation-before.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/2016-07-28-indico-1-9-8-news/event-creation-after.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;performance-improvements&quot;&gt;Performance improvements&lt;/h2&gt;
+&lt;p&gt;A lot of things have also changed under the hood, as always. Being the focus of this release categories, all the operations related with them are now much faster.&lt;/p&gt;
+
+&lt;p&gt;The loading time of category contents in the management area used to be quite slow for categories with many events, since the whole list would be displayed. Now this list is paginated and the loading time will always be small.&lt;/p&gt;
+
+&lt;p&gt;Checking the calendar for big categories used to take ages: up to 1 minute for the Home category in our CERN Indico instance. Now, it’s instant!&lt;/p&gt;
+
+&lt;p&gt;The month category overview with contribution granularity was also painfully slow for big categories, usually ending in a timeout. It’s still a very expensive operation, but now the server won’t leave you hanging.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;That’s all for now! We hope you will like the changes this release introduces and of course, we are looking forward to your feedback!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 28 Jul 2016 13:00:00 +0000</pubDate>
+        <link>https://getindico.io/indico/update/release/2016/07/28/indico-1-9-8-news.html</link>
+        <guid isPermaLink="true">https://getindico.io/indico/update/release/2016/07/28/indico-1-9-8-news.html</guid>
+        
+        
+        <category>indico</category>
+        
+        <category>update</category>
+        
+        <category>release</category>
+        
+      </item>
+    
+      <item>
+        <title>Indico 1.9.7 - what's new?</title>
+        <description>&lt;p&gt;We are pleased to announce yet another milestone in the path to Indico 2.0. You will find lots of improvements in this
+version, most of them related to &lt;strong&gt;timetable, contribution and session management&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;overhaul-of-meetinglecture-stylesthemes&quot;&gt;Overhaul of meeting/lecture styles/themes&lt;/h2&gt;
+
+&lt;p&gt;Meeting pages are the ones that receive the most visits. This is why we find it important to make them better version
+after version, adding new concepts to formulas that are already known to work. This time, we’ve focused on modernizing
+the look, taking advantage of new technologies and code to bring it to the next level. The most essential pieces of
+information concerning an event are now clearly isolated and displayed in a way that we hope that will decrease
+confusion while retaining simplicity.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2016-03-22-indico-1-9-7-news/meeting-styles-1.png&quot; alt=&quot;Meeting styles&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;better-contribution-management-interface&quot;&gt;Better contribution management interface&lt;/h2&gt;
+
+&lt;p&gt;Contribution management can be one of the most tedious tasks in conference organisation. It often requires lots of
+clicks and transitions between pages.
+With this new release, we’ve tried to simplify this process as much as possible.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2016-03-22-indico-1-9-7-news/contrib-list-2.png&quot; alt=&quot;List contribs&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Some of the actions that previously required changing page, such as setting a session or a track for a given
+contribution, are now within the reach of a click.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2016-03-22-indico-1-9-7-news/contrib-list-1.png&quot; alt=&quot;Dropdown&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Filtering contributions based on their properties is now much easier, thanks to the user interface pattern that we had
+already introduced for Registration Forms in the previous release.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2016-03-22-indico-1-9-7-news/contrib-list-3.png&quot; alt=&quot;Filtering&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;new-session-management-interface&quot;&gt;New session management interface&lt;/h2&gt;
+
+&lt;p&gt;One of the completely new features we have added in this version is an interface fully dedicated to session management.
+The concept of “session” is central to Indico, yet the only way to manage a session up to now was through the timetable
+page. We believe things become much simpler when it is possible to have an overview of all existing event structures.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2016-03-22-indico-1-9-7-news/session-list-1.png&quot; alt=&quot;Session list&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;modal-dialogs&quot;&gt;Modal dialogs&lt;/h3&gt;
+
+&lt;p&gt;Modal dialogs are a very powerful tool when used at the right spots. We’ve tried to concentrate as much of the
+functionality as possible in the contribution and session lists and the remaining features in simple and easy to access
+dialogs.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2016-03-22-indico-1-9-7-news/session-list-2.png&quot; alt=&quot;Add Session&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;better-widgets&quot;&gt;Better widgets&lt;/h2&gt;
+
+&lt;p&gt;We have invested quite a lot of effort in completely reworking some of the most important widgets as to make them as
+usable as possible. For instance, we’ve added autocomplete to the room selector.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2016-03-22-indico-1-9-7-news/widgets-1.png&quot; alt=&quot;Room Widget&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Managing authors and speakers is now much easier thanks to a new widget:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2016-03-22-indico-1-9-7-news/widgets-2.png&quot; alt=&quot;Authors Widget&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;performance-improvements&quot;&gt;Performance improvements&lt;/h2&gt;
+
+&lt;p&gt;Thanks to our new &lt;a href=&quot;http://www.postgresql.org/&quot;&gt;PostgreSQL&lt;/a&gt;-based database schema, we’ve managed to considerably improve
+performance in some of the slowest spots in Indico, such as rendering of &lt;strong&gt;large meetings&lt;/strong&gt;, conference timetables
+and overview pages such as &lt;strong&gt;“Today’s events”&lt;/strong&gt; and &lt;strong&gt;Week’s events&lt;/strong&gt;. In some cases, we’ve seen as much as &lt;strong&gt;70%&lt;/strong&gt;
+decrease in rendering time.&lt;/p&gt;
+
+&lt;h2 id=&quot;cds-agenda-style-discontinued&quot;&gt;“CDS Agenda” style discontinued&lt;/h2&gt;
+
+&lt;p&gt;The “CDS Agenda” style was introduced in the early days of Indico, in order to keep users of CDS Agenda comfortable
+during their transition to Indico. Ten years later, we have decided to discontinue it, as it is used by a very low
+number of recent events and offers no advantages over the “standard” Indico theme.&lt;/p&gt;
+
+&lt;h2 id=&quot;other-changes&quot;&gt;Other changes&lt;/h2&gt;
+
+&lt;p&gt;Last but not the least, a series of small improvements that we hope will make a great difference in the daily work of
+some of our users:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You can now see who last updated a contribution’s minutes, as well as the modification time&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2016-03-22-indico-1-9-7-news/others-1.png&quot; alt=&quot;Minutes&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We now display a link to the original event in every clone, as well as links from the original event to its copies.
+You will find this information in the management page, within the event header.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2016-03-22-indico-1-9-7-news/others-2.png&quot; alt=&quot;Minutes&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;New “Export to XSLX” option - when CSV is not good enough (and Excel can be pretty picky sometimes!), we now offer
+direct export to XSLX format.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We believe that’s it! We hope you will like this release and, as usual, we would like to know your feedback!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 22 Mar 2016 16:00:00 +0000</pubDate>
+        <link>https://getindico.io/indico/update/release/2016/03/22/indico-1-9-7-news.html</link>
+        <guid isPermaLink="true">https://getindico.io/indico/update/release/2016/03/22/indico-1-9-7-news.html</guid>
+        
+        
+        <category>indico</category>
+        
+        <category>update</category>
+        
+        <category>release</category>
+        
+      </item>
+    
+  </channel>
+</rss>

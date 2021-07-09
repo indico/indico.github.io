@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Indico - Indico 1.9.10 - what's new?</title>
+    <meta name="description" content="Indico Project Official site - Indico is a powerful event (meetings, conferences, lectures) management system developed at CERN
+">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/github-buttons.css">
+    <link rel="stylesheet" href="/assets/css/ekko-lightbox.css">
+
+    <link rel="canonical" href="https://getindico.io/indico/update/release/2017/03/20/indico-1-9-10-news.html">
+    <link href="//fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Source+Code Pro:200,300,400,500,600,700,900" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link type="application/atom+xml" rel="alternate" href="https://getindico.io/feed.xml" title="Indico Project" />
+</head>
+
+
+  <body>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <div class="dark-overlay"></div>
+
+    <header class="site-header">
+  <nav class="navbar navbar-expand-md site-nav">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img class="header-logo" src="/img/logos/indico_white.png">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+            <img src="/img/hamburger-menu.png">
+        </span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          
+          
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+                
+                <li class="nav-item">
+                  <a class="page-link" href="/">Home</a>
+                </li>
+              
+            
+          
+            
+              
+              
+                
+                <li class="nav-item">
+                  <a class="page-link" href="/features/">Features</a>
+                </li>
+              
+            
+          
+            
+              
+              
+                
+                <li class="nav-item">
+                  <a class="page-link" href="/getting-started/">Getting Started</a>
+                </li>
+              
+            
+          
+            
+              
+              
+                
+                <li class="nav-item">
+                  <a class="page-link" href="/blog/">Blog</a>
+                </li>
+              
+            
+          
+            
+              
+              
+                
+                <li class="nav-item">
+                  <a class="page-link" href="/resources/">Resources</a>
+                </li>
+              
+            
+          
+            
+              
+              
+                
+                <li class="nav-item">
+                  <a class="page-link" href="/roadmap/">Roadmap</a>
+                </li>
+              
+            
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <div class="page-content">
+      <section class="hero-section section hero-blog">
+    <div class="hero-section-content-centered container">
+        <div class="hero-spotlight-header hero-spotlight-header-page">
+            <h1>News from the Indico World</h1>
+        </div>
+    </div>
+</section>
+<section class="blog-section">
+    <div class="section-content container">
+        <div class="row">
+            <div class="col-md-16 col-16 block-center">
+                <div class="blog-navigation-links blog-navigation-links-top"><a href="/blog/">&larr; Back to all posts</a></div>
+<div class="blog-post blog-post-frame">
+  <div class="post">
+    <header class="post-header">
+      <h1><a class="post-link" href="/indico/update/release/2017/03/20/indico-1-9-10-news.html">Indico 1.9.10 - what's new?</a></h1>
+      <p class="post-meta">by  Indico Team - Mar 20, 2017</p>
+    </header>
+    
+    <article class="post-content">
+      <p>Indico keeps moving forward! The main focus of this release was the complete re-engineering of our <strong>Paper Reviewing</strong> module. The following list summarizes the new features and improvements that are included in the 1.9.10 release, one step before the long-awaited 2.0 release.</p>
+
+<h2 id="submitting-papers">Submitting papers</h2>
+
+<p>Submitting a paper has never before been as easy and straightforward as it is now. Once the call for papers opens, users can submit their papers through the <strong>Call for Papers</strong> page of the conference:</p>
+
+<p><img src="/assets/2017-03-20-indico-1-9-10-news/call_for_abstracts.png" alt="" /></p>
+
+<p>Another entry point for submitting a paper for a contribution is the <strong>contribution page</strong> itself.</p>
+
+<p>The paper submission form has also been simplified. Once the user submits their paper, it is marked as <em>Submitted</em>, the corresponding managers and reviewers are notified and the reviewing process begins.</p>
+
+<p><img src="/assets/2017-03-20-indico-1-9-10-news/submit_paper_dialog.png" alt="" /></p>
+
+<h3 id="paper-timeline">Paper timeline</h3>
+
+<p>A new feature that we are very proud to announce is the paper timeline page. Submitters, reviewers, judges and managers can all access this page and be informed of the <strong>current status</strong> of the paper. Moreover, this page provides a <strong>timeline</strong> indicating all the steps that the paper went through until it reaches its final stage. Last but not least, this page also serves as a <strong>communication hub</strong> between submitters-judges and reviewers-judges by allowing comments for every paper revision submitted. Users can submit new revisions of their paper, reviewers can submit their reviews and comments and the judges can easily make a decision by having all the necessary information in one page.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">1st revision</th>
+      <th style="text-align: center">2nd revision</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/assets/2017-03-20-indico-1-9-10-news/paper_timeline.png" alt="" /></td>
+      <td style="text-align: center"><img src="/assets/2017-03-20-indico-1-9-10-news/paper_timeline_accepted.png" alt="" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="reviewing-papers">Reviewing papers</h2>
+
+<p>In the <strong>Reviewing Area</strong> of the conference, the reviewers can have a general overview of the papers that need to be reviewed and the reviewed ones.</p>
+
+<p><img src="/assets/2017-03-20-indico-1-9-10-news/reviewing_area.png" alt="" /></p>
+
+<h2 id="judging-papers">Judging papers</h2>
+
+<p>Similarly to the Reviewing Area, the <strong>Judging Area</strong> of the conference provides an overview of the submitted papers to the judges. It lists the papers that the judge is assigned to, allowing them to make a decision but also to assign/unassign content and layout reviewers.</p>
+
+<p><img src="/assets/2017-03-20-indico-1-9-10-news/judging_area.png" alt="" /></p>
+
+<h2 id="call-for-papers-settings">Call for Papers settings</h2>
+
+<p>Major changes also affected the <strong>management area</strong> of the paper reviewing feature. In the dashboard page of the Call for Papers, the manager can find available options and configuration settings, all grouped in a way to reduce complexity and improve discoverability. These include the activation of reviewing types (content, layout) and configuration of deadlines, the management of the paper templates, the configuration of the reviewing settings and teams and other necessary options.</p>
+
+<p><img src="/assets/2017-03-20-indico-1-9-10-news/call_for_papers_mgmt.png" alt="" /></p>
+
+<p>In the <strong>reviewing settings</strong> dialog, one can manage the reviewing questions of each reviewing type, the announcement of the Call for Papers but also the email notification settings.</p>
+
+<p><img src="/assets/2017-03-20-indico-1-9-10-news/reviewing_settings_dialog.png" alt="" /></p>
+
+<p>The interface for configuring the <strong>reviewing teams</strong> and the <strong>competences</strong> of each person is split into 2 dialogs. The competences dialog allows the manager to edit the competences of the reviewing team members quickly and easily:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Reviewing Teams</th>
+      <th style="text-align: center">Competences</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/assets/2017-03-20-indico-1-9-10-news/reviewing_teams.png" alt="" /></td>
+      <td style="text-align: center"><img src="/assets/2017-03-20-indico-1-9-10-news/competences.png" alt="" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="paper-assignment">Paper assignment</h2>
+
+<p>Apart from the Judging Area in the display area of the conference, managers can also assign papers to the corresponding reviewers and judges through the <strong>paper assignment</strong> page.</p>
+
+<p><img src="/assets/2017-03-20-indico-1-9-10-news/paper_assignment.png" alt="" /></p>
+
+<h2 id="paper-email-notifications">Paper email notifications</h2>
+
+<p>Yet another eye-candy is the new HTML layout of the emails sent through Indico related to the paper reviewing process.</p>
+
+<p><img src="/assets/2017-03-20-indico-1-9-10-news/email.png" alt="" /></p>
+
+<h2 id="event-cloning">Event cloning</h2>
+
+<p>The complex interface for cloning an event has now been simplified with our new <strong>step-by-step guide</strong>.</p>
+
+<p><img src="/assets/2017-03-20-indico-1-9-10-news/event_cloning.png" alt="" /></p>
+
+<p>That’s all for now! We hope you will like the changes this release introduces and of course, we are looking forward to your feedback!</p>
+
+    </article>
+  </div>
+  
+</div>
+<div class="blog-navigation-links blog-navigation-links-bot ">
+  
+    <a class="blog-prev-post" rel="prev" href="/indico/update/release/2016/11/29/indico-1-9-9-news.html">&larr; Previous post</a>
+  
+  
+    <a class="blog-next-post" rel="next" href="/indico/update/release/milestone/2018/01/12/indico-2-0-news.html">Next post &rarr;</a>
+  
+</div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="safety-net-section section bg-blue-light">
+    <div class="section-content-short container">
+        <div class="row">
+            <div class="col-md-8 col-sm-8 col-xm-12 block-center">
+                <h2></h2>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    $(function() {
+        $(document).delegate('*.post-content img', 'click', function(event) {
+            $(this).attr('data-remote', $(this).attr('src'));
+            event.preventDefault(); $(this).ekkoLightbox();
+        });
+    })
+</script>
+
+    </div>
+
+    <footer class="site-footer">
+  <div class="container footer-container">
+    <div class="row">
+      <div class="col-sm-9 col-12 block-center">
+        <div class="row footer-col-wrapper">
+          <div class="footer-col col-md-2 col-sm-4 col-12">
+            <h3 class="footer-col-title">PRODUCT</h3>
+            <ul class="footer-col-list">
+              <li><a href="/">Home</a></li>
+              <li><a href="/features/">Features</a></li>
+              <li><a href="/getting-started/">Getting Started</a></li>
+            </ul>
+          </div>
+          <div class="footer-col col-md-2 col-sm-4 col-12">
+            <h3 class="footer-col-title">SUPPORT</h3>
+            <ul class="footer-col-list">
+              <li><a href="/about/">About Us</a></li>
+              <li><a href="/contact/">Contact</a></li>
+              <li><a href="https://docs.getindico.io/en/latest/">ReadTheDocs</a></li>
+            </ul>
+          </div>
+          <div class="footer-col col-md-2 col-sm-4 col-12">
+            <h3 class="footer-col-title">OTHER</h3>
+            <ul class="footer-col-list">
+              <li><a href="/blog/">Blog</a></li>
+              <li><a href="https://github.com/indico/indico/releases">Releases</a></li>
+              <li><a href="https://github.com/indico/indico/issues">Issues</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-12 text-center footer-github-buttons">
+            <div class="row">
+              <div class="col-6 text-right">
+                <span class="github-btn hide" data-user="indico" data-repo="indico" data-type="watch" data-count="1"></span>
+              </div>
+              <div class="col-6 text-left">
+                <span class="github-btn hide" data-user="indico" data-repo="indico" data-type="fork" data-count="1"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-12">Copyright &copy; 2014–2020 CERN. All rights reserved.</div>
+        <div class="col-md-2 col-12">
+          <span class="footer-icons">
+            <a class="no-decoration" href="https://twitter.com/getindico"><i class="fa fa-twitter fa-lg"></i></a>
+            <a class="no-decoration" href="https://github.com/indico/indico"><i class="fa fa-github-alt fa-lg"></i></a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script type="text/javascript" src="/js/github-buttons.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/ekko-lightbox.min.js"></script>
+    
+    
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.navbar-toggle').on('click', function(){
+          if($(this).hasClass('collapsed')) {
+            $('.dark-overlay').css('display','initial');
+          }
+          else {
+            $('.dark-overlay').css('display','none');
+          }
+        });
+
+        $('.dark-overlay').on('click',function(){
+          $('.collapse').collapse('hide');
+          $('.navbar-toggle').addClass('collapsed');
+          $('.dark-overlay').css('display','none');
+        })
+      });
+    </script>
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+        var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.web.cern.ch/" : "http://piwik.web.cern.ch/");
+        document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 144);
+            piwikTracker.trackPageView();
+            piwikTracker.enableLinkTracking();
+        } catch( err ) {}
+    </script>
+    <noscript>
+        <p><img src="http://piwik.web.cern.ch/piwik.php?idsite=144" style="border:0" alt="" /></p>
+    </noscript>
+    <!-- End Piwik Tracking Code -->
+  </body>
+</html>

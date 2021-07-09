@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Indico - Indico 1.9.9 - what's new?</title>
+    <meta name="description" content="Indico Project Official site - Indico is a powerful event (meetings, conferences, lectures) management system developed at CERN
+">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/github-buttons.css">
+    <link rel="stylesheet" href="/assets/css/ekko-lightbox.css">
+
+    <link rel="canonical" href="https://getindico.io/indico/update/release/2016/11/29/indico-1-9-9-news.html">
+    <link href="//fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Source+Code Pro:200,300,400,500,600,700,900" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link type="application/atom+xml" rel="alternate" href="https://getindico.io/feed.xml" title="Indico Project" />
+</head>
+
+
+  <body>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <div class="dark-overlay"></div>
+
+    <header class="site-header">
+  <nav class="navbar navbar-expand-md site-nav">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img class="header-logo" src="/img/logos/indico_white.png">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+            <img src="/img/hamburger-menu.png">
+        </span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          
+          
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+                
+                <li class="nav-item">
+                  <a class="page-link" href="/">Home</a>
+                </li>
+              
+            
+          
+            
+              
+              
+                
+                <li class="nav-item">
+                  <a class="page-link" href="/features/">Features</a>
+                </li>
+              
+            
+          
+            
+              
+              
+                
+                <li class="nav-item">
+                  <a class="page-link" href="/getting-started/">Getting Started</a>
+                </li>
+              
+            
+          
+            
+              
+              
+                
+                <li class="nav-item">
+                  <a class="page-link" href="/blog/">Blog</a>
+                </li>
+              
+            
+          
+            
+              
+              
+                
+                <li class="nav-item">
+                  <a class="page-link" href="/resources/">Resources</a>
+                </li>
+              
+            
+          
+            
+              
+              
+                
+                <li class="nav-item">
+                  <a class="page-link" href="/roadmap/">Roadmap</a>
+                </li>
+              
+            
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <div class="page-content">
+      <section class="hero-section section hero-blog">
+    <div class="hero-section-content-centered container">
+        <div class="hero-spotlight-header hero-spotlight-header-page">
+            <h1>News from the Indico World</h1>
+        </div>
+    </div>
+</section>
+<section class="blog-section">
+    <div class="section-content container">
+        <div class="row">
+            <div class="col-md-16 col-16 block-center">
+                <div class="blog-navigation-links blog-navigation-links-top"><a href="/blog/">&larr; Back to all posts</a></div>
+<div class="blog-post blog-post-frame">
+  <div class="post">
+    <header class="post-header">
+      <h1><a class="post-link" href="/indico/update/release/2016/11/29/indico-1-9-9-news.html">Indico 1.9.9 - what's new?</a></h1>
+      <p class="post-meta">by  Indico Team - Nov 29, 2016</p>
+    </header>
+    
+    <article class="post-content">
+      <p>The following list summarizes the new features and improvements included in the Indico 1.9.9 release.
+Improvements were done mostly regarding the abstract submission and abstract reviewing workflow.
+The new interface provides users with more intuitive features and give more flexibility to event managers.</p>
+
+<h2 id="abstract-submittedwithdrawn-email-notification">Abstract submitted/withdrawn email notification</h2>
+
+<p>It is now possible to send email notification also when an abstract was submitted or withdrawn.
+There is also the possibility to choose from different email templates that can be used as a base for the email
+notification.</p>
+
+<p><img src="/assets/2016-11-29-indico-1-9-9-news/notif.png" alt="" /></p>
+
+<h2 id="global-reviewersconveners">Global reviewers/conveners</h2>
+
+<p>A new concept of “global reviewers/conveners” was introduced. It allows managers to give global reviewing rights to
+selected users, allowing them not only to review abstracts of a selected track but to review abstracts in all tracks of
+the event. The distinction between reviewers and conveners is now also much clearer:</p>
+
+<ul>
+  <li>Reviewers provide an assessment of the abstract. They can consult only their own reviews.</li>
+  <li>Conveners can read all reviews in their tracks. If the event has been configured accordingly, they can also accept or
+reject abstracts on behalf of the event organizers/managers.</li>
+</ul>
+
+<p><img src="/assets/2016-11-29-indico-1-9-9-news/global.png" alt="" /></p>
+
+<h2 id="exclude-questions-from-abstract-reviewing-score">Exclude questions from abstract reviewing score</h2>
+
+<p>When configuring abstract reviewing questions, one can now add questions whose responses will not be included in the
+average of all scores of abstract reviews.</p>
+
+<p><img src="/assets/2016-11-29-indico-1-9-9-news/exclude.png" alt="" /></p>
+
+<h2 id="submission-reviewing-and-judgment-instructions">Submission, reviewing and judgment instructions</h2>
+
+<p>Very often organizers wish to provide specific instructions that should be read before an abstract is submitted,
+reviewed or judged. A new feature allows managers to provide a text that will be displayed whenever one of those actions
+is about to be performed.</p>
+
+<h2 id="abstract-submission-announcement">Abstract submission announcement</h2>
+
+<p>When abstract submission is open, a nicely formatted message is displayed at the overview page of an event, notifying
+users that they can start submitting their abstracts.</p>
+
+<p><img src="/assets/2016-11-29-indico-1-9-9-news/overview.png" alt="" /></p>
+
+<h2 id="call-for-abstracts-page">“Call for Abstracts” page</h2>
+
+<p>The new integrated “Call for Abstract” page is a place where users can conveniently find all information regarding the
+abstract submission process, as well as a list of abstracts they’ve authored/submitted.</p>
+
+<p><img src="/assets/2016-11-29-indico-1-9-9-news/CFA.png" alt="" /></p>
+
+<h2 id="new-abstract-timeline">New Abstract timeline</h2>
+
+<p>The biggest addition in version 1.9.9 is probably the new visual representation of the abstract reviewing process. The
+timeline provides an easy overview of the abstract reviews as well as the overall score of the abstract.</p>
+
+<p><img src="/assets/2016-11-29-indico-1-9-9-news/ntimeline1.png" alt="" /></p>
+
+<p>Reviewers can easily add a review stating their opinion whether the abstract should be accepted, rejected, merged,
+marked as duplicate or moved to another track.</p>
+
+<p><img src="/assets/2016-11-29-indico-1-9-9-news/ntimeline2.png" alt="" /></p>
+
+<p>For judges (event managers) there is a review summary at the end of the timeline. This provides them with an overview
+that facilitates the decision process.</p>
+
+<p><img src="/assets/2016-11-29-indico-1-9-9-news/ntimeline3.png" alt="" /></p>
+
+<h2 id="reviewing-area">Reviewing area</h2>
+
+<p>Reviewers and conveners have now access to a new “reviewing area” where they can easily see in what tracks they are
+reviewers/conveners of, as well as how many abstracts they reviewed or still need to review.</p>
+
+<p><img src="/assets/2016-11-29-indico-1-9-9-news/reviewing_area.png" alt="" /></p>
+
+    </article>
+  </div>
+  
+</div>
+<div class="blog-navigation-links blog-navigation-links-bot ">
+  
+    <a class="blog-prev-post" rel="prev" href="/indico/update/release/2016/07/28/indico-1-9-8-news.html">&larr; Previous post</a>
+  
+  
+    <a class="blog-next-post" rel="next" href="/indico/update/release/2017/03/20/indico-1-9-10-news.html">Next post &rarr;</a>
+  
+</div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="safety-net-section section bg-blue-light">
+    <div class="section-content-short container">
+        <div class="row">
+            <div class="col-md-8 col-sm-8 col-xm-12 block-center">
+                <h2></h2>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    $(function() {
+        $(document).delegate('*.post-content img', 'click', function(event) {
+            $(this).attr('data-remote', $(this).attr('src'));
+            event.preventDefault(); $(this).ekkoLightbox();
+        });
+    })
+</script>
+
+    </div>
+
+    <footer class="site-footer">
+  <div class="container footer-container">
+    <div class="row">
+      <div class="col-sm-9 col-12 block-center">
+        <div class="row footer-col-wrapper">
+          <div class="footer-col col-md-2 col-sm-4 col-12">
+            <h3 class="footer-col-title">PRODUCT</h3>
+            <ul class="footer-col-list">
+              <li><a href="/">Home</a></li>
+              <li><a href="/features/">Features</a></li>
+              <li><a href="/getting-started/">Getting Started</a></li>
+            </ul>
+          </div>
+          <div class="footer-col col-md-2 col-sm-4 col-12">
+            <h3 class="footer-col-title">SUPPORT</h3>
+            <ul class="footer-col-list">
+              <li><a href="/about/">About Us</a></li>
+              <li><a href="/contact/">Contact</a></li>
+              <li><a href="https://docs.getindico.io/en/latest/">ReadTheDocs</a></li>
+            </ul>
+          </div>
+          <div class="footer-col col-md-2 col-sm-4 col-12">
+            <h3 class="footer-col-title">OTHER</h3>
+            <ul class="footer-col-list">
+              <li><a href="/blog/">Blog</a></li>
+              <li><a href="https://github.com/indico/indico/releases">Releases</a></li>
+              <li><a href="https://github.com/indico/indico/issues">Issues</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-12 text-center footer-github-buttons">
+            <div class="row">
+              <div class="col-6 text-right">
+                <span class="github-btn hide" data-user="indico" data-repo="indico" data-type="watch" data-count="1"></span>
+              </div>
+              <div class="col-6 text-left">
+                <span class="github-btn hide" data-user="indico" data-repo="indico" data-type="fork" data-count="1"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-12">Copyright &copy; 2014–2020 CERN. All rights reserved.</div>
+        <div class="col-md-2 col-12">
+          <span class="footer-icons">
+            <a class="no-decoration" href="https://twitter.com/getindico"><i class="fa fa-twitter fa-lg"></i></a>
+            <a class="no-decoration" href="https://github.com/indico/indico"><i class="fa fa-github-alt fa-lg"></i></a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script type="text/javascript" src="/js/github-buttons.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/ekko-lightbox.min.js"></script>
+    
+    
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.navbar-toggle').on('click', function(){
+          if($(this).hasClass('collapsed')) {
+            $('.dark-overlay').css('display','initial');
+          }
+          else {
+            $('.dark-overlay').css('display','none');
+          }
+        });
+
+        $('.dark-overlay').on('click',function(){
+          $('.collapse').collapse('hide');
+          $('.navbar-toggle').addClass('collapsed');
+          $('.dark-overlay').css('display','none');
+        })
+      });
+    </script>
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+        var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.web.cern.ch/" : "http://piwik.web.cern.ch/");
+        document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 144);
+            piwikTracker.trackPageView();
+            piwikTracker.enableLinkTracking();
+        } catch( err ) {}
+    </script>
+    <noscript>
+        <p><img src="http://piwik.web.cern.ch/piwik.php?idsite=144" style="border:0" alt="" /></p>
+    </noscript>
+    <!-- End Piwik Tracking Code -->
+  </body>
+</html>
