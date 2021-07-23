@@ -7,21 +7,26 @@ weight: 20
 
 ## 2021
 
-### Indico 3 :hammer_and_pick:
+### Indico 3.0 :heavy_check_mark: [:loudspeaker:](/indico/release/2021/05/24/indico-3-0-news.html)
 > *Funded by CERN, with the help of of FNAL and BNL in the search module*
 
 *Q1 2021*
 * [New standalone solution for **Search**](https://talk.getindico.io/t/search-plugin-development/744) (*CERN + FNAL + BNL collaboration*)
-   - Plus new Search UI
+    - Plus new Search UI
+    - Basic [built-in search functionality](https://docs.getindico.io/en/stable/search-engine/features/#internal-search) with no additional dependencies
+    - Advanced search using Citadel [microservice](https://gitlab.cern.ch/webservices/cern-search/cern-search-rest-api) and [plugin](https://pypi.org/project/indico-plugin-citadel/)
+* [Application-specific user tokens with configurable scopes](https://github.com/indico/indico/pull/4976)
+    - Using standard Bearer tokens instead of signed query strings
 * Python 3.9
     - :warning: Python 2 will no longer be supported
+* Paper Editing UX improvements
 
-### Indico 3.1
+### Indico 3.1 :hammer_and_pick:
 > *Funded by CERN*
 
-*Q2 2021*
+*Q3 2021*
 * [**Unlisted events**](https://github.com/indico/indico/issues/4294)
-* Paper Editing UX improvements
+* [**Moderated categories**](https://github.com/indico/indico/issues/2057)
 
 ### Indico 3.2
 > *Funded by CERN*
@@ -54,7 +59,7 @@ weight: 20
 
 ## Future :crystal_ball:
 
-* Version 2 of the REST API: per-application user tokens, granular scopes, endpoint versioning, OpenAPI support;
+* Version 2 of the REST API: granular scopes, endpoint versioning, OpenAPI support;
 * User Interfaces
     - Markdown-based minute editor
     - Improvements in material editor (e.g. better drag and drop)
