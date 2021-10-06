@@ -19,6 +19,9 @@ current_members:
     - name: Tomas Roun
       position: Developer
       photo: tomasroun.jpg
+    - name: Duarte Galvão
+      position: Developer
+      photo: duartegalvao.jpg
 managers:
     - name: Tim Smith
       position: Group Leader, IT-CDA
