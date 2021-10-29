@@ -4,6 +4,14 @@ A few words to describe the structure of the site - where to find what.
 
 The structure of the website was created with [Jekyll](http://jekyllrb.com).
 
+## Testing the site locally with docker
+
+Run this from the root directory of the repo:
+
+```
+docker run --rm -it -v $(pwd):/srv/jekyll -p 4000:4000 jekyll/jekyll jekyll serve --watch
+```
+
 ## Configuration
 
 ### Baseurl
