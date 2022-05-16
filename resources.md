@@ -31,10 +31,10 @@ sections:
       summary: Learn more about the Indico team members and collaborators
   - title: Plugins
     resources:
-    - name: Vidyo
-      link: https://github.com/indico/indico-plugins/tree/master/vc_vidyo
+    - name: zoom
+      link: https://github.com/indico/indico-plugins/tree/master/vc_zoom
       logo: github.png
-      summary: Integrate videoconferencing tool with your Indico meetings
+      summary: Integrate videoconferencing tools with your Indico meetings
     - name: PayPal
       link: https://github.com/indico/indico-plugins/tree/master/payment_paypal
       logo: github.png

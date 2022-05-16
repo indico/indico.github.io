@@ -38,7 +38,7 @@ features:
   - id: 5
     name: Integration with Collaborative Tools
     text: |
-        Web-driven meetings are great, but video-conferencing makes them even more productive. Indico seamlessly integrates with Vidyo, allowing participants to connect with a single click.
+        Web-driven meetings are great, but video-conferencing makes them even more productive. Indico seamlessly integrates with Zoom, allowing participants to connect with a single click.
     images:
     - 51.png
 ---
