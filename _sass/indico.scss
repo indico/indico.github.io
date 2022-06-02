@@ -1450,3 +1450,20 @@ a.no-decoration {
         }
     }
 }
+
+.image-container {
+    display: flex;
+}
+
+// emoji-like title images
+.post-content .emoji-title {
+    display: flex;
+}
+
+.post-content .emoji {
+    margin: 0 .5rem 0 .5rem;
+    box-shadow: none;
+    height: 24px;
+    cursor: default;
+    pointer-events: none;
+}
