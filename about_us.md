@@ -4,18 +4,9 @@ title: About Us
 permalink: /about/
 exclude_from_nav: true
 current_members:
-    - name: Pedro Ferreira
-      position: Product Manager
-      photo: pedroferreira.jpg
     - name: Adrian Mönnich
       position: Lead Developer, Project Manager
       photo: adrianmonnich.jpg
-    - name: Pedro Lourenço
-      position: Developer
-      photo: pedrolourenco.jpg
-    - name: Javier Ferrer
-      position: Developer
-      photo: javierferrer.jpg
     - name: Tomas Roun
       position: Developer
       photo: tomasroun.jpg
@@ -23,13 +14,19 @@ current_members:
       position: Developer
       photo: duartegalvao.jpg
 managers:
-    - name: Tim Smith
-      position: Group Leader, IT-CDA
-      photo: timsmith.jpg
-    - name: Thomas Baron
-      position: Section Leader, IT-CDA-IC
-      photo: thomasbaron.jpg
+    - name: Pedro Ferreira
+      position: Section Leader, IT-CA-CTE
+      photo: pedroferreira.jpg
+    - name: Germán Cancio
+      position: Group Leader, IT-CA
+      photo: germancancio.png
 long_time_contributors:
+    - name: Tim Smith
+      dates: Group Leader, 2005-2020
+    - name: Thomas Baron
+      dates: Project Manager 2004-2007, Section Leader 2005-2020
+    - name: Pedro Lourenço
+      dates: 2020-2022
     - name: Panagiota Poulopoulou
       dates: 2018-2020
     - name: Michal Kolodziejski
@@ -55,6 +52,8 @@ long_time_contributors:
     - name: Eric Simon
       dates: 2002-2004
 contributors:
+    - name: Javier Ferrer
+      dates: 2021-2022
     - name: Lea Tschiersch
       dates: 2020-2021
     - name: Parth Shandilya
