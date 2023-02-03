@@ -13,6 +13,9 @@ current_members:
     - name: Duarte Galvão
       position: Developer
       photo: duartegalvao.jpg
+    - name: Dominic Hollis
+      position: Developer
+      photo: dominichollis.jpg
 managers:
     - name: Pedro Ferreira
       position: Section Leader, IT-CA-CTE
