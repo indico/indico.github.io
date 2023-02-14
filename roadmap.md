@@ -25,13 +25,15 @@ weight: 20
 ## 2023
 
 ### Indico 3.3
-* UI Improvements and legacy code removal
-  - React-based timetable
 * [Tools to assist in GDPR compliance](https://github.com/indico/indico/issues/1415) (pt. 2);
+    - User-accessible list of all events/contributions (e.g. JSON metadata)
+    - User consent for privacy notice
+    - Anonymization of accounts (admin tool)
+* Receipt/certificate generation
 
 ### Indico 3.4
-* [Tools to assist in GDPR compliance](https://github.com/indico/indico/issues/1415) (pt. 3);
-* TBD
+* UI Improvements and legacy code removal
+    - React-based timetable (management + display)
 
 ## Future :crystal_ball:
 
