@@ -16,6 +16,9 @@ current_members:
     - name: Dominic Hollis
       position: Developer
       photo: dominichollis.jpg
+    - name: Michel Succar
+      position: Developer
+      photo: michelsuccar.jpg
 managers:
     - name: Pedro Ferreira
       position: Section Leader, IT-CA-CTE
