@@ -1467,3 +1467,16 @@ a.no-decoration {
     cursor: default;
     pointer-events: none;
 }
+
+#checkin-app-images {
+    gap: 1em;
+    
+    img {
+        min-width: 0;
+        border-color: black;
+        border-style: solid;
+        border-width: 0.6em 0.6em 1.8em 0.6em;
+        background-color: black;
+        border-radius: 18px;
+    }
+}
