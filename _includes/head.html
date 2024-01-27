@@ -5,6 +5,13 @@
 
     <title>Indico - {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{{ site.description }}">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:image" content="{{ site.url }}/img/logos/indico.png">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.min.css">
