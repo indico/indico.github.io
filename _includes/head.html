@@ -3,16 +3,24 @@
     <meta name="viewport" content="width=device-width initial-scale=1, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Indico - {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <title>Indico - {{ page.title or site.title }}</title>
     <meta name="description" content="{{ site.description }}">
+    <meta name="theme-color" content="#1A4A61">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend:site.baseurl | prepend:site.url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ page.title or site.title }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:image" content="/img/logos/indico_embed.png">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/github-buttons.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ekko-lightbox.css">
 
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend:site.baseurl | prepend:site.url }}">
     <link href="//fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Source+Code Pro:200,300,400,500,600,700,900" rel="stylesheet" type="text/css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
