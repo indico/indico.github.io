@@ -5,35 +5,33 @@ permalink: /roadmap/
 weight: 20
 ---
 
-## 2022
+## 2024
 
-### Indico 3.2 :heavy_check_mark: [:loudspeaker:](/indico/release/2022/06/10/indico-3-2-news.html)
-> *Funded by CERN*, with contributions from the *United Nations Office in Geneva* and *Max-Planck-Gesellschaft zur Förderung der Wissenschaften e. V.*
+### Indico 3.3 [:loudspeaker:](/indico/release/2023/12/05/indico-3-3-news.html)
+> *Funded by CERN*, with contributions from the *United Nations Office in Geneva* and *Canonical*
 
-*Q3 2022*
-* UI Improvements and legacy code removal
-    - React-based registration form + lightweight registrations (acompanying persons)
-* [Tools to assist in GDPR compliance](https://github.com/indico/indico/issues/1415) (pt. 1)
-    - Data controller / privacy notice settings
-    - Participant list visiblity settings & consent
-    - Registration retention periods
-* CAPTCHA protection
-* Integration with CERNBox (ownCloud plugin)
-* Markdown-based minutes editor + direct image upload
-* Accessibility improvements (tab navigation)
-
-## 2023
-
-### Indico 3.3
 * [Tools to assist in GDPR compliance](https://github.com/indico/indico/issues/1415) (pt. 2);
-    - User-accessible list of all events/contributions (e.g. JSON metadata)
-    - User consent for privacy notice
+    - User-accessible dump of all their data (YAML metadata + files)
+    - User consent for privacy notice (Canonical contribution)
     - Anonymization of accounts (admin tool)
 * Receipt/certificate generation
+* Modernized mobile [Check-in app](https://checkin.getindico.io/)
+* Accessibility improvements (UN contribution)
+
+**"General availability" release planned for Q1**
+
 
 ### Indico 3.4
+
 * UI Improvements and legacy code removal
     - React-based timetable (management + display)
+* Accessibility improvements (ongoing UN contribution)
+
+### Indico v3.4.x or 3.5
+* Improvements in mobile-friendliness of UI (planned)
+* Zoom plugin: "Zoom Rooms" integration
+* Multilingualism for certain user-defined parts of events (planned UN contribution)
+* Linux distribution packaging (Max Planck Institute for Physics contribution)
 
 ## Future :crystal_ball:
 
@@ -46,3 +44,4 @@ weight: 20
     - Improvements in material editor (e.g. better drag and drop)
     - Responsive interfaces that work OK on mobile
     - Greater Accessibility (screenreaders, colourblind users, etc...)
+* Improve User Experience for users without an Indico account (e.g. in abstract submission)
