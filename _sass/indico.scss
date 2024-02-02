@@ -40,6 +40,7 @@ $blue-gradient:    linear-gradient(to right, #0054B5, #3DD8FF);
 $on-palm:          600px;
 $on-laptop:        800px;
 
+$xs:               360px;
 $sm:               576px;
 $md:               768px;
 $lg:               992px;
@@ -1128,6 +1129,30 @@ a.no-decoration {
         margin: 40px 10px;
     }
 
+    @media(max-width: $sm) {
+        .option-card {
+            img {
+                width: auto;
+                height: auto;
+            }
+
+            h4 {
+                font-size: 23px;
+            }
+        }
+    }
+
+    @media(max-width: $xs) {
+        .option-card {
+            h4 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
  }
 
 
@@ -1479,5 +1504,11 @@ a.no-decoration {
         border-width: 0.6em 0.6em 1.8em 0.6em;
         background-color: black;
         border-radius: 18px;
+    }
+}
+
+@media (max-width: $xs) {
+    .xs-hidden {
+        display: none !important;
     }
 }
