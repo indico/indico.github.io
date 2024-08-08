@@ -19,6 +19,9 @@ current_members:
     - name: Michel Succar
       position: Developer
       photo: michelsuccar.jpg
+    - name: Ajob Kustra
+      position: Developer
+      photo: ajobkustra.jpg
 managers:
     - name: Pedro Ferreira
       position: Section Leader, IT-CA-CTE
