@@ -11,7 +11,7 @@ categories: indico anniversary
     <i class="fa fa-chevron-right fa-lg"></i>
     <img src="/assets/2024-09-19-twenty-years/indico_classic.jpeg" alt="Indico Classic Logo" />
     <i class="fa fa-chevron-right fa-lg"></i>
-    <img src="/img/logos/indico_white.svg" alt="Indico Logo" />
+    <img src="/assets/2024-09-19-twenty-years/indico_solid_bg.svg" alt="Indico Logo" />
 </div>
 
 For the past 20 years, Indico has been the go-to solution for event management and conference organization at CERN and beyond, but did you know that Indico has been around for much longer than that?
