@@ -53,6 +53,26 @@ $xl:               1200px;
     }
 }
 
+/**
+ * Hide elements on different screen sizes
+ * E.g. '.xs-hidden' will hide the element on extra small screens
+ */
+$breakpoints: (
+    xs: $xs,
+    sm: $sm,
+    md: $md,
+    lg: $lg,
+    xl: $xl
+);
+
+@each $name, $size in $breakpoints {
+    @media (max-width: $size) {
+        .#{$name}-hidden {
+            display: none !important;
+        }
+    }
+}
+
 
 @import '_base';
 @import '_plugins';
@@ -1496,7 +1516,7 @@ a.no-decoration {
 
 #checkin-app-images {
     gap: 1em;
-    
+
     img {
         min-width: 0;
         border-color: black;
@@ -1507,8 +1527,39 @@ a.no-decoration {
     }
 }
 
-@media (max-width: $xs) {
-    .xs-hidden {
-        display: none !important;
+#indico-historical-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+
+    img {
+        transform: scale(0.5);
+        border-radius: 10px;
+        margin: 0;
+    }
+
+    img:first-child {
+        transform: scale(1);
+        margin: 0 75px;
+        border-radius: 0;
+    }
+
+    img:last-child {
+        background-color: $blue-darker;
+        padding: 10px;
+    }
+}
+
+#indico-poster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+        width: 50%;
+        height: 50%;
+        cursor: zoom-in;
     }
 }
