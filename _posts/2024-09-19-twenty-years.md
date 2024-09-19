@@ -20,4 +20,10 @@ Before Indico, "CDS Agenda" (formally "AgendaMaker") was the preferred tool for 
 
 Moving forward, in 2009, CDS Agenda was retired in favor of Indico; as well as this, integrations with video conferencing tools (EVO) were added into Indico, thus allowing users to organize their events online. In 2015, the United Nations Office at Geneva (UNOG) started using Indico to manage their events, alongside many academic, scientific, and governmental institutions that ran their own Indico instances. In 2017, the project underwent a major rewrite, which brought a modern look and feel to the platform as well as a more robust and scalable architecture.
 
+<div id="indico-poster" class="image-container">
+    <img src="/assets/2024-09-19-twenty-years/indico_20_poster.jpeg" alt="Indico 20th Anniversary Poster" />
+     <p class="mb-0"><i class="fa fa-magnifying-glass-plus"></i> Click to enlarge</p>
+    <p>Indico 20th Anniversary Poster - Credit: Jennifer Cham</p>
+</div>
+
 We've come a long way since our humble beginnings in 2004, and we're proud to have been powering events at CERN and beyond for the past 20 years. Over the coming weeks, we will be revealing some future plans for Indico; stay tuned to our news and social media platforms for more info. We're excited to see what the next 20 years will bring!

@@ -1554,4 +1554,12 @@ a.no-decoration {
 #indico-poster {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+        width: 50%;
+        height: 50%;
+        cursor: zoom-in;
+    }
 }
