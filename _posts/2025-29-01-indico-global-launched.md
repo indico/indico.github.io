@@ -8,10 +8,10 @@ categories: indico global
 
 We are happy to announce that [indico.global](indico.global) is now available to
 research centers, laboratories, universities, and educational institutions for
-them to organize and host meetings, lectures and conferences, without the need
-for a dedicated Indico server. The service remains free and accessible within
-our fair use policy, ensuring that every researcher has the tools they need to
-manage their events.
+them to organize and host meetings, lectures and conferences, who do not have
+the means to operate a dedicated Indico server. The service remains free and
+accessible within our fair use policy, ensuring that every researcher has the
+tools they need to manage their events.
 
 All events from the old “Global Indico” category on
 [indico.cern.ch](indico.cern.ch) have been successfully migrated to the new
