@@ -14,7 +14,3 @@ All events from the old “Global Indico” category on
 [indico.cern.ch](https://indico.cern.ch) have been successfully migrated to the
 new service and all links pointing to Global Indico events on indico.cern.ch now
 automatically redirect to indico.global.
-
-We invite you to explore this new space, and reach out if your institution would
-like to use it for its own events. Stay connected with the global research
-community, and continue to host your scientific events with indico.global.
