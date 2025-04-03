@@ -11,10 +11,8 @@ categories: indico workshop
 
 On the **6th and 7th of May 2025**, the [Indico workshop](https://indico.cern.ch/e/indico-workshop/2025) will return, where developers, administrators and representatives of organizations in the Indico community will meet in Geneva, at **CERN** and the **United Nations**, to discuss the latest developments and future plans for the Project.
 
-The workshop will be held in a hybrid format, allowing participants to join either in person or remotely. This is a great opportunity for those who are unable to travel to Geneva to still participate in the discussions and share their insights.
-
 However, we need your help. The call for talks is now open, and we encourage you to submit your proposals for talks. This is a chance to share your experiences, ideas, and suggestions with the wider Indico community.
 
-Wether you are a developer, administrator, or user of Indico, your input is valuable. We want to hear from you about your experiences with Indico, any challenges you have faced, and any ideas you have for improving the project.
+Whether you are a developer, or administrator of Indico, your input is valuable. We want to hear from you about your experiences with Indico, any challenges you have faced, and any ideas you have for improving the project.
 
 You can sign up for the workshop and submit your talk proposal on the [Indico workshop website](https://indico.cern.ch/e/indico-workshop/2025). We look forward to seeing you there!

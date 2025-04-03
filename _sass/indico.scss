@@ -36,6 +36,8 @@ $gray:             #828282;
 $gray-light:       #B5B5B5;
 $gray-dark:        #6e6e6e;
 $blue-gradient:    linear-gradient(to right, #0054B5, #3DD8FF);
+$announcement-blue: #0D82AF;
+$announcement-btn: #1E5B78;
 
 $on-palm:          600px;
 $on-laptop:        800px;
@@ -610,13 +612,13 @@ a.no-decoration {
 
 .indico-workshop-announcement {
     color: $white;
-    background-color: $blue-darker;
+    background-color: $announcement-blue;
     font-family: $ubuntu;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 
     a {
         color: $white;
-        background-color: $blue-dark;
+        background-color: $announcement-btn;
         text-decoration: none;
         padding: 5px 15px;
         font-family: $maven;
@@ -624,7 +626,7 @@ a.no-decoration {
         text-transform: uppercase;
 
         &:hover {
-            background-color: $blue;
+            background-color: $blue-darker;
             color: $white;
         }
     }
