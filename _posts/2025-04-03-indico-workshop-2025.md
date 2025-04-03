@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Indico workshop returns - we need your help!"
-date: 2025-04-03 31:00
+date: 2025-04-03 21:00
 author: "Indico Team"
 categories: indico workshop
 ---
