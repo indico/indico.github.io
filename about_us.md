@@ -60,6 +60,8 @@ long_time_contributors:
     - name: Eric Simon
       dates: 2002-2004
 contributors:
+    - name: João Mesquita
+      dates: 2023
     - name: Javier Ferrer
       dates: 2021-2022
     - name: Lea Tschiersch
