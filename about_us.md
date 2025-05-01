@@ -10,9 +10,6 @@ current_members:
     - name: Tomas Roun
       position: Developer
       photo: tomasroun.jpg
-    - name: Duarte Galvão
-      position: Developer
-      photo: duartegalvao.jpg
     - name: Dominic Hollis
       position: Developer
       photo: dominichollis.jpg
@@ -30,12 +27,14 @@ managers:
       position: Group Leader, IT-CA
       photo: germancancio.png
 long_time_contributors:
+    - name: Duarte Galvão
+      dates: 2021-2025
+    - name: Pedro Lourenço
+      dates: 2020-2022
     - name: Tim Smith
       dates: Group Leader, 2005-2020
     - name: Thomas Baron
       dates: Project Manager 2004-2007, Section Leader 2005-2020
-    - name: Pedro Lourenço
-      dates: 2020-2022
     - name: Panagiota Poulopoulou
       dates: 2018-2020
     - name: Michal Kolodziejski
