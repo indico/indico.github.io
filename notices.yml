@@ -1,0 +1,9 @@
+notices:
+  - id: postgres-below-12
+    severity: highlight
+    when:
+      postgres_version: < 12
+    message: >
+      Your database is running an older PostgreSQL version (**{postgres_version}**)
+      than recommended for Indico.
+      Please consider upgrading to the latest stable version (**13**).
