@@ -19,6 +19,9 @@ current_members:
     - name: Ajob Kustra
       position: Developer
       photo: ajobkustra.jpg
+    - name: Marina El Jaouhari
+      position: Developer
+      photo: marinaeljaouhari.jpg
 managers:
     - name: Pedro Ferreira
       position: Section Leader, IT-CA-CTE
