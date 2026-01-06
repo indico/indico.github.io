@@ -19,6 +19,9 @@ current_members:
     - name: Marina El Jaouhari
       position: Developer
       photo: marinaeljaouhari.jpg
+    - name: Francisco Rodrigues
+      position: Developer
+      photo: franciscorodrigues.jpg
 managers:
     - name: Pedro Ferreira
       position: Section Leader, IT-CA-CTE
