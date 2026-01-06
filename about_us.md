@@ -10,9 +10,6 @@ current_members:
     - name: Tomas Roun
       position: Developer
       photo: tomasroun.jpg
-    - name: Dominic Hollis
-      position: Developer
-      photo: dominichollis.jpg
     - name: Michel Succar
       position: Developer
       photo: michelsuccar.jpg
@@ -30,6 +27,8 @@ managers:
       position: Group Leader, IT-CA
       photo: germancancio.png
 long_time_contributors:
+    - name: Dominic Hollis
+      dates: 2023-2025
     - name: Duarte Galvão
       dates: 2021-2025
     - name: Pedro Lourenço
