@@ -9,7 +9,7 @@ The structure of the website was created with [Jekyll](http://jekyllrb.com).
 Run this from the root directory of the repo:
 
 ```
-docker run --rm -it -v $(pwd):/srv/jekyll -p 4000:4000 jekyll/jekyll:3 jekyll serve --watch
+./preview.sh
 ```
 
 ## Configuration
