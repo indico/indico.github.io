@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Indico Project</title>
+    <description>Indico Project Official site - Indico is a powerful event (meetings, conferences, lectures) management system developed at CERN
+</description>
+    <link>https://getindico.io/</link>
+    <atom:link href="https://getindico.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 19 Jan 2026 19:33:20 +0000</pubDate>
+    <lastBuildDate>Mon, 19 Jan 2026 19:33:20 +0000</lastBuildDate>
+    <generator>Jekyll v3.10.0</generator>
+    
+      <item>
+        <title>Indico workshop returns - we need your help!</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/2025-04-02-indico-workshop-2025/workshop_2025.png&quot; alt=&quot;&quot; width=&quot;60%&quot; style=&quot;box-shadow: none&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;On the &lt;strong&gt;6th and 7th of May 2025&lt;/strong&gt;, the &lt;a href=&quot;https://indico.cern.ch/e/indico-workshop/2025&quot;&gt;Indico workshop&lt;/a&gt; will return, where developers, administrators and representatives of organizations in the Indico community will meet in Geneva, at &lt;strong&gt;CERN&lt;/strong&gt; and the &lt;strong&gt;United Nations&lt;/strong&gt;, to discuss the latest developments and future plans for the Project.&lt;/p&gt;
+
+&lt;p&gt;However, we need your help. The call for talks is now open, and we encourage you to submit your proposals for talks. This is a chance to share your experiences, ideas, and suggestions with the wider Indico community.&lt;/p&gt;
+
+&lt;p&gt;Whether you are a developer, or administrator of Indico, your input is valuable. We want to hear from you about your experiences with Indico, any challenges you have faced, and any ideas you have for improving the project.&lt;/p&gt;
+
+&lt;p&gt;You can sign up for the workshop and submit your talk proposal on the &lt;a href=&quot;https://indico.cern.ch/e/indico-workshop/2025&quot;&gt;Indico workshop website&lt;/a&gt;. We look forward to seeing you there!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 03 Apr 2025 21:00:00 +0000</pubDate>
+        <link>https://getindico.io/indico/workshop/2025/04/03/indico-workshop-2025.html</link>
+        <guid isPermaLink="true">https://getindico.io/indico/workshop/2025/04/03/indico-workshop-2025.html</guid>
+        
+        
+        <category>indico</category>
+        
+        <category>workshop</category>
+        
+      </item>
+    
+      <item>
+        <title>indico.global is live!</title>
+        <description>&lt;p&gt;We are happy to announce that &lt;a href=&quot;https://indico.global&quot;&gt;indico.global&lt;/a&gt; is now
+online. The service remains free and accessible within our fair use policy,
+ensuring that every researcher has the tools they need to manage their events.&lt;/p&gt;
+
+&lt;p&gt;All events from the old “Global Indico” category on
+&lt;a href=&quot;https://indico.cern.ch&quot;&gt;indico.cern.ch&lt;/a&gt; have been successfully migrated to the
+new service and all links pointing to Global Indico events on indico.cern.ch now
+automatically redirect to indico.global.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 29 Jan 2025 17:00:00 +0000</pubDate>
+        <link>https://getindico.io/indico/global/2025/01/29/indico-global-launched.html</link>
+        <guid isPermaLink="true">https://getindico.io/indico/global/2025/01/29/indico-global-launched.html</guid>
+        
+        
+        <category>indico</category>
+        
+        <category>global</category>
+        
+      </item>
+    
+      <item>
+        <title>Announcing indico.global</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/2024-10-09-indico-global/logo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We are proud to present to you a project we have been dreaming of for the last
+decade, and which we are now happy to officially announce.&lt;/p&gt;
+
+&lt;p&gt;Present in more than 300 organizations worldwide, Indico is an essential tool
+for thousands of researchers. Over the years, CERN received many requests from
+partner institutions wanting to use it. As a consequence we opened up our own
+server, &lt;strong&gt;indico.cern.ch&lt;/strong&gt;, to the wider community, which has allowed so far
+more than &lt;strong&gt;6,000&lt;/strong&gt; researchers in more than 50 countries to organize their
+workshops and conferences. The &lt;a href=&quot;https://indico.cern.ch/category/5372/&quot;&gt;“Global
+Indico”&lt;/a&gt; category now hosts an impressive
+&lt;strong&gt;12,000 events&lt;/strong&gt;, all operating under a &lt;a href=&quot;https://cern.service-now.com/service-portal?id=kb_article&amp;amp;n=KB0004606&quot;&gt;fair use
+policy&lt;/a&gt;.
+Encouraged by this critical mass, we are embarking on a new, ambitious mission:
+to elevate scientific events on a global scale through a &lt;strong&gt;dedicated server&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;indico.global will cater specifically to smaller research centers, laboratories,
+universities, and educational institutions lacking the resources or expertise to
+establish their own Indico server. It will offer the complete Indico experience,
+supported by a production-grade service from the same team that develops the
+tool at CERN. Best of all, this service will remain free to use for all users!&lt;/p&gt;
+
+&lt;p&gt;indico.global is set to launch in &lt;strong&gt;December 2024&lt;/strong&gt;, so mark your calendars and
+stay tuned for more updates and detailed instructions on how to host &lt;strong&gt;your
+event&lt;/strong&gt; on indico.global!&lt;/p&gt;
+
+&lt;p&gt;In addition, the existing &lt;a href=&quot;https://indico.cern.ch/category/5372/&quot;&gt;“Global
+Indico”&lt;/a&gt; category will be &lt;strong&gt;migrated&lt;/strong&gt; to
+indico.global at the beginning of 2025. After the migration, all links pointing
+to Global Indico events on indico.cern.ch will automatically redirect to the
+new domain.&lt;/p&gt;
+
+&lt;p&gt;If you currently use “Global Indico”, you will receive an email with the
+timeline and additional information to help you prepare for the upcoming
+migration.&lt;/p&gt;
+
+&lt;p&gt;We look forward to welcoming you all in the Indico community!&lt;/p&gt;
+</description>
+        <pubDate>Wed, 09 Oct 2024 17:00:00 +0000</pubDate>
+        <link>https://getindico.io/indico/global/2024/10/09/indico-global.html</link>
+        <guid isPermaLink="true">https://getindico.io/indico/global/2024/10/09/indico-global.html</guid>
+        
+        
+        <category>indico</category>
+        
+        <category>global</category>
+        
+      </item>
+    
+      <item>
+        <title>20 Years of Indico (2004-2024)</title>
+        <description>&lt;div id=&quot;indico-historical-logos&quot; class=&quot;image-container xs-hidden sm-hidden&quot;&gt;
+    &lt;img src=&quot;/assets/2024-09-19-twenty-years/dec.agendas.gif&quot; alt=&quot;CDS Agendas Logo&quot; /&gt;
+    &lt;i class=&quot;fa fa-chevron-right fa-lg&quot;&gt;&lt;/i&gt;
+    &lt;img src=&quot;/assets/2024-09-19-twenty-years/indico_classic.jpeg&quot; alt=&quot;Indico Classic Logo&quot; /&gt;
+    &lt;i class=&quot;fa fa-chevron-right fa-lg&quot;&gt;&lt;/i&gt;
+    &lt;img src=&quot;/assets/2024-09-19-twenty-years/indico_solid_bg.svg&quot; alt=&quot;Indico Logo&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;For the past 20 years, Indico has been the go-to solution for event management and conference organization at CERN and beyond, but did you know that Indico has been around for much longer than that?&lt;/p&gt;
+
+&lt;p&gt;Before Indico, “CDS Agenda” (formally “AgendaMaker”) was the preferred tool for managing conference agendas at CERN, which was initially developed for the ATLAS collaboration in 1999 by a small in-house team at CERN. After a positive response from the community, the team behind the tool had higher aspirations for it. In 2002, an EU funded project was launched to create a flexible ‘catch-all’ platform for hosting meetings and conferences. The project became known as the “Integrated Digital Conferencing Project” (InDiCo), which later became the Indico we know today. In 2004, the first conference, CHEP 2004 (known as ‘event 0’), was organized using Indico.&lt;/p&gt;
+
+&lt;p&gt;Moving forward, in 2009, CDS Agenda was retired in favor of Indico; as well as this, integrations with video conferencing tools (EVO) were added into Indico, thus allowing users to organize their events online. In 2015, the United Nations Office at Geneva (UNOG) started using Indico to manage their events, alongside many academic, scientific, and governmental institutions that ran their own Indico instances. In 2017, the project underwent a major rewrite, which brought a modern look and feel to the platform as well as a more robust and scalable architecture.&lt;/p&gt;
+
+&lt;div id=&quot;indico-poster&quot; class=&quot;image-container&quot;&gt;
+    &lt;img src=&quot;/assets/2024-09-19-twenty-years/indico_20_poster.jpeg&quot; alt=&quot;Indico 20th Anniversary Poster&quot; /&gt;
+     &lt;p class=&quot;mb-0&quot;&gt;&lt;i class=&quot;fa fa-magnifying-glass-plus&quot;&gt;&lt;/i&gt; Click to enlarge&lt;/p&gt;
+    &lt;p&gt;Indico 20th Anniversary Poster - Credit: Jennifer Cham&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We’ve come a long way since our humble beginnings in 2004, and we’re proud to have been powering events at CERN and beyond for the past 20 years. Over the coming weeks, we will be revealing some future plans for Indico; stay tuned to our news and social media platforms for more info. We’re excited to see what the next 20 years will bring!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 19 Sep 2024 17:00:00 +0000</pubDate>
+        <link>https://getindico.io/indico/anniversary/2024/09/19/twenty-years.html</link>
+        <guid isPermaLink="true">https://getindico.io/indico/anniversary/2024/09/19/twenty-years.html</guid>
+        
+        
+        <category>indico</category>
+        
+        <category>anniversary</category>
+        
+      </item>
+    
+      <item>
+        <title>Indico 3.3</title>
+        <description>&lt;p&gt;Today, we are introducing Indico 3.3! This upcoming release brings a lot of new features and improvements, including a &lt;strong&gt;new Check-in app&lt;/strong&gt;, &lt;strong&gt;accessibility improvements (a11y)&lt;/strong&gt;, &lt;strong&gt;document generation&lt;/strong&gt; and a whole lot more.&lt;/p&gt;
+
+&lt;div class=&quot;premonition note&quot;&gt;
+  &lt;i class=&quot;premonition pn-note&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;p&gt;The full change log can be found &lt;a href=&quot;https://docs.getindico.io/en/latest/changelog/#v3-3&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;️-accessibility-improvements-a11y&quot;&gt;♿️ Accessibility improvements (a11y)&lt;/h2&gt;
+
+&lt;p&gt;The accessibility of Indico has been improved in this release, in-line with the &lt;a href=&quot;https://www.w3.org/TR/WCAG21/&quot;&gt;WCAG 2.1&lt;/a&gt;. This means that Indico is now easier to use by people with disabilities, including those who are blind, deaf, or have limited mobility. Notable improvements include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Making language selection, timezone selection and search functionalities more accessible to those using screen readers&lt;/li&gt;
+  &lt;li&gt;Improving accessibility of registration form fields&lt;/li&gt;
+  &lt;li&gt;Preventing icons from being read out by screen readers&lt;/li&gt;
+  &lt;li&gt;Including the selected language in the page metadata (for screen readers)&lt;/li&gt;
+  &lt;li&gt;More screen reader-friendly CAPTCHA when registering for events and creating an Indico account&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;premonition contribution&quot;&gt;
+  &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;p class=&quot;header&quot;&gt;Community Contribution&lt;/p&gt;&lt;p&gt;Feature kindly contributed by the &lt;strong&gt;United Nations Office at Geneva&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/2023-11-30-indico-3-3-news/timezone-picker.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;-check-in-app&quot;&gt;📱 Check-in app&lt;/h2&gt;
+
+&lt;p&gt;The existing &lt;strong&gt;Indico check-in mobile application&lt;/strong&gt; has been &lt;strong&gt;completely rewritten&lt;/strong&gt;. Instead of a native app released on two separate platforms (Google Play Store and Apple App Store), it is now a progressive web app (PWA) which can be easily installed on the two major phone OSs (Android and iOS) and used offline. The new app is available for all Indico instances running version 3.3 - you can &lt;a href=&quot;https://checkin.getindico.io/&quot;&gt;try it out here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Despite being hosted on &lt;a href=&quot;https://getindico.io&quot;&gt;getindico.io&lt;/a&gt;, we do not collect any data from the app. The app only communicates with the Indico instance that you configure and all data is stored locally on the phone.&lt;/p&gt;
+
+&lt;!-- Read our full in-depth blog post about the new Check-in app [here](https://getindico.io/blog/future-link-to-a-post-about-the-check-in-app/). --&gt;
+
+&lt;div id=&quot;checkin-app-images&quot; class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/assets/2023-11-30-indico-3-3-news/app1.png&quot; /&gt;
+  &lt;img src=&quot;/assets/2023-11-30-indico-3-3-news/app2.png&quot; /&gt;
+  &lt;img src=&quot;/assets/2023-11-30-indico-3-3-news/app3.png&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;-document-generation&quot;&gt;🧾 Document generation&lt;/h2&gt;
+
+&lt;p&gt;A long-awaited feature: Indico now supports the generation of fully customizable PDF documents. You can create &lt;strong&gt;receipts&lt;/strong&gt;, &lt;strong&gt;certificates of attendance&lt;/strong&gt; or any other document you might need. Once generated, participants can download their documents from the registration page.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2023-11-30-indico-3-3-news/receipts1.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/assets/2023-11-30-indico-3-3-news/receipts2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Note that creating document templates requires knowledge of HTML and CSS and for security reasons is restricted to Indico admins.
+Document templates are created at the category level and are available to all events within that category (and its subcategories).&lt;/p&gt;
+
+&lt;h2 id=&quot;-by-weekday-recurring-bookings&quot;&gt;📅 “By Weekday” Recurring Bookings&lt;/h2&gt;
+
+&lt;p&gt;The Room Booking module now supports &lt;strong&gt;recurring bookings that repeat on specific weekdays&lt;/strong&gt;. For example, you can now create a recurring booking that repeats every Monday, Wednesday, and Friday over a set period of time.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2023-11-30-indico-3-3-news/recurring-booking.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;️-privacy-improvements-gdpr-compliance&quot;&gt;⚖️ Privacy improvements (GDPR compliance)&lt;/h2&gt;
+
+&lt;p&gt;Users can now be anonymized in Indico; this means that all personal identifiers associated with a user will be removed from Indico, whilst only keeping the data that is required for Indico to function properly, in an anonymized manner. Because this is a rarely needed and a heavily destructive operation, it can only be performed by Indico system administrators through the indico command-line interface.&lt;/p&gt;
+
+&lt;p&gt;In addition to this, users can now export a copy of all their personal data stored in Indico (data portability).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2023-11-30-indico-3-3-news/export.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;!-- Holding this back for now, since this feature isn&apos;t merged yet...
+## 🎟️ Google Wallet Integration
+
+Registration tickets can now be saved directly to Google Wallet. This allows users to easily access their tickets on their mobile device, without having to download and print the ticket (where applicable).
+
+&lt;div class=&quot;premonition contribution&quot;&gt;
+  &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;p class=&quot;header&quot;&gt;Community Contribution&lt;/p&gt;&lt;p&gt;Feature kindly contributed by the &lt;strong&gt;United Nations Office at Geneva&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+  &lt;/div&gt;
+&lt;/div&gt;--&gt;
+
+&lt;h2 id=&quot;-auto-linker-for-minutes&quot;&gt;🔗 Auto-linker for minutes&lt;/h2&gt;
+
+&lt;p&gt;This feature allows Indico administrators to define specific text patterns which will be automatically linked when the patterns are used in minutes. This will save you time when adding links to e.g. ticketing systems, issue trackers or any other external systems. This feature is available for both the Markdown and HTML editor.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2023-11-30-indico-3-3-news/autolinker1.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/assets/2023-11-30-indico-3-3-news/autolinker2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;-acls-for-menu-entries&quot;&gt;🔐 ACLs for menu entries&lt;/h2&gt;
+
+&lt;p&gt;When adding custom menu entries to an event, event organizers can now restrict who can view those entries.
+For example, you can configure a custom event page to be visible only to participants registered with a specific registration form.&lt;/p&gt;
+
+&lt;div class=&quot;premonition contribution&quot;&gt;
+  &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;p class=&quot;header&quot;&gt;Community Contribution&lt;/p&gt;&lt;p&gt;Feature kindly contributed by &lt;strong&gt;Canonical&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/2023-11-30-indico-3-3-news/menu-acl.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;-ciao-indico&quot;&gt;🇮🇹 Ciao Indico!&lt;/h2&gt;
+
+&lt;p&gt;Italian has been added as a new language in Indico. This was done thanks to a team of volunteer translators who worked hard to make Indico even more familiar to the more than 65 million italian speakers around the world. We promise the translation is pineapple-free.&lt;/p&gt;
+
+&lt;p&gt;Want to help us translate Indico into your language? &lt;a href=&quot;https://docs.getindico.io/en/stable/installation/translations/#contributingo&quot;&gt;Learn more here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;-other-improvements-and-small-features&quot;&gt;📈 Other improvements and small features&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Paper Editors are now allowed to edit their review comments&lt;/li&gt;
+  &lt;li&gt;The login page UI has been improved, and it is now possible to use a custom logo for authentication providers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;premonition contribution&quot;&gt;
+  &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;p class=&quot;header&quot;&gt;Community Contribution&lt;/p&gt;&lt;p&gt;Feature kindly contributed by the &lt;strong&gt;United Nations Office at Geneva&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;The number of future months shown in a category is now configurable&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;premonition contribution&quot;&gt;
+  &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;p class=&quot;header&quot;&gt;Community Contribution&lt;/p&gt;&lt;p&gt;Feature kindly contributed by &lt;strong&gt;Canonical&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;Support for generating tickets and badges for each of the registrant’s accompanying persons&lt;/li&gt;
+  &lt;li&gt;Room managers can add internal notes to room bookings
+&lt;!-- Add more improvements here --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;We hope you enjoy using Indico 3.3!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 05 Dec 2023 15:00:00 +0000</pubDate>
+        <link>https://getindico.io/indico/release/2023/12/05/indico-3-3-news.html</link>
+        <guid isPermaLink="true">https://getindico.io/indico/release/2023/12/05/indico-3-3-news.html</guid>
+        
+        
+        <category>indico</category>
+        
+        <category>release</category>
+        
+      </item>
+    
+      <item>
+        <title>Monitor your Indico with Prometheus</title>
+        <description>&lt;p&gt;At CERN we run the world’s &lt;a href=&quot;https://indico.cern.ch&quot;&gt;biggest public Indico server&lt;/a&gt;, which hosts more than &lt;strong&gt;1 million events&lt;/strong&gt; and almost &lt;strong&gt;4 million single attachment files&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Knowing your growth rate is very important when you’re providing a service, and although it’s easy to gauge its scale through database queries and some experience, it’s not that trivial to keep track of the evolution of those metrics. Having an insight into these metrics helps us to answer some of our most burning questions, such as: ‘How has our user base been growing? How are our storage needs evolving?’. Plus, we’ve always wanted to have fancy charts we can present to people who are not that familiar with the tool nor the service we are providing.&lt;/p&gt;
+
+&lt;p&gt;With that in mind, we developed &lt;a href=&quot;https://pypi.org/project/indico-plugin-prometheus/&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;indico_prometheus&lt;/code&gt;&lt;/a&gt; an Indico plugin which provides a &lt;a href=&quot;https://prometheus.io/&quot;&gt;Prometheus&lt;/a&gt;-compatible endpoint which can be plugged into your own Prometheus instance and then your favorite dashboard tool (e.g. &lt;a href=&quot;https://grafana.com/&quot;&gt;Grafana&lt;/a&gt;). &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;indico_prometheus&lt;/code&gt; will take a regular snapshot of your Indico database and extract the most relevant metrics, which can then be imported, processed and displayed in the way of your liking.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2023-10-24-prometheus-plugin/dashboard.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Thanks to this tool, we can now have a sense of our most active usage periods (notice how the weekends are visible on this chart):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2023-10-24-prometheus-plugin/active_users.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We can also, for instance, see that at CERN we have up to 200 events happening simultaneously, and that there is always something going on, thanks to the various timezones on which our various collaborations work:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2023-10-24-prometheus-plugin/active_events.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The plugin also exposes more maintenance-oriented metrics, such as how many synchronization tasks we have queued up, waiting to be sent to the full-text search engine:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2023-10-24-prometheus-plugin/livesync_queue.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pypi.org/project/indico-plugin-prometheus/&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;indico_prometheus&lt;/code&gt;&lt;/a&gt; is of course &lt;a href=&quot;https://github.com/indico/indico-plugins/tree/master/prometheus&quot;&gt;open-source software&lt;/a&gt; and can be installed like &lt;a href=&quot;https://docs.getindico.io/en/stable/installation/plugins/&quot;&gt;any other Indico plugin&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 10 Nov 2023 12:00:00 +0000</pubDate>
+        <link>https://getindico.io/indico/prometheus/monitoring/2023/11/10/prometheus-plugin.html</link>
+        <guid isPermaLink="true">https://getindico.io/indico/prometheus/monitoring/2023/11/10/prometheus-plugin.html</guid>
+        
+        
+        <category>indico</category>
+        
+        <category>prometheus</category>
+        
+        <category>monitoring</category>
+        
+      </item>
+    
+      <item>
+        <title>Indico Workshop 3.5</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/2023-03-29-indico-workshop-3-5/workshop_4.png&quot; alt=&quot;&quot; width=&quot;60%&quot; style=&quot;box-shadow: none&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;On the &lt;strong&gt;20th and 21st of March 2023&lt;/strong&gt;, developers, administrators, and representatives of organizations in the Indico community met in Geneva, at &lt;strong&gt;CERN&lt;/strong&gt; and the &lt;strong&gt;United Nations&lt;/strong&gt;, to discuss the latest developments and future plans for the Project, which included a proposal for a &lt;strong&gt;new governance model&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dirk Duellmann&lt;/strong&gt;, head of Technical Delivery at CERN’s IT Department, opened the workshop, in front of an audience of &lt;strong&gt;41 people&lt;/strong&gt;. &lt;strong&gt;8 other&lt;/strong&gt; participants joined via Zoom. In total, &lt;strong&gt;16 organizations&lt;/strong&gt; were represented, &lt;strong&gt;3 of them from an industrial background&lt;/strong&gt;. This event had the particularity of being the first hybrid one in the Project’s history. Tom Haddon and Philipp Kewisch from Canonical spoke via Zoom and gave a pre-recorded talk, respectively.&lt;/p&gt;
+
+&lt;p&gt;On Monday 20 afternoon, the participants were transported to the UN, where the afternoon session was held. Kira Kruglikova, director of the Division of Administration at UNOG, opened the session, which included an &lt;a href=&quot;https://indico.cern.ch/event/1218989/contributions/5277945/&quot;&gt;inspiring keynote&lt;/a&gt; given by Dr. Tim Smith, head of Communication, Outreach and Education at CERN/IT (a pivotal figure in Indico’s history), and talks on accessibility and Governance. With regards to the latter, Pedro Ferreira, Indico Product Manager and head of Conferencing Technologies at CERN/IT, presented &lt;a href=&quot;https://indico.cern.ch/event/1218989/contributions/5275629/&quot;&gt;CERN’s proposal&lt;/a&gt; for an approach which balances agility and community involvement.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2023-03-29-indico-workshop-3-5/workshop_1.png&quot; alt=&quot;&quot; style=&quot;width: 60%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Tuesday 21 gave the participants the chance to visit the CERN Data Centre as well as the Antimatter Decelerator facilities. The rest of the day was packed with very interesting technical presentations which covered areas as diverse as:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Best practices&lt;/strong&gt; for the deployment of Indico;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Web Accessibility&lt;/strong&gt;;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Internationalization, localization and multi-lingualism&lt;/strong&gt;;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Customization&lt;/strong&gt; of Indico for organizational workflows;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Some of these talks have already become a tradition in the history of Indico workshops: Dr. Dirk Hoffmann’s (CPPM) iconic presentation on internationalization (i18n) was this time &lt;a href=&quot;https://indico.cern.ch/event/1218989/contributions/5285000/&quot;&gt;delivered in collaboration&lt;/a&gt; with Tomas Roun (CERN), Indico core developer responsible for i18n matters. Their thorough and humorous take on the subject sparked a lot of interesting discussions.&lt;/p&gt;
+
+&lt;p&gt;The talks were concluded with a presentation by Adrian Mönnich (CERN), Indico Project Manager, &lt;a href=&quot;https://indico.cern.ch/event/1218989/contributions/5284992/&quot;&gt;on what the future holds for Indico&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The event was successful in connecting the developers with the community, resulting in fruitful discussions about the future of the project. The proposal for a new governance model was welcomed by those present - this will bring new opportunities for collaboration and help shape the direction of Indico. The community outlined the need for more accessibility features, which will be a major focus point from now. Several collaboration opportunities arose from the discussions, such as bulk management of abstracts and contributions for large conferences, Zoom integration, integration with RH tools, improvements in the landing page, and packaging.&lt;/p&gt;
+
+&lt;p&gt;Applications are now open for a &lt;a href=&quot;https://talk.getindico.io/t/community-governance-and-community-manager-role/3009&quot;&gt;&lt;strong&gt;Community Manager&lt;/strong&gt; role&lt;/a&gt;. If you are interested, please contact someone from the team on Matrix or the &lt;a href=&quot;https://talk.getindico.io&quot;&gt;forum&lt;/a&gt;, or otherwise e-mail &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;indico-team AT cern.ch&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Recordings and slides are available on the &lt;a href=&quot;https://indico.cern.ch/e/indico-workshop/3.5&quot;&gt;Workshop Website&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2023-03-29-indico-workshop-3-5/workshop_2.png&quot; alt=&quot;&quot; style=&quot;width: 60%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2023-03-29-indico-workshop-3-5/workshop_3.png&quot; alt=&quot;&quot; style=&quot;width: 60%&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 29 Mar 2023 15:00:00 +0000</pubDate>
+        <link>https://getindico.io/indico/workshop/2023/03/29/indico-workshop-3-5.html</link>
+        <guid isPermaLink="true">https://getindico.io/indico/workshop/2023/03/29/indico-workshop-3-5.html</guid>
+        
+        
+        <category>indico</category>
+        
+        <category>workshop</category>
+        
+      </item>
+    
+      <item>
+        <title>Indico 3.2</title>
+        <description>&lt;p&gt;Today, we are introducing &lt;strong&gt;Indico 3.2&lt;/strong&gt;! This upcoming release is the result of about six months of development, and it includes many new privacy features that will make it easier for Indico events to be compliant with &lt;strong&gt;data privacy laws&lt;/strong&gt; (e.g. GDPR). In addition, there has been work on modernizing some parts of the &lt;strong&gt;user interface&lt;/strong&gt;, we’ve added a useful integration with &lt;strong&gt;OwnCloud&lt;/strong&gt;, and the ability to &lt;strong&gt;favorite events&lt;/strong&gt; along with some other features which we detail further below.&lt;/p&gt;
+
+&lt;div class=&quot;premonition note&quot;&gt;
+  &lt;i class=&quot;premonition pn-note&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;p&gt;The full change log can be found &lt;a href=&quot;https://docs.getindico.io/en/latest/changelog/#version-3-2&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;privacy-features-️&quot;&gt;Privacy features ⚖️&lt;/h2&gt;
+
+&lt;p&gt;One big set of features arriving in version 3.2 are those related to privacy. We’ve added a new &lt;strong&gt;privacy dashboard&lt;/strong&gt; in the event management page, which enables managers to designate a &lt;strong&gt;data controller&lt;/strong&gt; and to set a custom &lt;strong&gt;privacy notice&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2022-06-10-indico-3-2-news/1-privacy-notice.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;That privacy information will be clearly visible in all events: meetings will show it in a popup in the top right corner of the title —as shown in the left image below—, and conferences in a separate page with its menu entry (right image).&lt;/p&gt;
+
+&lt;div class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/assets/2022-06-10-indico-3-2-news/2-privacy-info-button.png&quot; /&gt;
+  &lt;img src=&quot;/assets/2022-06-10-indico-3-2-news/3-privacy-info.png&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Another addition is configurable &lt;strong&gt;participant visibility&lt;/strong&gt;. This allows event managers to fine-tune who can see the participant list. It can be configured to show all participants, none, or only those that consent, and it can be applied independently to event participants and to all other users. It can be set up in registration forms, and when adding participants to a meeting. Event managers can also hide specific people.&lt;/p&gt;
+
+&lt;p&gt;If managers set the explicit consent request, registrants will be shown the different options in the form.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2022-06-10-indico-3-2-news/4-participant-visibility.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Retention periods&lt;/strong&gt; have been added in multiple places: registration form, registration form fields and participant lists. This enables data to be forgotten at a certain time after an event has taken place.&lt;/p&gt;
+
+&lt;h2 id=&quot;favorite-events-&quot;&gt;Favorite events ★&lt;/h2&gt;
+
+&lt;p&gt;Users can now have &lt;strong&gt;favorite events&lt;/strong&gt;! This was a missing feature that completes users being able to set favorite categories.&lt;/p&gt;
+
+&lt;div class=&quot;premonition contribution&quot;&gt;
+  &lt;i class=&quot;fas fa-money-check-alt&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;p class=&quot;header&quot;&gt;Community Sponsorship&lt;/p&gt;&lt;p&gt;Feature kindly sponsored by &lt;a href=&quot;https://www.mpg.de/&quot;&gt;&lt;strong&gt;Max-Planck-Gesellschaft zur Förderung der Wissenschaften e. V.&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;To add an event to your favorites, just click on the star in the top button bar of the event’s page.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2022-06-10-indico-3-2-news/5-favorite-events.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Favorite events are now visible in the dashboard as well as in the favorites section of the user settings.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2022-06-10-indico-3-2-news/6-favorite-event-list.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;new-registration-forms-️&quot;&gt;New registration forms 🎟️&lt;/h2&gt;
+
+&lt;p&gt;The &lt;strong&gt;registration form&lt;/strong&gt; has been completely reworked and modernized, making it much easier to use by registrants and customise by the event managers. Many of the previous registration form limitations and bugs are now resolved, like the handling of long labels and titles.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2022-06-10-indico-3-2-news/7-registration-form.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;All the fields which were available before are still there, but with improved looks and extended configuration options (including the retention period previously discussed in the privacy features).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2022-06-10-indico-3-2-news/8-registration-form-fields.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;accompanying-persons-field&quot;&gt;Accompanying persons field&lt;/h3&gt;
+
+&lt;p&gt;Along the old fields, a new one for &lt;strong&gt;accompanying persons&lt;/strong&gt; has been added. This field lets registrants add people who will attend the event as their guests.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2022-06-10-indico-3-2-news/9-accompanying-persons-field.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;premonition note&quot;&gt;
+  &lt;i class=&quot;premonition pn-note&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;p class=&quot;header&quot;&gt;Note&lt;/p&gt;&lt;p&gt;Another upside of the new registration form is plug-ins are now able to extend it in a much more neat way, hooking into it as well as adding custom field types.&lt;/p&gt;
+
+
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;cernbox-integration&quot; class=&quot;emoji-title&quot;&gt;
+  CERNBox integration
+  &lt;img class=&quot;emoji&quot; src=&quot;/assets/2022-06-10-indico-3-2-news/indico.png&quot; /&gt;
+  ❤️
+  &lt;img class=&quot;emoji&quot; src=&quot;/assets/2022-06-10-indico-3-2-news/cernbox-chonky.png&quot; /&gt;
+&lt;/h2&gt;
+
+&lt;p&gt;Cloud storage and online collaboration tools are widely used. Some times, event managers who have been working in one of these services want to upload files straight away to their meetings or conferences. To help in this task, we’ve integrated CERNBox into Indico. Event and category managers are now able to pick up files directly from their CERNBox space and attach them as materials.&lt;/p&gt;
+
+&lt;p&gt;For this, a new button has been added to the materials management page of both events and categories.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2022-06-10-indico-3-2-news/10-cernbox-button.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It will open a dialog with a browser to select the files they wish to attach from their personal CERNBox storage.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2022-06-10-indico-3-2-news/11-cernbox-dialog.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;premonition note&quot;&gt;
+  &lt;i class=&quot;premonition pn-note&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;p&gt;“This new feature can be customized to use any ownCloud server, not just CERNBox. Indico server administrators can get it via a &lt;a href=&quot;https://github.com/indico/indico-plugins/tree/master/owncloud&quot;&gt;new official plugin&lt;/a&gt;.&lt;/p&gt;
+
+
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;better-support-for-event-series-&quot;&gt;Better support for event series 📚&lt;/h2&gt;
+
+&lt;p&gt;Up until now, creating a series of events was only possible when creating new lectures. With this update, users can now create series from &lt;strong&gt;any events&lt;/strong&gt;. In addition, we added a new management UI which makes it easy to add and remove events from an existing event series.&lt;/p&gt;
+
+&lt;div class=&quot;premonition contribution&quot;&gt;
+  &lt;i class=&quot;fas fa-money-check-alt&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;p class=&quot;header&quot;&gt;Community Sponsorship&lt;/p&gt;&lt;p&gt;Feature kindly sponsored by &lt;a href=&quot;https://www.mpg.de/&quot;&gt;&lt;strong&gt;Max-Planck-Gesellschaft zur Förderung der Wissenschaften e. V.&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To create a series from existing events, select one event and navigate to the management area. From the event actions choose &lt;strong&gt;Create series&lt;/strong&gt;.
+&lt;img src=&quot;/assets/2022-06-10-indico-3-2-news/15-event-series-button.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This will open a dialog where you can search for events to be added to your series:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2022-06-10-indico-3-2-news/16-create-event-series.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To modify an existing series, simply open the dialog again, make your changes and confirm by clicking &lt;strong&gt;Edit series&lt;/strong&gt;. The same dialog also lets you delete the series itself which unlinks all the events in it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2022-06-10-indico-3-2-news/17-edit-event-series.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;captcha-support-&quot;&gt;CAPTCHA support 🤖&lt;/h2&gt;
+
+&lt;p&gt;Starting with version 3.2, account creation and event registration is protected against spammers with a CAPTCHA:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2022-06-10-indico-3-2-news/21-captcha.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When registering for an event, the CAPTCHA is only shown to users who are not logged in. However, if you wish to disable it, there is a toggle in the general registration form settings titled &lt;strong&gt;Require CAPTCHA&lt;/strong&gt; which can be turned off.&lt;/p&gt;
+
+&lt;p&gt;In addition to providing a CAPTCHA out-of-the-box, Indico also lets you create plugins for different CAPTCHA solutions. To support the most popular cloud CAPTCHAs as well, we have created a plugin which adds support for Google’s reCAPTCHAv2 and hCAPTCHA.
+This also serves as an example for developers who wish to use a completely different CAPTCHA through a custom plugin.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2022-06-10-indico-3-2-news/22-recaptcha.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The plugin is available in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;indico-plugins&lt;/code&gt; meta-package or separately as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;indico-plugin-cloud-captchas&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;other-improvements-and-small-features&quot;&gt;Other improvements and small features&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;It is now possible to add &lt;strong&gt;extra images&lt;/strong&gt; to badges and posters in the designer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;premonition contribution&quot;&gt;
+  &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;p class=&quot;header&quot;&gt;Community Contribution&lt;/p&gt;&lt;p&gt;Feature kindly contributed by the &lt;strong&gt;United Nations Office in Geneva&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Speaker-only menu entries&lt;/strong&gt; can now be added from the event customisation section&lt;/li&gt;
+  &lt;li&gt;Basic markdown formatting (e.g. for clickable links) is now supported in the &lt;strong&gt;registration section &amp;amp; field description&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;The &lt;strong&gt;person selector&lt;/strong&gt;, widely used throughout Indico (to select speakers, chairpersons, etc.), has also been modernized
+&lt;img src=&quot;/assets/2022-06-10-indico-3-2-news/13-personlink.png&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;The &lt;strong&gt;editables list filter&lt;/strong&gt; has been improved and now includes many more useful types of filters in a easy to use interface
+&lt;img src=&quot;/assets/2022-06-10-indico-3-2-news/12-editable-list-filters.png&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;There is a new setting to &lt;strong&gt;notify contributors via email&lt;/strong&gt; when a new comment is made on their abstract. This will help improve the communication flow between reviewers and contributors. You can find it in the reviewing settings dialog, inside the call for abstracts management page.
+&lt;img src=&quot;/assets/2022-06-10-indico-3-2-news/14-notify-contributor.png&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;A new setting to &lt;strong&gt;give subcontribution speakers submitter rights&lt;/strong&gt;. This allows speakers to attach materials and add minutes without having management rights to the parent contribution. The setting can be found on the &lt;strong&gt;Protection&lt;/strong&gt; tab under &lt;strong&gt;Subcontribution rights&lt;/strong&gt;:
+&lt;img src=&quot;/assets/2022-06-10-indico-3-2-news/18-subcontrib-rights.png&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;The account creation form can be configured to require users to provide their &lt;strong&gt;affiliation&lt;/strong&gt; and an &lt;strong&gt;additional comment&lt;/strong&gt;. This setting can be found by clicking on the cog menu at the top in the &lt;strong&gt;Users&lt;/strong&gt; tab:
+&lt;img src=&quot;/assets/2022-06-10-indico-3-2-news/19-user-settings.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/assets/2022-06-10-indico-3-2-news/20-mandatory-fields.png&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Lastly, with the updated minutes editor you can now drag and drop or paste images directly into the editor. The new editor is available for minutes, event description and custom conference pages.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;We hope you will enjoy using Indico 3.2!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 10 Jun 2022 12:00:00 +0000</pubDate>
+        <link>https://getindico.io/indico/release/2022/06/10/indico-3-2-news.html</link>
+        <guid isPermaLink="true">https://getindico.io/indico/release/2022/06/10/indico-3-2-news.html</guid>
+        
+        
+        <category>indico</category>
+        
+        <category>release</category>
+        
+      </item>
+    
+      <item>
+        <title>Indico 3.1</title>
+        <description>&lt;p&gt;We are very happy to announce &lt;strong&gt;Indico 3.1&lt;/strong&gt;! This upcoming release includes some interesting new features which will enable users to better organise their events and keep categories clutter-free and tidy.&lt;/p&gt;
+
+&lt;div class=&quot;premonition note&quot;&gt;
+  &lt;i class=&quot;premonition pn-note&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;p&gt;The full change log can be found &lt;a href=&quot;https://docs.getindico.io/en/latest/changelog/#version-3-1&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;category-moderation-️&quot;&gt;Category moderation 👩‍⚖️&lt;/h2&gt;
+
+&lt;p&gt;The first big feature included in version 3.1 adds a new way to manage categories: &lt;strong&gt;moderation&lt;/strong&gt;. When you enable moderation in a category, only users with &lt;strong&gt;creation rights&lt;/strong&gt; will be able to create events in it. Other users who want to move events into that category require &lt;strong&gt;approval&lt;/strong&gt; from the category managers.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021-10-28-indico-3-1-news/upload_fc5b04629c1646b92f93c20c83eec9b5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Category moderators are presented with a list of requests and they can approve or reject them one by one or in batches; providing a reason if they think it will help the requester.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021-10-28-indico-3-1-news/upload_8932d5f4a07cb551ee5497d7e7283699.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Event moderation can be enabled in the protection settings of a category.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021-10-28-indico-3-1-news/upload_1d7f908a0e2f235e924e979f438fbef1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;unlisted-events-&quot;&gt;Unlisted events 🙈&lt;/h2&gt;
+
+&lt;p&gt;Users are now able to create events &lt;strong&gt;without listing them in a particular category&lt;/strong&gt;. These events will only be visible and accessible to the creator and anybody they actively grant access to.&lt;/p&gt;
+
+&lt;p&gt;The idea behind this is to allow event managers to work on preparing their event away from public view until it is ready to go. This is especially useful when the target category is moderated using the previously mentioned feature.&lt;/p&gt;
+
+&lt;p&gt;Unlisted events can run their entire lifetime without being listed in a category, but this should typically be done only for very ad-hoc events not worth archiving; many Indico instances are in fact used to preserve the history of events and meetings, and this of course implies categorizing them properly.&lt;/p&gt;
+
+&lt;p&gt;Keeping an event unlisted may also come in handy for a quick test event which does not require a category.&lt;/p&gt;
+
+&lt;p&gt;To create an unlisted event, a new option has been added to the new event form.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021-10-28-indico-3-1-news/upload_6cb537b40b7330dc07f6a14fa76b492c.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Event managers can later on publish the event into a category from the management page.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021-10-28-indico-3-1-news/upload_adf001382adf5144b9b80ffeb2910a46.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There is a list of unlisted events in the user’s dashboard.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021-10-28-indico-3-1-news/upload_69e039591b2c2fb7a5dcba106000cbd5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;category-logging-&quot;&gt;Category logging 📖&lt;/h2&gt;
+
+&lt;p&gt;There is now a log of all the changes that happen in a category, similar to the event log. The log will show any changes to the protection settings of a category, as well as event move requests and approvals/rejections. This makes the log a useful companion to the new moderation and listing features.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021-10-28-indico-3-1-news/upload_5126fed8938eb6be4a6bb40e7d23df40.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;custom-registration-tags-️&quot;&gt;Custom registration tags 🏷️&lt;/h3&gt;
+
+&lt;p&gt;Event organizers can now add custom registration status tags to help them categorize their registrants. They are useful to filter registrants when doing repetitive tasks, like mailing. The tags are associated with an event and can be created on the registration management page.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021-10-28-indico-3-1-news/upload_e6ef9293730fdc99aeaa5abd1cb4c1d6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Using these tags, an organizer can also filter the registrations for an event. This can help in tasks like contacting the registrants and other similarly repetitive chores.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021-10-28-indico-3-1-news/upload_eb9814963fba9cd7f2b3bb89fb101812.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;other-improvements-and-small-features&quot;&gt;Other improvements and small features&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Reminder emails&lt;/strong&gt; are now sent individually with the recipient in the To field instead of using BCC&lt;/li&gt;
+  &lt;li&gt;Event managers can now import &lt;strong&gt;registration invitations&lt;/strong&gt; from a &lt;strong&gt;CSV file&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;It is now possible to display the &lt;strong&gt;videoconference join button&lt;/strong&gt; on the home page of a conference&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021-10-28-indico-3-1-news/upload_070a707f35e2cac5edb7f8acfff1f970.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Event labels&lt;/strong&gt; are now shown in category overview tables and iCal event titles&lt;/li&gt;
+  &lt;li&gt;Event managers can now see the &lt;strong&gt;end-user view&lt;/strong&gt; of the &lt;strong&gt;timetable&lt;/strong&gt; even while in draft mode&lt;/li&gt;
+  &lt;li&gt;Event/category &lt;strong&gt;role members&lt;/strong&gt; can now be exported to a &lt;strong&gt;CSV file&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;We hope you will like this new release of Indico!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 28 Oct 2021 16:20:00 +0000</pubDate>
+        <link>https://getindico.io/indico/release/2021/10/28/indico-3-1-news.html</link>
+        <guid isPermaLink="true">https://getindico.io/indico/release/2021/10/28/indico-3-1-news.html</guid>
+        
+        
+        <category>indico</category>
+        
+        <category>release</category>
+        
+      </item>
+    
+      <item>
+        <title>Indico 3.0 Public Release 📦</title>
+        <description>&lt;p&gt;It’s with great joy that we announce the public release of &lt;strong&gt;Indico 3.0&lt;/strong&gt;. You can consult a summary of the main
+changes &lt;a href=&quot;https://talk.getindico.io/t/indico-3-0-released/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;python-3-&quot;&gt;Python 3 🐍&lt;/h2&gt;
+
+&lt;p&gt;This major release starts the new &lt;strong&gt;Python-3 era&lt;/strong&gt; of Indico.&lt;/p&gt;
+
+&lt;p&gt;Due to the massive changes that come with this, make sure to read the &lt;a href=&quot;https://docs.getindico.io/en/stable/installation/upgrade/#upgrading-from-2-x-to-3-x&quot;&gt;2.x to 3.0 upgrade guide&lt;/a&gt;
+if you plan to upgrade an existing instance.&lt;/p&gt;
+
+&lt;p&gt;As usual, but especially for a major upgrade like this, please make sure to read and understand the setup guide first and have a backup.&lt;/p&gt;
+
+&lt;h2 id=&quot;version-23&quot;&gt;Version 2.3&lt;/h2&gt;
+
+&lt;p&gt;Version 2.3 will only receive updates for critical bugs and security issues from now on. Updating to 3.0 is highly recommended.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 19 Jul 2021 09:00:00 +0000</pubDate>
+        <link>https://getindico.io/indico/release/2021/07/19/indico-3-0-public-news.html</link>
+        <guid isPermaLink="true">https://getindico.io/indico/release/2021/07/19/indico-3-0-public-news.html</guid>
+        
+        
+        <category>indico</category>
+        
+        <category>release</category>
+        
+      </item>
+    
+  </channel>
+</rss>
