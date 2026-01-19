@@ -65,6 +65,8 @@ long_time_contributors:
     - name: Eric Simon
       dates: 2002-2004
 contributors:
+    - name: Zeynep Çaysar
+      dates: 2025
     - name: João Mesquita
       dates: 2023
     - name: Javier Ferrer
