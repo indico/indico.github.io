@@ -5,43 +5,44 @@ permalink: /roadmap/
 weight: 20
 ---
 
-## 2024
+## 2025
 
-### Indico 3.3 [:loudspeaker:](/indico/release/2023/12/05/indico-3-3-news.html)
-> *Funded by CERN*, with contributions from the *United Nations Office in Geneva* and *Canonical*
+### Indico 3.3.x 🚀
 
-* [Tools to assist in GDPR compliance](https://github.com/indico/indico/issues/1415) (pt. 2);
-    - User-accessible dump of all their data (YAML metadata + files)
-    - User consent for privacy notice (Canonical contribution)
-    - Anonymization of accounts (admin tool)
-* Receipt/certificate generation
-* Modernized mobile [Check-in app](https://checkin.getindico.io/)
-* Accessibility improvements (UN contribution)
+* Many releases w/ various new features, including:
+    - Conditional registration form fields (💰 funded by Max Planck)
+    - Refreshed the looks of the PDF timetable
+    - User search privacy improvement (option to restrict to managers)
+    - Content-Security-Policy support
+    - Many accessibility improvements (💰 funded by the UN)
 
-**"General availability" release planned for Q1**
+## 2026
 
+### Indico 3.3.x
+
+* New markdown rendering engine (consistent between client and server)
+* Improved LaTeX renderer sandboxing
+* Accessibility improvements (ongoing UN contribution)
 
 ### Indico 3.4
 
-* UI Improvements and legacy code removal
-    - React-based timetable (management + display)
-* Accessibility improvements (ongoing UN contribution)
+* UI Improvements
+    - Modernized timetable management (full rewrite in React)
 
-### Indico v3.4.x or 3.5
-* Improvements in mobile-friendliness of UI (planned)
-* Zoom plugin: "Zoom Rooms" integration
-* Multilingualism for certain user-defined parts of events (planned UN contribution)
-* Linux distribution packaging (Max Planck Institute for Physics contribution)
+## 2027
+
+### Indico 3.5
+
+* UI Improvements (likely split over multiple releases):
+    - Redesign of various Indico pages (homepage, dashboard, meetings)
+    - Improved mobile-friendliness on redesigned pages
+    - New conference timetable view
 
 ## Future :crystal_ball:
 
+* Improved "data tables" in admin/management areas (contribution list etc)
 * Version 2 of the REST API: granular scopes, endpoint versioning, OpenAPI support;
-* More user-centric home page
-    - Improved home page with dashboard;
-    - Layered view based on favourite categories/events;
-    - Easier event creation/invite workflow;
-* User Interfaces
-    - Improvements in material editor (e.g. better drag and drop)
-    - Responsive interfaces that work OK on mobile
-    - Greater Accessibility (screenreaders, colourblind users, etc...)
+* UI improvements in material editor (e.g. better drag and drop)
 * Improve User Experience for users without an Indico account (e.g. in abstract submission)
+* Multilingualism for certain user-defined parts of events (planned UN contribution)
+* Linux distribution packaging (Max Planck Institute for Physics contribution)
