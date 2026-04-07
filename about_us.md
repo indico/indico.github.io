@@ -22,6 +22,9 @@ current_members:
     - name: Francisco Rodrigues
       position: Developer
       photo: franciscorodrigues.jpg
+    - name: Nicol Fedurcová
+      position: Developer
+      photo: nicolfedurcova.jpg
 managers:
     - name: Pedro Ferreira
       position: Section Leader, IT-CA-CTE
