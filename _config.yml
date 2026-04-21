@@ -30,3 +30,5 @@ premonition:
           </div>
         </div>
       default_title: "Community Contribution"
+
+include: ['.well-known']
