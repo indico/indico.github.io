@@ -1,0 +1,32 @@
+notices:
+  - id: postgres-below-12
+    severity: highlight
+    when:
+      postgres_version: < 12
+    message: >
+      Your database is running an older PostgreSQL version (**{postgres_version}**)
+      than recommended for Indico.
+      Please consider upgrading to the latest stable version (**13**).
+
+  - id: indico-3312-latex-vuln
+    announcement_bar: true
+    severity: error
+    when:
+      indico_version: < 3.3.12
+    message: |
+      A vulnerability has been found in Indico's LaTeX integration that can lead to local file
+      disclosure and remote code execution. Please update Indico to v3.3.12 as soon as possible; see
+      [our security advisory](https://github.com/indico/indico/security/advisories/GHSA-rm2q-f7jv-3cfp)
+      for details and workarounds.
+
+  - id: indico-3312-latex-vuln-admin
+    severity: error
+    when:
+      indico_version: < 3.3.12
+    message: |
+      A vulnerability has been found in Indico's LaTeX integration that can lead to local file
+      disclosure and remote code execution. Please update Indico to v3.3.12 as soon as possible; see
+      [our security advisory](https://github.com/indico/indico/security/advisories/GHSA-rm2q-f7jv-3cfp)
+      for details and workarounds.
+
+      Note: You are only affected if you installed TeXLive and set `XELATEX_PATH` in `indico.conf`.
