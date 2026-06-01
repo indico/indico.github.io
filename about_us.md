@@ -25,6 +25,9 @@ current_members:
     - name: Nicol Fedurcová
       position: Developer
       photo: nicolfedurcova.jpg
+    - name: Noah Salvi
+      position: Developer
+      photo: noahsalvi.jpg
 managers:
     - name: Pedro Ferreira
       position: Section Leader, IT-CA-CTE
