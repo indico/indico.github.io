@@ -43,9 +43,9 @@ long_time_contributors:
     - name: Pedro Lourenço
       dates: 2020-2022
     - name: Tim Smith
-      dates: Group Leader, 2005-2020
+      dates: Group Leader, 2005-2022
     - name: Thomas Baron
-      dates: Project Manager 2004-2007, Section Leader 2005-2020
+      dates: Project Manager 2004-2007, Section Leader 2005-2022
     - name: Panagiota Poulopoulou
       dates: 2018-2020
     - name: Michal Kolodziejski
