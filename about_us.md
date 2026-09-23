@@ -25,17 +25,16 @@ current_members:
     - name: Nicol Fedurcová
       position: Developer
       photo: nicolfedurcova.jpg
-    - name: Noah Salvi
-      position: Developer
-      photo: noahsalvi.jpg
 managers:
-    - name: Pedro Ferreira
-      position: Section Leader, IT-CA-CTE
-      photo: pedroferreira.jpg
+    - name: Thomas Baron
+      position: Section Leader, IT-CA-CET
+      photo: thomasbaron.jpg
     - name: Germán Cancio
       position: Group Leader, IT-CA
       photo: germancancio.png
 long_time_contributors:
+    - name: Pedro Ferreira
+      dates: Project Manager 2014-2020, Section Leader 2022-2026
     - name: Dominic Hollis
       dates: 2023-2025
     - name: Duarte Galvão
@@ -71,6 +70,8 @@ long_time_contributors:
     - name: Eric Simon
       dates: 2002-2004
 contributors:
+    - name: Noah Salvi
+      dates: 2026
     - name: Zeynep Çaysar
       dates: 2025
     - name: João Mesquita
