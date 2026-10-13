@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Indico - Indico 3.2</title>
+    <meta name="description" content="Indico Project Official site - Indico is a powerful event (meetings, conferences, lectures) management system developed at CERN
+">
+    <meta name="theme-color" content="#1A4A61">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <meta property="og:url" content="https://getindico.io/indico/release/2022/06/10/indico-3-2-news.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Indico 3.2">
+    <meta property="og:description" content="Indico Project Official site - Indico is a powerful event (meetings, conferences, lectures) management system developed at CERN
+">
+    <meta property="og:image" content="/img/logos/indico_embed.png">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/github-buttons.css">
+    <link rel="stylesheet" href="/assets/css/ekko-lightbox.css">
+
+    <link rel="canonical" href="https://getindico.io/indico/release/2022/06/10/indico-3-2-news.html">
+    <link href="//fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Source+Code Pro:200,300,400,500,600,700,900" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link type="application/atom+xml" rel="alternate" href="https://getindico.io/feed.xml" title="Indico Project" />
+</head>
+
+
+  <body>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <div class="dark-overlay"></div>
+
+    <header class="site-header">
+  <nav class="navbar navbar-expand-md site-nav">
+    <div class="container">
+      <a class="navbar-brand" href="">
+        <img class="header-logo" src="/img/logos/indico_white.svg">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+            <img src="/img/hamburger-menu.svg">
+        </span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          
+          
+            
+          
+            
+              
+              
+            
+          
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+            
+          
+            
+              
+              
+                
+                <li class="nav-item">
+                  <a class="page-link" href="/">Home</a>
+                </li>
+              
+            
+          
+            
+              
+              
+                
+                <li class="nav-item">
+                  <a class="page-link" href="/features/">Features</a>
+                </li>
+              
+            
+          
+            
+              
+              
+                
+                <li class="nav-item">
+                  <a class="page-link" href="/getting-started/">Getting Started</a>
+                </li>
+              
+            
+          
+            
+              
+              
+                
+                <li class="nav-item">
+                  <a class="page-link" href="/blog/">Blog</a>
+                </li>
+              
+            
+          
+            
+              
+              
+                
+                <li class="nav-item">
+                  <a class="page-link" href="/resources/">Resources</a>
+                </li>
+              
+            
+          
+            
+              
+              
+                
+                <li class="nav-item">
+                  <a class="page-link" href="/roadmap/">Roadmap</a>
+                </li>
+              
+            
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <div class="page-content">
+      <section class="hero-section section hero-blog">
+    <div class="hero-section-content-centered container">
+        <div class="hero-spotlight-header hero-spotlight-header-page">
+            <h1>News from the Indico World</h1>
+        </div>
+    </div>
+</section>
+<section class="blog-section">
+    <div class="section-content container">
+        <div class="row">
+            <div class="col-md-16 col-16 block-center">
+                <div class="blog-navigation-links blog-navigation-links-top"><a href="/blog/">&larr; Back to all posts</a></div>
+<div class="blog-post blog-post-frame">
+  <div class="post">
+    <header class="post-header">
+      <h1><a class="post-link" href="/indico/release/2022/06/10/indico-3-2-news.html">Indico 3.2</a></h1>
+      <p class="post-meta">by  Indico Team - Jun 10, 2022</p>
+    </header>
+    
+    <article class="post-content">
+      <p>Today, we are introducing <strong>Indico 3.2</strong>! This upcoming release is the result of about six months of development, and it includes many new privacy features that will make it easier for Indico events to be compliant with <strong>data privacy laws</strong> (e.g. GDPR). In addition, there has been work on modernizing some parts of the <strong>user interface</strong>, we’ve added a useful integration with <strong>OwnCloud</strong>, and the ability to <strong>favorite events</strong> along with some other features which we detail further below.</p>
+
+<div class="premonition note">
+  <i class="premonition pn-note"></i>
+  <div class="content">
+    <p>The full change log can be found <a href="https://docs.getindico.io/en/latest/changelog/#version-3-2">here</a>.</p>
+
+
+
+
+  </div>
+</div>
+
+<hr />
+
+<h2 id="privacy-features-️">Privacy features ⚖️</h2>
+
+<p>One big set of features arriving in version 3.2 are those related to privacy. We’ve added a new <strong>privacy dashboard</strong> in the event management page, which enables managers to designate a <strong>data controller</strong> and to set a custom <strong>privacy notice</strong>.</p>
+
+<p><img src="/assets/2022-06-10-indico-3-2-news/1-privacy-notice.png" alt="" /></p>
+
+<p>That privacy information will be clearly visible in all events: meetings will show it in a popup in the top right corner of the title —as shown in the left image below—, and conferences in a separate page with its menu entry (right image).</p>
+
+<div class="image-container">
+  <img src="/assets/2022-06-10-indico-3-2-news/2-privacy-info-button.png" />
+  <img src="/assets/2022-06-10-indico-3-2-news/3-privacy-info.png" />
+</div>
+
+<p>Another addition is configurable <strong>participant visibility</strong>. This allows event managers to fine-tune who can see the participant list. It can be configured to show all participants, none, or only those that consent, and it can be applied independently to event participants and to all other users. It can be set up in registration forms, and when adding participants to a meeting. Event managers can also hide specific people.</p>
+
+<p>If managers set the explicit consent request, registrants will be shown the different options in the form.</p>
+
+<p><img src="/assets/2022-06-10-indico-3-2-news/4-participant-visibility.png" alt="" /></p>
+
+<p><strong>Retention periods</strong> have been added in multiple places: registration form, registration form fields and participant lists. This enables data to be forgotten at a certain time after an event has taken place.</p>
+
+<h2 id="favorite-events-">Favorite events ★</h2>
+
+<p>Users can now have <strong>favorite events</strong>! This was a missing feature that completes users being able to set favorite categories.</p>
+
+<div class="premonition contribution">
+  <i class="fas fa-money-check-alt"></i>
+  <div class="content">
+    <p class="header">Community Sponsorship</p><p>Feature kindly sponsored by <a href="https://www.mpg.de/"><strong>Max-Planck-Gesellschaft zur Förderung der Wissenschaften e. V.</strong></a></p>
+
+
+
+
+  </div>
+</div>
+<p>To add an event to your favorites, just click on the star in the top button bar of the event’s page.</p>
+
+<p><img src="/assets/2022-06-10-indico-3-2-news/5-favorite-events.png" alt="" /></p>
+
+<p>Favorite events are now visible in the dashboard as well as in the favorites section of the user settings.</p>
+
+<p><img src="/assets/2022-06-10-indico-3-2-news/6-favorite-event-list.png" alt="" /></p>
+
+<h2 id="new-registration-forms-️">New registration forms 🎟️</h2>
+
+<p>The <strong>registration form</strong> has been completely reworked and modernized, making it much easier to use by registrants and customise by the event managers. Many of the previous registration form limitations and bugs are now resolved, like the handling of long labels and titles.</p>
+
+<p><img src="/assets/2022-06-10-indico-3-2-news/7-registration-form.png" alt="" /></p>
+
+<p>All the fields which were available before are still there, but with improved looks and extended configuration options (including the retention period previously discussed in the privacy features).</p>
+
+<p><img src="/assets/2022-06-10-indico-3-2-news/8-registration-form-fields.png" alt="" /></p>
+
+<h3 id="accompanying-persons-field">Accompanying persons field</h3>
+
+<p>Along the old fields, a new one for <strong>accompanying persons</strong> has been added. This field lets registrants add people who will attend the event as their guests.</p>
+
+<p><img src="/assets/2022-06-10-indico-3-2-news/9-accompanying-persons-field.png" alt="" /></p>
+
+<div class="premonition note">
+  <i class="premonition pn-note"></i>
+  <div class="content">
+    <p class="header">Note</p><p>Another upside of the new registration form is plug-ins are now able to extend it in a much more neat way, hooking into it as well as adding custom field types.</p>
+
+
+
+
+  </div>
+</div>
+
+<h2 id="cernbox-integration" class="emoji-title">
+  CERNBox integration
+  <img class="emoji" src="/assets/2022-06-10-indico-3-2-news/indico.png" />
+  ❤️
+  <img class="emoji" src="/assets/2022-06-10-indico-3-2-news/cernbox-chonky.png" />
+</h2>
+
+<p>Cloud storage and online collaboration tools are widely used. Some times, event managers who have been working in one of these services want to upload files straight away to their meetings or conferences. To help in this task, we’ve integrated CERNBox into Indico. Event and category managers are now able to pick up files directly from their CERNBox space and attach them as materials.</p>
+
+<p>For this, a new button has been added to the materials management page of both events and categories.</p>
+
+<p><img src="/assets/2022-06-10-indico-3-2-news/10-cernbox-button.png" alt="" /></p>
+
+<p>It will open a dialog with a browser to select the files they wish to attach from their personal CERNBox storage.</p>
+
+<p><img src="/assets/2022-06-10-indico-3-2-news/11-cernbox-dialog.png" alt="" /></p>
+
+<div class="premonition note">
+  <i class="premonition pn-note"></i>
+  <div class="content">
+    <p>“This new feature can be customized to use any ownCloud server, not just CERNBox. Indico server administrators can get it via a <a href="https://github.com/indico/indico-plugins/tree/master/owncloud">new official plugin</a>.</p>
+
+
+
+
+  </div>
+</div>
+
+<h2 id="better-support-for-event-series-">Better support for event series 📚</h2>
+
+<p>Up until now, creating a series of events was only possible when creating new lectures. With this update, users can now create series from <strong>any events</strong>. In addition, we added a new management UI which makes it easy to add and remove events from an existing event series.</p>
+
+<div class="premonition contribution">
+  <i class="fas fa-money-check-alt"></i>
+  <div class="content">
+    <p class="header">Community Sponsorship</p><p>Feature kindly sponsored by <a href="https://www.mpg.de/"><strong>Max-Planck-Gesellschaft zur Förderung der Wissenschaften e. V.</strong></a></p>
+
+
+
+
+  </div>
+</div>
+
+<p>To create a series from existing events, select one event and navigate to the management area. From the event actions choose <strong>Create series</strong>.
+<img src="/assets/2022-06-10-indico-3-2-news/15-event-series-button.png" alt="" /></p>
+
+<p>This will open a dialog where you can search for events to be added to your series:</p>
+
+<p><img src="/assets/2022-06-10-indico-3-2-news/16-create-event-series.png" alt="" /></p>
+
+<p>To modify an existing series, simply open the dialog again, make your changes and confirm by clicking <strong>Edit series</strong>. The same dialog also lets you delete the series itself which unlinks all the events in it.</p>
+
+<p><img src="/assets/2022-06-10-indico-3-2-news/17-edit-event-series.png" alt="" /></p>
+
+<h2 id="captcha-support-">CAPTCHA support 🤖</h2>
+
+<p>Starting with version 3.2, account creation and event registration is protected against spammers with a CAPTCHA:</p>
+
+<p><img src="/assets/2022-06-10-indico-3-2-news/21-captcha.png" alt="" /></p>
+
+<p>When registering for an event, the CAPTCHA is only shown to users who are not logged in. However, if you wish to disable it, there is a toggle in the general registration form settings titled <strong>Require CAPTCHA</strong> which can be turned off.</p>
+
+<p>In addition to providing a CAPTCHA out-of-the-box, Indico also lets you create plugins for different CAPTCHA solutions. To support the most popular cloud CAPTCHAs as well, we have created a plugin which adds support for Google’s reCAPTCHAv2 and hCAPTCHA.
+This also serves as an example for developers who wish to use a completely different CAPTCHA through a custom plugin.</p>
+
+<p><img src="/assets/2022-06-10-indico-3-2-news/22-recaptcha.png" alt="" /></p>
+
+<p>The plugin is available in the <code class="language-plaintext highlighter-rouge">indico-plugins</code> meta-package or separately as <code class="language-plaintext highlighter-rouge">indico-plugin-cloud-captchas</code>.</p>
+
+<h2 id="other-improvements-and-small-features">Other improvements and small features</h2>
+
+<ul>
+  <li>It is now possible to add <strong>extra images</strong> to badges and posters in the designer</li>
+</ul>
+<div class="premonition contribution">
+  <i class="fas fa-star"></i>
+  <div class="content">
+    <p class="header">Community Contribution</p><p>Feature kindly contributed by the <strong>United Nations Office in Geneva</strong></p>
+
+
+
+
+  </div>
+</div>
+<ul>
+  <li><strong>Speaker-only menu entries</strong> can now be added from the event customisation section</li>
+  <li>Basic markdown formatting (e.g. for clickable links) is now supported in the <strong>registration section &amp; field description</strong></li>
+  <li>The <strong>person selector</strong>, widely used throughout Indico (to select speakers, chairpersons, etc.), has also been modernized
+<img src="/assets/2022-06-10-indico-3-2-news/13-personlink.png" alt="" /></li>
+  <li>The <strong>editables list filter</strong> has been improved and now includes many more useful types of filters in a easy to use interface
+<img src="/assets/2022-06-10-indico-3-2-news/12-editable-list-filters.png" alt="" /></li>
+  <li>There is a new setting to <strong>notify contributors via email</strong> when a new comment is made on their abstract. This will help improve the communication flow between reviewers and contributors. You can find it in the reviewing settings dialog, inside the call for abstracts management page.
+<img src="/assets/2022-06-10-indico-3-2-news/14-notify-contributor.png" alt="" /></li>
+  <li>A new setting to <strong>give subcontribution speakers submitter rights</strong>. This allows speakers to attach materials and add minutes without having management rights to the parent contribution. The setting can be found on the <strong>Protection</strong> tab under <strong>Subcontribution rights</strong>:
+<img src="/assets/2022-06-10-indico-3-2-news/18-subcontrib-rights.png" alt="" /></li>
+  <li>The account creation form can be configured to require users to provide their <strong>affiliation</strong> and an <strong>additional comment</strong>. This setting can be found by clicking on the cog menu at the top in the <strong>Users</strong> tab:
+<img src="/assets/2022-06-10-indico-3-2-news/19-user-settings.png" alt="" />
+<img src="/assets/2022-06-10-indico-3-2-news/20-mandatory-fields.png" alt="" /></li>
+  <li>Lastly, with the updated minutes editor you can now drag and drop or paste images directly into the editor. The new editor is available for minutes, event description and custom conference pages.</li>
+</ul>
+
+<hr />
+
+<p>We hope you will enjoy using Indico 3.2!</p>
+
+    </article>
+  </div>
+  
+</div>
+<div class="blog-navigation-links blog-navigation-links-bot ">
+  
+    <a class="blog-prev-post" rel="prev" href="/indico/release/2021/10/28/indico-3-1-news.html">&larr; Previous post</a>
+  
+  
+    <a class="blog-next-post" rel="next" href="/indico/workshop/2023/03/29/indico-workshop-3-5.html">Next post &rarr;</a>
+  
+</div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="safety-net-section section bg-blue-light">
+    <div class="section-content-short container">
+        <div class="row">
+            <div class="col-md-8 col-sm-8 col-xm-12 block-center">
+                <h2></h2>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    $(function() {
+        $(document).delegate('*.post-content img', 'click', function(event) {
+            $(this).attr('data-remote', $(this).attr('src'));
+            event.preventDefault(); $(this).ekkoLightbox();
+        });
+    })
+</script>
+
+    </div>
+
+    <footer class="site-footer">
+  <div class="container footer-container">
+    <div class="row">
+      <div class="col-sm-9 col-12 block-center">
+        <div class="row footer-col-wrapper">
+          <div class="footer-col col-md-2 col-sm-4 col-12">
+            <h3 class="footer-col-title">PRODUCT</h3>
+            <ul class="footer-col-list">
+              <li><a href="/">Home</a></li>
+              <li><a href="/features/">Features</a></li>
+              <li><a href="/getting-started/">Getting Started</a></li>
+            </ul>
+          </div>
+          <div class="footer-col col-md-2 col-sm-4 col-12">
+            <h3 class="footer-col-title">SUPPORT</h3>
+            <ul class="footer-col-list">
+              <li><a href="/about/">About Us</a></li>
+              <li><a href="/contact/">Contact</a></li>
+              <li><a href="https://docs.getindico.io/en/latest/">ReadTheDocs</a></li>
+            </ul>
+          </div>
+          <div class="footer-col col-md-2 col-sm-4 col-12">
+            <h3 class="footer-col-title">OTHER</h3>
+            <ul class="footer-col-list">
+              <li><a href="/blog/">Blog</a></li>
+              <li><a href="https://github.com/indico/indico/releases">Releases</a></li>
+              <li><a href="https://github.com/indico/indico/issues">Issues</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-12 text-center footer-github-buttons">
+            <div class="row">
+              <div class="col-6 text-right">
+                <span class="github-btn hide" data-user="indico" data-repo="indico" data-type="watch" data-count="1"></span>
+              </div>
+              <div class="col-6 text-left">
+                <span class="github-btn hide" data-user="indico" data-repo="indico" data-type="fork" data-count="1"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-12">Copyright &copy; 2014–2026 CERN. All rights reserved.</div>
+        <div class="col-md-2 col-12">
+          <span class="footer-icons">
+            <a class="no-decoration" href="https://fosstodon.org/@getindico" target="_blank"><i class="fa fa-mastodon fa-lg"></i></a>
+            <a class="no-decoration" href="https://twitter.com/getindico" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+            <a class="no-decoration" href="https://github.com/indico/indico" target="_blank"><i class="fa fa-github fa-lg"></i></a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script type="text/javascript" src="/js/github-buttons.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/ekko-lightbox.min.js"></script>
+    
+    
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.navbar-toggle').on('click', function(){
+          if($(this).hasClass('collapsed')) {
+            $('.dark-overlay').css('display','initial');
+          }
+          else {
+            $('.dark-overlay').css('display','none');
+          }
+        });
+
+        $('.dark-overlay').on('click',function(){
+          $('.collapse').collapse('hide');
+          $('.navbar-toggle').addClass('collapsed');
+          $('.dark-overlay').css('display','none');
+        })
+      });
+    </script>
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+        var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.web.cern.ch/" : "http://piwik.web.cern.ch/");
+        document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 144);
+            piwikTracker.trackPageView();
+            piwikTracker.enableLinkTracking();
+        } catch( err ) {}
+    </script>
+    <noscript>
+        <p><img src="http://piwik.web.cern.ch/piwik.php?idsite=144" style="border:0" alt="" /></p>
+    </noscript>
+    <!-- End Piwik Tracking Code -->
+  </body>
+</html>
