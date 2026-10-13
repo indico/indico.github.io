@@ -30,3 +30,24 @@ notices:
       for details and workarounds.
 
       Note: You are only affected if you installed TeXLive and set `XELATEX_PATH` in `indico.conf`.
+
+  - id: indico-3314-static-vuln
+    announcement_bar: true
+    severity: error
+    when:
+      indico_version: < 3.3.14
+    message: |
+      A vulnerability has been found in Indico's offline event archive creation that can lead to local
+      file disclosure. Please update Indico to v3.3.14 as soon as possible; see
+      [our security advisory](https://github.com/indico/indico/security/advisories/GHSA-h57f-c9j4-577x)
+      for details and workarounds.
+
+  - id: indico-3314-static-vuln-admin
+    severity: error
+    when:
+      indico_version: < 3.3.14
+    message: |
+      A vulnerability has been found in Indico's offline event archive creation that can lead to local
+      file disclosure. Please update Indico to v3.3.14 as soon as possible; see
+      [our security advisory](https://github.com/indico/indico/security/advisories/GHSA-h57f-c9j4-577x)
+      for details and workarounds.
